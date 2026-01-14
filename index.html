@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>クイック・セキュリティ成熟度診断｜NIST CSF 2.0セルフアセスメント</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header class="app-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand__title">クイック・セキュリティ成熟度診断</div>
+        <div class="brand__sub">NIST CSF 2.0に基づくセルフアセスメント</div>
+      </div>
+
+      <div class="header-actions">
+        <!-- NEW: session export/import -->
+        <button id="btnExportSession" class="btn btn--ghost btn--compact" type="button"
+          title="回答は自動保存されません。必要に応じて JSON で保存してください。">
+          回答を保存
+        </button>
+        <button id="btnImportSession" class="btn btn--ghost btn--compact" type="button" title="保存したJSONを読み込み、回答を復元">
+          JSONを読み込む
+        </button>
+        <input id="fileImportSession" type="file" accept="application/json" hidden />
+
+        <span class="divider" aria-hidden="true"></span>
+
+        <button id="btnRestart" class="btn btn--ghost" type="button" hidden>最初から</button>
+
+        <!-- NEW: always-open results view -->
+        <button id="btnOpenResult" class="btn btn--ghost" type="button" title="現在の回答状況で結果ビューを開きます" disabled>
+          結果を開く
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Loading -->
+    <section id="viewLoading" class="card">
+      <div class="card__body">
+        <div class="row row--space">
+          <h1 class="h1">読み込み中</h1>
+          <span class="pill">JSON: <code>data.json</code></span>
+        </div>
+        <p class="muted">設問データを読み込んでいます。</p>
+        <div class="progressbar" aria-label="loading">
+          <div class="progressbar__fill" style="width: 40%"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section id="viewIntro" class="card" hidden>
+      <div class="card__body">
+        <h1 class="h1">概要</h1>
+
+        <p>
+          質問に答えることで、現在のセキュリティ成熟度と、
+          各カテゴリの平均成熟度スコアに基づき算出した
+          優先改善カテゴリを把握できます。
+        </p>
+
+        <div class="note">
+          <div class="note__title">本ツールについて</div>
+          <p>
+            本ツールは、個人開発者による独立した取り組みとして開発・公開している
+            セルフアセスメントツールです。
+          </p>
+          <p>
+            <a href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener">
+              NIST Cybersecurity Framework (CSF) 2.0
+            </a>
+            の構成および公開資料を参考に設計していますが、
+            NIST が提供する公式ツールや認定ツールではありません。
+          </p>
+          <p>
+            ソースコードは GitHub 上で公開しています：
+            <a href="https://github.com/notegridx/nist-csf-assessment" target="_blank" rel="noopener">
+              github.com/notegridx/nist-csf-assessment
+            </a>
+          </p>
+        </div>
+
+
+        <div class="note">
+          <div class="note__title">免責事項（必ずお読みください）</div>
+
+          <ul class="list">
+            <li>本ツールは、NIST CSF 2.0 を参考にしたセルフアセスメント（自己点検）であり、教育・全体把握を目的とします。</li>
+            <li>監査、認証、法令・規制遵守の判断、または専門的助言（法務・監査・コンサルティング）を提供するものではありません。</li>
+            <li>表示される結果（スコア、優先改善 Top3 等）は参考情報であり、完全性・正確性・最新性・適合性を保証しません。</li>
+            <li>最終的な意思決定および対策の実施は利用者の責任において行ってください。</li>
+          </ul>
+
+          <details class="details" style="margin-top:10px;">
+            <summary>免責事項（詳細）</summary>
+            <div class="details__body">
+              <div class="muted small">
+                <p><b>1. 範囲・位置付け</b><br>
+                  本ツールは、NIST CSF 2.0
+                  の構造を参考に「現状（成熟度）」を俯瞰するための簡易評価です。個別組織の状況、業種特性、脅威動向、法令・契約要件等を網羅的に反映するものではありません。
+                  本ツールは、NIST Cybersecurity Framework (CSF) 2.0 を参考に、
+                  個人開発者が独自に作成した非公式のセルフアセスメントツールです。
+                  NIST による認定、承認、保証を受けたものではありません。
+                  本ツールの内容は、法的助言、セキュリティ上の保証、または専門的コンサルティングを構成するものではありません。
+                  本ツールの結果を用いた判断・意思決定は、すべて利用者の責任において行われるものとします。
+                </p>
+
+                <p><b>2. 非保証</b><br>
+                  本ツールの内容（質問、解釈、集計、表示、出力）について、誤り、不備、中断、欠陥がないことを保証しません。
+                  本ツールの利用により、事故・侵害・損失の発生防止、またはセキュリティ水準の向上を保証するものではありません。
+                  本ツールにおける NIST CSF 2.0 の日本語表現は、原文を参考に AI 等により翻訳・要約したものであり、公式な翻訳ではありません。
+                  原文の解釈や翻訳内容の正確性についても保証するものではありません。
+                  NIST CSF 2.0 の原文および最新情報については、NIST 公式サイトの公開資料をご参照ください。
+                </p>
+
+                <p><b>3. 責任の制限</b><br>
+                  本ツールの利用または利用不能に起因して生じたいかなる損害（直接損害、間接損害、特別損害、逸失利益、データ損失、業務中断等）についても、適用法令により許容される最大限の範囲において、運営者は一切の責任を負いません。
+                </p>
+
+                <p><b>4. データの取り扱い</b><br>
+                  本ツールの回答内容は、ブラウザ内でのみ処理され、サーバへ送信・保存されません。
+                  入力内容は LocalStorage 等の永続領域にも自動保存されないため、ブラウザを閉じる、タブを閉じる、またはページを再読み込みすると、回答内容は消去されます。
+
+                  回答内容を保存する場合は、利用者が明示的に 「回答を保存」 を押し、JSON ファイルとしてエクスポートする必要があります。
+                  エクスポートした JSON ファイルは、組織のセキュリティ対策状況等の情報を含む可能性があるため、保存場所・アクセス権限・誤送信・誤共有に十分注意のうえ、利用者の管理下で適切に取り扱ってください。
+
+                  なお、本ツールの利用に関連する端末、ブラウザ、ネットワーク環境等に起因する情報漏えい等について、運営者は責任を負いません。
+                </p>
+
+                <p><b>5. 第三者の権利・非提携</b><br>
+                  “NIST” および “NIST CSF 2.0” は参照先の名称です。NIST が本ツールを承認・推奨・保証するものではありません。
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <label class="agreeRow">
+            <input id="chkAgree" type="checkbox" />
+            <span>上記の免責事項に同意して開始します</span>
+          </label>
+        </div>
+
+        <div class="grid2">
+          <div class="card card--inner">
+            <div class="card__body">
+              <div class="h2">回答形式（成熟度）</div>
+              <ul class="list">
+                <li>5: 定着</li>
+                <li>4: 概ね実施</li>
+                <li>3: 一部実施</li>
+                <li>2: 準備中</li>
+                <li>1: 未実施</li>
+                <li>未回答／不明（後で確認）※スコア集計には含めません</li>
+              </ul>
+              <p class="muted">
+                本ツールは成熟度（Maturity）に基づき、回答済み（1〜5）のみを0〜100点に換算して集計します。
+              </p>
+            </div>
+          </div>
+          <div class="card card--inner">
+            <div class="card__body">
+              <div class="h2">評価軸（Function）</div>
+              <ul class="list">
+                <li>ガバナンス（GV）</li>
+                <li>識別（ID）</li>
+                <li>防御（PR）</li>
+                <li>検知（DE）</li>
+                <li>対応（RS）</li>
+                <li>復旧（RC）</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row--end gap">
+          <button id="btnStart" class="btn btn--primary" type="button">開始する</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Assessment -->
+    <section id="viewAssess" class="card" hidden>
+      <div class="card__body">
+        <div class="assessSplit">
+          <aside class="navPane" aria-label="設問ナビゲーション">
+            <div class="navPane__head"> </div>
+            <div id="navTree" class="navTree" role="navigation" aria-label="FunctionとCategory"></div>
+          </aside>
+
+          <div class="assessMain">
+            <div class="row row--space">
+              <div>
+                <div class="h2">設問</div>
+                <div id="metaLine" class="muted">—</div>
+                <button id="btnBackToResult" class="btn btn--ghost" type="button">結果に戻る</button>
+              </div>
+              <div class="pill">
+                <span id="progressText">0/0</span>
+              </div>
+            </div>
+
+            <div class="progressbar" aria-label="progress">
+              <div id="progressFill" class="progressbar__fill" style="width: 0%"></div>
+            </div>
+
+            <div class="qa">
+              <div id="questionText" class="qa__q">—</div>
+
+              <!-- 回答（成熟度：高→低） -->
+              <div class="answerScale" role="radiogroup" aria-label="成熟度（Maturity）">
+                <button type="button" class="answerChoice" data-answer="5" role="radio" aria-checked="false">
+                  <span class="answerChoice__label">5: 定着</span>
+                  <span class="answerChoice__hint">標準化され、継続運用・改善サイクルが回っている</span>
+                </button>
+
+                <button type="button" class="answerChoice" data-answer="4" role="radio" aria-checked="false">
+                  <span class="answerChoice__label">4: 概ね実施</span>
+                  <span class="answerChoice__hint">主要範囲で運用されている（例外・改善余地は残る）</span>
+                </button>
+
+                <button type="button" class="answerChoice" data-answer="3" role="radio" aria-checked="false">
+                  <span class="answerChoice__label">3: 一部実施</span>
+                  <span class="answerChoice__hint">範囲・部門が限定される／ばらつきがある</span>
+                </button>
+
+                <button type="button" class="answerChoice" data-answer="2" role="radio" aria-checked="false">
+                  <span class="answerChoice__label">2: 準備中</span>
+                  <span class="answerChoice__hint">方針・計画・設計はあるが、運用は限定的／開始前</span>
+                </button>
+
+                <button type="button" class="answerChoice" data-answer="1" role="radio" aria-checked="false">
+                  <span class="answerChoice__label">1: 未実施</span>
+                  <span class="answerChoice__hint">未整備または未運用</span>
+                </button>
+
+                <button type="button" class="answerChoice answerChoice--na" data-answer="na" role="radio"
+                  aria-checked="false">
+                  <span class="answerChoice__label">未回答／不明（後で確認）</span>
+                  <span class="answerChoice__hint">スコア集計には含めず、回答率としてのみ反映します</span>
+                </button>
+              </div>
+
+
+              <!-- 参考情報（examples） -->
+              <div class="ref">
+                <details id="exampleDetails" class="details">
+                  <summary>参考情報（Implementation Examples）</summary>
+                  <div class="details__body">
+                    <ol id="exampleList" class="exampleList"></ol>
+                    <div class="muted small">
+                      ※ 参考情報は、NIST CSF 2.0 の Implementation Example を要約したものです（回答の根拠やヒントとして利用してください）。
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="row row--space gap">
+                <button id="btnPrev" class="btn btn--ghost" type="button" disabled>戻る</button>
+                <div class="row gap">
+                  <button id="btnNext" class="btn btn--primary" type="button" disabled>次へ</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="muted small">
+              ※ 設問の範囲：NIST CSF 2.0 の Subcategory を省略せずに設問化しています。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section id="viewResult" class="card" hidden>
+      <div class="card__body">
+        <div class="row row--space">
+          <h1 class="h1">結果</h1>
+          <button id="btnExport" class="btn btn--ghost" type="button">結果をJSONで保存</button>
+        </div>
+
+        <div class="grid2">
+          <div class="card card--inner">
+            <div class="card__body">
+              <div class="h2">分野別の対策状況（NIST CSF 2.0 Function）</div>
+              <canvas id="radar" width="520" height="420" class="radar"></canvas>
+
+              <details id="catBarsDetails" class="details details--result">
+                <summary>カテゴリ別の対策状況（Function内）</summary>
+                <div class="details__body">
+                  <div class="row row--space gap">
+                    <div class="muted small">対象Functionと並び替えを選択すると、Function配下のカテゴリ（Category）を一覧表示します。</div>
+                    <select id="catFnSelect" class="select" aria-label="カテゴリ一覧の対象Function"></select>
+                  </div>
+
+                  <div class="row gap" style="margin-top:10px; flex-wrap:wrap;">
+                    <select id="catSortSelect" class="select select--sm" aria-label="カテゴリの並び替え"></select>
+                  </div>
+
+                  <div id="catBarsNote" class="muted small" style="margin-top:8px;"></div>
+                  <div id="catBars" class="catBars" role="list" aria-label="カテゴリ別スコア一覧"></div>
+
+                  <div class="muted small" style="margin-top:10px;">
+                    ※ 横棒は「高いほど対策が十分」を示す相対指標です（厳密な比較を目的としません）。<br />
+                    ※ 行をクリックすると、そのカテゴリの先頭設問へ移動します。
+                  </div>
+                </div>
+              </details>
+
+              <div class="note" style="margin-top:12px;">
+                <div class="note__title">スコア（平均）について</div>
+                <p class="small">
+                  各設問の回答（1〜5）を 0〜100点に換算して集計しています（1=0点、2=25点、3=50点、4=75点、5=100点）。
+                </p>
+                <p class="small muted" style="margin:8px 0 0;">
+                  「平均」は、カテゴリ内の回答済み（1〜5）の平均点です。未回答／不明（NA）はスコア集計に含めず、回答率としてのみ反映します。
+                </p>
+              </div>
+
+              <div class="muted small">
+                ※ 本チャートは各分野における現在の対策状況を相対的に示したものです。<br />
+                ※ 数値が高いほど対策が十分であることを示しますが、厳密な比較を目的としません。<br />
+                ※ 本結果は簡易的な自己評価に基づくものであり、監査・詳細評価を目的としたものではありません。
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--inner">
+            <div class="card__body">
+              <div class="h2">サマリ</div>
+              <div id="summaryBox" class="summary">
+                <div class="summary__kpis" id="summaryKpis"></div>
+
+                <div class="summary__row">
+                  <div class="summary__label">回答内訳</div>
+                  <div class="summary__badges" id="summaryBadges"></div>
+                </div>
+
+                <div class="summary__row" id="summaryUnassessedRow" hidden>
+                  <div class="summary__label">未評価カテゴリ（要回答）</div>
+                  <div class="summary__tags" id="summaryUnassessed"></div>
+                </div>
+
+                <div class="summary__row">
+                  <div class="summary__label">優先改善カテゴリ（下位3）</div>
+                  <div class="summary__tags" id="summaryTop3"></div>
+                </div>
+
+                <div class="summary__callout" id="summaryAction"></div>
+
+                <!-- 互換用（旧サマリ。JSが新DOMを見つけられない場合のフォールバック） -->
+                <div id="summaryText" class="muted" hidden>—</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <hr class="sep" />
+
+        <div class="row row--space">
+          <div>
+            <div class="h2">優先改善カテゴリ（成熟度スコア下位3）</div>
+            <div class="muted small">
+              この欄には、<b>1件以上回答があるカテゴリ（評価済みカテゴリ）</b>を対象に、カテゴリ内の<b>平均成熟度スコア</b>が低いものから最大3件を表示します。<br />
+              平均成熟度スコアは、各設問の回答（1〜5）を<b>0〜100点</b>に換算して算出し、<b>未回答／不明（NA）は平均の計算に含めません</b>（回答率にのみ反映します）。<br />
+              なお、カテゴリ内の設問がすべて<b>未回答／不明（NA）</b>のカテゴリは本欄の対象外とし、サマリの「未評価カテゴリ（要回答）」に表示します。<br />
+              ※ 同点の場合は、<b>回答率が低い</b>カテゴリを優先し、それでも同じ場合はカテゴリコード順で表示します。
+            </div>
+          </div>
+        </div>
+
+        <div id="top3" class="top3"></div>
+
+        <hr class="sep" />
+
+        <div class="card card--inner">
+          <div class="card__body">
+            <div class="h2">詳細一覧（任意）</div>
+            <div class="muted small">
+              成熟度スコアは回答済み（1〜5）のみを集計します。未回答／不明はスコア集計に含めず、回答率にのみ反映します。
+            </div>
+
+            <details id="lowMaturityDetails" class="details" style="margin-top:10px;">
+              <summary>成熟度が低い項目を一覧表示する</summary>
+              <div class="details__body">
+                <div class="field">
+                  <div class="field__label">表示条件</div>
+                  <div class="field__control">
+                    <select id="lowThresholdSelect" class="select select--sm" aria-label="低成熟度一覧の表示条件">
+                      <option value="2">1–2（未実施／準備中）</option>
+                      <option value="3">1–3（未実施／準備中／一部実施）</option>
+                    </select>
+                  </div>
+                </div>
+                <div id="lowMaturityList" class="unmetList" style="margin-top:12px;"></div>
+              </div>
+            </details>
+
+            <details id="unansweredDetails" class="details" style="margin-top:10px;">
+              <summary>未回答／不明の項目を一覧表示する</summary>
+              <div class="details__body">
+                <div id="unansweredList" class="unmetList" style="margin-top:12px;"></div>
+              </div>
+            </details>
+
+            <div class="muted small" style="margin-top:8px;">
+              ※ 現場での作業計画（棚卸し／ルール整備／運用定着など）に落とし込むための一覧です。
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row row--end gap">
+          <button id="btnBackToAssess" class="btn btn--ghost" type="button">回答に戻る</button>
+          <button id="btnRestart2" class="btn btn--primary" type="button">最初から</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="muted small">
+        本ツールは NIST CSF 2.0 を参考にしたセルフアセスメントです。結果は参考情報であり、正確性・完全性・適合性を保証しません。
+      </div>
+      <div class="muted small">
+        This tool is an independent implementation based on NIST CSF 2.0
+        and is not affiliated with or endorsed by NIST. Source code is publicly available on GitHub.
+      </div>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,3301 @@
+[
+  {
+    "id": "GV.OC-01",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.OC (Organizational Context)",
+    "category_ja": "GV.OC（組織コンテキスト）",
+    "subcategory": "GV.OC-01 - The organizational mission is understood and informs cybersecurity risk management",
+    "subcategory_ja": "GV.OC-01 - 組織の使命が理解されており、サイバーセキュリティ・リスクマネジメントの方針および意思決定に反映されている",
+    "question": "GV.OC-01 - 組織の使命が理解されており、サイバーセキュリティ・リスクマネジメントの方針および意思決定に反映されている",
+    "examples": [
+      {
+        "implementationExample": "GV.OC-01.001 (Ex1)",
+        "text": "Share the organization's mission (e.g., through vision and mission statements, marketing, and service strategies) to provide a basis for identifying risks that may impede that mission",
+        "text_ja": "組織のミッションを、ビジョン・ミッションステートメント、マーケティング資料、サービス戦略などを通じて社内外に共有し、そのミッションを妨げる可能性のあるリスクを特定するための前提情報とします。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織の事業特性や環境、前提条件がサイバーセキュリティ施策に十分反映されず、実態に合わない対策や優先順位付けの誤りが生じるおそれがあります。 特に、組織の使命が理解されており、サイバーセキュリティ・リスクマネジメントの方針および意思決定に反映されているが不十分だと、統制の一貫性が損なわれ、説明責任や監査対応に支障が生じる可能性があります。",
+    "improvementHint": "組織の事業目的やミッションを踏まえ、サイバーセキュリティ対策の目的を「どの事業活動・価値を守るためのものか」という観点で明確化する。あわせて、経営層がリスク判断に活用できる形で文書化する。（GV.OC-01）"
+  },
+  {
+    "id": "GV.OC-02",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.OC (Organizational Context)",
+    "category_ja": "GV.OC（組織コンテキスト）",
+    "subcategory": "GV.OC-02 - Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk mana...",
+    "subcategory_ja": "GV.OC-02 - 内部および外部のステークホルダーが把握され、サイバーセキュリティ・リスクマネジメントに関するニーズおよび期待が理解されている",
+    "question": "GV.OC-02 - 内部および外部のステークホルダーが把握され、サイバーセキュリティ・リスクマネジメントに関するニーズおよび期待が理解されている",
+    "examples": [
+      {
+        "implementationExample": "GV.OC-02.002 (Ex1)",
+        "text": "Identify relevant internal stakeholders and their cybersecurity-related expectations (e.g., performance and risk expectations of officers, directors, and advisors; cultural expectations of employees)",
+        "text_ja": "経営層、部門長、アドバイザー、一般社員など、社内の関係者を洗い出し、それぞれがサイバーセキュリティに対してどのような期待（性能面・リスク面・文化面など）を持っているかを把握します。"
+      },
+      {
+        "implementationExample": "GV.OC-02.003 (Ex2)",
+        "text": "Identify relevant external stakeholders and their cybersecurity-related expectations (e.g., privacy expectations of customers, business expectations of partnerships, compliance expectations of regulators, ethics expectations of society)",
+        "text_ja": "顧客、パートナー企業、規制当局、社会などの外部ステークホルダーを特定し、プライバシー、ビジネス要件、コンプライアンス、倫理など、各ステークホルダーがサイバーセキュリティに対して持つ期待や要件を把握します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織の事業特性や環境、前提条件がサイバーセキュリティ施策に十分反映されず、実態に合わない対策や優先順位付けの誤りが生じるおそれがあります。 特に、内部および外部のステークホルダーが把握され、サイバーセキュリティ・リスクマネジメントに関するニーズおよび期待が理解されているが不十分だと、関係者への連絡・報告が遅れ、意思決定の遅延や対外説明の混乱につながる可能性があります。",
+    "improvementHint": "顧客、規制当局、取引先などのステークホルダーごとに求められるセキュリティ要件や期待事項を整理する。それらを組織のセキュリティ方針や管理策に反映させる。（GV.OC-02）"
+  },
+  {
+    "id": "GV.OC-03",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.OC (Organizational Context)",
+    "category_ja": "GV.OC（組織コンテキスト）",
+    "subcategory": "GV.OC-03 - Legal, regulatory, and contractual requirements regarding cybersecurity - including privacy and civil liberties oblig...",
+    "subcategory_ja": "GV.OC-03 - 法的要件、規制要件、契約要件（プライバシーおよび市民的自由に関する義務を含む）が理解され、サイバーセキュリティの取組みに反映されている",
+    "question": "GV.OC-03 - 法的要件、規制要件、契約要件（プライバシーおよび市民的自由に関する義務を含む）が理解され、サイバーセキュリティの取組みに反映されている",
+    "examples": [
+      {
+        "implementationExample": "GV.OC-03.004 (Ex1)",
+        "text": "Determine a process to track and manage legal and regulatory requirements regarding protection of individuals' information (e.g., Health Insurance Portability and Accountability Act, California Consumer Privacy Act, General Data Protection Regulation)",
+        "text_ja": "個人情報保護に関する法令・規制（例：HIPAA、CCPA、GDPR など）を継続的に把握し、その要求事項を管理するためのプロセスを整備します。"
+      },
+      {
+        "implementationExample": "GV.OC-03.005 (Ex2)",
+        "text": "Determine a process to track and manage contractual requirements for cybersecurity management of supplier, customer, and partner information",
+        "text_ja": "サプライヤー、顧客、パートナー企業の情報に関するサイバーセキュリティ上の契約条件を把握し、それらの要求事項を追跡・管理するプロセスを定めます。"
+      },
+      {
+        "implementationExample": "GV.OC-03.006 (Ex3)",
+        "text": "Align the organization's cybersecurity strategy with legal, regulatory, and contractual requirements",
+        "text_ja": "組織のサイバーセキュリティ戦略を、関連する法令・規制・契約上の要求と整合するように見直し・調整します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織の事業特性や環境、前提条件がサイバーセキュリティ施策に十分反映されず、実態に合わない対策や優先順位付けの誤りが生じるおそれがあります。 特に、法的要件、規制要件、契約要件（プライバシーおよび市民的自由に関する義務を含む）が理解され、サイバーセキュリティの取組みに反映されているが不十分だと、委託先・サプライヤ由来の弱点が組織内に持ち込まれ、事故発生時の影響が拡大する可能性があります。",
+    "improvementHint": "顧客、規制当局、取引先などのステークホルダーごとに求められるセキュリティ要件や期待事項を整理する。それらを組織のセキュリティ方針や管理策に反映させる。（GV.OC-03）"
+  },
+  {
+    "id": "GV.OC-04",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.OC (Organizational Context)",
+    "category_ja": "GV.OC（組織コンテキスト）",
+    "subcategory": "GV.OC-04 - Critical objectives, capabilities, and services that external stakeholders depend on or expect from the organization ...",
+    "subcategory_ja": "GV.OC-04 - 重要な目標、能力、サービスのうち、ステークホルダーが組織に依存または期待しているものが理解され、共有されている",
+    "question": "GV.OC-04 - 重要な目標、能力、サービスのうち、ステークホルダーが組織に依存または期待しているものが理解され、共有されている",
+    "examples": [
+      {
+        "implementationExample": "GV.OC-04.007 (Ex1)",
+        "text": "Establish criteria for determining the criticality of capabilities and services as viewed by internal and external stakeholders",
+        "text_ja": "社内外のステークホルダーの視点から、どの機能やサービスがどの程度重要かを判断するための評価基準を策定します。"
+      },
+      {
+        "implementationExample": "GV.OC-04.008 (Ex2)",
+        "text": "Determine (e.g., from a business impact analysis) assets and business operations that are vital to achieving mission objectives and the potential impact of a loss (or partial loss) of such operations",
+        "text_ja": "ビジネスインパクト分析（BIA）などを通じて、ミッション達成に不可欠な資産や業務を特定し、それらが停止または一部損失した場合の影響度を把握します。"
+      },
+      {
+        "implementationExample": "GV.OC-04.009 (Ex3)",
+        "text": "Establish and communicate resilience objectives (e.g., recovery time objectives) for delivering critical capabilities and services in various operating states (e.g., under attack, during recovery, normal operation)",
+        "text_ja": "重要な機能・サービスを、攻撃下・復旧中・平常時など様々な状況で提供し続けるために、復旧時間目標（RTO）などのレジリエンス目標を定め、関係者に共有します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織の事業特性や環境、前提条件がサイバーセキュリティ施策に十分反映されず、実態に合わない対策や優先順位付けの誤りが生じるおそれがあります。 特に、重要な目標、能力、サービスのうち、ステークホルダーが組織に依存または期待しているものが理解され、共有されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "組織として継続が求められる重要業務や提供サービスを整理し、停止や影響が発生した場合の事業インパクトを明確にする。その結果を、サイバーセキュリティ上の優先順位付けに活用する。（GV.OC-04）"
+  },
+  {
+    "id": "GV.OC-05",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.OC (Organizational Context)",
+    "category_ja": "GV.OC（組織コンテキスト）",
+    "subcategory": "GV.OC-05 - Outcomes, capabilities, and services that the organization depends on are understood and communicated",
+    "subcategory_ja": "GV.OC-05 - 組織が事業遂行上依存している成果、能力、サービスが特定され、理解されている",
+    "question": "GV.OC-05 - 組織が事業遂行上依存している成果、能力、サービスが特定され、理解されている",
+    "examples": [
+      {
+        "implementationExample": "GV.OC-05.010 (Ex1)",
+        "text": "Create an inventory of the organization's dependencies on external resources (e.g., facilities, cloud-based hosting providers) and their relationships to organizational assets and business functions",
+        "text_ja": "外部の設備、クラウドホスティング事業者など、組織が依存している外部リソースの一覧を作成し、それらがどの資産・業務と関係しているかを整理します。"
+      },
+      {
+        "implementationExample": "GV.OC-05.011 (Ex2)",
+        "text": "Identify and document external dependencies that are potential points of failure for the organization's critical capabilities and services, and share that information with appropriate personnel",
+        "text_ja": "組織の重要な機能・サービスに対する単一障害点となり得る外部依存を特定し、文書化したうえで、関係する担当者に共有します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織の事業特性や環境、前提条件がサイバーセキュリティ施策に十分反映されず、実態に合わない対策や優先順位付けの誤りが生じるおそれがあります。 特に、組織が事業遂行上依存している成果、能力、サービスが特定され、理解されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "事業上重要なシステム、情報資産、データの範囲を明確に定義し、どの資産がサイバーリスク管理の優先対象となるかを整理する。この定義を、資産管理やリスク評価の前提条件として活用する。（GV.OC-05）"
+  },
+  {
+    "id": "GV.RM-01",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.RM (Risk Management Strategy)",
+    "category_ja": "GV.RM（リスクマネジメント戦略）",
+    "subcategory": "GV.RM-01 - Risk management objectives are established and agreed to by organizational stakeholders",
+    "subcategory_ja": "GV.RM-01 - リスクマネジメントの目標が定義され、組織のステークホルダーによって合意されている",
+    "question": "GV.RM-01 - リスクマネジメントの目標が定義され、組織のステークホルダーによって合意されている",
+    "examples": [
+      {
+        "implementationExample": "GV.RM-01.012 (Ex1)",
+        "text": "Update near-term and long-term cybersecurity risk management objectives as part of annual strategic planning and when major changes occur",
+        "text_ja": "年次の戦略立案や大きな環境変化があったタイミングで、サイバーセキュリティリスク管理の短期・長期の目標を見直し・更新します。"
+      },
+      {
+        "implementationExample": "GV.RM-01.013 (Ex2)",
+        "text": "Establish measurable objectives for cybersecurity risk management (e.g., manage the quality of user training, ensure adequate risk protection for industrial control systems)",
+        "text_ja": "ユーザートレーニングの品質管理や制御システムへの十分なリスク対策などを例に、サイバーセキュリティリスク管理について測定可能な目標を設定します。"
+      },
+      {
+        "implementationExample": "GV.RM-01.014 (Ex3)",
+        "text": "Senior leaders agree about cybersecurity objectives and use them for measuring and managing risk and performance",
+        "text_ja": "経営陣がサイバーセキュリティに関する目標について合意し、その目標をリスクやパフォーマンスを測定・管理するための指標として活用します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織として許容すべきリスクの水準や判断基準が明確にならず、重要な意思決定やリスク対応の優先順位付けが属人的・場当たり的になるおそれがあります。 特に、リスクマネジメントの目標が定義され、組織のステークホルダーによって合意されているが不十分だと、統制の一貫性が損なわれ、説明責任や監査対応に支障が生じる可能性があります。",
+    "improvementHint": "リスクごとに対応状況、残余リスク、見直し期限を管理する仕組みを整備し、定期的に進捗と妥当性を確認する。事業環境や脅威の変化に応じて評価を更新できるようにする。（GV.RM-01）"
+  },
+  {
+    "id": "GV.RM-02",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.RM (Risk Management Strategy)",
+    "category_ja": "GV.RM（リスクマネジメント戦略）",
+    "subcategory": "GV.RM-02 - Risk appetite and risk tolerance statements are established, communicated, and maintained",
+    "subcategory_ja": "GV.RM-02 - リスク許容度（リスクアペタイトおよびリスクトレランス）が定義され、周知され、維持されている",
+    "question": "GV.RM-02 - リスク許容度（リスクアペタイトおよびリスクトレランス）が定義され、周知され、維持されている",
+    "examples": [
+      {
+        "implementationExample": "GV.RM-02.015 (Ex1)",
+        "text": "Determine and communicate risk appetite statements that convey expectations about the appropriate level of risk for the organization",
+        "text_ja": "組織として許容できるリスクの水準（リスクアペタイト）を文書化し、どの程度までリスクを取るのかという経営の考え方を明確にして共有します。"
+      },
+      {
+        "implementationExample": "GV.RM-02.016 (Ex2)",
+        "text": "Translate risk appetite statements into specific, measurable, and broadly understandable risk tolerance statements",
+        "text_ja": "リスクアペタイトの方針を、より具体的で測定可能かつ誰にでも分かる形の「リスク許容度」の基準に落とし込みます。"
+      },
+      {
+        "implementationExample": "GV.RM-02.017 (Ex3)",
+        "text": "Refine organizational objectives and risk appetite periodically based on known risk exposure and residual risk",
+        "text_ja": "現在のリスク曝露状況や残余リスクに基づき、組織目標とリスクアペタイトを定期的に見直し・調整します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織として許容すべきリスクの水準や判断基準が明確にならず、重要な意思決定やリスク対応の優先順位付けが属人的・場当たり的になるおそれがあります。 特に、リスク許容度（リスクアペタイトおよびリスクトレランス）が定義され、周知され、維持されているが不十分だと、関係者への連絡・報告が遅れ、意思決定の遅延や対外説明の混乱につながる可能性があります。",
+    "improvementHint": "組織として許容可能なサイバーリスクの水準を明確に定義し、どのレベルのリスクを経営判断事項とするかを整理する。この判断基準を、リスク評価や対策優先順位付けの前提とする。（GV.RM-02）"
+  },
+  {
+    "id": "GV.RM-03",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.RM (Risk Management Strategy)",
+    "category_ja": "GV.RM（リスクマネジメント戦略）",
+    "subcategory": "GV.RM-03 - Cybersecurity risk management activities and outcomes are included in enterprise risk management processes",
+    "subcategory_ja": "GV.RM-03 - サイバーセキュリティ・リスクマネジメントの活動および成果が、全社的リスクマネジメント（ERM）プロセスに組み込まれている",
+    "question": "GV.RM-03 - サイバーセキュリティ・リスクマネジメントの活動および成果が、全社的リスクマネジメント（ERM）プロセスに組み込まれている",
+    "examples": [
+      {
+        "implementationExample": "GV.RM-03.018 (Ex1)",
+        "text": "Aggregate and manage cybersecurity risks alongside other enterprise risks (e.g., compliance, financial, operational, regulatory, reputational, safety)",
+        "text_ja": "サイバーセキュリティリスクを、コンプライアンス、財務、オペレーション、規制、評判、安全性など他の企業リスクとあわせて統合的に集約・管理します。"
+      },
+      {
+        "implementationExample": "GV.RM-03.019 (Ex2)",
+        "text": "Include cybersecurity risk managers in enterprise risk management planning",
+        "text_ja": "エンタープライズリスク管理（ERM）の計画策定プロセスに、サイバーセキュリティリスクを担当するメンバーを参加させます。"
+      },
+      {
+        "implementationExample": "GV.RM-03.020 (Ex3)",
+        "text": "Establish criteria for escalating cybersecurity risks within enterprise risk management",
+        "text_ja": "サイバーセキュリティリスクを ERM の枠組みの中でどのタイミング・条件でエスカレーションするかについて、その基準やルールを定めます。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織として許容すべきリスクの水準や判断基準が明確にならず、重要な意思決定やリスク対応の優先順位付けが属人的・場当たり的になるおそれがあります。 特に、サイバーセキュリティ・リスクマネジメントの活動および成果が、全社的リスクマネジメント（ERM）プロセスに組み込まれているが不十分だと、統制の一貫性が損なわれ、説明責任や監査対応に支障が生じる可能性があります。",
+    "improvementHint": "サイバーリスクの評価結果を、経営層が理解・判断できる形で整理し、投資判断やリスク対応方針の決定に活用する。全社的なリスクマネジメントとの整合性も確保する。（GV.RM-03）"
+  },
+  {
+    "id": "GV.RM-04",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.RM (Risk Management Strategy)",
+    "category_ja": "GV.RM（リスクマネジメント戦略）",
+    "subcategory": "GV.RM-04 - Strategic direction that describes appropriate risk response options is established and communicated",
+    "subcategory_ja": "GV.RM-04 - 適切なリスク対応オプションを示す戦略的指針が定義され、組織内に周知されている",
+    "question": "GV.RM-04 - 適切なリスク対応オプションを示す戦略的指針が定義され、組織内に周知されている",
+    "examples": [
+      {
+        "implementationExample": "GV.RM-04.021 (Ex1)",
+        "text": "Specify criteria for accepting and avoiding cybersecurity risk for various classifications of data",
+        "text_ja": "データの分類ごとに、どのリスクは受容し、どのリスクは回避すべきかを判断するための基準を明確にします。"
+      },
+      {
+        "implementationExample": "GV.RM-04.022 (Ex2)",
+        "text": "Determine whether to purchase cybersecurity insurance",
+        "text_ja": "サイバー保険を契約すべきかどうかを検討し、必要性を判断します。"
+      },
+      {
+        "implementationExample": "GV.RM-04.023 (Ex3)",
+        "text": "Document conditions under which shared responsibility models are acceptable (e.g., outsourcing certain cybersecurity functions, having a third party perform financial transactions on behalf of the organization, using public cloud-based services)",
+        "text_ja": "アウトソーシングやクラウド利用など、共有責任モデルが受け入れられる条件を文書化し、組織として明確にします。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織として許容すべきリスクの水準や判断基準が明確にならず、重要な意思決定やリスク対応の優先順位付けが属人的・場当たり的になるおそれがあります。 特に、適切なリスク対応オプションを示す戦略的指針が定義され、組織内に周知されているが不十分だと、責任分界点が曖昧となり、対応の抜け・重複やエスカレーション遅延につながる可能性があります。",
+    "improvementHint": "組織として許容可能なサイバーリスクの水準を明確に定義し、どのレベルのリスクを経営判断事項とするかを整理する。この判断基準を、リスク評価や対策優先順位付けの前提とする。（GV.RM-04）"
+  },
+  {
+    "id": "GV.RM-05",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.RM (Risk Management Strategy)",
+    "category_ja": "GV.RM（リスクマネジメント戦略）",
+    "subcategory": "GV.RM-05 - Lines of communication across the organization are established for cybersecurity risks, including risks from supplier...",
+    "subcategory_ja": "GV.RM-05 - サプライヤおよび第三者に起因するリスクを含め、サイバーセキュリティ・リスクに関する組織横断的なコミュニケーション経路が確立されている",
+    "question": "GV.RM-05 - サプライヤおよび第三者に起因するリスクを含め、サイバーセキュリティ・リスクに関する組織横断的なコミュニケーション経路が確立されている",
+    "examples": [
+      {
+        "implementationExample": "GV.RM-05.024 (Ex1)",
+        "text": "Determine how to update senior executives, directors, and management on the organization's cybersecurity posture at agreed-upon intervals",
+        "text_ja": "経営層・役員・管理職に対して、組織のセキュリティ状況をどのタイミングで、どのような形式で報告するかを決めます。"
+      },
+      {
+        "implementationExample": "GV.RM-05.025 (Ex2)",
+        "text": "Identify how all departments across the organization - such as management, operations, internal auditors, legal, acquisition, physical security, and HR - will communicate with each other about cybersecurity risks",
+        "text_ja": "管理、運用、内部監査、法務、人事など、全社の各部門がサイバーセキュリティリスクに関してどのように連携・情報共有するかを明確にします。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織として許容すべきリスクの水準や判断基準が明確にならず、重要な意思決定やリスク対応の優先順位付けが属人的・場当たり的になるおそれがあります。 特に、サプライヤおよび第三者に起因するリスクを含め、サイバーセキュリティ・リスクに関する組織横断的なコミュニケーション経路が確立されているが不十分だと、関係者への連絡・報告が遅れ、意思決定の遅延や対外説明の混乱につながる可能性があります。",
+    "improvementHint": "サイバーリスクの評価結果を、経営層が理解・判断できる形で整理し、投資判断やリスク対応方針の決定に活用する。全社的なリスクマネジメントとの整合性も確保する。（GV.RM-05）"
+  },
+  {
+    "id": "GV.RM-06",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.RM (Risk Management Strategy)",
+    "category_ja": "GV.RM（リスクマネジメント戦略）",
+    "subcategory": "GV.RM-06 - A standardized method for calculating, documenting, categorizing, and prioritizing cybersecurity risks is established...",
+    "subcategory_ja": "GV.RM-06 - サイバーセキュリティ・リスクを算定、記録、分類、優先順位付けするための標準化された手法が確立されている",
+    "question": "GV.RM-06 - サイバーセキュリティ・リスクを算定、記録、分類、優先順位付けするための標準化された手法が確立されている",
+    "examples": [
+      {
+        "implementationExample": "GV.RM-06.026 (Ex1)",
+        "text": "Establish criteria for using a quantitative approach to cybersecurity risk analysis, and specify probability and exposure formulas",
+        "text_ja": "サイバーセキュリティリスクを定量的に分析する際の基準（確率や影響度の計算方法など）を定めます。"
+      },
+      {
+        "implementationExample": "GV.RM-06.027 (Ex2)",
+        "text": "Create and use templates (e.g., a risk register) to document cybersecurity risk information (e.g., risk description, exposure, treatment, and ownership)",
+        "text_ja": "リスクの内容、対応方針、責任者などを整理するためのテンプレート（リスク登録票など）を作成し、運用します。"
+      },
+      {
+        "implementationExample": "GV.RM-06.028 (Ex3)",
+        "text": "Establish criteria for risk prioritization at the appropriate levels within the enterprise",
+        "text_ja": "組織全体のレベルに応じて、リスクを優先順位付けするための基準を整備します。"
+      },
+      {
+        "implementationExample": "GV.RM-06.029 (Ex4)",
+        "text": "Use a consistent list of risk categories to support integrating, aggregating, and comparing cybersecurity risks",
+        "text_ja": "サイバーセキュリティリスクを統合・比較できるように、リスク分類の一覧（カテゴリ体系）を統一して使用します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織として許容すべきリスクの水準や判断基準が明確にならず、重要な意思決定やリスク対応の優先順位付けが属人的・場当たり的になるおそれがあります。 特に、サイバーセキュリティ・リスクを算定、記録、分類、優先順位付けするための標準化された手法が確立されているが不十分だと、統制の一貫性が損なわれ、説明責任や監査対応に支障が生じる可能性があります。",
+    "improvementHint": "サイバーリスクを評価するための観点（影響度・発生可能性など）と尺度を定義し、誰が評価しても一定の判断ができる評価プロセスを整備する。評価結果は文書化し、再利用可能な形で管理する。（GV.RM-06）"
+  },
+  {
+    "id": "GV.RM-07",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.RM (Risk Management Strategy)",
+    "category_ja": "GV.RM（リスクマネジメント戦略）",
+    "subcategory": "GV.RM-07 - Strategic opportunities (i.e., positive risks) are characterized and are included in organizational cybersecurity ris...",
+    "subcategory_ja": "GV.RM-07 - 戦略的機会（プラスのリスク）が特定・評価され、組織のサイバーセキュリティ・リスク検討に含められている",
+    "question": "GV.RM-07 - 戦略的機会（プラスのリスク）が特定・評価され、組織のサイバーセキュリティ・リスク検討に含められている",
+    "examples": [
+      {
+        "implementationExample": "GV.RM-07.030 (Ex1)",
+        "text": "Define and communicate guidance and methods for identifying opportunities and including them in risk discussions (e.g., strengths, weaknesses, opportunities, and threats [SWOT] analysis)",
+        "text_ja": "機会（ポジティブリスク）を見つけ、それをリスク議論に組み込むための方法・基準を定め、関係者に共有します。"
+      },
+      {
+        "implementationExample": "GV.RM-07.031 (Ex2)",
+        "text": "Identify stretch goals and document them",
+        "text_ja": "組織の成長につながるようなストレッチ目標を設定し、文書化します。"
+      },
+      {
+        "implementationExample": "GV.RM-07.032 (Ex3)",
+        "text": "Calculate, document, and prioritize positive risks alongside negative risks",
+        "text_ja": "ネガティブリスクだけでなく、プラスの効果をもたらすポジティブリスクも評価・記録し、優先度を付けて管理します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織として許容すべきリスクの水準や判断基準が明確にならず、重要な意思決定やリスク対応の優先順位付けが属人的・場当たり的になるおそれがあります。 特に、戦略的機会（プラスのリスク）が特定・評価され、組織のサイバーセキュリティ・リスク検討に含められているが不十分だと、関係者への連絡・報告が遅れ、意思決定の遅延や対外説明の混乱につながる可能性があります。",
+    "improvementHint": "組織として許容可能なサイバーリスクの水準を明確に定義し、どのレベルのリスクを経営判断事項とするかを整理する。この判断基準を、リスク評価や対策優先順位付けの前提とする。（GV.RM-07）"
+  },
+  {
+    "id": "GV.RR-01",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.RR (Roles, Responsibilities, and Authorities)",
+    "category_ja": "GV.RR（役割・責任・権限）",
+    "subcategory": "GV.RR-01 - Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aw...",
+    "subcategory_ja": "GV.RR-01 - 組織のリーダーシップがサイバーセキュリティ・リスクに対する責任を担い、リスクを意識した文化を醸成している",
+    "question": "GV.RR-01 - 組織のリーダーシップがサイバーセキュリティ・リスクに対する責任を担い、リスクを意識した文化を醸成している",
+    "examples": [
+      {
+        "implementationExample": "GV.RR-01.033 (Ex1)",
+        "text": "Leaders (e.g., directors) agree on their roles and responsibilities in developing, implementing, and assessing the organization's cybersecurity strategy",
+        "text_ja": "経営層が、自身の役割と責任（セキュリティ戦略の策定・評価におけるもの）について合意します。"
+      },
+      {
+        "implementationExample": "GV.RR-01.034 (Ex2)",
+        "text": "Share leaders' expectations regarding a secure and ethical culture, especially when current events present the opportunity to highlight positive or negative examples of cybersecurity risk management",
+        "text_ja": "安全で倫理的な企業文化を維持するために、経営層が期待する行動や姿勢を明確にし、組織内で共有します。"
+      },
+      {
+        "implementationExample": "GV.RR-01.035 (Ex3)",
+        "text": "Leaders direct the CISO to maintain a comprehensive cybersecurity risk strategy and review and update it at least annually and after major events",
+        "text_ja": "経営層が CISO に対し、セキュリティリスク戦略の維持と、年次の見直しを指示します。"
+      },
+      {
+        "implementationExample": "GV.RR-01.036 (Ex4)",
+        "text": "Conduct reviews to ensure adequate authority and coordination among those responsible for managing cybersecurity risk",
+        "text_ja": "セキュリティリスク管理を担当する組織や個人が、適切な権限と連携体制を持っているかどうかを定期的に確認します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティ・リスクマネジメントに関する役割・責任・権限が不明確となり、対応の遅延や判断の空白が生じるおそれがあります。 特に、組織のリーダーシップがサイバーセキュリティ・リスクに対する責任を担い、リスクを意識した文化を醸成しているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "サイバーセキュリティに関わる主要な役割を整理し、それぞれの責任範囲と権限を明確に定義する。意思決定者と実行者の区分を明示し、責任の所在を明確にする。（GV.RR-01）"
+  },
+  {
+    "id": "GV.RR-02",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.RR (Roles, Responsibilities, and Authorities)",
+    "category_ja": "GV.RR（役割・責任・権限）",
+    "subcategory": "GV.RR-02 - Roles, responsibilities, and authorities related to cybersecurity risk management are established, communicated, unde...",
+    "subcategory_ja": "GV.RR-02 - サイバーセキュリティ・リスクマネジメントに関する役割、責任、権限が定義され、周知され、理解されている",
+    "question": "GV.RR-02 - サイバーセキュリティ・リスクマネジメントに関する役割、責任、権限が定義され、周知され、理解されている",
+    "examples": [
+      {
+        "implementationExample": "GV.RR-02.037 (Ex1)",
+        "text": "Document risk management roles and responsibilities in policy",
+        "text_ja": "リスク管理に関する役割と責任をポリシーに明確に記載します。"
+      },
+      {
+        "implementationExample": "GV.RR-02.038 (Ex2)",
+        "text": "Document who is responsible and accountable for cybersecurity risk management activities and how those teams and individuals are to be consulted and informed",
+        "text_ja": "サイバーセキュリティリスク管理において、誰が実行責任者で、誰が説明責任者かを文書化します。"
+      },
+      {
+        "implementationExample": "GV.RR-02.039 (Ex3)",
+        "text": "Include cybersecurity responsibilities and performance requirements in personnel descriptions",
+        "text_ja": "職務記述書（ジョブディスクリプション）に、サイバーセキュリティに関連する責任や求められる行動基準を記載します。"
+      },
+      {
+        "implementationExample": "GV.RR-02.040 (Ex4)",
+        "text": "Document performance goals for personnel with cybersecurity risk management responsibilities, and periodically measure performance to identify areas for improvement",
+        "text_ja": "セキュリティを担当する職員について、パフォーマンス目標を設定して文書化し、定期的に評価して改善点を特定します。"
+      },
+      {
+        "implementationExample": "GV.RR-02.041 (Ex5)",
+        "text": "Clearly articulate cybersecurity responsibilities within operations, risk functions, and internal audit functions",
+        "text_ja": "運用部門、リスク管理部門、内部監査部門など、それぞれの部門におけるサイバーセキュリティ上の役割と責任を明確にします。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティ・リスクマネジメントに関する役割・責任・権限が不明確となり、対応の遅延や判断の空白が生じるおそれがあります。 特に、サイバーセキュリティ・リスクマネジメントに関する役割、責任、権限が定義され、周知され、理解されているが不十分だと、責任分界点が曖昧となり、対応の抜け・重複やエスカレーション遅延につながる可能性があります。",
+    "improvementHint": "サイバーセキュリティに関わる主要な役割を整理し、それぞれの責任範囲と権限を明確に定義する。意思決定者と実行者の区分を明示し、責任の所在を明確にする。（GV.RR-02）"
+  },
+  {
+    "id": "GV.RR-03",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.RR (Roles, Responsibilities, and Authorities)",
+    "category_ja": "GV.RR（役割・責任・権限）",
+    "subcategory": "GV.RR-03 - Adequate resources are allocated commensurate with the cybersecurity risk strategy, roles, responsibilities, and poli...",
+    "subcategory_ja": "GV.RR-03 - サイバーセキュリティ・リスク戦略、役割、責任、方針に見合った十分なリソースが配分されている",
+    "question": "GV.RR-03 - サイバーセキュリティ・リスク戦略、役割、責任、方針に見合った十分なリソースが配分されている",
+    "examples": [
+      {
+        "implementationExample": "GV.RR-03.042 (Ex1)",
+        "text": "Conduct periodic management reviews to ensure that those given cybersecurity risk management responsibilities have the necessary authority",
+        "text_ja": "セキュリティリスク管理を担当する人が、必要な権限を適切に持っているかを確認するため、定期的にマネジメントレビューを実施します。"
+      },
+      {
+        "implementationExample": "GV.RR-03.043 (Ex2)",
+        "text": "Identify resource allocation and investment in line with risk tolerance and response",
+        "text_ja": "組織のリスク許容度や対応方針に沿って、必要なリソース配分や投資内容を明確にします。"
+      },
+      {
+        "implementationExample": "GV.RR-03.044 (Ex3)",
+        "text": "Provide adequate and sufficient people, process, and technical resources to support the cybersecurity strategy",
+        "text_ja": "サイバーセキュリティ戦略を実行するために、必要な人員、プロセス、技術的リソースを確保します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティ・リスクマネジメントに関する役割・責任・権限が不明確となり、対応の遅延や判断の空白が生じるおそれがあります。 特に、サイバーセキュリティ・リスク戦略、役割、責任、方針に見合った十分なリソースが配分されているが不十分だと、取るべきリスクと避けるべきリスクの線引きが曖昧になり、投資判断や例外判断の一貫性が損なわれる可能性があります。",
+    "improvementHint": "サイバーセキュリティに関わる主要な役割を整理し、それぞれの責任範囲と権限を明確に定義する。意思決定者と実行者の区分を明示し、責任の所在を明確にする。（GV.RR-03）"
+  },
+  {
+    "id": "GV.RR-04",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.RR (Roles, Responsibilities, and Authorities)",
+    "category_ja": "GV.RR（役割・責任・権限）",
+    "subcategory": "GV.RR-04 - Cybersecurity is included in human resources practices",
+    "subcategory_ja": "GV.RR-04 - 人事（HR）に関する運用（採用・配置・評価・退職等）にサイバーセキュリティが組み込まれている",
+    "question": "GV.RR-04 - 人事（HR）に関する運用（採用・配置・評価・退職等）にサイバーセキュリティが組み込まれている",
+    "examples": [
+      {
+        "implementationExample": "GV.RR-04.045 (Ex1)",
+        "text": "Integrate cybersecurity risk management considerations into human resources processes (e.g., personnel screening, onboarding, change notification, offboarding)",
+        "text_ja": "採用、入社手続き、退職手続きなどの人事プロセスに、サイバーセキュリティの観点を取り入れます。"
+      },
+      {
+        "implementationExample": "GV.RR-04.046 (Ex2)",
+        "text": "Consider cybersecurity knowledge to be a positive factor in hiring, training, and retention decisions",
+        "text_ja": "採用、教育、社員の維持において、サイバーセキュリティ知識を評価ポイントとして考慮します。"
+      },
+      {
+        "implementationExample": "GV.RR-04.047 (Ex3)",
+        "text": "Conduct background checks prior to onboarding new personnel for sensitive roles, and periodically repeat background checks for personnel with such roles",
+        "text_ja": "重要なセキュリティ関連の職務に就く従業員については、入社前に身元調査（背景調査）を実施します。"
+      },
+      {
+        "implementationExample": "GV.RR-04.048 (Ex4)",
+        "text": "Define and enforce obligations for personnel to be aware of, adhere to, and uphold security policies as they relate to their roles",
+        "text_ja": "従業員がセキュリティポリシーを理解し、遵守し、維持する義務を明確にし、それを徹底します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティ・リスクマネジメントに関する役割・責任・権限が不明確となり、対応の遅延や判断の空白が生じるおそれがあります。 特に、人事（HR）に関する運用（採用・配置・評価・退職等）にサイバーセキュリティが組み込まれているが不十分だと、責任分界点が曖昧となり、対応の抜け・重複やエスカレーション遅延につながる可能性があります。",
+    "improvementHint": "サイバーセキュリティに関わる主要な役割を整理し、それぞれの責任範囲と権限を明確に定義する。意思決定者と実行者の区分を明示し、責任の所在を明確にする。（GV.RR-04）"
+  },
+  {
+    "id": "GV.PO-01",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.PO (Policy)",
+    "category_ja": "GV.PO（方針）",
+    "subcategory": "GV.PO-01 - Policy for managing cybersecurity risks is established based on organizational context, cybersecurity strategy, and p...",
+    "subcategory_ja": "GV.PO-01 - サイバーセキュリティ・リスクを管理するための方針が、組織の状況および戦略に基づいて策定・承認され、維持されている",
+    "question": "GV.PO-01 - サイバーセキュリティ・リスクを管理するための方針が、組織の状況および戦略に基づいて策定・承認され、維持されている",
+    "examples": [
+      {
+        "implementationExample": "GV.PO-01.049 (Ex1)",
+        "text": "Create, disseminate, and maintain an understandable, usable risk management policy with statements of management intent, expectations, and direction",
+        "text_ja": "分かりやすく実用的なリスク管理方針を策定し、組織内に展開したうえで適切に維持します。"
+      },
+      {
+        "implementationExample": "GV.PO-01.050 (Ex2)",
+        "text": "Periodically review policy and supporting processes and procedures to ensure that they align with risk management strategy objectives and priorities, as well as the high-level direction of the cybersecurity policy",
+        "text_ja": "リスク管理方針と関連プロセスを定期的に見直し、組織の目標や優先事項と整合しているかを確認します。"
+      },
+      {
+        "implementationExample": "GV.PO-01.051 (Ex3)",
+        "text": "Require approval from senior management on policy",
+        "text_ja": "リスク管理方針について、経営層の承認を得るようにします。"
+      },
+      {
+        "implementationExample": "GV.PO-01.052 (Ex4)",
+        "text": "Communicate cybersecurity risk management policy and supporting processes and procedures across the organization",
+        "text_ja": "サイバーセキュリティリスク管理に関する方針を、全社に周知・共有します。"
+      },
+      {
+        "implementationExample": "GV.PO-01.053 (Ex5)",
+        "text": "Require personnel to acknowledge receipt of policy when first hired, annually, and whenever policy is updated",
+        "text_ja": "従業員には、入社時・年次・方針更新時に、リスク管理方針を確認したことを明示的に承認してもらいます。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティに関する方針やルールが明確に定義・運用されず、現場での対応が属人的となるおそれがあります。 特に、サイバーセキュリティ・リスクを管理するための方針が、組織の状況および戦略に基づいて策定・承認され、維持されているが不十分だと、関係者への連絡・報告が遅れ、意思決定の遅延や対外説明の混乱につながる可能性があります。",
+    "improvementHint": "セキュリティ方針を定期的に見直すルールを定義し、事業環境や脅威の変化を反映できるようにする。見直しの責任者と実施タイミングを明確にする。（GV.PO-01）"
+  },
+  {
+    "id": "GV.PO-02",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.PO (Policy)",
+    "category_ja": "GV.PO（方針）",
+    "subcategory": "GV.PO-02 - Policy for managing cybersecurity risks is reviewed, updated, communicated, and enforced to reflect changes in requir...",
+    "subcategory_ja": "GV.PO-02 - サイバーセキュリティ・リスク管理方針がレビューされ、周知され、要件の変更を反映した形で遵守が徹底されている",
+    "question": "GV.PO-02 - サイバーセキュリティ・リスク管理方針がレビューされ、周知され、要件の変更を反映した形で遵守が徹底されている",
+    "examples": [
+      {
+        "implementationExample": "GV.PO-02.054 (Ex1)",
+        "text": "Update policy based on periodic reviews of cybersecurity risk management results to ensure that policy and supporting processes and procedures adequately maintain risk at an acceptable level",
+        "text_ja": "セキュリティリスク管理の結果を定期的に評価し、それに基づいて方針を更新します。"
+      },
+      {
+        "implementationExample": "GV.PO-02.055 (Ex2)",
+        "text": "Provide a timeline for reviewing changes to the organization's risk environment (e.g., changes in risk or in the organization's mission objectives), and communicate recommended policy updates",
+        "text_ja": "リスク環境の変化を定期的に確認するためのスケジュールを定め、方針変更が必要な場合はその内容を関係者に共有します。"
+      },
+      {
+        "implementationExample": "GV.PO-02.056 (Ex3)",
+        "text": "Update policy to reflect changes in legal and regulatory requirements",
+        "text_ja": "法令や規制の変更に合わせて、方針を更新します。"
+      },
+      {
+        "implementationExample": "GV.PO-02.057 (Ex4)",
+        "text": "Update policy to reflect changes in technology (e.g., adoption of artificial intelligence) and changes to the business (e.g., acquisition of a new business, new contract requirements)",
+        "text_ja": "技術の進化や事業内容の変更に応じて、リスク管理方針を見直し・更新します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティに関する方針やルールが明確に定義・運用されず、現場での対応が属人的となるおそれがあります。 特に、サイバーセキュリティ・リスク管理方針がレビューされ、周知され、要件の変更を反映した形で遵守が徹底されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "セキュリティ方針を定期的に見直すルールを定義し、事業環境や脅威の変化を反映できるようにする。見直しの責任者と実施タイミングを明確にする。（GV.PO-02）"
+  },
+  {
+    "id": "GV.OV-01",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.OV (Oversight)",
+    "category_ja": "GV.OV（監督）",
+    "subcategory": "GV.OV-01 - Cybersecurity risk management strategy outcomes are reviewed to inform and adjust strategy and direction",
+    "subcategory_ja": "GV.OV-01 - サイバーセキュリティ・リスクマネジメント戦略の成果が定期的にレビューされ、戦略および方向性の見直しに活用されている",
+    "question": "GV.OV-01 - サイバーセキュリティ・リスクマネジメント戦略の成果が定期的にレビューされ、戦略および方向性の見直しに活用されている",
+    "examples": [
+      {
+        "implementationExample": "GV.OV-01.058 (Ex1)",
+        "text": "Measure how well the risk management strategy and risk results have helped leaders make decisions and achieve organizational objectives",
+        "text_ja": "リスク管理戦略やリスク評価の結果が、経営層の意思決定にどれほど役立ったかを測定します。"
+      },
+      {
+        "implementationExample": "GV.OV-01.059 (Ex2)",
+        "text": "Examine whether cybersecurity risk strategies that impede operations or innovation should be adjusted",
+        "text_ja": "現行のセキュリティ戦略が業務を阻害していないかを確認し、必要に応じて調整します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティに関する経営層や統制機能による監督が十分に機能せず、リスクの見過ごしや対応遅延につながるおそれがあります。 特に、サイバーセキュリティ・リスクマネジメント戦略の成果が定期的にレビューされ、戦略および方向性の見直しに活用されているが不十分だと、統制の一貫性が損なわれ、説明責任や監査対応に支障が生じる可能性があります。",
+    "improvementHint": "サイバーセキュリティに関するレビューの実施頻度と内容を定義し、課題が確認された場合には是正対応につなげるプロセスを整備する。対応状況を継続的にフォローできる仕組みを設ける。（GV.OV-01）"
+  },
+  {
+    "id": "GV.OV-02",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.OV (Oversight)",
+    "category_ja": "GV.OV（監督）",
+    "subcategory": "GV.OV-02 - The cybersecurity risk management strategy is reviewed and adjusted to ensure coverage of organizational requirements...",
+    "subcategory_ja": "GV.OV-02 - サイバーセキュリティ・リスクマネジメント戦略がレビューおよび調整され、組織要件を十分に網羅するよう維持されている",
+    "question": "GV.OV-02 - サイバーセキュリティ・リスクマネジメント戦略がレビューおよび調整され、組織要件を十分に網羅するよう維持されている",
+    "examples": [
+      {
+        "implementationExample": "GV.OV-02.060 (Ex1)",
+        "text": "Review audit findings to confirm whether the existing cybersecurity strategy has ensured compliance with internal and external requirements",
+        "text_ja": "監査結果を確認し、現在のサイバーセキュリティ戦略が法令や内部規程に従っているかを評価します。"
+      },
+      {
+        "implementationExample": "GV.OV-02.061 (Ex2)",
+        "text": "Review the performance oversight of those in cybersecurity-related roles to determine whether policy changes are necessary",
+        "text_ja": "サイバーセキュリティツールや機能が強化された場合、それに合わせて監督・管理の計画（oversight plan）を更新します。"
+      },
+      {
+        "implementationExample": "GV.OV-02.062 (Ex3)",
+        "text": "Review strategy in light of cybersecurity incidents",
+        "text_ja": "新しい技術の導入やリスク環境の変化に応じて、監督計画を見直し・更新します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティに関する経営層や統制機能による監督が十分に機能せず、リスクの見過ごしや対応遅延につながるおそれがあります。 特に、サイバーセキュリティ・リスクマネジメント戦略がレビューおよび調整され、組織要件を十分に網羅するよう維持されているが不十分だと、責任分界点が曖昧となり、対応の抜け・重複やエスカレーション遅延につながる可能性があります。",
+    "improvementHint": "サイバーセキュリティに関するレビューの実施頻度と内容を定義し、課題が確認された場合には是正対応につなげるプロセスを整備する。対応状況を継続的にフォローできる仕組みを設ける。（GV.OV-02）"
+  },
+  {
+    "id": "GV.OV-03",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.OV (Oversight)",
+    "category_ja": "GV.OV（監督）",
+    "subcategory": "GV.OV-03 - Organizational cybersecurity risk management performance is evaluated and reviewed for adjustments needed",
+    "subcategory_ja": "GV.OV-03 - 組織におけるサイバーセキュリティ・リスクマネジメントのパフォーマンスが評価・レビューされ、必要に応じて改善が行われている",
+    "question": "GV.OV-03 - 組織におけるサイバーセキュリティ・リスクマネジメントのパフォーマンスが評価・レビューされ、必要に応じて改善が行われている",
+    "examples": [
+      {
+        "implementationExample": "GV.OV-03.063 (Ex1)",
+        "text": "Review key performance indicators (KPIs) to ensure that organization-wide policies and procedures achieve objectives",
+        "text_ja": "リスク状況や事業要件を踏まえて、新しいサイバーセキュリティ投資の優先順位を決めます。"
+      },
+      {
+        "implementationExample": "GV.OV-03.064 (Ex2)",
+        "text": "Review key risk indicators (KRIs) to identify risks the organization faces, including likelihood and potential impact",
+        "text_ja": "想定される効果や予算の制約を考慮し、どのセキュリティ投資を優先すべきか判断します。"
+      },
+      {
+        "implementationExample": "GV.OV-03.065 (Ex3)",
+        "text": "Collect and communicate metrics on cybersecurity risk management with senior leadership",
+        "text_ja": "予算の増減に合わせて、サイバーセキュリティ戦略を調整します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティに関する経営層や統制機能による監督が十分に機能せず、リスクの見過ごしや対応遅延につながるおそれがあります。 特に、組織におけるサイバーセキュリティ・リスクマネジメントのパフォーマンスが評価・レビューされ、必要に応じて改善が行われているが不十分だと、関係者への連絡・報告が遅れ、意思決定の遅延や対外説明の混乱につながる可能性があります。",
+    "improvementHint": "サイバーセキュリティ対策の実施状況やリスク状況を把握するための指標を定義し、定期的に状況を可視化する。経営層や統制部門が現状を把握できる報告の仕組みを整備する。（GV.OV-03）"
+  },
+  {
+    "id": "GV.SC-01",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.SC (Cybersecurity Supply Chain Risk Management)",
+    "category_ja": "GV.SC（サイバーセキュリティ・サプライチェーンリスク管理）",
+    "subcategory": "GV.SC-01 - A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established a...",
+    "subcategory_ja": "GV.SC-01 - サイバーセキュリティ・サプライチェーンに関するリスクが特定され、評価されている",
+    "question": "GV.SC-01 - サイバーセキュリティ・サプライチェーンに関するリスクが特定され、評価されている",
+    "examples": [
+      {
+        "implementationExample": "GV.SC-01.066 (Ex1)",
+        "text": "Establish a strategy that expresses the objectives of the cybersecurity supply chain risk management program",
+        "text_ja": "ガバナンス委員会やインシデント対応ワーキンググループなどを活用し、組織全体のリーダーを集めてセキュリティガバナンスを実施します。"
+      },
+      {
+        "implementationExample": "GV.SC-01.067 (Ex2)",
+        "text": "Develop the cybersecurity supply chain risk management program, including a plan (with milestones), policies, and procedures that guide implementation and improvement of the program, and share the policies and procedures with the organizational stakeholders",
+        "text_ja": "CEO、CFO、CRO などの経営層を含む、サイバーセキュリティ責任者が参加するガバナンス委員会を設置します。"
+      },
+      {
+        "implementationExample": "GV.SC-01.068 (Ex3)",
+        "text": "Develop and implement program processes based on the strategy, objectives, policies, and procedures that are agreed upon and performed by the organizational stakeholders",
+        "text_ja": "サイバーセキュリティガバナンスに関する定期的な会議体を設置し、継続的に開催します。"
+      },
+      {
+        "implementationExample": "GV.SC-01.069 (Ex4)",
+        "text": "Establish a cross-organizational mechanism that ensures alignment between functions that contribute to cybersecurity supply chain risk management, such as cybersecurity, IT, operations, legal, human resources, and engineering",
+        "text_ja": "OT（Operational Technology）や産業用制御システムに関する責任分担を明確にするガバナンス体制を構築します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サプライチェーンに起因するサイバーセキュリティリスクを適切に把握・管理できず、外部要因によるインシデントの発生や被害拡大につながるおそれがあります。 特に、サイバーセキュリティ・サプライチェーンに関するリスクが特定され、評価されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "サプライヤのセキュリティ対策状況を確認するための評価方法を定義し、重要度に応じて定期的に評価を実施する。問題が確認された場合には、改善を求める仕組みを整備する。（GV.SC-01）"
+  },
+  {
+    "id": "GV.SC-02",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.SC (Cybersecurity Supply Chain Risk Management)",
+    "category_ja": "GV.SC（サイバーセキュリティ・サプライチェーンリスク管理）",
+    "subcategory": "GV.SC-02 - Cybersecurity roles and responsibilities for suppliers, customers, and partners are established, communicated, and co...",
+    "subcategory_ja": "GV.SC-02 - サプライチェーン・リスクを管理するための方針、プロセス、管理策が確立され、実装されている",
+    "question": "GV.SC-02 - サプライチェーン・リスクを管理するための方針、プロセス、管理策が確立され、実装されている",
+    "examples": [
+      {
+        "implementationExample": "GV.SC-02.070 (Ex1)",
+        "text": "Identify one or more specific roles or positions that will be responsible and accountable for planning, resourcing, and executing cybersecurity supply chain risk management activities",
+        "text_ja": "サイバーセキュリティに関する法令順守を実現するために、必要な役割・責任・プロセスを定めます。"
+      },
+      {
+        "implementationExample": "GV.SC-02.071 (Ex2)",
+        "text": "Document cybersecurity supply chain risk management roles and responsibilities in policy",
+        "text_ja": "ISA などの標準化団体への参加費用を支援するなど、他部門を含む担当者が専門知識を維持し、標準策定活動に参加できるようにします。"
+      },
+      {
+        "implementationExample": "GV.SC-02.072 (Ex3)",
+        "text": "Create responsibility matrixes to document who will be responsible and accountable for cybersecurity supply chain risk management activities and how those teams and individuals will be consulted and informed",
+        "text_ja": "民間・公共のパートナーと協力して、業界標準の策定プロセスに参加します。"
+      },
+      {
+        "implementationExample": "GV.SC-02.073 (Ex4)",
+        "text": "Include cybersecurity supply chain risk management responsibilities and performance requirements in personnel descriptions to ensure clarity and improve accountability",
+        "text_ja": "業界標準と一貫性を持たせるため、コンフォーマンスポリシー（適合方針）を策定・管理・運用し、組織内に共有します。"
+      },
+      {
+        "implementationExample": "GV.SC-02.074 (Ex5)",
+        "text": "Document performance goals for personnel with cybersecurity risk management-specific responsibilities, and periodically measure them to demonstrate and improve performance",
+        "text_ja": "セキュリティ関連の法規制に関する問題を特定するため、弁護士やコンサルタントなどの専門家の支援を受けます。"
+      },
+      {
+        "implementationExample": "GV.SC-02.075 (Ex6)",
+        "text": "Develop roles and responsibilities for suppliers, customers, and business partners to address shared responsibilities for applicable cybersecurity risks, and integrate them into organizational policies and applicable third-party agreements",
+        "text_ja": "該当するサイバーセキュリティ要件を文書化し、関係者に共有します。"
+      },
+      {
+        "implementationExample": "GV.SC-02.076 (Ex7)",
+        "text": "Internally communicate cybersecurity supply chain risk management roles and responsibilities for third parties",
+        "text_ja": "サイバーセキュリティインシデントに対応する際に必要となる、法務・規制対応の助言や支援を提供します。"
+      },
+      {
+        "implementationExample": "GV.SC-02.077 (Ex8)",
+        "text": "Establish rules and protocols for information sharing and reporting processes between the organization and its suppliers",
+        "text_ja": "サイバーセキュリティ侵害の調査や対処において、法執行機関と連携します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サプライチェーンに起因するサイバーセキュリティリスクを適切に把握・管理できず、外部要因によるインシデントの発生や被害拡大につながるおそれがあります。 特に、サプライチェーン・リスクを管理するための方針、プロセス、管理策が確立され、実装されているが不十分だと、委託先・サプライヤ由来の弱点が組織内に持ち込まれ、事故発生時の影響が拡大する可能性があります。",
+    "improvementHint": "業務やシステムの提供に影響を与える重要なサプライヤや外部サービスを整理し、事業影響の観点から重要度を評価する。サイバーセキュリティ上の管理対象を明確にする。（GV.SC-02）"
+  },
+  {
+    "id": "GV.SC-03",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.SC (Cybersecurity Supply Chain Risk Management)",
+    "category_ja": "GV.SC（サイバーセキュリティ・サプライチェーンリスク管理）",
+    "subcategory": "GV.SC-03 - Cybersecurity supply chain risk management is integrated into cybersecurity and enterprise risk management, risk asse...",
+    "subcategory_ja": "GV.SC-03 - サイバーセキュリティ・サプライチェーン・リスクマネジメントが、サイバーセキュリティおよび全社的リスクマネジメント（ERM）に統合されている",
+    "question": "GV.SC-03 - サイバーセキュリティ・サプライチェーン・リスクマネジメントが、サイバーセキュリティおよび全社的リスクマネジメント（ERM）に統合されている",
+    "examples": [
+      {
+        "implementationExample": "GV.SC-03.078 (Ex1)",
+        "text": "Identify areas of alignment and overlap with cybersecurity and enterprise risk management",
+        "text_ja": "監査や検査など、法令順守（コンプライアンス）に関するプログラムに参加します。"
+      },
+      {
+        "implementationExample": "GV.SC-03.079 (Ex2)",
+        "text": "Establish integrated control sets for cybersecurity risk management and cybersecurity supply chain risk management",
+        "text_ja": "法務・規制に関するレビューの結果を反映し、必要なプロセスを更新します。"
+      },
+      {
+        "implementationExample": "GV.SC-03.080 (Ex3)",
+        "text": "Integrate cybersecurity supply chain risk management into improvement processes",
+        "text_ja": "サプライヤーやパートナーとの契約（SLA や RACI など）に、サイバーセキュリティの要求事項を組み込みます。"
+      },
+      {
+        "implementationExample": "GV.SC-03.081 (Ex4)",
+        "text": "Escalate material cybersecurity risks in supply chains to senior management, and address them at the enterprise risk management level",
+        "text_ja": "組織全体でサイバーセキュリティリスクに関する情報を共有できるよう、コミュニケーション戦略を策定します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サプライチェーンに起因するサイバーセキュリティリスクを適切に把握・管理できず、外部要因によるインシデントの発生や被害拡大につながるおそれがあります。 特に、サイバーセキュリティ・サプライチェーン・リスクマネジメントが、サイバーセキュリティおよび全社的リスクマネジメント（ERM）に統合されているが不十分だと、委託先・サプライヤ由来の弱点が組織内に持ち込まれ、事故発生時の影響が拡大する可能性があります。",
+    "improvementHint": "サプライヤに求めるセキュリティ要件を明確に定義し、契約や合意文書に反映させる。インシデント発生時の通知義務や対応協力についても取り決める。（GV.SC-03）"
+  },
+  {
+    "id": "GV.SC-04",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.SC (Cybersecurity Supply Chain Risk Management)",
+    "category_ja": "GV.SC（サイバーセキュリティ・サプライチェーンリスク管理）",
+    "subcategory": "GV.SC-04 - Suppliers are known and prioritized by criticality",
+    "subcategory_ja": "GV.SC-04 - サプライヤが把握され、重要度に基づいて優先順位付けされている",
+    "question": "GV.SC-04 - サプライヤが把握され、重要度に基づいて優先順位付けされている",
+    "examples": [
+      {
+        "implementationExample": "GV.SC-04.082 (Ex1)",
+        "text": "Develop criteria for supplier criticality based on, for example, the sensitivity of data processed or possessed by suppliers, the degree of access to the organization's systems, and the importance of the products or services to the organization's mission",
+        "text_ja": "各事業部と積極的にコミュニケーションを取り、リスク対応や期待する役割を明確にします。"
+      },
+      {
+        "implementationExample": "GV.SC-04.083 (Ex2)",
+        "text": "Keep a record of all suppliers, and prioritize suppliers based on the criticality criteria",
+        "text_ja": "ISAC などから得た外部の脅威情報を、関連する事業部門に共有します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サプライチェーンに起因するサイバーセキュリティリスクを適切に把握・管理できず、外部要因によるインシデントの発生や被害拡大につながるおそれがあります。 特に、サプライヤが把握され、重要度に基づいて優先順位付けされているが不十分だと、委託先・サプライヤ由来の弱点が組織内に持ち込まれ、事故発生時の影響が拡大する可能性があります。",
+    "improvementHint": "業務やシステムの提供に影響を与える重要なサプライヤや外部サービスを整理し、事業影響の観点から重要度を評価する。サイバーセキュリティ上の管理対象を明確にする。（GV.SC-04）"
+  },
+  {
+    "id": "GV.SC-05",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.SC (Cybersecurity Supply Chain Risk Management)",
+    "category_ja": "GV.SC（サイバーセキュリティ・サプライチェーンリスク管理）",
+    "subcategory": "GV.SC-05 - Requirements to address cybersecurity risks in supply chains are established, prioritized, and integrated into contra...",
+    "subcategory_ja": "GV.SC-05 - サプライチェーンにおけるサイバーセキュリティリスクに対応する要求事項が確立され、優先順位付けされ、契約等に統合されている",
+    "question": "GV.SC-05 - サプライチェーンにおけるサイバーセキュリティリスクに対応する要求事項が確立され、優先順位付けされ、契約等に統合されている",
+    "examples": [
+      {
+        "implementationExample": "GV.SC-05.084 (Ex1)",
+        "text": "Establish security requirements for suppliers, products, and services commensurate with their criticality level and potential impact if compromised",
+        "text_ja": "インシデント発生時に関係者と適切に連携できるよう、運用チームと協力してコミュニケーション体制を整備します。"
+      },
+      {
+        "implementationExample": "GV.SC-05.085 (Ex2)",
+        "text": "Include all cybersecurity and supply chain requirements that third parties must follow and how compliance with the requirements may be verified in default contractual language",
+        "text_ja": "現在のセキュリティ状況やリスクについて、事業部門や経営層へ定期的に報告します。"
+      },
+      {
+        "implementationExample": "GV.SC-05.086 (Ex3)",
+        "text": "Define the rules and protocols for information sharing between the organization and its suppliers and sub-tier suppliers in agreements",
+        "text_ja": "プライバシー関連の施策を主導する責任者（プライバシーオフィサー）を任命します。"
+      },
+      {
+        "implementationExample": "GV.SC-05.087 (Ex4)",
+        "text": "Manage risk by including security requirements in agreements based on their criticality and potential impact if compromised",
+        "text_ja": "プライバシー要件とサイバーセキュリティの目標が矛盾しないよう、整合性を確保します。"
+      },
+      {
+        "implementationExample": "GV.SC-05.088 (Ex5)",
+        "text": "Define security requirements in service-level agreements (SLAs) for monitoring suppliers for acceptable security performance throughout the supplier relationship lifecycle",
+        "text_ja": "関連する事業部門と協力して、プライバシーに関する要件を策定します。"
+      },
+      {
+        "implementationExample": "GV.SC-05.089 (Ex6)",
+        "text": "Contractually require suppliers to disclose cybersecurity features, functions, and vulnerabilities of their products and services for the life of the product or the term of service",
+        "text_ja": "プライバシー要件を、日々の運用プロセスや業務システムに組み込みます。"
+      },
+      {
+        "implementationExample": "GV.SC-05.090 (Ex7)",
+        "text": "Contractually require suppliers to provide and maintain a current component inventory (e.g., software or hardware bill of materials) for critical products",
+        "text_ja": "組織全体におけるプライバシーへの影響（例：従業員のプライバシーと担当者のセキュリティ責務のバランスなど）を理解するため、社内外の関係者と連携します。"
+      },
+      {
+        "implementationExample": "GV.SC-05.091 (Ex8)",
+        "text": "Contractually require suppliers to vet their employees and guard against insider threats",
+        "text_ja": "ISAC などの外部のサイバーセキュリティ関連ワーキンググループやイベントに参加し、必要に応じて貢献します。"
+      },
+      {
+        "implementationExample": "GV.SC-05.092 (Ex9)",
+        "text": "Contractually require suppliers to provide evidence of performing acceptable security practices through, for example, self-attestation, conformance to known standards, certifications, or inspections",
+        "text_ja": "重要インフラに関するサイバーセキュリティ情報を共有するため、業界パートナーと協力します。"
+      },
+      {
+        "implementationExample": "GV.SC-05.093 (Ex10)",
+        "text": "Specify in contracts and other agreements the rights and responsibilities of the organization, its suppliers, and their supply chains, with respect to potential cybersecurity risks",
+        "text_ja": "組織全体でセキュリティ施策に取り組むため、共通の情報基盤や協働プラットフォームを活用します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サプライチェーンに起因するサイバーセキュリティリスクを適切に把握・管理できず、外部要因によるインシデントの発生や被害拡大につながるおそれがあります。 特に、サプライチェーンにおけるサイバーセキュリティリスクに対応する要求事項が確立され、優先順位付けされ、契約等に統合されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "サプライヤに求めるセキュリティ要件を明確に定義し、契約や合意文書に反映させる。インシデント発生時の通知義務や対応協力についても取り決める。（GV.SC-05）"
+  },
+  {
+    "id": "GV.SC-06",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.SC (Cybersecurity Supply Chain Risk Management)",
+    "category_ja": "GV.SC（サイバーセキュリティ・サプライチェーンリスク管理）",
+    "subcategory": "GV.SC-06 - Planning and due diligence are performed to reduce risks before entering into formal supplier or other third-party re...",
+    "subcategory_ja": "GV.SC-06 - サプライヤ／第三者との正式な関係開始前に、リスク低減のための計画策定およびデューデリジェンスが実施されている",
+    "question": "GV.SC-06 - サプライヤ／第三者との正式な関係開始前に、リスク低減のための計画策定およびデューデリジェンスが実施されている",
+    "examples": [
+      {
+        "implementationExample": "GV.SC-06.094 (Ex1)",
+        "text": "Perform thorough due diligence on prospective suppliers that is consistent with procurement planning and commensurate with the level of risk, criticality, and complexity of each supplier relationship",
+        "text_ja": "組織内の関係者を洗い出し、レジリエンス（復旧力）計画に適切に取り込みます。"
+      },
+      {
+        "implementationExample": "GV.SC-06.095 (Ex2)",
+        "text": "Assess the suitability of the technology and cybersecurity capabilities and the risk management practices of prospective suppliers",
+        "text_ja": "業務運用に関する意思決定が、サイバーセキュリティリスク管理とも一貫性を保つように調整します。"
+      },
+      {
+        "implementationExample": "GV.SC-06.096 (Ex3)",
+        "text": "Conduct supplier risk assessments against business and applicable cybersecurity requirements",
+        "text_ja": "事業継続性（レジリエンス）とセキュリティ戦略の間に矛盾がある場合、その衝突を特定し、解消します。"
+      },
+      {
+        "implementationExample": "GV.SC-06.097 (Ex4)",
+        "text": "Assess the authenticity, integrity, and security of critical products prior to acquisition and use",
+        "text_ja": "レジリエンス（復旧力）に関わる全ての部署・担当者の役割と責任を明確にします。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サプライチェーンに起因するサイバーセキュリティリスクを適切に把握・管理できず、外部要因によるインシデントの発生や被害拡大につながるおそれがあります。 特に、サプライヤ／第三者との正式な関係開始前に、リスク低減のための計画策定およびデューデリジェンスが実施されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "サプライヤに起因するサイバーリスクを継続的に管理するため、評価結果や対応状況を記録・追跡する。事業や脅威環境の変化に応じて見直しを行う。（GV.SC-06）"
+  },
+  {
+    "id": "GV.SC-07",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.SC (Cybersecurity Supply Chain Risk Management)",
+    "category_ja": "GV.SC（サイバーセキュリティ・サプライチェーンリスク管理）",
+    "subcategory": "GV.SC-07 - The risks posed by a supplier, their products and services, and other third parties are understood, recorded, priorit...",
+    "subcategory_ja": "GV.SC-07 - サプライヤ、その製品・サービス、その他第三者がもたらすリスクが理解され、記録され、優先順位付けされ、評価されている",
+    "question": "GV.SC-07 - サプライヤ、その製品・サービス、その他第三者がもたらすリスクが理解され、記録され、優先順位付けされ、評価されている",
+    "examples": [
+      {
+        "implementationExample": "GV.SC-07.098 (Ex1)",
+        "text": "Adjust assessment formats and frequencies based on the third party's reputation and the criticality of the products or services they provide",
+        "text_ja": "代替オペレーションセンターや予備の機器（物理・仮想問わず）など、レジリエンス確保に必要なリソースを準備します。"
+      },
+      {
+        "implementationExample": "GV.SC-07.099 (Ex2)",
+        "text": "Evaluate third parties' evidence of compliance with contractual cybersecurity requirements, such as self-attestations, warranties, certifications, and other artifacts",
+        "text_ja": "レジリエンス用のリソース構成が正しく機能するかを検証し、定期的に訓練・演習を行います。"
+      },
+      {
+        "implementationExample": "GV.SC-07.100 (Ex3)",
+        "text": "Monitor critical suppliers to ensure that they are fulfilling their security obligations throughout the supplier relationship lifecycle using a variety of methods and techniques, such as inspections, audits, tests, or other forms of evaluation",
+        "text_ja": "訓練や実際のインシデントから得られた知見を、レジリエンス計画に反映します。"
+      },
+      {
+        "implementationExample": "GV.SC-07.101 (Ex4)",
+        "text": "Monitor critical suppliers, services, and products for changes to their risk profiles, and reevaluate supplier criticality and risk impact accordingly",
+        "text_ja": "IT 機器、IoT デバイス、OT 機器、モバイル端末など、すべての種類のハードウェア資産を一覧として管理します。"
+      },
+      {
+        "implementationExample": "GV.SC-07.102 (Ex5)",
+        "text": "Plan for unexpected supplier and supply chain-related interruptions to ensure business continuity",
+        "text_ja": "既存の調達プロセスを活用し、ハードウェア資産の管理が確実にできるようにします。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サプライチェーンに起因するサイバーセキュリティリスクを適切に把握・管理できず、外部要因によるインシデントの発生や被害拡大につながるおそれがあります。 特に、サプライヤ、その製品・サービス、その他第三者がもたらすリスクが理解され、記録され、優先順位付けされ、評価されているが不十分だと、証拠保全や記録の完全性を担保できず、原因究明・説明責任・法的対応に支障が生じる可能性があります。",
+    "improvementHint": "サプライヤのセキュリティ対策状況を確認するための評価方法を定義し、重要度に応じて定期的に評価を実施する。問題が確認された場合には、改善を求める仕組みを整備する。（GV.SC-07）"
+  },
+  {
+    "id": "GV.SC-08",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.SC (Cybersecurity Supply Chain Risk Management)",
+    "category_ja": "GV.SC（サイバーセキュリティ・サプライチェーンリスク管理）",
+    "subcategory": "GV.SC-08 - Relevant suppliers and other third parties are included in incident planning, response, and recovery activities",
+    "subcategory_ja": "GV.SC-08 - 関連するサプライヤおよび第三者が、インシデントの計画、対応、復旧活動に含められている",
+    "question": "GV.SC-08 - 関連するサプライヤおよび第三者が、インシデントの計画、対応、復旧活動に含められている",
+    "examples": [
+      {
+        "implementationExample": "GV.SC-08.103 (Ex1)",
+        "text": "Define and use rules and protocols for reporting incident response and recovery activities and the status between the organization and its suppliers",
+        "text_ja": "ネットワークに接続されていない機器（オフネット機器）についても、資産一覧を作成して管理します。"
+      },
+      {
+        "implementationExample": "GV.SC-08.104 (Ex2)",
+        "text": "Identify and document the roles and responsibilities of the organization and its suppliers for incident response",
+        "text_ja": "ICS（産業制御システム）やビル管理システムなど、制御系に関連するハードウェア資産の一覧を作成します。"
+      },
+      {
+        "implementationExample": "GV.SC-08.105 (Ex3)",
+        "text": "Include critical suppliers in incident response exercises and simulations",
+        "text_ja": "ファームウェア、ケーブル、ドックなど、機器の付属部品や周辺機器も資産管理の対象に含めます。"
+      },
+      {
+        "implementationExample": "GV.SC-08.106 (Ex4)",
+        "text": "Define and coordinate crisis communication methods and protocols between the organization and its critical suppliers",
+        "text_ja": "ソフトウェア、アプリケーション、デジタルプラットフォームのコンポーネントなど、すべての種類のソフト資産を一覧として管理します。"
+      },
+      {
+        "implementationExample": "GV.SC-08.107 (Ex5)",
+        "text": "Conduct collaborative lessons learned sessions with critical suppliers",
+        "text_ja": "ソフトウェアのバージョン、設定、パッチ適用状況を一覧管理し、更新を追跡します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サプライチェーンに起因するサイバーセキュリティリスクを適切に把握・管理できず、外部要因によるインシデントの発生や被害拡大につながるおそれがあります。 特に、関連するサプライヤおよび第三者が、インシデントの計画、対応、復旧活動に含められているが不十分だと、委託先・サプライヤ由来の弱点が組織内に持ち込まれ、事故発生時の影響が拡大する可能性があります。",
+    "improvementHint": "サプライヤに起因するサイバーリスクを継続的に管理するため、評価結果や対応状況を記録・追跡する。事業や脅威環境の変化に応じて見直しを行う。（GV.SC-08）"
+  },
+  {
+    "id": "GV.SC-09",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.SC (Cybersecurity Supply Chain Risk Management)",
+    "category_ja": "GV.SC（サイバーセキュリティ・サプライチェーンリスク管理）",
+    "subcategory": "GV.SC-09 - Supply chain security practices are integrated into cybersecurity and enterprise risk management programs, and their ...",
+    "subcategory_ja": "GV.SC-09 - サプライチェーンのセキュリティ実践が、サイバーセキュリティおよび全社的リスクマネジメント（ERM）に統合されている",
+    "question": "GV.SC-09 - サプライチェーンのセキュリティ実践が、サイバーセキュリティおよび全社的リスクマネジメント（ERM）に統合されている",
+    "examples": [
+      {
+        "implementationExample": "GV.SC-09.108 (Ex1)",
+        "text": "Policies and procedures require provenance records for all acquired technology products and services",
+        "text_ja": "ソフトウェアが追加・削除・変更された場合に、資産一覧を更新して変更履歴を管理します。"
+      },
+      {
+        "implementationExample": "GV.SC-09.109 (Ex2)",
+        "text": "Periodically provide risk reporting to leaders about how acquired components are proven to be untampered and authentic",
+        "text_ja": "パッチ適用、アップグレード、廃止、置き換えなど、ソフトウェアのライフサイクル管理を支えるプロセスを整備します。"
+      },
+      {
+        "implementationExample": "GV.SC-09.110 (Ex3)",
+        "text": "Communicate regularly among cybersecurity risk managers and operations personnel about the need to acquire software patches, updates, and upgrades only from authenticated and trustworthy software providers",
+        "text_ja": "サプライヤー提供のソフトウェアやオープンソースコンポーネントも含めて資産として管理します。"
+      },
+      {
+        "implementationExample": "GV.SC-09.111 (Ex4)",
+        "text": "Review policies to ensure that they require approved supplier personnel to perform maintenance on supplier products",
+        "text_ja": "どの資産や依存関係が共有されており、どれが特定システム専用なのかを識別します。"
+      },
+      {
+        "implementationExample": "GV.SC-09.112 (Ex5)",
+        "text": "Policies and procedure require checking upgrades to critical hardware for unauthorized changes",
+        "text_ja": "利用しているベンダー製品とその依存関係、そしてそれらが組織の既存技術を適切にサポートするかを確認します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サプライチェーンに起因するサイバーセキュリティリスクを適切に把握・管理できず、外部要因によるインシデントの発生や被害拡大につながるおそれがあります。 特に、サプライチェーンのセキュリティ実践が、サイバーセキュリティおよび全社的リスクマネジメント（ERM）に統合されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "サプライヤに起因するサイバーリスクを継続的に管理するため、評価結果や対応状況を記録・追跡する。事業や脅威環境の変化に応じて見直しを行う。（GV.SC-09）"
+  },
+  {
+    "id": "GV.SC-10",
+    "function": "GV (GOVERN)",
+    "function_ja": "GV (GOVERN)",
+    "category": "GV.SC (Cybersecurity Supply Chain Risk Management)",
+    "category_ja": "GV.SC（サイバーセキュリティ・サプライチェーンリスク管理）",
+    "subcategory": "GV.SC-10 - Cybersecurity supply chain risk management plans include provisions for activities that occur after the conclusion of...",
+    "subcategory_ja": "GV.SC-10 - サイバーセキュリティ・サプライチェーン・リスクマネジメント計画に、契約終了後に実施すべき活動の規定が含まれている",
+    "question": "GV.SC-10 - サイバーセキュリティ・サプライチェーン・リスクマネジメント計画に、契約終了後に実施すべき活動の規定が含まれている",
+    "examples": [
+      {
+        "implementationExample": "GV.SC-10.113 (Ex1)",
+        "text": "Establish processes for terminating critical relationships under both normal and adverse circumstances",
+        "text_ja": "ソフトウェアに必要なライブラリ、フレームワーク、サブコンポーネントなどの技術的依存関係を文書化します。"
+      },
+      {
+        "implementationExample": "GV.SC-10.114 (Ex2)",
+        "text": "Define and implement plans for component end-of-life maintenance support and obsolescence",
+        "text_ja": "業務機能、業務プロセス、システム間の依存関係を整理し、文書化します。"
+      },
+      {
+        "implementationExample": "GV.SC-10.115 (Ex3)",
+        "text": "Verify that supplier access to organization resources is deactivated promptly when it is no longer needed",
+        "text_ja": "担当者の役割と責任を識別・文書化するためのプロセスを整備します。"
+      },
+      {
+        "implementationExample": "GV.SC-10.116 (Ex4)",
+        "text": "Verify that assets containing the organization's data are returned or properly disposed of in a timely, controlled, and safe manner",
+        "text_ja": "担当者の役割や責任に変更があった場合、それを継続的に追跡し管理します。"
+      },
+      {
+        "implementationExample": "GV.SC-10.117 (Ex5)",
+        "text": "Develop and execute a plan for terminating or transitioning supplier relationships that takes supply chain security risk and resiliency into account",
+        "text_ja": "運用担当、経営層、リスク管理担当など、役割ごとの担当者リストを整備し、常に最新に保ちます。"
+      },
+      {
+        "implementationExample": "GV.SC-10.118 (Ex6)",
+        "text": "Mitigate risks to data and systems created by supplier termination",
+        "text_ja": "ハードウェア資産が、どの組織・ユーザー・システム・物理場所に紐づいているかを明確にします。"
+      },
+      {
+        "implementationExample": "GV.SC-10.119 (Ex7)",
+        "text": "Manage data leakage risks associated with supplier termination",
+        "text_ja": "ソフトウェア資産が、どの組織・利用者・システムと関連付いているかを整理します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、サプライチェーンに起因するサイバーセキュリティリスクを適切に把握・管理できず、外部要因によるインシデントの発生や被害拡大につながるおそれがあります。 特に、サイバーセキュリティ・サプライチェーン・リスクマネジメント計画に、契約終了後に実施すべき活動の規定が含まれているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "サプライヤに起因するサイバーリスクを継続的に管理するため、評価結果や対応状況を記録・追跡する。事業や脅威環境の変化に応じて見直しを行う。（GV.SC-10）"
+  },
+  {
+    "id": "ID.AM-01",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.AM (Asset Management)",
+    "category_ja": "ID.AM（資産管理）",
+    "subcategory": "ID.AM-01 - Inventories of hardware managed by the organization are maintained",
+    "subcategory_ja": "ID.AM-01 - 組織が管理するハードウェア、ソフトウェア、データ、サービスなどの資産が特定され、一覧として管理されている",
+    "question": "ID.AM-01 - 組織が管理するハードウェア、ソフトウェア、データ、サービスなどの資産が特定され、一覧として管理されている",
+    "examples": [
+      {
+        "implementationExample": "ID.AM-01.120 (Ex1)",
+        "text": "Maintain inventories for all types of hardware, including IT, IoT, OT, and mobile devices",
+        "text_ja": "資産と技術的依存関係を可視化するため、適切なツール（CMDB、依存関係分析ツールなど）を使用します。"
+      },
+      {
+        "implementationExample": "ID.AM-01.121 (Ex2)",
+        "text": "Constantly monitor networks to detect new hardware and automatically update inventories",
+        "text_ja": "組織内のデータフローを可視化するために、適切なツール（DFD、分析ツールなど）を使用します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織が管理すべき資産を正確に把握できず、脆弱性管理やインシデント対応の対象から重要な資産が漏れるおそれがあります。 特に、組織が管理するハードウェア、ソフトウェア、データ、サービスなどの資産が特定され、一覧として管理されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "ハードウェア、ソフトウェア、クラウドサービス、データなど、管理対象とする資産の範囲を明確に定義する。サイバーセキュリティ上の管理対象が漏れなく把握できる状態を整える。（ID.AM-01）"
+  },
+  {
+    "id": "ID.AM-02",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.AM (Asset Management)",
+    "category_ja": "ID.AM（資産管理）",
+    "subcategory": "ID.AM-02 - Inventories of software, services, and systems managed by the organization are maintained",
+    "subcategory_ja": "ID.AM-02 - ソフトウェア、ハードウェア、データ、サービスが事業目的との関連性を踏まえて分類・管理されている",
+    "question": "ID.AM-02 - ソフトウェア、ハードウェア、データ、サービスが事業目的との関連性を踏まえて分類・管理されている",
+    "examples": [
+      {
+        "implementationExample": "ID.AM-02.122 (Ex1)",
+        "text": "Maintain inventories for all types of software and services, including commercial-off-the-shelf, open-source, custom applications, API services, and cloud-based applications and services",
+        "text_ja": "技術的依存関係やデータフローを、組織の業務機能・プロセス・システム・ミッションと関連付けて整理します。"
+      },
+      {
+        "implementationExample": "ID.AM-02.123 (Ex2)",
+        "text": "Constantly monitor all platforms, including containers and virtual machines, for software and service inventory changes",
+        "text_ja": "リスクアセスメントで特定したリスクと、関連する組織資産を紐づけて整理します。"
+      },
+      {
+        "implementationExample": "ID.AM-02.124 (Ex3)",
+        "text": "Maintain an inventory of the organization's systems",
+        "text_ja": "組織資産が、どの法規制・契約義務と関係しているかを可視化します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織が管理すべき資産を正確に把握できず、脆弱性管理やインシデント対応の対象から重要な資産が漏れるおそれがあります。 特に、ソフトウェア、ハードウェア、データ、サービスが事業目的との関連性を踏まえて分類・管理されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "ハードウェア、ソフトウェア、クラウドサービス、データなど、管理対象とする資産の範囲を明確に定義する。サイバーセキュリティ上の管理対象が漏れなく把握できる状態を整える。（ID.AM-02）"
+  },
+  {
+    "id": "ID.AM-03",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.AM (Asset Management)",
+    "category_ja": "ID.AM（資産管理）",
+    "subcategory": "ID.AM-03 - Representations of the organization's authorized network communication and internal and external network data flows a...",
+    "subcategory_ja": "ID.AM-03 - 組織外のシステム、サービス、データとの接点（外部依存関係）が特定され、管理されている",
+    "question": "ID.AM-03 - 組織外のシステム、サービス、データとの接点（外部依存関係）が特定され、管理されている",
+    "examples": [
+      {
+        "implementationExample": "ID.AM-03.125 (Ex1)",
+        "text": "Maintain baselines of communication and data flows within the organization's wired and wireless networks",
+        "text_ja": "資産と、稼働時間・レジリエンス・性能などの業務要件を関連付けて整理します。"
+      },
+      {
+        "implementationExample": "ID.AM-03.126 (Ex2)",
+        "text": "Maintain baselines of communication and data flows between the organization and third parties",
+        "text_ja": "資産が失われた場合の影響が、組織の目標にどのように影響するかを明確にします。"
+      },
+      {
+        "implementationExample": "ID.AM-03.127 (Ex3)",
+        "text": "Maintain baselines of communication and data flows for the organization's infrastructure-as-a-service (IaaS) usage",
+        "text_ja": "依存関係（業務への重要度、ミッションへの影響など）に基づいて、資産の優先順位を決めます。"
+      },
+      {
+        "implementationExample": "ID.AM-03.128 (Ex4)",
+        "text": "Maintain documentation of expected network ports, protocols, and services that are typically used among authorized systems",
+        "text_ja": "どの資産を変更管理の対象とするかを決定します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織が管理すべき資産を正確に把握できず、脆弱性管理やインシデント対応の対象から重要な資産が漏れるおそれがあります。 特に、組織外のシステム、サービス、データとの接点（外部依存関係）が特定され、管理されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "ハードウェア、ソフトウェア、クラウドサービス、データなど、管理対象とする資産の範囲を明確に定義する。サイバーセキュリティ上の管理対象が漏れなく把握できる状態を整える。（ID.AM-03）"
+  },
+  {
+    "id": "ID.AM-04",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.AM (Asset Management)",
+    "category_ja": "ID.AM（資産管理）",
+    "subcategory": "ID.AM-04 - Inventories of services provided by suppliers are maintained",
+    "subcategory_ja": "ID.AM-04 - 重要な機能やサービスを支えるリソースが特定され、事業上の重要度に基づいて優先順位付けされている",
+    "question": "ID.AM-04 - 重要な機能やサービスを支えるリソースが特定され、事業上の重要度に基づいて優先順位付けされている",
+    "examples": [
+      {
+        "implementationExample": "ID.AM-04.129 (Ex1)",
+        "text": "Inventory all external services used by the organization, including third-party infrastructure-as-a-service (IaaS), platform-as-a-service (PaaS), and software-as-a-service (SaaS) offerings; APIs; and other externally hosted application services",
+        "text_ja": "資産を追加・削除・置換する際には、変更管理プロセスを確実に適用します。"
+      },
+      {
+        "implementationExample": "ID.AM-04.130 (Ex2)",
+        "text": "Update the inventory when a new external service is going to be utilized to ensure adequate cybersecurity risk management monitoring of the organization's use of that service",
+        "text_ja": "変更管理を行った結果、資産一覧も必ず最新の状態に更新します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織が管理すべき資産を正確に把握できず、脆弱性管理やインシデント対応の対象から重要な資産が漏れるおそれがあります。 特に、重要な機能やサービスを支えるリソースが特定され、事業上の重要度に基づいて優先順位付けされているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "資産の追加、変更、廃止が発生した際に、資産台帳が確実に更新されるプロセスを整備する。変更管理など既存の業務プロセスとの連携を図る。（ID.AM-04）"
+  },
+  {
+    "id": "ID.AM-05",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.AM (Asset Management)",
+    "category_ja": "ID.AM（資産管理）",
+    "subcategory": "ID.AM-05 - Assets are prioritized based on classification, criticality, resources, and impact on the mission",
+    "subcategory_ja": "ID.AM-05 - 資産の所有者および管理責任者が明確に定義されている",
+    "question": "ID.AM-05 - 資産の所有者および管理責任者が明確に定義されている",
+    "examples": [
+      {
+        "implementationExample": "ID.AM-05.131 (Ex1)",
+        "text": "Define criteria for prioritizing each class of assets",
+        "text_ja": "ID管理プログラムの対象範囲（システム、プロセス、担当者）を明確に定義します。"
+      },
+      {
+        "implementationExample": "ID.AM-05.132 (Ex2)",
+        "text": "Apply the prioritization criteria to assets",
+        "text_ja": "ID管理プログラムを統括するための役割と責任を定義します。"
+      },
+      {
+        "implementationExample": "ID.AM-05.133 (Ex3)",
+        "text": "Track the asset priorities and update them periodically or when significant changes to the organization occur",
+        "text_ja": "組織における ID ライフサイクルの各ステージ（発行・変更・削除など）を明確にします。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織が管理すべき資産を正確に把握できず、脆弱性管理やインシデント対応の対象から重要な資産が漏れるおそれがあります。 特に、資産の所有者および管理責任者が明確に定義されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "ハードウェア、ソフトウェア、クラウドサービス、データなど、管理対象とする資産の範囲を明確に定義する。サイバーセキュリティ上の管理対象が漏れなく把握できる状態を整える。（ID.AM-05）"
+  },
+  {
+    "id": "ID.AM-07",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.AM (Asset Management)",
+    "category_ja": "ID.AM（資産管理）",
+    "subcategory": "ID.AM-07 - Inventories of data and corresponding metadata for designated data types are maintained",
+    "subcategory_ja": "ID.AM-07 - 指定されたデータ種別について、データと対応するメタデータの棚卸（インベントリ）が維持されている",
+    "question": "ID.AM-07 - 指定されたデータ種別について、データと対応するメタデータの棚卸（インベントリ）が維持されている",
+    "examples": [
+      {
+        "implementationExample": "ID.AM-07.134 (Ex1)",
+        "text": "Maintain a list of the designated data types of interest (e.g., personally identifiable information, protected health information, financial account numbers, organization intellectual property, operational technology data)",
+        "text_ja": "パスワード、証明書、トークンなど、全ての認証情報に関するガバナンス（発行・更新・失効など）を定義します。"
+      },
+      {
+        "implementationExample": "ID.AM-07.135 (Ex2)",
+        "text": "Continuously discover and analyze ad hoc data to identify new instances of designated data types",
+        "text_ja": "ID管理プログラムで扱う認証手段（パスワード、MFA、物理キーなど）の範囲を明確にします。"
+      },
+      {
+        "implementationExample": "ID.AM-07.136 (Ex3)",
+        "text": "Assign data classifications to designated data types through tags or labels",
+        "text_ja": "既存の要件や法規制、利用可能な技術、組織の将来成長を踏まえた、アクセス制御ポリシーを策定します。"
+      },
+      {
+        "implementationExample": "ID.AM-07.137 (Ex4)",
+        "text": "Track the provenance, data owner, and geolocation of each instance of designated data types",
+        "text_ja": "全ユーザーについて、最小権限の原則と職務分掌の基準を定めます。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織が管理すべき資産を正確に把握できず、脆弱性管理やインシデント対応の対象から重要な資産が漏れるおそれがあります。 特に、指定されたデータ種別について、データと対応するメタデータの棚卸（インベントリ）が維持されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "ハードウェア、ソフトウェア、クラウドサービス、データなど、管理対象とする資産の範囲を明確に定義する。サイバーセキュリティ上の管理対象が漏れなく把握できる状態を整える。（ID.AM-07）"
+  },
+  {
+    "id": "ID.AM-08",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.AM (Asset Management)",
+    "category_ja": "ID.AM（資産管理）",
+    "subcategory": "ID.AM-08 - Systems, hardware, software, services, and data are managed throughout their life cycles",
+    "subcategory_ja": "ID.AM-08 - システム、ハードウェア、ソフトウェア、サービス、データがライフサイクル全体を通じて管理されている",
+    "question": "ID.AM-08 - システム、ハードウェア、ソフトウェア、サービス、データがライフサイクル全体を通じて管理されている",
+    "examples": [
+      {
+        "implementationExample": "ID.AM-08.138 (Ex1)",
+        "text": "Integrate cybersecurity considerations throughout the life cycles of systems, hardware, software, and services",
+        "text_ja": "組織に適した ID 証明・本人確認手法（高レベル保証が必要かなど）を定義します。"
+      },
+      {
+        "implementationExample": "ID.AM-08.139 (Ex2)",
+        "text": "Integrate cybersecurity considerations into product life cycles",
+        "text_ja": "サイバーセキュリティ関連の役割を定義し、その役割に必要な最低限のスキルを明確にします。"
+      },
+      {
+        "implementationExample": "ID.AM-08.140 (Ex3)",
+        "text": "Identify unofficial uses of technology to meet mission objectives (i.e., shadow IT)",
+        "text_ja": "ユーザーに起因するリスク（行動、担当業務、ビジネス要件など）に影響する要素を特定し、定義します。"
+      },
+      {
+        "implementationExample": "ID.AM-08.141 (Ex4)",
+        "text": "Periodically identify redundant systems, hardware, software, and services that unnecessarily increase the organization's attack surface",
+        "text_ja": "ユーザーのアクセス権限が、担当する役割・責任と一致しているかどうかを、定期的に確認します。"
+      },
+      {
+        "implementationExample": "ID.AM-08.142 (Ex5)",
+        "text": "Properly configure and secure systems, hardware, software, and services prior to their deployment in production",
+        "text_ja": "アクセス制御ポリシーの例外事項を文書化し、適切に管理します。"
+      },
+      {
+        "implementationExample": "ID.AM-08.143 (Ex6)",
+        "text": "Update inventories when systems, hardware, software, and services are moved or transferred within the organization",
+        "text_ja": "ID管理システムを、企業の各種システムや業務プロセスと統合するための戦略を策定します。"
+      },
+      {
+        "implementationExample": "ID.AM-08.144 (Ex7)",
+        "text": "Securely destroy stored data based on the organization's data retention policy using the prescribed destruction method, and keep and manage a record of the destructions",
+        "text_ja": "ID管理システムを、認証や認可を行うシステムと連携させます。"
+      },
+      {
+        "implementationExample": "ID.AM-08.145 (Ex8)",
+        "text": "Securely sanitize data storage when hardware is being retired, decommissioned, reassigned, or sent for repairs or replacement",
+        "text_ja": "ID管理システムを統合し、認証を一元化する仕組み（SSO 等）を構築します。"
+      },
+      {
+        "implementationExample": "ID.AM-08.146 (Ex9)",
+        "text": "Offer methods for destroying paper, storage media, and other physical forms of data storage",
+        "text_ja": "ゼロトラストを実現するため、デバイス認証を行うシステムと ID管理システムを連携させます。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、組織が管理すべき資産を正確に把握できず、脆弱性管理やインシデント対応の対象から重要な資産が漏れるおそれがあります。 特に、システム、ハードウェア、ソフトウェア、サービス、データがライフサイクル全体を通じて管理されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "ハードウェア、ソフトウェア、クラウドサービス、データなど、管理対象とする資産の範囲を明確に定義する。サイバーセキュリティ上の管理対象が漏れなく把握できる状態を整える。（ID.AM-08）"
+  },
+  {
+    "id": "ID.RA-01",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.RA (Risk Assessment)",
+    "category_ja": "ID.RA（リスク評価）",
+    "subcategory": "ID.RA-01 - Vulnerabilities in assets are identified, validated, and recorded",
+    "subcategory_ja": "ID.RA-01 - サイバーセキュリティに関するリスクが特定され、分析されている",
+    "question": "ID.RA-01 - サイバーセキュリティに関するリスクが特定され、分析されている",
+    "examples": [
+      {
+        "implementationExample": "ID.RA-01.147 (Ex1)",
+        "text": "Use vulnerability management technologies to identify unpatched and misconfigured software",
+        "text_ja": "ID管理システムを、ログ管理・監視システムと連携させ、アクセスの記録と監視を強化します。"
+      },
+      {
+        "implementationExample": "ID.RA-01.148 (Ex2)",
+        "text": "Assess network and system architectures for design and implementation weaknesses that affect cybersecurity",
+        "text_ja": "ID管理システムを活用して、ユーザー行動を把握し、セキュリティ監視に活かします。"
+      },
+      {
+        "implementationExample": "ID.RA-01.149 (Ex3)",
+        "text": "Review, analyze, or test organization-developed software to identify design, coding, and default configuration vulnerabilities",
+        "text_ja": "必要に応じて、多要素認証（MFA）を導入・適用します。"
+      },
+      {
+        "implementationExample": "ID.RA-01.150 (Ex4)",
+        "text": "Assess facilities that house critical computing assets for physical vulnerabilities and resilience issues",
+        "text_ja": "シングルサインオン（SSO）を利用する場合も、多要素認証を組み合わせて安全性を高めます。"
+      },
+      {
+        "implementationExample": "ID.RA-01.151 (Ex5)",
+        "text": "Monitor sources of cyber threat intelligence for information on new vulnerabilities in products and services",
+        "text_ja": "必要に応じて、追加の認証情報（追加パスワード、トークンなど）を求めるようにします。"
+      },
+      {
+        "implementationExample": "ID.RA-01.152 (Ex6)",
+        "text": "Review processes and procedures for weaknesses that could be exploited to affect cybersecurity",
+        "text_ja": "特権権限を付与する際には、追加の確認手続き（多要素認証や承認プロセスなど）を必須とします。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、脅威や脆弱性、事業影響を踏まえた適切なリスク評価や優先順位付けが行えず、重要なリスクへの対応が後手に回るおそれがあります。 特に、サイバーセキュリティに関するリスクが特定され、分析されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "管理対象資産ごとに想定される脅威や脆弱性を整理し、サイバーリスクを漏れなく特定する。新たな脅威や環境変化も考慮できるようにする。（ID.RA-01）"
+  },
+  {
+    "id": "ID.RA-02",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.RA (Risk Assessment)",
+    "category_ja": "ID.RA（リスク評価）",
+    "subcategory": "ID.RA-02 - Cyber threat intelligence is received from information sharing forums and sources",
+    "subcategory_ja": "ID.RA-02 - 脅威、脆弱性、影響が体系的に評価されている",
+    "question": "ID.RA-02 - 脅威、脆弱性、影響が体系的に評価されている",
+    "examples": [
+      {
+        "implementationExample": "ID.RA-02.153 (Ex1)",
+        "text": "Configure cybersecurity tools and technologies with detection or response capabilities to securely ingest cyber threat intelligence feeds",
+        "text_ja": "必要に応じて、属性ベースのアクセス制御（ABAC）を活用します。"
+      },
+      {
+        "implementationExample": "ID.RA-02.154 (Ex2)",
+        "text": "Receive and review advisories from reputable third parties on current threat actors and their tactics, techniques, and procedures (TTPs)",
+        "text_ja": "状況に応じて、リスクベースのアクセス制御を適用します（状況に応じて認証強化など）。"
+      },
+      {
+        "implementationExample": "ID.RA-02.155 (Ex3)",
+        "text": "Monitor sources of cyber threat intelligence for information on the types of vulnerabilities that emerging technologies may have",
+        "text_ja": "業務に応じて、ロールベースのアクセス制御（RBAC）を適用します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、脅威や脆弱性、事業影響を踏まえた適切なリスク評価や優先順位付けが行えず、重要なリスクへの対応が後手に回るおそれがあります。 特に、脅威、脆弱性、影響が体系的に評価されているが不十分だと、攻撃者の手口の変化に追随できず、検知・防御の更新が遅れる可能性があります。",
+    "improvementHint": "管理対象資産ごとに想定される脅威や脆弱性を整理し、サイバーリスクを漏れなく特定する。新たな脅威や環境変化も考慮できるようにする。（ID.RA-02）"
+  },
+  {
+    "id": "ID.RA-03",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.RA (Risk Assessment)",
+    "category_ja": "ID.RA（リスク評価）",
+    "subcategory": "ID.RA-03 - Internal and external threats to the organization are identified and recorded",
+    "subcategory_ja": "ID.RA-03 - リスク評価結果が事業上の影響分析および優先順位付けに反映されている",
+    "question": "ID.RA-03 - リスク評価結果が事業上の影響分析および優先順位付けに反映されている",
+    "examples": [
+      {
+        "implementationExample": "ID.RA-03.156 (Ex1)",
+        "text": "Use cyber threat intelligence to maintain awareness of the types of threat actors likely to target the organization and the TTPs they are likely to use",
+        "text_ja": "システムにアクセスする前に、すべてのユーザーとデバイスの認証を行います。"
+      },
+      {
+        "implementationExample": "ID.RA-03.157 (Ex2)",
+        "text": "Perform threat hunting to look for signs of threat actors within the environment",
+        "text_ja": "重要な資産にアクセスする場合は、認証と認可が適切に行われていることを保証します。"
+      },
+      {
+        "implementationExample": "ID.RA-03.158 (Ex3)",
+        "text": "Implement processes for identifying internal threat actors",
+        "text_ja": "重要なシステムへのアクセスでは、多要素認証を必須とします。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、脅威や脆弱性、事業影響を踏まえた適切なリスク評価や優先順位付けが行えず、重要なリスクへの対応が後手に回るおそれがあります。 特に、リスク評価結果が事業上の影響分析および優先順位付けに反映されているが不十分だと、攻撃者の手口の変化に追随できず、検知・防御の更新が遅れる可能性があります。",
+    "improvementHint": "管理対象資産ごとに想定される脅威や脆弱性を整理し、サイバーリスクを漏れなく特定する。新たな脅威や環境変化も考慮できるようにする。（ID.RA-03）"
+  },
+  {
+    "id": "ID.RA-04",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.RA (Risk Assessment)",
+    "category_ja": "ID.RA（リスク評価）",
+    "subcategory": "ID.RA-04 - Potential impacts and likelihoods of threats exploiting vulnerabilities are identified and recorded",
+    "subcategory_ja": "ID.RA-04 - リスク評価結果が意思決定およびリスク対応に活用されている",
+    "question": "ID.RA-04 - リスク評価結果が意思決定およびリスク対応に活用されている",
+    "examples": [
+      {
+        "implementationExample": "ID.RA-04.159 (Ex1)",
+        "text": "Business leaders and cybersecurity risk management practitioners work together to estimate the likelihood and impact of risk scenarios and record them in risk registers",
+        "text_ja": "リモートアクセス時には、多要素認証を適用します。"
+      },
+      {
+        "implementationExample": "ID.RA-04.160 (Ex2)",
+        "text": "Enumerate the potential business impacts of unauthorized access to the organization's communications, systems, and data processed in or by those systems",
+        "text_ja": "新しいデバイスを登録する際にも、多要素認証を使用します。"
+      },
+      {
+        "implementationExample": "ID.RA-04.161 (Ex3)",
+        "text": "Account for the potential impacts of cascading failures for systems of systems",
+        "text_ja": "パスワードをリセットする前に、本人確認のための認証を必須にします。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、脅威や脆弱性、事業影響を踏まえた適切なリスク評価や優先順位付けが行えず、重要なリスクへの対応が後手に回るおそれがあります。 特に、リスク評価結果が意思決定およびリスク対応に活用されているが不十分だと、関係者への連絡・報告が遅れ、意思決定の遅延や対外説明の混乱につながる可能性があります。",
+    "improvementHint": "管理対象資産ごとに想定される脅威や脆弱性を整理し、サイバーリスクを漏れなく特定する。新たな脅威や環境変化も考慮できるようにする。（ID.RA-04）"
+  },
+  {
+    "id": "ID.RA-05",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.RA (Risk Assessment)",
+    "category_ja": "ID.RA（リスク評価）",
+    "subcategory": "ID.RA-05 - Threats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and inform risk response prio...",
+    "subcategory_ja": "ID.RA-05 - サプライヤおよび第三者に関連するリスクが特定され、評価されている",
+    "question": "ID.RA-05 - サプライヤおよび第三者に関連するリスクが特定され、評価されている",
+    "examples": [
+      {
+        "implementationExample": "ID.RA-05.162 (Ex1)",
+        "text": "Develop threat models to better understand risks to the data and identify appropriate risk responses",
+        "text_ja": "アカウント復旧の前に、本人確認の認証を必須とします。"
+      },
+      {
+        "implementationExample": "ID.RA-05.163 (Ex2)",
+        "text": "Prioritize cybersecurity resource allocations and investments based on estimated likelihoods and impacts",
+        "text_ja": "ユーザー ID のライフサイクル（作成・変更・削除など）に沿って、ユーザーアカウントを管理します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、脅威や脆弱性、事業影響を踏まえた適切なリスク評価や優先順位付けが行えず、重要なリスクへの対応が後手に回るおそれがあります。 特に、サプライヤおよび第三者に関連するリスクが特定され、評価されているが不十分だと、インシデントの分類や深刻度評価を誤り、対応の優先順位付けが崩れる可能性があります。",
+    "improvementHint": "管理対象資産ごとに想定される脅威や脆弱性を整理し、サイバーリスクを漏れなく特定する。新たな脅威や環境変化も考慮できるようにする。（ID.RA-05）"
+  },
+  {
+    "id": "ID.RA-06",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.RA (Risk Assessment)",
+    "category_ja": "ID.RA（リスク評価）",
+    "subcategory": "ID.RA-06 - Risk responses are chosen, prioritized, planned, tracked, and communicated",
+    "subcategory_ja": "ID.RA-06 - リスク対応が選定され、優先順位付けされ、計画され、追跡され、共有されている",
+    "question": "ID.RA-06 - リスク対応が選定され、優先順位付けされ、計画され、追跡され、共有されている",
+    "examples": [
+      {
+        "implementationExample": "ID.RA-06.164 (Ex1)",
+        "text": "Apply the vulnerability management plan's criteria for deciding whether to accept, transfer, mitigate, or avoid risk",
+        "text_ja": "プライバシー要件に従って、ID管理システムにおけるユーザーの活動を適切に管理します。"
+      },
+      {
+        "implementationExample": "ID.RA-06.165 (Ex2)",
+        "text": "Apply the vulnerability management plan's criteria for selecting compensating controls to mitigate risk",
+        "text_ja": "安全かつ効率的な ID ライフサイクル管理を行うために必要な要件を定義します。"
+      },
+      {
+        "implementationExample": "ID.RA-06.166 (Ex3)",
+        "text": "Track the progress of risk response implementation (e.g., plan of action and milestones [POA&M], risk register, risk detail report)",
+        "text_ja": "ID管理のプロセスを自動化するため、ワークフローを活用します。"
+      },
+      {
+        "implementationExample": "ID.RA-06.167 (Ex4)",
+        "text": "Use risk assessment findings to inform risk response decisions and actions",
+        "text_ja": "ユーザーがアカウントや権限をセルフサービスで申請できるよう、ID管理システムを活用します。"
+      },
+      {
+        "implementationExample": "ID.RA-06.168 (Ex5)",
+        "text": "Communicate planned risk responses to affected stakeholders in priority order",
+        "text_ja": "ID の作成プロセスが、利用者・グループ・役割を正確に反映するようにします。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、脅威や脆弱性、事業影響を踏まえた適切なリスク評価や優先順位付けが行えず、重要なリスクへの対応が後手に回るおそれがあります。 特に、リスク対応が選定され、優先順位付けされ、計画され、追跡され、共有されているが不十分だと、関係者への連絡・報告が遅れ、意思決定の遅延や対外説明の混乱につながる可能性があります。",
+    "improvementHint": "管理対象資産ごとに想定される脅威や脆弱性を整理し、サイバーリスクを漏れなく特定する。新たな脅威や環境変化も考慮できるようにする。（ID.RA-06）"
+  },
+  {
+    "id": "ID.RA-07",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.RA (Risk Assessment)",
+    "category_ja": "ID.RA（リスク評価）",
+    "subcategory": "ID.RA-07 - Changes and exceptions are managed, assessed for risk impact, recorded, and tracked",
+    "subcategory_ja": "ID.RA-07 - 変更および例外が管理され、リスク影響が評価され、記録され、追跡されている",
+    "question": "ID.RA-07 - 変更および例外が管理され、リスク影響が評価され、記録され、追跡されている",
+    "examples": [
+      {
+        "implementationExample": "ID.RA-07.169 (Ex1)",
+        "text": "Implement and follow procedures for the formal documentation, review, testing, and approval of proposed changes and requested exceptions",
+        "text_ja": "リスクベース認証を行う際、ID の属性情報（役職、行動、デバイス状況など）を反映させます。"
+      },
+      {
+        "implementationExample": "ID.RA-07.170 (Ex2)",
+        "text": "Document the possible risks of making or not making each proposed change, and provide guidance on rolling back changes",
+        "text_ja": "リスクスコアリングの際に、ユーザーの属性・行動・環境情報などの ID コンテキストを活用します。"
+      },
+      {
+        "implementationExample": "ID.RA-07.171 (Ex3)",
+        "text": "Document the risks related to each requested exception and the plan for responding to those risks",
+        "text_ja": "IDコンテキストとリスクスコアを統合し、ゼロトラスト型セキュリティの実現を支援します。"
+      },
+      {
+        "implementationExample": "ID.RA-07.172 (Ex4)",
+        "text": "Periodically review risks that were accepted based upon planned future actions or milestones",
+        "text_ja": "認証情報（パスワード、証明書など）の発行、更新、失効を管理します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、脅威や脆弱性、事業影響を踏まえた適切なリスク評価や優先順位付けが行えず、重要なリスクへの対応が後手に回るおそれがあります。 特に、変更および例外が管理され、リスク影響が評価され、記録され、追跡されているが不十分だと、リスクの見落としや優先順位の誤りが生じ、対策の抜け漏れにつながる可能性があります。",
+    "improvementHint": "リスク評価結果を記録・管理し、事業環境や脅威の変化に応じて更新する。評価結果を、リスク対応や改善計画の検討に活用する。（ID.RA-07）"
+  },
+  {
+    "id": "ID.RA-08",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.RA (Risk Assessment)",
+    "category_ja": "ID.RA（リスク評価）",
+    "subcategory": "ID.RA-08 - Processes for receiving, analyzing, and responding to vulnerability disclosures are established",
+    "subcategory_ja": "ID.RA-08 - 脆弱性開示を受領・分析・対応するためのプロセスが確立されている",
+    "question": "ID.RA-08 - 脆弱性開示を受領・分析・対応するためのプロセスが確立されている",
+    "examples": [
+      {
+        "implementationExample": "ID.RA-08.173 (Ex1)",
+        "text": "Conduct vulnerability information sharing between the organization and its suppliers following the rules and protocols defined in contracts",
+        "text_ja": "認証情報の保存・送信を安全に行うよう、必要に応じたセキュリティ対策を実施します。"
+      },
+      {
+        "implementationExample": "ID.RA-08.174 (Ex2)",
+        "text": "Assign responsibilities and verify the execution of procedures for processing, analyzing the impact of, and responding to cybersecurity threat, vulnerability, or incident disclosures by suppliers, customers, partners, and government cybersecurity organizations",
+        "text_ja": "強固なパスワードの使用や、認証情報の適切な取扱い（パスワード共有禁止など）を促進します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、脅威や脆弱性、事業影響を踏まえた適切なリスク評価や優先順位付けが行えず、重要なリスクへの対応が後手に回るおそれがあります。 特に、脆弱性開示を受領・分析・対応するためのプロセスが確立されているが不十分だと、委託先・サプライヤ由来の弱点が組織内に持ち込まれ、事故発生時の影響が拡大する可能性があります。",
+    "improvementHint": "管理対象資産ごとに想定される脅威や脆弱性を整理し、サイバーリスクを漏れなく特定する。新たな脅威や環境変化も考慮できるようにする。（ID.RA-08）"
+  },
+  {
+    "id": "ID.RA-09",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.RA (Risk Assessment)",
+    "category_ja": "ID.RA（リスク評価）",
+    "subcategory": "ID.RA-09 - The authenticity and integrity of hardware and software are assessed prior to acquisition and use",
+    "subcategory_ja": "ID.RA-09 - ハードウェアおよびソフトウェアの真正性と完全性が、取得・利用前に評価されている",
+    "question": "ID.RA-09 - ハードウェアおよびソフトウェアの真正性と完全性が、取得・利用前に評価されている",
+    "examples": [
+      {
+        "implementationExample": "ID.RA-09.175 (Ex1)",
+        "text": "Assess the authenticity and cybersecurity of critical technology products and services prior to acquisition and use",
+        "text_ja": "ID管理システムで、認証情報の発行状況や有効性を追跡します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、脅威や脆弱性、事業影響を踏まえた適切なリスク評価や優先順位付けが行えず、重要なリスクへの対応が後手に回るおそれがあります。 特に、ハードウェアおよびソフトウェアの真正性と完全性が、取得・利用前に評価されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "管理対象資産ごとに想定される脅威や脆弱性を整理し、サイバーリスクを漏れなく特定する。新たな脅威や環境変化も考慮できるようにする。（ID.RA-09）"
+  },
+  {
+    "id": "ID.RA-10",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.RA (Risk Assessment)",
+    "category_ja": "ID.RA（リスク評価）",
+    "subcategory": "ID.RA-10 - Critical suppliers are assessed prior to acquisition",
+    "subcategory_ja": "ID.RA-10 - 重要サプライヤが取得・利用前に評価されている",
+    "question": "ID.RA-10 - 重要サプライヤが取得・利用前に評価されている",
+    "examples": [
+      {
+        "implementationExample": "ID.RA-10.176 (Ex1)",
+        "text": "Conduct supplier risk assessments against business and applicable cybersecurity requirements, including the supply chain",
+        "text_ja": "暗号鍵や証明書などの認証情報を、ハードウェアモジュール（HSM 等）やソフトウェアモジュールで安全に保護します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、脅威や脆弱性、事業影響を踏まえた適切なリスク評価や優先順位付けが行えず、重要なリスクへの対応が後手に回るおそれがあります。 特に、重要サプライヤが取得・利用前に評価されているが不十分だと、委託先・サプライヤ由来の弱点が組織内に持ち込まれ、事故発生時の影響が拡大する可能性があります。",
+    "improvementHint": "外部委託先やサプライヤに起因するリスクも含めて評価を行い、自組織への影響を把握する。サプライチェーン全体を視野に入れた評価を実施する。（ID.RA-10）"
+  },
+  {
+    "id": "ID.IM-01",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.IM (Improvement)",
+    "category_ja": "ID.IM（改善）",
+    "subcategory": "ID.IM-01 - Improvements are identified from evaluations",
+    "subcategory_ja": "ID.IM-01 - サイバーセキュリティの取組みについて、計画・実行・評価・改善のサイクルが確立されている",
+    "question": "ID.IM-01 - サイバーセキュリティの取組みについて、計画・実行・評価・改善のサイクルが確立されている",
+    "examples": [
+      {
+        "implementationExample": "ID.IM-01.177 (Ex1)",
+        "text": "Perform self-assessments of critical services that take current threats and TTPs into consideration",
+        "text_ja": "不正アクセスの試行や異常な行動を検知するため、デジタル ID システムを活用します。"
+      },
+      {
+        "implementationExample": "ID.IM-01.178 (Ex2)",
+        "text": "Invest in third-party assessments or independent audits of the effectiveness of the organization's cybersecurity program to identify areas that need improvement",
+        "text_ja": "ID管理システムを、継続的モニタリング・監査・インシデント検知の仕組みの一部として活用します。"
+      },
+      {
+        "implementationExample": "ID.IM-01.179 (Ex3)",
+        "text": "Constantly evaluate compliance with selected cybersecurity requirements through automated means",
+        "text_ja": "IDに関するデータ（ユーザー属性、行動ログなど）を用いて、セキュリティアラートを監視します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、評価結果や教訓が十分に活用されず、サイバーセキュリティ対策が継続的に改善されないおそれがあります。 特に、サイバーセキュリティの取組みについて、計画・実行・評価・改善のサイクルが確立されているが不十分だと、攻撃者の手口の変化に追随できず、検知・防御の更新が遅れる可能性があります。",
+    "improvementHint": "リスク評価、監査、インシデント対応などから得られた課題や教訓を整理し、改善が必要な事項として可視化する。場当たり的な対応にならないよう、一覧で管理する。（ID.IM-01）"
+  },
+  {
+    "id": "ID.IM-02",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.IM (Improvement)",
+    "category_ja": "ID.IM（改善）",
+    "subcategory": "ID.IM-02 - Improvements are identified from security tests and exercises, including those done in coordination with suppliers an...",
+    "subcategory_ja": "ID.IM-02 - 評価結果や教訓がサイバーセキュリティ対策の継続的な改善に反映されている",
+    "question": "ID.IM-02 - 評価結果や教訓がサイバーセキュリティ対策の継続的な改善に反映されている",
+    "examples": [
+      {
+        "implementationExample": "ID.IM-02.180 (Ex1)",
+        "text": "Identify improvements for future incident response activities based on findings from incident response assessments (e.g., tabletop exercises and simulations, tests, internal reviews, independent audits)",
+        "text_ja": "インシデント調査の際に、ユーザーの属性や行動履歴などの ID コンテキストを活用します。"
+      },
+      {
+        "implementationExample": "ID.IM-02.181 (Ex2)",
+        "text": "Identify improvements for future business continuity, disaster recovery, and incident response activities based on exercises performed in coordination with critical service providers and product suppliers",
+        "text_ja": "アクセスパターンを監視し、通常とは異なる行動（異常アクセス）がないか確認します。"
+      },
+      {
+        "implementationExample": "ID.IM-02.182 (Ex3)",
+        "text": "Involve internal stakeholders (e.g., senior executives, legal department, HR) in security tests and exercises as appropriate",
+        "text_ja": "サイバーセキュリティの脅威を検知するためのアプローチ、計画、ポリシーを策定します。"
+      },
+      {
+        "implementationExample": "ID.IM-02.183 (Ex4)",
+        "text": "Perform penetration testing to identify opportunities to improve the security posture of selected high-risk systems as approved by leadership",
+        "text_ja": "どの脅威を優先的に検知すべきか、その優先順位付けの基準を定めます。"
+      },
+      {
+        "implementationExample": "ID.IM-02.184 (Ex5)",
+        "text": "Exercise contingency plans for responding to and recovering from the discovery that products or services did not originate with the contracted supplier or partner or were altered before receipt",
+        "text_ja": "外部の脅威情報（ISAC、CERT など）を基に、既知の脅威を検知するためのプロセスを整備します。"
+      },
+      {
+        "implementationExample": "ID.IM-02.185 (Ex6)",
+        "text": "Collect and analyze performance metrics using security tools and services to inform improvements to the cybersecurity program",
+        "text_ja": "異常行動や悪意のある可能性のある活動を検知するためのプロセスを整備します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、評価結果や教訓が十分に活用されず、サイバーセキュリティ対策が継続的に改善されないおそれがあります。 特に、評価結果や教訓がサイバーセキュリティ対策の継続的な改善に反映されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "リスク評価、監査、インシデント対応などから得られた課題や教訓を整理し、改善が必要な事項として可視化する。場当たり的な対応にならないよう、一覧で管理する。（ID.IM-02）"
+  },
+  {
+    "id": "ID.IM-03",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.IM (Improvement)",
+    "category_ja": "ID.IM（改善）",
+    "subcategory": "ID.IM-03 - Improvements are identified from execution of operational processes, procedures, and activities",
+    "subcategory_ja": "ID.IM-03 - 運用プロセス、手順、活動の実行結果から改善点が特定されている",
+    "question": "ID.IM-03 - 運用プロセス、手順、活動の実行結果から改善点が特定されている",
+    "examples": [
+      {
+        "implementationExample": "ID.IM-03.186 (Ex1)",
+        "text": "Conduct collaborative lessons learned sessions with suppliers",
+        "text_ja": "セキュリティ脅威データを分析・検証するための、統一された再現性のあるプロセスを策定します。"
+      },
+      {
+        "implementationExample": "ID.IM-03.187 (Ex2)",
+        "text": "Annually review cybersecurity policies, processes, and procedures to take lessons learned into account",
+        "text_ja": "脅威インテリジェンスを活用し、脅威検知や自動アラートの仕組みを強化します。"
+      },
+      {
+        "implementationExample": "ID.IM-03.188 (Ex3)",
+        "text": "Use metrics to assess operational cybersecurity performance over time",
+        "text_ja": "スレットハンティング手法を用いて、異常行動や悪意のある活動を積極的に特定します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、評価結果や教訓が十分に活用されず、サイバーセキュリティ対策が継続的に改善されないおそれがあります。 特に、運用プロセス、手順、活動の実行結果から改善点が特定されているが不十分だと、委託先・サプライヤ由来の弱点が組織内に持ち込まれ、事故発生時の影響が拡大する可能性があります。",
+    "improvementHint": "リスク評価、監査、インシデント対応などから得られた課題や教訓を整理し、改善が必要な事項として可視化する。場当たり的な対応にならないよう、一覧で管理する。（ID.IM-03）"
+  },
+  {
+    "id": "ID.IM-04",
+    "function": "ID (IDENTIFY)",
+    "function_ja": "ID (IDENTIFY)",
+    "category": "ID.IM (Improvement)",
+    "category_ja": "ID.IM（改善）",
+    "subcategory": "ID.IM-04 - Incident response plans and other cybersecurity plans that affect operations are established, communicated, maintaine...",
+    "subcategory_ja": "ID.IM-04 - インシデント対応計画等、運用に影響を及ぼすサイバーセキュリティ計画が確立され、周知され、維持されている",
+    "question": "ID.IM-04 - インシデント対応計画等、運用に影響を及ぼすサイバーセキュリティ計画が確立され、周知され、維持されている",
+    "examples": [
+      {
+        "implementationExample": "ID.IM-04.189 (Ex1)",
+        "text": "Establish contingency plans (e.g., incident response, business continuity, disaster recovery) for responding to and recovering from adverse events that can interfere with operations, expose confidential information, or otherwise endanger the organization's mission and viability",
+        "text_ja": "複数のデータセットを用いて脅威の相関分析を行うプロセスを整備します。"
+      },
+      {
+        "implementationExample": "ID.IM-04.190 (Ex2)",
+        "text": "Include contact and communication information, processes for handling common scenarios, and criteria for prioritization, escalation, and elevation in all contingency plans",
+        "text_ja": "統計モデルを活用して、異常行動を検知し、悪意のあるアクティビティを分類します。"
+      },
+      {
+        "implementationExample": "ID.IM-04.191 (Ex3)",
+        "text": "Create a vulnerability management plan to identify and assess all types of vulnerabilities and to prioritize, test, and implement risk responses",
+        "text_ja": "機械学習モデルを適切に使用し、潜在的な脅威を検知します。"
+      },
+      {
+        "implementationExample": "ID.IM-04.192 (Ex4)",
+        "text": "Communicate cybersecurity plans (including updates) to those responsible for carrying them out and to affected parties",
+        "text_ja": "統計モデルと機械学習を組み合わせ、より高度な脅威検知を行います。"
+      },
+      {
+        "implementationExample": "ID.IM-04.193 (Ex5)",
+        "text": "Review and update all cybersecurity plans annually or when a need for significant improvements is identified",
+        "text_ja": "継続的に脅威を監視・検知するためのプロセスを構築します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、評価結果や教訓が十分に活用されず、サイバーセキュリティ対策が継続的に改善されないおそれがあります。 特に、インシデント対応計画等、運用に影響を及ぼすサイバーセキュリティ計画が確立され、周知され、維持されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "リスク評価、監査、インシデント対応などから得られた課題や教訓を整理し、改善が必要な事項として可視化する。場当たり的な対応にならないよう、一覧で管理する。（ID.IM-04）"
+  },
+  {
+    "id": "PR.AA-01",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.AA (Identity Management, Authentication, and Access Control)",
+    "category_ja": "PR.AA（アイデンティティ管理・認証・アクセス制御）",
+    "subcategory": "PR.AA-01 - Identities and credentials for authorized users, services, and hardware are managed by the organization",
+    "subcategory_ja": "PR.AA-01 - 利用者およびデバイスの識別、認証、認可が一貫した方針と手続に基づいて管理されている",
+    "question": "PR.AA-01 - 利用者およびデバイスの識別、認証、認可が一貫した方針と手続に基づいて管理されている",
+    "examples": [
+      {
+        "implementationExample": "PR.AA-01.194 (Ex1)",
+        "text": "Initiate requests for new access or additional access for employees, contractors, and others, and track, review, and fulfill the requests, with permission from system or data owners when needed",
+        "text_ja": "ログやイベントデータを活用し、異常行動を効果的に検知します。"
+      },
+      {
+        "implementationExample": "PR.AA-01.195 (Ex2)",
+        "text": "Issue, manage, and revoke cryptographic certificates and identity tokens, cryptographic keys (i.e., key management), and other credentials",
+        "text_ja": "重要なデータを取得できるよう、ログ収集・監視ツールを適切に設定します。"
+      },
+      {
+        "implementationExample": "PR.AA-01.196 (Ex3)",
+        "text": "Select a unique identifier for each device from immutable hardware characteristics or an identifier securely provisioned to the device",
+        "text_ja": "全てのデバイスやシステムでログが取得できるようにします。"
+      },
+      {
+        "implementationExample": "PR.AA-01.197 (Ex4)",
+        "text": "Physically label authorized hardware with an identifier for inventory and servicing purposes",
+        "text_ja": "複数システムや拠点にまたがるログやイベントを相関分析するプロセスを整備します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、利用者やシステムに対する認証・認可・アクセス制御が適切に行われず、不正アクセスや権限の過剰付与につながるおそれがあります。 特に、利用者およびデバイスの識別、認証、認可が一貫した方針と手続に基づいて管理されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "業務内容に応じた必要最小限の権限を定義し、過剰な権限が付与されないようにする。職務分離の観点も踏まえて権限設計を見直す。（PR.AA-01）"
+  },
+  {
+    "id": "PR.AA-02",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.AA (Identity Management, Authentication, and Access Control)",
+    "category_ja": "PR.AA（アイデンティティ管理・認証・アクセス制御）",
+    "subcategory": "PR.AA-02 - Identities are proofed and bound to credentials based on the context of interactions",
+    "subcategory_ja": "PR.AA-02 - 特権アクセスが制限され、適切に管理・監視されている",
+    "question": "PR.AA-02 - 特権アクセスが制限され、適切に管理・監視されている",
+    "examples": [
+      {
+        "implementationExample": "PR.AA-02.198 (Ex1)",
+        "text": "Verify a person's claimed identity at enrollment time using government-issued identity credentials (e.g., passport, visa, driver's license)",
+        "text_ja": "UEBA（ユーザー・エンティティ行動分析）を活用して、不審な行動やデータ持ち出しを検知します。"
+      },
+      {
+        "implementationExample": "PR.AA-02.199 (Ex2)",
+        "text": "Issue a different credential for each person (i.e., no credential sharing)",
+        "text_ja": "既知の IOC（侵害指標）を継続的に監視します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、利用者やシステムに対する認証・認可・アクセス制御が適切に行われず、不正アクセスや権限の過剰付与につながるおそれがあります。 特に、特権アクセスが制限され、適切に管理・監視されているが不十分だと、攻撃者の手口の変化に追随できず、検知・防御の更新が遅れる可能性があります。",
+    "improvementHint": "業務内容に応じた必要最小限の権限を定義し、過剰な権限が付与されないようにする。職務分離の観点も踏まえて権限設計を見直す。（PR.AA-02）"
+  },
+  {
+    "id": "PR.AA-03",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.AA (Identity Management, Authentication, and Access Control)",
+    "category_ja": "PR.AA（アイデンティティ管理・認証・アクセス制御）",
+    "subcategory": "PR.AA-03 - Users, services, and hardware are authenticated",
+    "subcategory_ja": "PR.AA-03 - リモートアクセスが定義された方針および手続に基づいて管理されている",
+    "question": "PR.AA-03 - リモートアクセスが定義された方針および手続に基づいて管理されている",
+    "examples": [
+      {
+        "implementationExample": "PR.AA-03.200 (Ex1)",
+        "text": "Require multifactor authentication",
+        "text_ja": "マルウェア解析を行い、悪意のある活動を特定します。"
+      },
+      {
+        "implementationExample": "PR.AA-03.201 (Ex2)",
+        "text": "Enforce policies for the minimum strength of passwords, PINs, and similar authenticators",
+        "text_ja": "サイバー脅威データを分類・検証するためのプロセスを整備し、運用します。"
+      },
+      {
+        "implementationExample": "PR.AA-03.202 (Ex3)",
+        "text": "Periodically reauthenticate users, services, and hardware based on risk (e.g., in zero trust architectures)",
+        "text_ja": "フィッシング分析を行い、実際の脅威や訓練での疑似脅威、悪意のある活動を検知します。"
+      },
+      {
+        "implementationExample": "PR.AA-03.203 (Ex4)",
+        "text": "Ensure that authorized personnel can access accounts essential for protecting safety under emergency conditions",
+        "text_ja": "異常行動・不審な活動・インシデントの兆候を特定するためのポリシーとプロセスを策定します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、利用者やシステムに対する認証・認可・アクセス制御が適切に行われず、不正アクセスや権限の過剰付与につながるおそれがあります。 特に、リモートアクセスが定義された方針および手続に基づいて管理されているが不十分だと、不正アクセスや情報漏えいのリスクが高まる可能性があります。",
+    "improvementHint": "業務内容に応じた必要最小限の権限を定義し、過剰な権限が付与されないようにする。職務分離の観点も踏まえて権限設計を見直す。（PR.AA-03）"
+  },
+  {
+    "id": "PR.AA-04",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.AA (Identity Management, Authentication, and Access Control)",
+    "category_ja": "PR.AA（アイデンティティ管理・認証・アクセス制御）",
+    "subcategory": "PR.AA-04 - Identity assertions are protected, conveyed, and verified",
+    "subcategory_ja": "PR.AA-04 - アクセス権限が役割および職務に基づいて付与・見直しされている",
+    "question": "PR.AA-04 - アクセス権限が役割および職務に基づいて付与・見直しされている",
+    "examples": [
+      {
+        "implementationExample": "PR.AA-04.204 (Ex1)",
+        "text": "Protect identity assertions that are used to convey authentication and user information through single sign-on systems",
+        "text_ja": "システム内外のデータフローを監視し、異常なデータ転送がないか確認します。"
+      },
+      {
+        "implementationExample": "PR.AA-04.205 (Ex2)",
+        "text": "Protect identity assertions that are used to convey authentication and user information between federated systems",
+        "text_ja": "ユーザーの活動ログを監視し、異常な行動や悪意の可能性がある活動を検出します。"
+      },
+      {
+        "implementationExample": "PR.AA-04.206 (Ex3)",
+        "text": "Implement standards-based approaches for identity assertions in all contexts, and follow all guidance for the generation (e.g., data models, metadata), protection (e.g., digital signing, encryption), and verification (e.g., signature validation) of identity assertions",
+        "text_ja": "デバイスのアクセスパターンを監視し、異常や悪意の兆候を特定します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、利用者やシステムに対する認証・認可・アクセス制御が適切に行われず、不正アクセスや権限の過剰付与につながるおそれがあります。 特に、アクセス権限が役割および職務に基づいて付与・見直しされているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "業務内容に応じた必要最小限の権限を定義し、過剰な権限が付与されないようにする。職務分離の観点も踏まえて権限設計を見直す。（PR.AA-04）"
+  },
+  {
+    "id": "PR.AA-05",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.AA (Identity Management, Authentication, and Access Control)",
+    "category_ja": "PR.AA（アイデンティティ管理・認証・アクセス制御）",
+    "subcategory": "PR.AA-05 - Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and in...",
+    "subcategory_ja": "PR.AA-05 - 物理的および論理的アクセスが適切に制御されている",
+    "question": "PR.AA-05 - 物理的および論理的アクセスが適切に制御されている",
+    "examples": [
+      {
+        "implementationExample": "PR.AA-05.207 (Ex1)",
+        "text": "Review logical and physical access privileges periodically and whenever someone changes roles or leaves the organization, and promptly rescind privileges that are no longer needed",
+        "text_ja": "業務運用における活動を監視し、異常・不正の可能性がないか確認します。"
+      },
+      {
+        "implementationExample": "PR.AA-05.208 (Ex2)",
+        "text": "Take attributes of the requester and the requested resource into account for authorization decisions (e.g., geolocation, day/time, requester endpoint's cyber health)",
+        "text_ja": "検知されたセキュリティ異常が正しいかどうかを確認するプロセスを整備し、運用します。"
+      },
+      {
+        "implementationExample": "PR.AA-05.209 (Ex3)",
+        "text": "Restrict access and privileges to the minimum necessary (e.g., zero trust architecture)",
+        "text_ja": "統計モデルを活用し、異常行動や不審な活動の妥当性を検証します。"
+      },
+      {
+        "implementationExample": "PR.AA-05.210 (Ex4)",
+        "text": "Periodically review the privileges associated with critical business functions to confirm proper separation of duties",
+        "text_ja": "既知のインシデント情報や脅威データを参照し、検知した異常の正当性を検証します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、利用者やシステムに対する認証・認可・アクセス制御が適切に行われず、不正アクセスや権限の過剰付与につながるおそれがあります。 特に、物理的および論理的アクセスが適切に制御されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "業務内容に応じた必要最小限の権限を定義し、過剰な権限が付与されないようにする。職務分離の観点も踏まえて権限設計を見直す。（PR.AA-05）"
+  },
+  {
+    "id": "PR.AA-06",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.AA (Identity Management, Authentication, and Access Control)",
+    "category_ja": "PR.AA（アイデンティティ管理・認証・アクセス制御）",
+    "subcategory": "PR.AA-06 - Physical access to assets is managed, monitored, and enforced commensurate with risk",
+    "subcategory_ja": "PR.AA-06 - 資産への物理アクセスが、リスクに見合う形で管理・監視され、遵守が徹底されている",
+    "question": "PR.AA-06 - 資産への物理アクセスが、リスクに見合う形で管理・監視され、遵守が徹底されている",
+    "examples": [
+      {
+        "implementationExample": "PR.AA-06.211 (Ex1)",
+        "text": "Use security guards, security cameras, locked entrances, alarm systems, and other physical controls to monitor facilities and restrict access",
+        "text_ja": "MITRE ATT&CK フレームワークを活用して、異常行動や不審な活動の分析を行います。"
+      },
+      {
+        "implementationExample": "PR.AA-06.212 (Ex2)",
+        "text": "Employ additional physical security controls for areas that contain high-risk assets",
+        "text_ja": "不審な活動や異常を記録し、必要な関係者へ共有します。"
+      },
+      {
+        "implementationExample": "PR.AA-06.213 (Ex3)",
+        "text": "Escort guests, vendors, and other third parties within areas that contain business-critical assets",
+        "text_ja": "異常や不審な活動について、詳細をまとめた報告書を作成し配布します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、利用者やシステムに対する認証・認可・アクセス制御が適切に行われず、不正アクセスや権限の過剰付与につながるおそれがあります。 特に、資産への物理アクセスが、リスクに見合う形で管理・監視され、遵守が徹底されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "業務内容に応じた必要最小限の権限を定義し、過剰な権限が付与されないようにする。職務分離の観点も踏まえて権限設計を見直す。（PR.AA-06）"
+  },
+  {
+    "id": "PR.AT-01",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.AT (Awareness and Training)",
+    "category_ja": "PR.AT（意識向上と訓練）",
+    "subcategory": "PR.AT-01 - Personnel are provided with awareness and training so that they possess the knowledge and skills to perform general t...",
+    "subcategory_ja": "PR.AT-01 - 組織の全要員が、自身の役割に応じたサイバーセキュリティの意識向上および教育・訓練を受けている",
+    "question": "PR.AT-01 - 組織の全要員が、自身の役割に応じたサイバーセキュリティの意識向上および教育・訓練を受けている",
+    "examples": [
+      {
+        "implementationExample": "PR.AT-01.214 (Ex1)",
+        "text": "Provide basic cybersecurity awareness and training to employees, contractors, partners, suppliers, and all other users of the organization's non-public resources",
+        "text_ja": "異常・不審活動の報告書が、一貫性のある形式で作成されるようにします。"
+      },
+      {
+        "implementationExample": "PR.AT-01.215 (Ex2)",
+        "text": "Train personnel to recognize social engineering attempts and other common attacks, report attacks and suspicious activity, comply with acceptable use policies, and perform basic cyber hygiene tasks (e.g., patching software, choosing passwords, protecting credentials)",
+        "text_ja": "脅威情報の機密性を保護できるコミュニケーション手段（暗号化・アクセス制御など）を使用します。"
+      },
+      {
+        "implementationExample": "PR.AT-01.216 (Ex3)",
+        "text": "Explain the consequences of cybersecurity policy violations, both to individual users and the organization as a whole",
+        "text_ja": "サイバーセキュリティリスクへの対応計画を進めるため、組織のリーダー層を招集します。"
+      },
+      {
+        "implementationExample": "PR.AT-01.217 (Ex4)",
+        "text": "Periodically assess or test users on their understanding of basic cybersecurity practices",
+        "text_ja": "経営層と協力し、サイバーリスク環境を定期的に見直します。"
+      },
+      {
+        "implementationExample": "PR.AT-01.218 (Ex5)",
+        "text": "Require annual refreshers to reinforce existing practices and introduce new practices",
+        "text_ja": "リスク戦略・プロセス・手順について、関連する全てのステークホルダーに周知します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、利用者や担当者のセキュリティ意識や対応能力が向上せず、ヒューマンエラーや不適切な対応によるインシデントが発生しやすくなるおそれがあります。 特に、組織の全要員が、自身の役割に応じたサイバーセキュリティの意識向上および教育・訓練を受けているが不十分だと、既知の脆弱性や安全でない設定が残り、侵入・権限奪取のリスクが高まる可能性があります。",
+    "improvementHint": "経営層、一般従業員、管理者などの役割に応じて必要なセキュリティ知識や行動を整理する。対象者別に適切な教育内容を設計する。（PR.AT-01）"
+  },
+  {
+    "id": "PR.AT-02",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.AT (Awareness and Training)",
+    "category_ja": "PR.AT（意識向上と訓練）",
+    "subcategory": "PR.AT-02 - Individuals in specialized roles are provided with awareness and training so that they possess the knowledge and skil...",
+    "subcategory_ja": "PR.AT-02 - 特定の役割や責任を持つ要員が、専門的なサイバーセキュリティ教育・訓練を受けている",
+    "question": "PR.AT-02 - 特定の役割や責任を持つ要員が、専門的なサイバーセキュリティ教育・訓練を受けている",
+    "examples": [
+      {
+        "implementationExample": "PR.AT-02.219 (Ex1)",
+        "text": "Identify the specialized roles within the organization that require additional cybersecurity training, such as physical and cybersecurity personnel, finance personnel, senior leadership, and anyone with access to business-critical data",
+        "text_ja": "サイバーリスク管理の結果を、技術面や組織のプロセス・サービス改善に活用します。"
+      },
+      {
+        "implementationExample": "PR.AT-02.220 (Ex2)",
+        "text": "Provide role-based cybersecurity awareness and training to all those in specialized roles, including contractors, partners, suppliers, and other third parties",
+        "text_ja": "関係する組織（内部チームや外部パートナーなど）と連携し、サイバーセキュリティ戦略と計画を更新します。"
+      },
+      {
+        "implementationExample": "PR.AT-02.221 (Ex3)",
+        "text": "Periodically assess or test users on their understanding of cybersecurity practices for their specialized roles",
+        "text_ja": "現在のサイバーセキュリティリスクを反映したリスクプロファイルを作成し、継続的に更新します。"
+      },
+      {
+        "implementationExample": "PR.AT-02.222 (Ex4)",
+        "text": "Require annual refreshers to reinforce existing practices and introduce new practices",
+        "text_ja": "リスクプロファイルを定期的に見直し、必要に応じて更新します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、利用者や担当者のセキュリティ意識や対応能力が向上せず、ヒューマンエラーや不適切な対応によるインシデントが発生しやすくなるおそれがあります。 特に、特定の役割や責任を持つ要員が、専門的なサイバーセキュリティ教育・訓練を受けているが不十分だと、委託先・サプライヤ由来の弱点が組織内に持ち込まれ、事故発生時の影響が拡大する可能性があります。",
+    "improvementHint": "新たな脅威やインシデント事例を踏まえて、教育内容を定期的に見直す。常に最新の状況を反映した内容を提供する。（PR.AT-02）"
+  },
+  {
+    "id": "PR.DS-01",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.DS (Data Security)",
+    "category_ja": "PR.DS（データセキュリティ）",
+    "subcategory": "PR.DS-01 - The confidentiality, integrity, and availability of data-at-rest are protected",
+    "subcategory_ja": "PR.DS-01 - 保存中および転送中のデータが、その重要度および機密性に応じて保護されている",
+    "question": "PR.DS-01 - 保存中および転送中のデータが、その重要度および機密性に応じて保護されている",
+    "examples": [
+      {
+        "implementationExample": "PR.DS-01.223 (Ex1)",
+        "text": "Use encryption, digital signatures, and cryptographic hashes to protect the confidentiality and integrity of stored data in files, databases, virtual machine disk images, container images, and other resources",
+        "text_ja": "リスクプロファイルを活用し、どのセキュリティ投資を優先すべきか判断します。"
+      },
+      {
+        "implementationExample": "PR.DS-01.224 (Ex2)",
+        "text": "Use full disk encryption to protect data stored on user endpoints",
+        "text_ja": "リスクプロファイルが、事業目標と整合しているか確認します。"
+      },
+      {
+        "implementationExample": "PR.DS-01.225 (Ex3)",
+        "text": "Confirm the integrity of software by validating signatures",
+        "text_ja": "リスクプロファイルに基づき、現在のセキュリティ対策（コントロール）の有効性を評価します。"
+      },
+      {
+        "implementationExample": "PR.DS-01.226 (Ex4)",
+        "text": "Restrict the use of removable media to prevent data exfiltration",
+        "text_ja": "重要インフラに関連する脅威を特定します。"
+      },
+      {
+        "implementationExample": "PR.DS-01.227 (Ex5)",
+        "text": "Physically secure removable media containing unencrypted sensitive information, such as within locked offices or file cabinets",
+        "text_ja": "脅威インテリジェンスを活用して、サイバー脅威を特定します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、データの保護や取扱いが適切に管理されず、情報漏えいやデータ改ざん、意図しない利用につながるおそれがあります。 特に、保存中および転送中のデータが、その重要度および機密性に応じて保護されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "データの重要度に応じて、適切なアクセス制御や暗号化を適用する。保存時および転送時の双方で保護が確保されるようにする。（PR.DS-01）"
+  },
+  {
+    "id": "PR.DS-02",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.DS (Data Security)",
+    "category_ja": "PR.DS（データセキュリティ）",
+    "subcategory": "PR.DS-02 - The confidentiality, integrity, and availability of data-in-transit are protected",
+    "subcategory_ja": "PR.DS-02 - データの整合性が維持され、不正な変更から保護されている",
+    "question": "PR.DS-02 - データの整合性が維持され、不正な変更から保護されている",
+    "examples": [
+      {
+        "implementationExample": "PR.DS-02.228 (Ex1)",
+        "text": "Use encryption, digital signatures, and cryptographic hashes to protect the confidentiality and integrity of network communications",
+        "text_ja": "システム・資産・データ・人材に関連する脅威を特定します。"
+      },
+      {
+        "implementationExample": "PR.DS-02.229 (Ex2)",
+        "text": "Automatically encrypt or block outbound emails and other communications that contain sensitive data, depending on the data classification",
+        "text_ja": "組織が利用している技術や業務プロセスに関連した脅威を特定します。"
+      },
+      {
+        "implementationExample": "PR.DS-02.230 (Ex3)",
+        "text": "Block access to personal email, file sharing, file storage services, and other personal communications applications and services from organizational systems and networks",
+        "text_ja": "組織に関連する脅威シナリオを体系的に整理・一覧化します。"
+      },
+      {
+        "implementationExample": "PR.DS-02.231 (Ex4)",
+        "text": "Prevent reuse of sensitive data from production environments (e.g., customer records) in development, testing, and other non-production environments",
+        "text_ja": "資産に存在する脆弱性を発見するため、脆弱性識別プロセス（スキャン、診断など）を活用します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、データの保護や取扱いが適切に管理されず、情報漏えいやデータ改ざん、意図しない利用につながるおそれがあります。 特に、データの整合性が維持され、不正な変更から保護されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "データ漏えいや改ざんを防止するための対策を整理し、必要に応じて監視や制御の仕組みを導入する。異常を検知できる体制を整える。（PR.DS-02）"
+  },
+  {
+    "id": "PR.DS-10",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.DS (Data Security)",
+    "category_ja": "PR.DS（データセキュリティ）",
+    "subcategory": "PR.DS-10 - The confidentiality, integrity, and availability of data-in-use are protected",
+    "subcategory_ja": "PR.DS-10 - 利用中（処理中）のデータの機密性・完全性・可用性が保護されている",
+    "question": "PR.DS-10 - 利用中（処理中）のデータの機密性・完全性・可用性が保護されている",
+    "examples": [
+      {
+        "implementationExample": "PR.DS-10.232 (Ex1)",
+        "text": "Remove data that must remain confidential (e.g., from processors and memory) as soon as it is no longer needed",
+        "text_ja": "ISAC の情報を活用して、脆弱性識別プロセスを強化します。"
+      },
+      {
+        "implementationExample": "PR.DS-10.233 (Ex2)",
+        "text": "Protect data in use from access by other users and processes of the same platform",
+        "text_ja": "脆弱性管理ツール（スキャナなど）を使用して脆弱性を検知します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、データの保護や取扱いが適切に管理されず、情報漏えいやデータ改ざん、意図しない利用につながるおそれがあります。 特に、利用中（処理中）のデータの機密性・完全性・可用性が保護されているが不十分だと、不正アクセスや情報漏えいのリスクが高まる可能性があります。",
+    "improvementHint": "データ漏えいや改ざんを防止するための対策を整理し、必要に応じて監視や制御の仕組みを導入する。異常を検知できる体制を整える。（PR.DS-10）"
+  },
+  {
+    "id": "PR.DS-11",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.DS (Data Security)",
+    "category_ja": "PR.DS（データセキュリティ）",
+    "subcategory": "PR.DS-11 - Backups of data are created, protected, maintained, and tested",
+    "subcategory_ja": "PR.DS-11 - データのバックアップが作成され、保護され、維持され、定期的にテストされている",
+    "question": "PR.DS-11 - データのバックアップが作成され、保護され、維持され、定期的にテストされている",
+    "examples": [
+      {
+        "implementationExample": "PR.DS-11.234 (Ex1)",
+        "text": "Continuously back up critical data in near-real-time, and back up other data frequently at agreed-upon schedules",
+        "text_ja": "複数のデータソースを相関させる手法を用いて、脆弱性を特定します。"
+      },
+      {
+        "implementationExample": "PR.DS-11.235 (Ex2)",
+        "text": "Test backups and restores for all types of data sources at least annually",
+        "text_ja": "脆弱性管理ツールを活用し、脆弱性の分析を実施します。"
+      },
+      {
+        "implementationExample": "PR.DS-11.236 (Ex3)",
+        "text": "Securely store some backups offline and offsite so that an incident or disaster will not damage them",
+        "text_ja": "組織全体でサイバーセキュリティリスクを特定・分析し、優先順位を付けます。"
+      },
+      {
+        "implementationExample": "PR.DS-11.237 (Ex4)",
+        "text": "Enforce geographic separation and geolocation restrictions for data backup storage",
+        "text_ja": "脅威モデリングなどの手法を用いて、リスクを特定します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、データの保護や取扱いが適切に管理されず、情報漏えいやデータ改ざん、意図しない利用につながるおそれがあります。 特に、データのバックアップが作成され、保護され、維持され、定期的にテストされているが不十分だと、復旧手順の選定や資源配分を誤り、復旧遅延や復旧後の再発につながる可能性があります。",
+    "improvementHint": "データ漏えいや改ざんを防止するための対策を整理し、必要に応じて監視や制御の仕組みを導入する。異常を検知できる体制を整える。（PR.DS-11）"
+  },
+  {
+    "id": "PR.PS-01",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.PS (Platform Security)",
+    "category_ja": "PR.PS（プラットフォームセキュリティ）",
+    "subcategory": "PR.PS-01 - Configuration management practices are established and applied",
+    "subcategory_ja": "PR.PS-01 - プラットフォームおよびシステム構成が安全に管理されている",
+    "question": "PR.PS-01 - プラットフォームおよびシステム構成が安全に管理されている",
+    "examples": [
+      {
+        "implementationExample": "PR.PS-01.238 (Ex1)",
+        "text": "Establish, test, deploy, and maintain hardened baselines that enforce the organization's cybersecurity policies and provide only essential capabilities (i.e., principle of least functionality)",
+        "text_ja": "リスク管理プロセスを活用して、事業活動の判断材料とします。"
+      },
+      {
+        "implementationExample": "PR.PS-01.239 (Ex2)",
+        "text": "Review all default configuration settings that may potentially impact cybersecurity when installing or upgrading software",
+        "text_ja": "サイバーリスクの特定・分析・優先順位付けの結果を文書化します。"
+      },
+      {
+        "implementationExample": "PR.PS-01.240 (Ex3)",
+        "text": "Monitor implemented software for deviations from approved baselines",
+        "text_ja": "OT（Operational Technology）に対するリスクを特定し、分析します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、システムやプラットフォームの構成不備や脆弱性が放置され、攻撃を受けやすい状態が継続するおそれがあります。 特に、プラットフォームおよびシステム構成が安全に管理されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "不正や異常を検知するために必要なログが取得できるよう、プラットフォームの設定を見直す。監視や分析に活用できる状態を確保する。（PR.PS-01）"
+  },
+  {
+    "id": "PR.PS-02",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.PS (Platform Security)",
+    "category_ja": "PR.PS（プラットフォームセキュリティ）",
+    "subcategory": "PR.PS-02 - Software is maintained, replaced, and removed commensurate with risk",
+    "subcategory_ja": "PR.PS-02 - ソフトウェアおよびハードウェアの脆弱性が適切に管理されている",
+    "question": "PR.PS-02 - ソフトウェアおよびハードウェアの脆弱性が適切に管理されている",
+    "examples": [
+      {
+        "implementationExample": "PR.PS-02.241 (Ex1)",
+        "text": "Perform routine and emergency patching within the timeframes specified in the vulnerability management plan",
+        "text_ja": "リスクにどう対応するかの戦略（リスク対応戦略）を策定し、必要に応じて更新します。"
+      },
+      {
+        "implementationExample": "PR.PS-02.242 (Ex2)",
+        "text": "Update container images, and deploy new container instances to replace rather than update existing instances",
+        "text_ja": "特定された各リスクに対し、適切な対応方法（回避・低減・受容・移転）を決定します。"
+      },
+      {
+        "implementationExample": "PR.PS-02.243 (Ex3)",
+        "text": "Replace end-of-life software and service versions with supported, maintained versions",
+        "text_ja": "リスク対応を判断するための指標（メトリクス）を定義します。"
+      },
+      {
+        "implementationExample": "PR.PS-02.244 (Ex4)",
+        "text": "Uninstall and remove unauthorized software and services that pose undue risks",
+        "text_ja": "脅威インテリジェンスに基づき、適切なリスク対応を選定します。"
+      },
+      {
+        "implementationExample": "PR.PS-02.245 (Ex5)",
+        "text": "Uninstall and remove any unnecessary software components (e.g., operating system utilities) that attackers might misuse",
+        "text_ja": "リスク対応戦略が、事業の優先順位やビジネス目標と整合していることを確認します。"
+      },
+      {
+        "implementationExample": "PR.PS-02.246 (Ex6)",
+        "text": "Define and implement plans for software and service end-of-life maintenance support and obsolescence",
+        "text_ja": "リスク対応戦略を、事業計画や業務プロセスに組み込みます。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、システムやプラットフォームの構成不備や脆弱性が放置され、攻撃を受けやすい状態が継続するおそれがあります。 特に、ソフトウェアおよびハードウェアの脆弱性が適切に管理されているが不十分だと、既知の脆弱性や安全でない設定が残り、侵入・権限奪取のリスクが高まる可能性があります。",
+    "improvementHint": "プラットフォームに関する脆弱性情報を継続的に把握し、影響度を評価した上で計画的に対応する。パッチ適用の方針と優先順位を明確にする。（PR.PS-02）"
+  },
+  {
+    "id": "PR.PS-03",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.PS (Platform Security)",
+    "category_ja": "PR.PS（プラットフォームセキュリティ）",
+    "subcategory": "PR.PS-03 - Hardware is maintained, replaced, and removed commensurate with risk",
+    "subcategory_ja": "PR.PS-03 - ハードウェアがリスクに見合う形で保守され、交換・撤去されている",
+    "question": "PR.PS-03 - ハードウェアがリスクに見合う形で保守され、交換・撤去されている",
+    "examples": [
+      {
+        "implementationExample": "PR.PS-03.247 (Ex1)",
+        "text": "Replace hardware when it lacks needed security capabilities or when it cannot support software with needed security capabilities",
+        "text_ja": "リスク対応戦略を活用して、セキュリティ投資の判断材料とします。"
+      },
+      {
+        "implementationExample": "PR.PS-03.248 (Ex2)",
+        "text": "Define and implement plans for hardware end-of-life maintenance support and obsolescence",
+        "text_ja": "リスク対応戦略を踏まえて、組織のポリシーを見直したり策定したりします。"
+      },
+      {
+        "implementationExample": "PR.PS-03.249 (Ex3)",
+        "text": "Perform hardware disposal in a secure, responsible, and auditable manner",
+        "text_ja": "事業継続性・レジリエンスを高めるため、リスク対応戦略の活用方法を定義します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、システムやプラットフォームの構成不備や脆弱性が放置され、攻撃を受けやすい状態が継続するおそれがあります。 特に、ハードウェアがリスクに見合う形で保守され、交換・撤去されているが不十分だと、責任分界点が曖昧となり、対応の抜け・重複やエスカレーション遅延につながる可能性があります。",
+    "improvementHint": "プラットフォームに関する脆弱性情報を継続的に把握し、影響度を評価した上で計画的に対応する。パッチ適用の方針と優先順位を明確にする。（PR.PS-03）"
+  },
+  {
+    "id": "PR.PS-04",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.PS (Platform Security)",
+    "category_ja": "PR.PS（プラットフォームセキュリティ）",
+    "subcategory": "PR.PS-04 - Log records are generated and made available for continuous monitoring",
+    "subcategory_ja": "PR.PS-04 - 継続的モニタリングのために、ログ記録が生成され、利用可能な状態で提供されている",
+    "question": "PR.PS-04 - 継続的モニタリングのために、ログ記録が生成され、利用可能な状態で提供されている",
+    "examples": [
+      {
+        "implementationExample": "PR.PS-04.250 (Ex1)",
+        "text": "Configure all operating systems, applications, and services (including cloud-based services) to generate log records",
+        "text_ja": "各リスク対応戦略がレジリエンス（復旧力）にどのような影響を与えるかを評価します。"
+      },
+      {
+        "implementationExample": "PR.PS-04.251 (Ex2)",
+        "text": "Configure log generators to securely share their logs with the organization's logging infrastructure systems and services",
+        "text_ja": "サイバーインシデント対応に関するポリシーと手順を策定し、定期的に更新します。"
+      },
+      {
+        "implementationExample": "PR.PS-04.252 (Ex3)",
+        "text": "Configure log generators to record the data needed by zero-trust architectures",
+        "text_ja": "OT（産業制御系）特有の要件や影響を、インシデント対応ポリシーに含めます。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、システムやプラットフォームの構成不備や脆弱性が放置され、攻撃を受けやすい状態が継続するおそれがあります。 特に、継続的モニタリングのために、ログ記録が生成され、利用可能な状態で提供されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "不正や異常を検知するために必要なログが取得できるよう、プラットフォームの設定を見直す。監視や分析に活用できる状態を確保する。（PR.PS-04）"
+  },
+  {
+    "id": "PR.PS-05",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.PS (Platform Security)",
+    "category_ja": "PR.PS（プラットフォームセキュリティ）",
+    "subcategory": "PR.PS-05 - Installation and execution of unauthorized software are prevented",
+    "subcategory_ja": "PR.PS-05 - 未承認ソフトウェアの導入および実行が防止されている",
+    "question": "PR.PS-05 - 未承認ソフトウェアの導入および実行が防止されている",
+    "examples": [
+      {
+        "implementationExample": "PR.PS-05.253 (Ex1)",
+        "text": "When risk warrants it, restrict software execution to permitted products only or deny the execution of prohibited and unauthorized software",
+        "text_ja": "インシデント対応に必要な役割と責任が明確に定義されていることを確認します。"
+      },
+      {
+        "implementationExample": "PR.PS-05.254 (Ex2)",
+        "text": "Verify the source of new software and the software's integrity before installing it",
+        "text_ja": "対応・復旧作業における各担当者の責任範囲を定義します。"
+      },
+      {
+        "implementationExample": "PR.PS-05.255 (Ex3)",
+        "text": "Configure platforms to use only approved DNS services that block access to known malicious domains",
+        "text_ja": "NIST SP 800-61 など標準的なインシデント管理フレームワークを採用します。"
+      },
+      {
+        "implementationExample": "PR.PS-05.256 (Ex4)",
+        "text": "Configure platforms to allow the installation of organization-approved software only",
+        "text_ja": "インシデント対応計画を、災害復旧（DR）や事業継続計画（BCP）などの企業全体計画と統合します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、システムやプラットフォームの構成不備や脆弱性が放置され、攻撃を受けやすい状態が継続するおそれがあります。 特に、未承認ソフトウェアの導入および実行が防止されているが不十分だと、不正アクセスや情報漏えいのリスクが高まる可能性があります。",
+    "improvementHint": "プラットフォームに関する脆弱性情報を継続的に把握し、影響度を評価した上で計画的に対応する。パッチ適用の方針と優先順位を明確にする。（PR.PS-05）"
+  },
+  {
+    "id": "PR.PS-06",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.PS (Platform Security)",
+    "category_ja": "PR.PS（プラットフォームセキュリティ）",
+    "subcategory": "PR.PS-06 - Secure software development practices are integrated, and their performance is monitored throughout the software deve...",
+    "subcategory_ja": "PR.PS-06 - セキュアなソフトウェア開発プラクティスが開発ライフサイクルに統合され、開発期間を通じてパフォーマンスが監視されている",
+    "question": "PR.PS-06 - セキュアなソフトウェア開発プラクティスが開発ライフサイクルに統合され、開発期間を通じてパフォーマンスが監視されている",
+    "examples": [
+      {
+        "implementationExample": "PR.PS-06.257 (Ex1)",
+        "text": "Protect all components of organization-developed software from tampering and unauthorized access",
+        "text_ja": "コミュニケーション計画（広報・社内通知）とインシデント対応計画を連動させます。"
+      },
+      {
+        "implementationExample": "PR.PS-06.258 (Ex2)",
+        "text": "Secure all software produced by the organization, with minimal vulnerabilities in their releases",
+        "text_ja": "インシデント対応を計画する際、関係者（顧客、取引先、従業員など）への影響を考慮します。"
+      },
+      {
+        "implementationExample": "PR.PS-06.259 (Ex3)",
+        "text": "Maintain the software used in production environments, and securely dispose of software once it is no longer needed",
+        "text_ja": "サイバー保険の条件や法的要件を、インシデント対応プロセスに組み込みます。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、システムやプラットフォームの構成不備や脆弱性が放置され、攻撃を受けやすい状態が継続するおそれがあります。 特に、セキュアなソフトウェア開発プラクティスが開発ライフサイクルに統合され、開発期間を通じてパフォーマンスが監視されているが不十分だと、不正アクセスや情報漏えいのリスクが高まる可能性があります。",
+    "improvementHint": "プラットフォームに関する脆弱性情報を継続的に把握し、影響度を評価した上で計画的に対応する。パッチ適用の方針と優先順位を明確にする。（PR.PS-06）"
+  },
+  {
+    "id": "PR.IR-01",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.IR (Technology Infrastructure Resilience)",
+    "category_ja": "PR.IR（技術インフラのレジリエンス）",
+    "subcategory": "PR.IR-01 - Networks and environments are protected from unauthorized logical access and usage",
+    "subcategory_ja": "PR.IR-01 - 技術インフラが、可用性およびレジリエンスの要件を満たすよう設計・構成されている",
+    "question": "PR.IR-01 - 技術インフラが、可用性およびレジリエンスの要件を満たすよう設計・構成されている",
+    "examples": [
+      {
+        "implementationExample": "PR.IR-01.260 (Ex1)",
+        "text": "Logically segment organization networks and cloud-based platforms according to trust boundaries and platform types (e.g., IT, IoT, OT, mobile, guests), and permit required communications only between segments",
+        "text_ja": "法執行機関や規制当局への対応要求を、インシデント対応計画に反映します。"
+      },
+      {
+        "implementationExample": "PR.IR-01.261 (Ex2)",
+        "text": "Logically segment organization networks from external networks, and permit only necessary communications to enter the organization's networks from the external networks",
+        "text_ja": "サイバーインシデント対応において重要となる関係者（社内外）を特定します。"
+      },
+      {
+        "implementationExample": "PR.IR-01.262 (Ex3)",
+        "text": "Implement zero trust architectures to restrict network access to each resource to the minimum necessary",
+        "text_ja": "インシデント対応中、関係する役割・チームと適切に連携します。"
+      },
+      {
+        "implementationExample": "PR.IR-01.263 (Ex4)",
+        "text": "Check the cyber health of endpoints before allowing them to access and use production resources",
+        "text_ja": "インシデント対応の際、経営層と適切に連携し、必要な意思決定を得られるようにします。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、情報セキュリティを確保するための運用プロセスや手順が定着せず、対策が継続的・組織的に実行されないおそれがあります。 特に、技術インフラが、可用性およびレジリエンスの要件を満たすよう設計・構成されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "重要なシステムやサービスについて、停止時の事業影響を踏まえた可用性・冗長性の要件を整理する。必要な構成や対策を計画的に整備する。（PR.IR-01）"
+  },
+  {
+    "id": "PR.IR-02",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.IR (Technology Infrastructure Resilience)",
+    "category_ja": "PR.IR（技術インフラのレジリエンス）",
+    "subcategory": "PR.IR-02 - The organization's technology assets are protected from environmental threats",
+    "subcategory_ja": "PR.IR-02 - インフラ障害時の影響を最小化するための対策が講じられている",
+    "question": "PR.IR-02 - インフラ障害時の影響を最小化するための対策が講じられている",
+    "examples": [
+      {
+        "implementationExample": "PR.IR-02.264 (Ex1)",
+        "text": "Protect organizational equipment from known environmental threats, such as flooding, fire, wind, and excessive heat and humidity",
+        "text_ja": "インシデント対応では、法務部門とも連携して対応方針を決めます。"
+      },
+      {
+        "implementationExample": "PR.IR-02.265 (Ex2)",
+        "text": "Include protection from environmental threats and provisions for adequate operating infrastructure in requirements for service providers that operate systems on the organization's behalf",
+        "text_ja": "インシデントが公表対象となる場合、広報部門と連携して対応します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、情報セキュリティを確保するための運用プロセスや手順が定着せず、対策が継続的・組織的に実行されないおそれがあります。 特に、インフラ障害時の影響を最小化するための対策が講じられているが不十分だと、不正アクセスや情報漏えいのリスクが高まる可能性があります。",
+    "improvementHint": "障害やインシデント発生時の復旧手順を整備し、定期的な確認や訓練を通じて実効性を高める。担当者が迷わず対応できる状態を作る。（PR.IR-02）"
+  },
+  {
+    "id": "PR.IR-03",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.IR (Technology Infrastructure Resilience)",
+    "category_ja": "PR.IR（技術インフラのレジリエンス）",
+    "subcategory": "PR.IR-03 - Mechanisms are implemented to achieve resilience requirements in normal and adverse situations",
+    "subcategory_ja": "PR.IR-03 - 通常時および異常時におけるレジリエンス要件を満たすための仕組みが実装されている",
+    "question": "PR.IR-03 - 通常時および異常時におけるレジリエンス要件を満たすための仕組みが実装されている",
+    "examples": [
+      {
+        "implementationExample": "PR.IR-03.266 (Ex1)",
+        "text": "Avoid single points of failure in systems and infrastructure",
+        "text_ja": "さまざまなインシデント種別に対応したプレイブック（手順書）を活用します。"
+      },
+      {
+        "implementationExample": "PR.IR-03.267 (Ex2)",
+        "text": "Use load balancing to increase capacity and improve reliability",
+        "text_ja": "エスカレーション基準を明確に定め、それに基づいて対応を進めます。"
+      },
+      {
+        "implementationExample": "PR.IR-03.268 (Ex3)",
+        "text": "Use high-availability components like redundant storage and power supplies to improve system reliability",
+        "text_ja": "定めた基準に達した場合、エスカレーションプロセスを発動します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、情報セキュリティを確保するための運用プロセスや手順が定着せず、対策が継続的・組織的に実行されないおそれがあります。 特に、通常時および異常時におけるレジリエンス要件を満たすための仕組みが実装されているが不十分だと、不正アクセスや情報漏えいのリスクが高まる可能性があります。",
+    "improvementHint": "障害やインシデント発生時の復旧手順を整備し、定期的な確認や訓練を通じて実効性を高める。担当者が迷わず対応できる状態を作る。（PR.IR-03）"
+  },
+  {
+    "id": "PR.IR-04",
+    "function": "PR (PROTECT)",
+    "function_ja": "PR (PROTECT)",
+    "category": "PR.IR (Technology Infrastructure Resilience)",
+    "category_ja": "PR.IR（技術インフラのレジリエンス）",
+    "subcategory": "PR.IR-04 - Adequate resource capacity to ensure availability is maintained",
+    "subcategory_ja": "PR.IR-04 - 可用性を確保するための十分なリソース容量が維持されている",
+    "question": "PR.IR-04 - 可用性を確保するための十分なリソース容量が維持されている",
+    "examples": [
+      {
+        "implementationExample": "PR.IR-04.269 (Ex1)",
+        "text": "Monitor usage of storage, power, compute, network bandwidth, and other resources",
+        "text_ja": "自動化ツールを活用し、インシデント対応プレイブックの実行を支援します。"
+      },
+      {
+        "implementationExample": "PR.IR-04.270 (Ex2)",
+        "text": "Forecast future needs, and scale resources accordingly",
+        "text_ja": "自動化された仕組みを使って、問題のエスカレーションを迅速に行います。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、情報セキュリティを確保するための運用プロセスや手順が定着せず、対策が継続的・組織的に実行されないおそれがあります。 特に、可用性を確保するための十分なリソース容量が維持されているが不十分だと、不正アクセスや情報漏えいのリスクが高まる可能性があります。",
+    "improvementHint": "重要なシステムやサービスについて、停止時の事業影響を踏まえた可用性・冗長性の要件を整理する。必要な構成や対策を計画的に整備する。（PR.IR-04）"
+  },
+  {
+    "id": "DE.CM-01",
+    "function": "DE (DETECT)",
+    "function_ja": "DE (DETECT)",
+    "category": "DE.CM (Continuous Monitoring)",
+    "category_ja": "DE.CM（継続的モニタリング）",
+    "subcategory": "DE.CM-01 - Networks and network services are monitored to find potentially adverse events",
+    "subcategory_ja": "DE.CM-01 - ネットワークおよびネットワークサービスが、潜在的な悪影響事象を検知するために継続的に監視されている",
+    "question": "DE.CM-01 - ネットワークおよびネットワークサービスが、潜在的な悪影響事象を検知するために継続的に監視されている",
+    "examples": [
+      {
+        "implementationExample": "DE.CM-01.271 (Ex1)",
+        "text": "Monitor DNS, BGP, and other network services for adverse events",
+        "text_ja": "インシデント対応計画や手順が有効かどうかを検証するため、演習を実施します。"
+      },
+      {
+        "implementationExample": "DE.CM-01.272 (Ex2)",
+        "text": "Monitor wired and wireless networks for connections from unauthorized endpoints",
+        "text_ja": "インシデント対応演習を通じて、担当者の知識・スキルを確認します。"
+      },
+      {
+        "implementationExample": "DE.CM-01.273 (Ex3)",
+        "text": "Monitor facilities for unauthorized or rogue wireless networks",
+        "text_ja": "演習を活用して、必要な機器や技術が適切に機能するか検証します。"
+      },
+      {
+        "implementationExample": "DE.CM-01.274 (Ex4)",
+        "text": "Compare actual network flows against baselines to detect deviations",
+        "text_ja": "実施した演習について、定期的に評価・見直しを行います。"
+      },
+      {
+        "implementationExample": "DE.CM-01.275 (Ex5)",
+        "text": "Monitor network communications to identify changes in security postures for zero trust purposes",
+        "text_ja": "実際のインシデントや演習から得られた教訓を、対応計画に反映します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、システムや環境を継続的に監視できず、不正な挙動や異常を見逃すことで、被害が拡大するおそれがあります。 特に、ネットワークおよびネットワークサービスが、潜在的な悪影響事象を検知するために継続的に監視されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "不正や異常を検知するために必要なログの種類と保管期間を定義し、確実に取得・保管されるようにする。後続の分析に活用できる状態を確保する。（DE.CM-01）"
+  },
+  {
+    "id": "DE.CM-02",
+    "function": "DE (DETECT)",
+    "function_ja": "DE (DETECT)",
+    "category": "DE.CM (Continuous Monitoring)",
+    "category_ja": "DE.CM（継続的モニタリング）",
+    "subcategory": "DE.CM-02 - The physical environment is monitored to find potentially adverse events",
+    "subcategory_ja": "DE.CM-02 - 物理環境が、潜在的な悪影響事象を検知するために監視されている",
+    "question": "DE.CM-02 - 物理環境が、潜在的な悪影響事象を検知するために監視されている",
+    "examples": [
+      {
+        "implementationExample": "DE.CM-02.276 (Ex1)",
+        "text": "Monitor logs from physical access control systems (e.g., badge readers) to find unusual access patterns (e.g., deviations from the norm) and failed access attempts",
+        "text_ja": "インシデント対応におけるコミュニケーション担当者を明確に指名します。"
+      },
+      {
+        "implementationExample": "DE.CM-02.277 (Ex2)",
+        "text": "Review and monitor physical access records (e.g., from visitor registration, sign-in sheets)",
+        "text_ja": "サイバーセキュリティ関連のコミュニケーションに必要な役割を定義します。"
+      },
+      {
+        "implementationExample": "DE.CM-02.278 (Ex3)",
+        "text": "Monitor physical access controls (e.g., locks, latches, hinge pins, alarms) for signs of tampering",
+        "text_ja": "コミュニケーション業務における役割と責任を文書化します。"
+      },
+      {
+        "implementationExample": "DE.CM-02.279 (Ex4)",
+        "text": "Monitor the physical environment using alarm systems, cameras, and security guards",
+        "text_ja": "社内外のコミュニケーション対応が適切に行えるよう、担当者が準備できている状態を保ちます。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、システムや環境を継続的に監視できず、不正な挙動や異常を見逃すことで、被害が拡大するおそれがあります。 特に、物理環境が、潜在的な悪影響事象を検知するために監視されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "不正や異常を検知するために必要なログの種類と保管期間を定義し、確実に取得・保管されるようにする。後続の分析に活用できる状態を確保する。（DE.CM-02）"
+  },
+  {
+    "id": "DE.CM-03",
+    "function": "DE (DETECT)",
+    "function_ja": "DE (DETECT)",
+    "category": "DE.CM (Continuous Monitoring)",
+    "category_ja": "DE.CM（継続的モニタリング）",
+    "subcategory": "DE.CM-03 - Personnel activity and technology usage are monitored to find potentially adverse events",
+    "subcategory_ja": "DE.CM-03 - 要員の活動および技術利用状況が、潜在的な悪影響事象を検知するために監視されている",
+    "question": "DE.CM-03 - 要員の活動および技術利用状況が、潜在的な悪影響事象を検知するために監視されている",
+    "examples": [
+      {
+        "implementationExample": "DE.CM-03.280 (Ex1)",
+        "text": "Use behavior analytics software to detect anomalous user activity to mitigate insider threats",
+        "text_ja": "サイバーインシデント発生時のコミュニケーション業務や期待される役割について、担当者に教育を行います。"
+      },
+      {
+        "implementationExample": "DE.CM-03.281 (Ex2)",
+        "text": "Monitor logs from logical access control systems to find unusual access patterns and failed access attempts",
+        "text_ja": "インシデント発生時に情報共有が必要となる、社内外の関係者を特定します。"
+      },
+      {
+        "implementationExample": "DE.CM-03.282 (Ex3)",
+        "text": "Continuously monitor deception technology, including user accounts, for any usage",
+        "text_ja": "適切に情報が共有されるよう、コミュニケーション計画に基づいて発信します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、システムや環境を継続的に監視できず、不正な挙動や異常を見逃すことで、被害が拡大するおそれがあります。 特に、要員の活動および技術利用状況が、潜在的な悪影響事象を検知するために監視されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "不正や異常を検知するために必要なログの種類と保管期間を定義し、確実に取得・保管されるようにする。後続の分析に活用できる状態を確保する。（DE.CM-03）"
+  },
+  {
+    "id": "DE.CM-06",
+    "function": "DE (DETECT)",
+    "function_ja": "DE (DETECT)",
+    "category": "DE.CM (Continuous Monitoring)",
+    "category_ja": "DE.CM（継続的モニタリング）",
+    "subcategory": "DE.CM-06 - External service provider activities and services are monitored to find potentially adverse events",
+    "subcategory_ja": "DE.CM-06 - 外部サービス提供者の活動および提供サービスが、潜在的な悪影響事象を検知するために監視されている",
+    "question": "DE.CM-06 - 外部サービス提供者の活動および提供サービスが、潜在的な悪影響事象を検知するために監視されている",
+    "examples": [
+      {
+        "implementationExample": "DE.CM-06.283 (Ex1)",
+        "text": "Monitor remote and onsite administration and maintenance activities that external providers perform on organizational systems",
+        "text_ja": "サイバーインシデントに関する対外・対内広報を、企業全体のコミュニケーション方針と連携させます。"
+      },
+      {
+        "implementationExample": "DE.CM-06.284 (Ex2)",
+        "text": "Monitor activity from cloud-based services, internet service providers, and other service providers for deviations from expected behavior",
+        "text_ja": "必要な社内外関係者と調整しながら、インシデント通知を行います。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、システムや環境を継続的に監視できず、不正な挙動や異常を見逃すことで、被害が拡大するおそれがあります。 特に、外部サービス提供者の活動および提供サービスが、潜在的な悪影響事象を検知するために監視されているが不十分だと、既知の脆弱性や安全でない設定が残り、侵入・権限奪取のリスクが高まる可能性があります。",
+    "improvementHint": "サイバーセキュリティ上、監視が必要なシステムや資産を整理し、どの範囲を継続的に監視するかを明確にする。重要度に応じた監視対象の優先順位を設定する。（DE.CM-06）"
+  },
+  {
+    "id": "DE.CM-09",
+    "function": "DE (DETECT)",
+    "function_ja": "DE (DETECT)",
+    "category": "DE.CM (Continuous Monitoring)",
+    "category_ja": "DE.CM（継続的モニタリング）",
+    "subcategory": "DE.CM-09 - Computing hardware and software, runtime environments, and their data are monitored to find potentially adverse events",
+    "subcategory_ja": "DE.CM-09 - コンピューティング機器・ソフトウェア・実行環境およびそれらのデータが、潜在的な悪影響事象を検知するために監視されている",
+    "question": "DE.CM-09 - コンピューティング機器・ソフトウェア・実行環境およびそれらのデータが、潜在的な悪影響事象を検知するために監視されている",
+    "examples": [
+      {
+        "implementationExample": "DE.CM-09.285 (Ex1)",
+        "text": "Monitor email, web, file sharing, collaboration services, and other common attack vectors to detect malware, phishing, data leaks and exfiltration, and other adverse events",
+        "text_ja": "必要に応じて、法執行機関（警察など）へインシデント通知を行います。"
+      },
+      {
+        "implementationExample": "DE.CM-09.286 (Ex2)",
+        "text": "Monitor authentication attempts to identify attacks against credentials and unauthorized credential reuse",
+        "text_ja": "社内外のインシデント関連コミュニケーションには、安全な手段（暗号化・認証付きチャネル等）を用います。"
+      },
+      {
+        "implementationExample": "DE.CM-09.287 (Ex3)",
+        "text": "Monitor software configurations for deviations from security baselines",
+        "text_ja": "機密情報を保護するために、安全な通信方法を使用します。"
+      },
+      {
+        "implementationExample": "DE.CM-09.288 (Ex4)",
+        "text": "Monitor hardware and software for signs of tampering",
+        "text_ja": "通信の「機密性・完全性・可用性」を確保するため、安全なコミュニケーション手段を活用します。"
+      },
+      {
+        "implementationExample": "DE.CM-09.289 (Ex5)",
+        "text": "Use technologies with a presence on endpoints to detect cyber health issues (e.g., missing patches, malware infections, unauthorized software), and redirect the endpoints to a remediation environment before access is authorized",
+        "text_ja": "インシデント対応時に使用するコミュニケーション手段（チャット、ホットラインなど）を提供します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、システムや環境を継続的に監視できず、不正な挙動や異常を見逃すことで、被害が拡大するおそれがあります。 特に、コンピューティング機器・ソフトウェア・実行環境およびそれらのデータが、潜在的な悪影響事象を検知するために監視されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "不正や異常を検知するために必要なログの種類と保管期間を定義し、確実に取得・保管されるようにする。後続の分析に活用できる状態を確保する。（DE.CM-09）"
+  },
+  {
+    "id": "DE.AE-02",
+    "function": "DE (DETECT)",
+    "function_ja": "DE (DETECT)",
+    "category": "DE.AE (Adverse Event Analysis)",
+    "category_ja": "DE.AE（悪影響事象分析）",
+    "subcategory": "DE.AE-02 - Potentially adverse events are analyzed to better understand associated activities",
+    "subcategory_ja": "DE.AE-02 - 複数の情報源からの情報が相関分析されている",
+    "question": "DE.AE-02 - 複数の情報源からの情報が相関分析されている",
+    "examples": [
+      {
+        "implementationExample": "DE.AE-02.290 (Ex1)",
+        "text": "Use security information and event management (SIEM) or other tools to continuously monitor log events for known malicious and suspicious activity",
+        "text_ja": "インシデント対応に必要なコミュニケーションチャネルへ、適切な担当者がアクセスできるようにします。"
+      },
+      {
+        "implementationExample": "DE.AE-02.291 (Ex2)",
+        "text": "Utilize up-to-date cyber threat intelligence in log analysis tools to improve detection accuracy and characterize threat actors, their methods, and indicators of compromise",
+        "text_ja": "脆弱性を修正するためのプロセスを策定し、運用します。"
+      },
+      {
+        "implementationExample": "DE.AE-02.292 (Ex3)",
+        "text": "Regularly conduct manual reviews of log events for technologies that cannot be sufficiently monitored through automation",
+        "text_ja": "パッチ管理プロセスを用いて、脆弱性修正（パッチ適用）を支援します。"
+      },
+      {
+        "implementationExample": "DE.AE-02.293 (Ex4)",
+        "text": "Use log analysis tools to generate reports on their findings",
+        "text_ja": "脆弱性修正のプロセスを、クラウドサービスなど企業のその他の仕組みと統合します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、悪影響事象やインシデントの兆候を十分に分析できず、影響範囲や深刻度の把握が遅れるおそれがあります。 特に、複数の情報源からの情報が相関分析されているが不十分だと、攻撃者の手口の変化に追随できず、検知・防御の更新が遅れる可能性があります。",
+    "improvementHint": "事象が事業やシステムに与える影響範囲や深刻度を評価する方法を整理し、対応の優先順位付けに活用する。重要な判断を迅速に行える状態を整える。（DE.AE-02）"
+  },
+  {
+    "id": "DE.AE-03",
+    "function": "DE (DETECT)",
+    "function_ja": "DE (DETECT)",
+    "category": "DE.AE (Adverse Event Analysis)",
+    "category_ja": "DE.AE（悪影響事象分析）",
+    "subcategory": "DE.AE-03 - Information is correlated from multiple sources",
+    "subcategory_ja": "DE.AE-03 - 悪影響事象の想定される影響および範囲が把握されている",
+    "question": "DE.AE-03 - 悪影響事象の想定される影響および範囲が把握されている",
+    "examples": [
+      {
+        "implementationExample": "DE.AE-03.294 (Ex1)",
+        "text": "Constantly transfer log data generated by other sources to a relatively small number of log servers",
+        "text_ja": "サプライヤーとの契約や作業に、脆弱性修正の要件を組み込みます。"
+      },
+      {
+        "implementationExample": "DE.AE-03.295 (Ex2)",
+        "text": "Use event correlation technology (e.g., SIEM) to collect information captured by multiple sources",
+        "text_ja": "脆弱性修正の要件を文書化し、関係者に共有します。"
+      },
+      {
+        "implementationExample": "DE.AE-03.296 (Ex3)",
+        "text": "Utilize cyber threat intelligence to help correlate events among log sources",
+        "text_ja": "インシデントや脆弱性を軽減するための、緩和（mitigation）戦略を策定します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、悪影響事象やインシデントの兆候を十分に分析できず、影響範囲や深刻度の把握が遅れるおそれがあります。 特に、悪影響事象の想定される影響および範囲が把握されているが不十分だと、攻撃者の手口の変化に追随できず、検知・防御の更新が遅れる可能性があります。",
+    "improvementHint": "事象が事業やシステムに与える影響範囲や深刻度を評価する方法を整理し、対応の優先順位付けに活用する。重要な判断を迅速に行える状態を整える。（DE.AE-03）"
+  },
+  {
+    "id": "DE.AE-04",
+    "function": "DE (DETECT)",
+    "function_ja": "DE (DETECT)",
+    "category": "DE.AE (Adverse Event Analysis)",
+    "category_ja": "DE.AE（悪影響事象分析）",
+    "subcategory": "DE.AE-04 - The estimated impact and scope of adverse events are understood",
+    "subcategory_ja": "DE.AE-04 - 悪影響事象に関する情報が、権限を付与された担当者およびツールに提供されている",
+    "question": "DE.AE-04 - 悪影響事象に関する情報が、権限を付与された担当者およびツールに提供されている",
+    "examples": [
+      {
+        "implementationExample": "DE.AE-04.297 (Ex1)",
+        "text": "Use SIEMs or other tools to estimate impact and scope, and review and refine the estimates",
+        "text_ja": "リスク情報を活用して、優先的に取り組むべき緩和策を決定します。"
+      },
+      {
+        "implementationExample": "DE.AE-04.298 (Ex2)",
+        "text": "A person creates their own estimates of impact and scope",
+        "text_ja": "既知の攻撃者の行動パターン（TTP）に基づき、効果的な緩和策を策定します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、悪影響事象やインシデントの兆候を十分に分析できず、影響範囲や深刻度の把握が遅れるおそれがあります。 特に、悪影響事象に関する情報が、権限を付与された担当者およびツールに提供されているが不十分だと、攻撃者の手口の変化に追随できず、検知・防御の更新が遅れる可能性があります。",
+    "improvementHint": "事象が事業やシステムに与える影響範囲や深刻度を評価する方法を整理し、対応の優先順位付けに活用する。重要な判断を迅速に行える状態を整える。（DE.AE-04）"
+  },
+  {
+    "id": "DE.AE-06",
+    "function": "DE (DETECT)",
+    "function_ja": "DE (DETECT)",
+    "category": "DE.AE (Adverse Event Analysis)",
+    "category_ja": "DE.AE（悪影響事象分析）",
+    "subcategory": "DE.AE-06 - Information on adverse events is provided to authorized staff and tools",
+    "subcategory_ja": "DE.AE-06 - 悪影響事象が定義されたインシデント判定基準を満たす場合、インシデントとして宣言されている",
+    "question": "DE.AE-06 - 悪影響事象が定義されたインシデント判定基準を満たす場合、インシデントとして宣言されている",
+    "examples": [
+      {
+        "implementationExample": "DE.AE-06.299 (Ex1)",
+        "text": "Use cybersecurity software to generate alerts and provide them to the security operations center (SOC), incident responders, and incident response tools",
+        "text_ja": "最小権限の原則を取り入れ、緩和策の効果を高めます。"
+      },
+      {
+        "implementationExample": "DE.AE-06.300 (Ex2)",
+        "text": "Incident responders and other authorized personnel can access log analysis findings at all times",
+        "text_ja": "多層防御の考え方を取り入れ、緩和策の実効性を高めます。"
+      },
+      {
+        "implementationExample": "DE.AE-06.301 (Ex3)",
+        "text": "Automatically create and assign tickets in the organization's ticketing system when certain types of alerts occur",
+        "text_ja": "サイバーセキュリティイベント（インシデント等）の情報を分析し、改善が必要な領域を特定します。"
+      },
+      {
+        "implementationExample": "DE.AE-06.302 (Ex4)",
+        "text": "Manually create and assign tickets in the organization's ticketing system when technical staff discover indicators of compromise",
+        "text_ja": "脅威インテリジェンスレポートの情報を活用し、改善ポイントを特定します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、悪影響事象やインシデントの兆候を十分に分析できず、影響範囲や深刻度の把握が遅れるおそれがあります。 特に、悪影響事象が定義されたインシデント判定基準を満たす場合、インシデントとして宣言されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "事象が事業やシステムに与える影響範囲や深刻度を評価する方法を整理し、対応の優先順位付けに活用する。重要な判断を迅速に行える状態を整える。（DE.AE-06）"
+  },
+  {
+    "id": "DE.AE-07",
+    "function": "DE (DETECT)",
+    "function_ja": "DE (DETECT)",
+    "category": "DE.AE (Adverse Event Analysis)",
+    "category_ja": "DE.AE（悪影響事象分析）",
+    "subcategory": "DE.AE-07 - Cyber threat intelligence and other contextual information are integrated into the analysis",
+    "subcategory_ja": "DE.AE-07 - サイバー脅威インテリジェンスおよびその他のコンテキスト情報が分析に統合されている",
+    "question": "DE.AE-07 - サイバー脅威インテリジェンスおよびその他のコンテキスト情報が分析に統合されている",
+    "examples": [
+      {
+        "implementationExample": "DE.AE-07.303 (Ex1)",
+        "text": "Securely provide cyber threat intelligence feeds to detection technologies, processes, and personnel",
+        "text_ja": "インシデントや脆弱性に対して、原因分析（Root Cause Analysis）を実施します。"
+      },
+      {
+        "implementationExample": "DE.AE-07.304 (Ex2)",
+        "text": "Securely provide information from asset inventories to detection technologies, processes, and personnel",
+        "text_ja": "原因分析の結果を基に、改善施策を実行します。"
+      },
+      {
+        "implementationExample": "DE.AE-07.305 (Ex3)",
+        "text": "Rapidly acquire and analyze vulnerability disclosures for the organization's technologies from suppliers, vendors, and third-party security advisories",
+        "text_ja": "改善点や改善機会を文書化し、関係者へ共有します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、悪影響事象やインシデントの兆候を十分に分析できず、影響範囲や深刻度の把握が遅れるおそれがあります。 特に、サイバー脅威インテリジェンスおよびその他のコンテキスト情報が分析に統合されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "事象が事業やシステムに与える影響範囲や深刻度を評価する方法を整理し、対応の優先順位付けに活用する。重要な判断を迅速に行える状態を整える。（DE.AE-07）"
+  },
+  {
+    "id": "DE.AE-08",
+    "function": "DE (DETECT)",
+    "function_ja": "DE (DETECT)",
+    "category": "DE.AE (Adverse Event Analysis)",
+    "category_ja": "DE.AE（悪影響事象分析）",
+    "subcategory": "DE.AE-08 - Incidents are declared when adverse events meet the defined incident criteria",
+    "subcategory_ja": "DE.AE-08 - 悪影響事象が定義されたインシデント判定基準を満たす場合、インシデントとして宣言されている",
+    "question": "DE.AE-08 - 悪影響事象が定義されたインシデント判定基準を満たす場合、インシデントとして宣言されている",
+    "examples": [
+      {
+        "implementationExample": "DE.AE-08.306 (Ex1)",
+        "text": "Apply incident criteria to known and assumed characteristics of activity in order to determine whether an incident should be declared",
+        "text_ja": "ID管理プログラムの文書を、インシデントや改善点に応じて更新します。"
+      },
+      {
+        "implementationExample": "DE.AE-08.307 (Ex2)",
+        "text": "Take known false positives into account when applying incident criteria",
+        "text_ja": "得られた教訓（Lessons Learned）を基に、ID管理プログラムを改善します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、悪影響事象やインシデントの兆候を十分に分析できず、影響範囲や深刻度の把握が遅れるおそれがあります。 特に、悪影響事象が定義されたインシデント判定基準を満たす場合、インシデントとして宣言されているが不十分だと、異常の検知が遅れ、被害範囲の拡大や対応コストの増大につながる可能性があります。",
+    "improvementHint": "事象が事業やシステムに与える影響範囲や深刻度を評価する方法を整理し、対応の優先順位付けに活用する。重要な判断を迅速に行える状態を整える。（DE.AE-08）"
+  },
+  {
+    "id": "RS.MA-01",
+    "function": "RS (RESPOND)",
+    "function_ja": "RS (RESPOND)",
+    "category": "RS.MA (Incident Management)",
+    "category_ja": "RS.MA（インシデント管理）",
+    "subcategory": "RS.MA-01 - The incident response plan is executed in coordination with relevant third parties once an incident is declared",
+    "subcategory_ja": "RS.MA-01 - インシデント対応活動が、定義された手順および役割に基づいて管理されている",
+    "question": "RS.MA-01 - インシデント対応活動が、定義された手順および役割に基づいて管理されている",
+    "examples": [
+      {
+        "implementationExample": "RS.MA-01.308 (Ex1)",
+        "text": "Detection technologies automatically report confirmed incidents",
+        "text_ja": "本人確認（ID Verification）の改善点を、プロセスに反映します。"
+      },
+      {
+        "implementationExample": "RS.MA-01.309 (Ex2)",
+        "text": "Request incident response assistance from the organization's incident response outsourcer",
+        "text_ja": "認可プロセス（アクセス許可）の改善点を反映します。"
+      },
+      {
+        "implementationExample": "RS.MA-01.310 (Ex3)",
+        "text": "Designate an incident lead for each incident",
+        "text_ja": "ID証明（Identity Proofing）の改善点をプロセスへ取り込みます。"
+      },
+      {
+        "implementationExample": "RS.MA-01.311 (Ex4)",
+        "text": "Initiate execution of additional cybersecurity plans as needed to support incident response (for example, business continuity and disaster recovery)",
+        "text_ja": "安全な構成管理のベストプラクティスを用いて、システムの標準構成（ベースライン）を定義します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、インシデント対応の分類や優先順位付けが適切に行われず、対応の遅延や被害拡大につながるおそれがあります。 特に、インシデント対応活動が、定義された手順および役割に基づいて管理されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "インシデント対応の進捗や重要な判断内容を記録し、対応状況を可視化できるようにする。事後の振り返りや説明に活用できる状態を整える。（RS.MA-01）"
+  },
+  {
+    "id": "RS.MA-02",
+    "function": "RS (RESPOND)",
+    "function_ja": "RS (RESPOND)",
+    "category": "RS.MA (Incident Management)",
+    "category_ja": "RS.MA（インシデント管理）",
+    "subcategory": "RS.MA-02 - Incident reports are triaged and validated",
+    "subcategory_ja": "RS.MA-02 - インシデント対応の進捗および有効性が監視・調整されている",
+    "question": "RS.MA-02 - インシデント対応の進捗および有効性が監視・調整されている",
+    "examples": [
+      {
+        "implementationExample": "RS.MA-02.312 (Ex1)",
+        "text": "Preliminarily review incident reports to confirm that they are cybersecurity-related and necessitate incident response activities",
+        "text_ja": "運用システムの構成管理において、安全な構成管理のベストプラクティスを適用します。"
+      },
+      {
+        "implementationExample": "RS.MA-02.313 (Ex2)",
+        "text": "Apply criteria to estimate the severity of an incident",
+        "text_ja": "ソフトウェア構成管理にも、安全な構成管理手法を適用します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、インシデント対応の分類や優先順位付けが適切に行われず、対応の遅延や被害拡大につながるおそれがあります。 特に、インシデント対応の進捗および有効性が監視・調整されているが不十分だと、関係者への連絡・報告が遅れ、意思決定の遅延や対外説明の混乱につながる可能性があります。",
+    "improvementHint": "インシデント対応における指揮命令系統を整理し、意思決定者と実行担当者の役割を明確にする。迅速な判断と対応が行える体制を構築する。（RS.MA-02）"
+  },
+  {
+    "id": "RS.MA-03",
+    "function": "RS (RESPOND)",
+    "function_ja": "RS (RESPOND)",
+    "category": "RS.MA (Incident Management)",
+    "category_ja": "RS.MA（インシデント管理）",
+    "subcategory": "RS.MA-03 - Incidents are categorized and prioritized",
+    "subcategory_ja": "RS.MA-03 - インシデントが分類され、優先順位付けされている",
+    "question": "RS.MA-03 - インシデントが分類され、優先順位付けされている",
+    "examples": [
+      {
+        "implementationExample": "RS.MA-03.314 (Ex1)",
+        "text": "Further review and categorize incidents based on the type of incident (e.g., data breach, ransomware, DDoS, account compromise)",
+        "text_ja": "運用環境が、定めた標準構成（ベースライン）と一致していることを確認します。"
+      },
+      {
+        "implementationExample": "RS.MA-03.315 (Ex2)",
+        "text": "Prioritize incidents based on their scope, likely impact, and time-critical nature",
+        "text_ja": "安全な構成管理を適用し、法規制・ガイドラインの遵守を支援します。"
+      },
+      {
+        "implementationExample": "RS.MA-03.316 (Ex3)",
+        "text": "Select incident response strategies for active incidents by balancing the need to quickly recover from an incident with the need to observe the attacker or conduct a more thorough investigation",
+        "text_ja": "資産（システム・アプリ）の開発およびデプロイ時に、安全なデプロイ手法を活用します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、インシデント対応の分類や優先順位付けが適切に行われず、対応の遅延や被害拡大につながるおそれがあります。 特に、インシデントが分類され、優先順位付けされているが不十分だと、インシデントの分類や深刻度評価を誤り、対応の優先順位付けが崩れる可能性があります。",
+    "improvementHint": "インシデント対応計画について定期的な訓練や確認を実施し、実効性を検証する。課題があれば計画の見直しにつなげる。（RS.MA-03）"
+  },
+  {
+    "id": "RS.MA-04",
+    "function": "RS (RESPOND)",
+    "function_ja": "RS (RESPOND)",
+    "category": "RS.MA (Incident Management)",
+    "category_ja": "RS.MA（インシデント管理）",
+    "subcategory": "RS.MA-04 - Incidents are escalated or elevated as needed",
+    "subcategory_ja": "RS.MA-04 - 必要に応じてインシデントがエスカレーションされる",
+    "question": "RS.MA-04 - 必要に応じてインシデントがエスカレーションされる",
+    "examples": [
+      {
+        "implementationExample": "RS.MA-04.317 (Ex1)",
+        "text": "Track and validate the status of all ongoing incidents",
+        "text_ja": "ソフトウェア開発時に、安全な開発手法（Secure SDLC）を取り入れます。"
+      },
+      {
+        "implementationExample": "RS.MA-04.318 (Ex2)",
+        "text": "Coordinate incident escalation or elevation with designated internal and external stakeholders",
+        "text_ja": "資産の開発・展開において、関連する脅威（攻撃手法）を考慮します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、インシデント対応の分類や優先順位付けが適切に行われず、対応の遅延や被害拡大につながるおそれがあります。 特に、必要に応じてインシデントがエスカレーションされるが不十分だと、関係者への連絡・報告が遅れ、意思決定の遅延や対外説明の混乱につながる可能性があります。",
+    "improvementHint": "インシデント対応における指揮命令系統を整理し、意思決定者と実行担当者の役割を明確にする。迅速な判断と対応が行える体制を構築する。（RS.MA-04）"
+  },
+  {
+    "id": "RS.MA-05",
+    "function": "RS (RESPOND)",
+    "function_ja": "RS (RESPOND)",
+    "category": "RS.MA (Incident Management)",
+    "category_ja": "RS.MA（インシデント管理）",
+    "subcategory": "RS.MA-05 - The criteria for initiating incident recovery are applied",
+    "subcategory_ja": "RS.MA-05 - インシデント復旧を開始するための基準が適用されている",
+    "question": "RS.MA-05 - インシデント復旧を開始するための基準が適用されている",
+    "examples": [
+      {
+        "implementationExample": "RS.MA-05.319 (Ex1)",
+        "text": "Apply incident recovery criteria to known and assumed characteristics of the incident to determine whether incident recovery processes should be initiated",
+        "text_ja": "セキュアコーディングを行うため、安全な開発手法を適用します。"
+      },
+      {
+        "implementationExample": "RS.MA-05.320 (Ex2)",
+        "text": "Take the possible operational disruption of incident recovery activities into account",
+        "text_ja": "コードスキャナなどの自動化ツールを活用し、安全な開発（Secure Development）を支援します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、インシデント対応の分類や優先順位付けが適切に行われず、対応の遅延や被害拡大につながるおそれがあります。 特に、インシデント復旧を開始するための基準が適用されているが不十分だと、封じ込め・根絶・復旧判断が遅れ、二次被害や業務影響が拡大する可能性があります。",
+    "improvementHint": "インシデント発生時の対応計画を整備し、対応に必要な役割や体制を明確にする。混乱なく初動対応が行える状態を作る。（RS.MA-05）"
+  },
+  {
+    "id": "RS.AN-03",
+    "function": "RS (RESPOND)",
+    "function_ja": "RS (RESPOND)",
+    "category": "RS.AN (Incident Analysis)",
+    "category_ja": "RS.AN（インシデント分析）",
+    "subcategory": "RS.AN-03 - Analysis is performed to establish what has taken place during an incident and the root cause of the incident",
+    "subcategory_ja": "RS.AN-03 - インシデント中に何が起きたか、および根本原因を特定するための分析が実施されている",
+    "question": "RS.AN-03 - インシデント中に何が起きたか、および根本原因を特定するための分析が実施されている",
+    "examples": [
+      {
+        "implementationExample": "RS.AN-03.321 (Ex1)",
+        "text": "Determine the sequence of events that occurred during the incident and which assets and resources were involved in each event",
+        "text_ja": "資産管理を適切に行うため、安全な構成管理（Secure Configuration）を適用します。"
+      },
+      {
+        "implementationExample": "RS.AN-03.322 (Ex2)",
+        "text": "Attempt to determine what vulnerabilities, threats, and threat actors were directly or indirectly involved in the incident",
+        "text_ja": "資産インベントリ（機器・ソフト一覧）を活用し、安全な構成管理を実施します。"
+      },
+      {
+        "implementationExample": "RS.AN-03.323 (Ex3)",
+        "text": "Analyze the incident to find the underlying, systemic root causes",
+        "text_ja": "無許可の構成変更を防ぐため、安全な構成管理手法を活用します。"
+      },
+      {
+        "implementationExample": "RS.AN-03.324 (Ex4)",
+        "text": "Check any cyber deception technology for additional information on attacker behavior",
+        "text_ja": "組織全体で、安全な構成管理の方法が統一して適用されるようにします。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、インシデントの原因や影響範囲を正確に分析できず、適切な対応判断や再発防止策を講じられないおそれがあります。 特に、インシデント中に何が起きたか、および根本原因を特定するための分析が実施されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "ログや証跡をもとに、インシデントの原因や侵入経路を分析する体制を整備する。再発防止策の検討に必要な情報を明確にする。（RS.AN-03）"
+  },
+  {
+    "id": "RS.AN-06",
+    "function": "RS (RESPOND)",
+    "function_ja": "RS (RESPOND)",
+    "category": "RS.AN (Incident Analysis)",
+    "category_ja": "RS.AN（インシデント分析）",
+    "subcategory": "RS.AN-06 - Actions performed during an investigation are recorded, and the records' integrity and provenance are preserved",
+    "subcategory_ja": "RS.AN-06 - 調査で実施した作業が記録され、記録の完全性および来歴（プロベナンス）が保持されている",
+    "question": "RS.AN-06 - 調査で実施した作業が記録され、記録の完全性および来歴（プロベナンス）が保持されている",
+    "examples": [
+      {
+        "implementationExample": "RS.AN-06.325 (Ex1)",
+        "text": "Require each incident responder and others (e.g., system administrators, cybersecurity engineers) who perform incident response tasks to record their actions and make the record immutable",
+        "text_ja": "レジリエンス（復旧力）向上のため、安全な構成管理手法を活用します。"
+      },
+      {
+        "implementationExample": "RS.AN-06.326 (Ex2)",
+        "text": "Require the incident lead to document the incident in detail and be responsible for preserving the integrity of the documentation and the sources of all information being reported",
+        "text_ja": "アクセス制御において、最小権限の原則を適用します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、インシデントの原因や影響範囲を正確に分析できず、適切な対応判断や再発防止策を講じられないおそれがあります。 特に、調査で実施した作業が記録され、記録の完全性および来歴（プロベナンス）が保持されているが不十分だと、関係者への連絡・報告が遅れ、意思決定の遅延や対外説明の混乱につながる可能性があります。",
+    "improvementHint": "ログや証跡をもとに、インシデントの原因や侵入経路を分析する体制を整備する。再発防止策の検討に必要な情報を明確にする。（RS.AN-06）"
+  },
+  {
+    "id": "RS.AN-07",
+    "function": "RS (RESPOND)",
+    "function_ja": "RS (RESPOND)",
+    "category": "RS.AN (Incident Analysis)",
+    "category_ja": "RS.AN（インシデント分析）",
+    "subcategory": "RS.AN-07 - Incident data and metadata are collected, and their integrity and provenance are preserved",
+    "subcategory_ja": "RS.AN-07 - インシデントに関するデータおよびメタデータが収集され、その完全性および来歴（プロベナンス）が保持されている",
+    "question": "RS.AN-07 - インシデントに関するデータおよびメタデータが収集され、その完全性および来歴（プロベナンス）が保持されている",
+    "examples": [
+      {
+        "implementationExample": "RS.AN-07.327 (Ex1)",
+        "text": "Collect, preserve, and safeguard the integrity of all pertinent incident data and metadata (e.g., data source, date/time of collection) based on evidence preservation and chain-of-custody procedures",
+        "text_ja": "アクセス制御では、職務分掌（Separation of Duties）を適切に導入します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、インシデントの原因や影響範囲を正確に分析できず、適切な対応判断や再発防止策を講じられないおそれがあります。 特に、インシデントに関するデータおよびメタデータが収集され、その完全性および来歴（プロベナンス）が保持されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "ログや証跡をもとに、インシデントの原因や侵入経路を分析する体制を整備する。再発防止策の検討に必要な情報を明確にする。（RS.AN-07）"
+  },
+  {
+    "id": "RS.AN-08",
+    "function": "RS (RESPOND)",
+    "function_ja": "RS (RESPOND)",
+    "category": "RS.AN (Incident Analysis)",
+    "category_ja": "RS.AN（インシデント分析）",
+    "subcategory": "RS.AN-08 - An incident's magnitude is estimated and validated",
+    "subcategory_ja": "RS.AN-08 - インシデントの規模が推定され、検証されている",
+    "question": "RS.AN-08 - インシデントの規模が推定され、検証されている",
+    "examples": [
+      {
+        "implementationExample": "RS.AN-08.328 (Ex1)",
+        "text": "Review other potential targets of the incident to search for indicators of compromise and evidence of persistence",
+        "text_ja": "サイバーセキュリティのリスク管理を支援するため、安全なアクセス制御手法を適用します。"
+      },
+      {
+        "implementationExample": "RS.AN-08.329 (Ex2)",
+        "text": "Automatically run tools on targets to look for indicators of compromise and evidence of persistence",
+        "text_ja": "アクセス制御プロセスが、安全なサービス提供を支えるように設計します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、インシデントの原因や影響範囲を正確に分析できず、適切な対応判断や再発防止策を講じられないおそれがあります。 特に、インシデントの規模が推定され、検証されているが不十分だと、証拠保全や記録の完全性を担保できず、原因究明・説明責任・法的対応に支障が生じる可能性があります。",
+    "improvementHint": "分析に用いる証拠や記録を適切に保全し、後続の調査や説明に耐えうる状態を確保する。証拠の取り扱いルールを明確にする。（RS.AN-08）"
+  },
+  {
+    "id": "RS.CO-02",
+    "function": "RS (RESPOND)",
+    "function_ja": "RS (RESPOND)",
+    "category": "RS.CO (Incident Response Reporting and Communication)",
+    "category_ja": "RS.CO（インシデント対応の報告・コミュニケーション）",
+    "subcategory": "RS.CO-02 - Internal and external stakeholders are notified of incidents",
+    "subcategory_ja": "RS.CO-02 - インシデント対応の状況および結果が、関係するステークホルダーに報告されている",
+    "question": "RS.CO-02 - インシデント対応の状況および結果が、関係するステークホルダーに報告されている",
+    "examples": [
+      {
+        "implementationExample": "RS.CO-02.330 (Ex1)",
+        "text": "Follow the organization's breach notification procedures after discovering a data breach incident, including notifying affected customers",
+        "text_ja": "IAM（ID & Access Management）システムを適切に活用し、アクセス制御を強化します。"
+      },
+      {
+        "implementationExample": "RS.CO-02.331 (Ex2)",
+        "text": "Notify business partners and customers of incidents in accordance with contractual requirements",
+        "text_ja": "レジリエンス（復旧力）強化のため、アクセス制御の適切な運用を行います。"
+      },
+      {
+        "implementationExample": "RS.CO-02.332 (Ex3)",
+        "text": "Notify law enforcement agencies and regulatory bodies of incidents based on criteria in the incident response plan and management approval",
+        "text_ja": "アクセス制御を強化するため、多要素認証（MFA）を導入・運用します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、インシデントに関する情報共有や報告が適切に行われず、関係者間の混乱や信頼低下を招くおそれがあります。 特に、インシデント対応の状況および結果が、関係するステークホルダーに報告されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "インシデント発生時に報告すべき相手と内容を整理し、対内・対外の報告基準を明確にする。関係者が迷わず連絡できる状態を整える。（RS.CO-02）"
+  },
+  {
+    "id": "RS.CO-03",
+    "function": "RS (RESPOND)",
+    "function_ja": "RS (RESPOND)",
+    "category": "RS.CO (Incident Response Reporting and Communication)",
+    "category_ja": "RS.CO（インシデント対応の報告・コミュニケーション）",
+    "subcategory": "RS.CO-03 - Information is shared with designated internal and external stakeholders",
+    "subcategory_ja": "RS.CO-03 - 指定された内部および外部のステークホルダーに情報が共有されている",
+    "question": "RS.CO-03 - 指定された内部および外部のステークホルダーに情報が共有されている",
+    "examples": [
+      {
+        "implementationExample": "RS.CO-03.333 (Ex1)",
+        "text": "Securely share information consistent with response plans and information sharing agreements",
+        "text_ja": "アクセス制御を適切に行うため、本人確認（Identity Proofing）を実施します。"
+      },
+      {
+        "implementationExample": "RS.CO-03.334 (Ex2)",
+        "text": "Voluntarily share information about an attacker's observed TTPs, with all sensitive data removed, with an Information Sharing and Analysis Center (ISAC)",
+        "text_ja": "リモートアクセス時には、デジタルID確認（Digital Identity Verification）を活用します。"
+      },
+      {
+        "implementationExample": "RS.CO-03.335 (Ex3)",
+        "text": "Notify HR when malicious insider activity occurs",
+        "text_ja": "リモートアクセスには、適切な認証ソリューションの利用を必須とします。"
+      },
+      {
+        "implementationExample": "RS.CO-03.336 (Ex4)",
+        "text": "Regularly update senior leadership on the status of major incidents",
+        "text_ja": "機密性・完全性・可用性を確保するため、アクセス制御を適切に運用します。"
+      },
+      {
+        "implementationExample": "RS.CO-03.337 (Ex5)",
+        "text": "Follow the rules and protocols defined in contracts for incident information sharing between the organization and its suppliers",
+        "text_ja": "ネットワークセキュリティを強化するため、アクセス制御手法を活用します。"
+      },
+      {
+        "implementationExample": "RS.CO-03.338 (Ex6)",
+        "text": "Coordinate crisis communication methods between the organization and its critical suppliers",
+        "text_ja": "安全なサービス運用のため、アクセス制御手法を活用します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、インシデントに関する情報共有や報告が適切に行われず、関係者間の混乱や信頼低下を招くおそれがあります。 特に、指定された内部および外部のステークホルダーに情報が共有されているが不十分だと、攻撃者の手口の変化に追随できず、検知・防御の更新が遅れる可能性があります。",
+    "improvementHint": "インシデント発生時に報告すべき相手と内容を整理し、対内・対外の報告基準を明確にする。関係者が迷わず連絡できる状態を整える。（RS.CO-03）"
+  },
+  {
+    "id": "RS.MI-01",
+    "function": "RS (RESPOND)",
+    "function_ja": "RS (RESPOND)",
+    "category": "RS.MI (Incident Mitigation)",
+    "category_ja": "RS.MI（インシデント緩和）",
+    "subcategory": "RS.MI-01 - Incidents are contained",
+    "subcategory_ja": "RS.MI-01 - インシデントの影響を抑制・軽減するための対策が実施されている",
+    "question": "RS.MI-01 - インシデントの影響を抑制・軽減するための対策が実施されている",
+    "examples": [
+      {
+        "implementationExample": "RS.MI-01.339 (Ex1)",
+        "text": "Cybersecurity technologies (e.g., antivirus software) and cybersecurity features of other technologies (e.g., operating systems, network infrastructure devices) automatically perform containment actions",
+        "text_ja": "外部業者・サードパーティのユーザーアクセスを適切に管理します。"
+      },
+      {
+        "implementationExample": "RS.MI-01.340 (Ex2)",
+        "text": "Allow incident responders to manually select and perform containment actions",
+        "text_ja": "ユーザーIDとデバイスIDを組み合わせて、アクセス制御を強化します。"
+      },
+      {
+        "implementationExample": "RS.MI-01.341 (Ex3)",
+        "text": "Allow a third party (e.g., internet service provider, managed security service provider) to perform containment actions on behalf of the organization",
+        "text_ja": "アカウント管理を強化するため、ログ取得と監視を活用します。"
+      },
+      {
+        "implementationExample": "RS.MI-01.342 (Ex4)",
+        "text": "Automatically transfer compromised endpoints to a remediation virtual local area network (VLAN)",
+        "text_ja": "ID管理・アカウント管理に関連するイベントを監視します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、インシデントの影響を抑制・軽減するための対応が適切に実施されず、被害範囲の拡大や復旧の長期化につながるおそれがあります。 特に、インシデントの影響を抑制・軽減するための対策が実施されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "インシデント発生時に実施すべき封じ込めや被害拡大防止の対応を整理し、迅速に実行できる手順を整備する。初動対応での迷いを防ぐ。（RS.MI-01）"
+  },
+  {
+    "id": "RS.MI-02",
+    "function": "RS (RESPOND)",
+    "function_ja": "RS (RESPOND)",
+    "category": "RS.MI (Incident Mitigation)",
+    "category_ja": "RS.MI（インシデント緩和）",
+    "subcategory": "RS.MI-02 - Incidents are eradicated",
+    "subcategory_ja": "RS.MI-02 - インシデントによる被害の拡大を防止するための是正措置が講じられている",
+    "question": "RS.MI-02 - インシデントによる被害の拡大を防止するための是正措置が講じられている",
+    "examples": [
+      {
+        "implementationExample": "RS.MI-02.343 (Ex1)",
+        "text": "Cybersecurity technologies and cybersecurity features of other technologies (e.g., operating systems, network infrastructure devices) automatically perform eradication actions",
+        "text_ja": "認証・認可ログを活用し、アカウント管理を適切に行います。"
+      },
+      {
+        "implementationExample": "RS.MI-02.344 (Ex2)",
+        "text": "Allow incident responders to manually select and perform eradication actions",
+        "text_ja": "アクセス制御ログを活用して、アカウント管理をサポートします。"
+      },
+      {
+        "implementationExample": "RS.MI-02.345 (Ex3)",
+        "text": "Allow a third party (e.g., managed security service provider) to perform eradication actions on behalf of the organization",
+        "text_ja": "アクセス制御ログを分析し、セキュリティ対策やリスク管理の判断に役立てます。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、インシデントの影響を抑制・軽減するための対応が適切に実施されず、被害範囲の拡大や復旧の長期化につながるおそれがあります。 特に、インシデントによる被害の拡大を防止するための是正措置が講じられているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "インシデント発生時に実施すべき封じ込めや被害拡大防止の対応を整理し、迅速に実行できる手順を整備する。初動対応での迷いを防ぐ。（RS.MI-02）"
+  },
+  {
+    "id": "RC.RP-01",
+    "function": "RC (RECOVER)",
+    "function_ja": "RC (RECOVER)",
+    "category": "RC.RP (Incident Recovery Plan Execution)",
+    "category_ja": "RC.RP（インシデント復旧計画の実行）",
+    "subcategory": "RC.RP-01 - The recovery portion of the incident response plan is executed once initiated from the incident response process",
+    "subcategory_ja": "RC.RP-01 - インシデントからの復旧計画が定義され、計画に基づいて復旧活動が実行されている",
+    "question": "RC.RP-01 - インシデントからの復旧計画が定義され、計画に基づいて復旧活動が実行されている",
+    "examples": [
+      {
+        "implementationExample": "RC.RP-01.346 (Ex1)",
+        "text": "Begin recovery procedures during or after incident response processes",
+        "text_ja": "インフラストラクチャツール（IAM、AD等）を活用し、アクセス制御を適切に実施します。"
+      },
+      {
+        "implementationExample": "RC.RP-01.347 (Ex2)",
+        "text": "Make all individuals with recovery responsibilities aware of the plans for recovery and the authorizations required to implement each aspect of the plans",
+        "text_ja": "アクセス制御リスト（ACL）やパーミッション設定を適切に運用し、アクセス制御を行います。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、復旧活動が計画どおりに実行されず、事業停止期間の長期化や復旧品質の低下につながるおそれがあります。 特に、インシデントからの復旧計画が定義され、計画に基づいて復旧活動が実行されているが不十分だと、責任分界点が曖昧となり、対応の抜け・重複やエスカレーション遅延につながる可能性があります。",
+    "improvementHint": "インシデントや障害発生後に復旧すべきシステムや業務の優先順位を整理し、事業への影響を踏まえた復旧計画を明確にする。重要業務から段階的に復旧できる状態を整える。（RC.RP-01）"
+  },
+  {
+    "id": "RC.RP-02",
+    "function": "RC (RECOVER)",
+    "function_ja": "RC (RECOVER)",
+    "category": "RC.RP (Incident Recovery Plan Execution)",
+    "category_ja": "RC.RP（インシデント復旧計画の実行）",
+    "subcategory": "RC.RP-02 - Recovery actions are selected, scoped, prioritized, and performed",
+    "subcategory_ja": "RC.RP-02 - 復旧活動が、事業継続および復旧目標に沿って調整・実施されている",
+    "question": "RC.RP-02 - 復旧活動が、事業継続および復旧目標に沿って調整・実施されている",
+    "examples": [
+      {
+        "implementationExample": "RC.RP-02.348 (Ex1)",
+        "text": "Select recovery actions based on the criteria defined in the incident response plan and available resources",
+        "text_ja": "IAMツールを使用して、ユーザーアカウント管理を効率化します。"
+      },
+      {
+        "implementationExample": "RC.RP-02.349 (Ex2)",
+        "text": "Change planned recovery actions based on a reassessment of organizational needs and resources",
+        "text_ja": "システムやアプリケーションのロール設定を活用し、安全なアクセス制御を実現します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、復旧活動が計画どおりに実行されず、事業停止期間の長期化や復旧品質の低下につながるおそれがあります。 特に、復旧活動が、事業継続および復旧目標に沿って調整・実施されているが不十分だと、復旧手順の選定や資源配分を誤り、復旧遅延や復旧後の再発につながる可能性があります。",
+    "improvementHint": "復旧に必要な手順や作業内容を具体化し、担当者が迷わず実行できる形で整理する。関係部門との役割分担もあわせて明確にする。（RC.RP-02）"
+  },
+  {
+    "id": "RC.RP-03",
+    "function": "RC (RECOVER)",
+    "function_ja": "RC (RECOVER)",
+    "category": "RC.RP (Incident Recovery Plan Execution)",
+    "category_ja": "RC.RP（インシデント復旧計画の実行）",
+    "subcategory": "RC.RP-03 - The integrity of backups and other restoration assets is verified before using them for restoration",
+    "subcategory_ja": "RC.RP-03 - 復旧計画が、復旧活動の進捗および有効性を踏まえて更新されている",
+    "question": "RC.RP-03 - 復旧計画が、復旧活動の進捗および有効性を踏まえて更新されている",
+    "examples": [
+      {
+        "implementationExample": "RC.RP-03.350 (Ex1)",
+        "text": "Check restoration assets for indicators of compromise, file corruption, and other integrity issues before use",
+        "text_ja": "アクセス制御を適切に運用し、データセキュリティを強化します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、復旧活動が計画どおりに実行されず、事業停止期間の長期化や復旧品質の低下につながるおそれがあります。 特に、復旧計画が、復旧活動の進捗および有効性を踏まえて更新されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "インシデントや障害発生後に復旧すべきシステムや業務の優先順位を整理し、事業への影響を踏まえた復旧計画を明確にする。重要業務から段階的に復旧できる状態を整える。（RC.RP-03）"
+  },
+  {
+    "id": "RC.RP-04",
+    "function": "RC (RECOVER)",
+    "function_ja": "RC (RECOVER)",
+    "category": "RC.RP (Incident Recovery Plan Execution)",
+    "category_ja": "RC.RP（インシデント復旧計画の実行）",
+    "subcategory": "RC.RP-04 - Critical mission functions and cybersecurity risk management are considered to establish post-incident operational norms",
+    "subcategory_ja": "RC.RP-04 - インシデント後の運用上の標準状態（運用ノーム）を確立するために、重要任務機能およびサイバーセキュリティ・リスクマネジメントが考慮されている",
+    "question": "RC.RP-04 - インシデント後の運用上の標準状態（運用ノーム）を確立するために、重要任務機能およびサイバーセキュリティ・リスクマネジメントが考慮されている",
+    "examples": [
+      {
+        "implementationExample": "RC.RP-04.351 (Ex1)",
+        "text": "Use business impact and system categorization records (including service delivery objectives) to validate that essential services are restored in the appropriate order",
+        "text_ja": "保存データ（data-at-rest）を保護するため、安全な管理手法を適用します。"
+      },
+      {
+        "implementationExample": "RC.RP-04.352 (Ex2)",
+        "text": "Work with system owners to confirm the successful restoration of systems and the return to normal operations",
+        "text_ja": "保存データの保護のため、暗号化を適切に活用します。"
+      },
+      {
+        "implementationExample": "RC.RP-04.353 (Ex3)",
+        "text": "Monitor the performance of restored systems to verify the adequacy of the restoration",
+        "text_ja": "保存データ保護のため、適切な鍵管理（Key Management）を行います。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、復旧活動が計画どおりに実行されず、事業停止期間の長期化や復旧品質の低下につながるおそれがあります。 特に、インシデント後の運用上の標準状態（運用ノーム）を確立するために、重要任務機能およびサイバーセキュリティ・リスクマネジメントが考慮されているが不十分だと、復旧手順の選定や資源配分を誤り、復旧遅延や復旧後の再発につながる可能性があります。",
+    "improvementHint": "インシデントや障害発生後に復旧すべきシステムや業務の優先順位を整理し、事業への影響を踏まえた復旧計画を明確にする。重要業務から段階的に復旧できる状態を整える。（RC.RP-04）"
+  },
+  {
+    "id": "RC.RP-05",
+    "function": "RC (RECOVER)",
+    "function_ja": "RC (RECOVER)",
+    "category": "RC.RP (Incident Recovery Plan Execution)",
+    "category_ja": "RC.RP（インシデント復旧計画の実行）",
+    "subcategory": "RC.RP-05 - The integrity of restored assets is verified, systems and services are restored, and normal operating status is confi...",
+    "subcategory_ja": "RC.RP-05 - 復元された資産の完全性が検証され、システムおよびサービスが復旧され、通常運用状態が確認されている",
+    "question": "RC.RP-05 - 復元された資産の完全性が検証され、システムおよびサービスが復旧され、通常運用状態が確認されている",
+    "examples": [
+      {
+        "implementationExample": "RC.RP-05.354 (Ex1)",
+        "text": "Check restored assets for indicators of compromise and remediation of root causes of the incident before production use",
+        "text_ja": "アクセス制御を活用し、保存データの安全性を高めます。"
+      },
+      {
+        "implementationExample": "RC.RP-05.355 (Ex2)",
+        "text": "Verify the correctness and adequacy of the restoration actions taken before putting a restored system online",
+        "text_ja": "バックアップを確実に実施し、保存データの保護に役立てます。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、復旧活動が計画どおりに実行されず、事業停止期間の長期化や復旧品質の低下につながるおそれがあります。 特に、復元された資産の完全性が検証され、システムおよびサービスが復旧され、通常運用状態が確認されているが不十分だと、管理対象外の資産・データが残存し、脆弱性や設定不備の放置につながる可能性があります。",
+    "improvementHint": "復旧作業を実施する前に、不正アクセスやマルウェアが残存していないことを確認する。安全性を担保した上でサービスを再開する。（RC.RP-05）"
+  },
+  {
+    "id": "RC.RP-06",
+    "function": "RC (RECOVER)",
+    "function_ja": "RC (RECOVER)",
+    "category": "RC.RP (Incident Recovery Plan Execution)",
+    "category_ja": "RC.RP（インシデント復旧計画の実行）",
+    "subcategory": "RC.RP-06 - The end of incident recovery is declared based on criteria, and incident-related documentation is completed",
+    "subcategory_ja": "RC.RP-06 - 定義された基準に基づき復旧完了が宣言され、インシデント関連の文書化が完了している",
+    "question": "RC.RP-06 - 定義された基準に基づき復旧完了が宣言され、インシデント関連の文書化が完了している",
+    "examples": [
+      {
+        "implementationExample": "RC.RP-06.356 (Ex1)",
+        "text": "Prepare an after-action report that documents the incident itself, the response and recovery actions taken, and lessons learned",
+        "text_ja": "通信中のデータ（data-in-transit）を保護するため、安全な通信手法を用います。"
+      },
+      {
+        "implementationExample": "RC.RP-06.357 (Ex2)",
+        "text": "Declare the end of incident recovery once the criteria are met",
+        "text_ja": "通信中データの保護のため、暗号化通信（TLS等）を使用します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、復旧活動が計画どおりに実行されず、事業停止期間の長期化や復旧品質の低下につながるおそれがあります。 特に、定義された基準に基づき復旧完了が宣言され、インシデント関連の文書化が完了しているが不十分だと、復旧手順の選定や資源配分を誤り、復旧遅延や復旧後の再発につながる可能性があります。",
+    "improvementHint": "復旧に必要な手順や作業内容を具体化し、担当者が迷わず実行できる形で整理する。関係部門との役割分担もあわせて明確にする。（RC.RP-06）"
+  },
+  {
+    "id": "RC.CO-03",
+    "function": "RC (RECOVER)",
+    "function_ja": "RC (RECOVER)",
+    "category": "RC.CO (Incident Recovery Communication)",
+    "category_ja": "RC.CO（インシデント復旧のコミュニケーション）",
+    "subcategory": "RC.CO-03 - Recovery activities and progress in restoring operational capabilities are communicated to designated internal and ex...",
+    "subcategory_ja": "RC.CO-03 - 復旧活動および運用能力回復の進捗が、指定された内部および外部の関係者に共有されている",
+    "question": "RC.CO-03 - 復旧活動および運用能力回復の進捗が、指定された内部および外部の関係者に共有されている",
+    "examples": [
+      {
+        "implementationExample": "RC.CO-03.358 (Ex1)",
+        "text": "Securely share recovery information, including restoration progress, consistent with response plans and information sharing agreements",
+        "text_ja": "安全な通信手法（認証、暗号化、VPNなど）を用いて、通信データの保護を行います。"
+      },
+      {
+        "implementationExample": "RC.CO-03.359 (Ex2)",
+        "text": "Regularly update senior leadership on recovery status and restoration progress for major incidents",
+        "text_ja": "通信データ保護のため、安全なプロトコル（HTTPS、SSH等）を使用します。"
+      },
+      {
+        "implementationExample": "RC.CO-03.360 (Ex3)",
+        "text": "Follow the rules and protocols defined in contracts for incident information sharing between the organization and its suppliers",
+        "text_ja": "通信中データの保護のため、適切な鍵管理（証明書管理など）を行います。"
+      },
+      {
+        "implementationExample": "RC.CO-03.361 (Ex4)",
+        "text": "Coordinate crisis communication between the organization and its critical suppliers",
+        "text_ja": "データの完全性と品質を維持するため、安全なデータ管理手法を適用します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、復旧状況や対応方針に関する情報共有が適切に行われず、関係者間の混乱や信頼低下を招くおそれがあります。 特に、復旧活動および運用能力回復の進捗が、指定された内部および外部の関係者に共有されているが不十分だと、攻撃者の手口の変化に追随できず、検知・防御の更新が遅れる可能性があります。",
+    "improvementHint": "復旧作業の進捗や状況を関係者に共有し、現在の状態や見通しを分かりやすく伝える。不安や誤解を生まない情報提供を行う。（RC.CO-03）"
+  },
+  {
+    "id": "RC.CO-04",
+    "function": "RC (RECOVER)",
+    "function_ja": "RC (RECOVER)",
+    "category": "RC.CO (Incident Recovery Communication)",
+    "category_ja": "RC.CO（インシデント復旧のコミュニケーション）",
+    "subcategory": "RC.CO-04 - Public updates on incident recovery are shared using approved methods and messaging",
+    "subcategory_ja": "RC.CO-04 - インシデント復旧に関する対外的な更新情報が、承認済みの手段およびメッセージにより発信されている",
+    "question": "RC.CO-04 - インシデント復旧に関する対外的な更新情報が、承認済みの手段およびメッセージにより発信されている",
+    "examples": [
+      {
+        "implementationExample": "RC.CO-04.362 (Ex1)",
+        "text": "Follow the organization's breach notification procedures for recovering from a data breach incident",
+        "text_ja": "ハッシュやデジタル署名を利用して、データの完全性を確保します。"
+      },
+      {
+        "implementationExample": "RC.CO-04.363 (Ex2)",
+        "text": "Explain the steps being taken to recover from the incident and to prevent a recurrence",
+        "text_ja": "アクセス制御を適切に運用し、データの完全性と品質を保護します。"
+      }
+    ],
+    "riskText": "本カテゴリの取組みが不十分な場合、復旧状況や対応方針に関する情報共有が適切に行われず、関係者間の混乱や信頼低下を招くおそれがあります。 特に、インシデント復旧に関する対外的な更新情報が、承認済みの手段およびメッセージにより発信されているが不十分だと、ログやイベントの相関分析が進まず、侵害の兆候の見逃しや初動遅延につながる可能性があります。",
+    "improvementHint": "復旧作業の進捗や状況を関係者に共有し、現在の状態や見通しを分かりやすく伝える。不安や誤解を生まない情報提供を行う。（RC.CO-04）"
+  }
+]

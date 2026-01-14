@@ -1,0 +1,19 @@
+# === macOS ===
+.DS_Store
+
+# === Editor / IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === Logs ===
+*.log
+
+# === OS / misc ===
+Thumbs.db
+ehthumbs.db
+
+# === Temporary / backup files ===
+*~
+*.tmp
