@@ -12,7 +12,7 @@
       {
         "implementationExample": "GV.OC-01.001 (Ex1)",
         "text": "Share the organization's mission (e.g., through vision and mission statements, marketing, and service strategies) to provide a basis for identifying risks that may impede that mission",
-        "text_ja": "組織のミッションを、ビジョン・ミッションステートメント、マーケティング資料、サービス戦略などを通じて社内外に共有し、そのミッションを妨げる可能性のあるリスクを特定するための前提情報とします。"
+        "text_ja": "組織のミッションを共有する（例：ビジョン・ミッションステートメント、マーケティング、サービス戦略などを通じて）ことで、そのミッションの達成を阻害する可能性のあるリスクを特定するための基盤を整備する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、組織の状況や事業目的を踏まえた一貫したサイバーセキュリティ判断ができず、施策の方向性や優先順位が実態とずれるおそれがあります。特に、組織の使命が十分に理解されず、サイバーセキュリティ・リスクマネジメントの方針や意思決定に反映されていない場合、守るべき事業価値が曖昧となり、重要なリスクへの対応判断を誤る可能性があります。",
@@ -31,12 +31,12 @@
       {
         "implementationExample": "GV.OC-02.002 (Ex1)",
         "text": "Identify relevant internal stakeholders and their cybersecurity-related expectations (e.g., performance and risk expectations of officers, directors, and advisors; cultural expectations of employees)",
-        "text_ja": "経営層、部門長、アドバイザー、一般社員など、社内の関係者を洗い出し、それぞれがサイバーセキュリティに対してどのような期待（性能面・リスク面・文化面など）を持っているかを把握します。"
+        "text_ja": "関連する内部ステークホルダーを特定し、それぞれのサイバーセキュリティに関する期待を把握する（例：役員・取締役・アドバイザーのパフォーマンスおよびリスクに関する期待、従業員の文化的な期待など）"
       },
       {
         "implementationExample": "GV.OC-02.003 (Ex2)",
         "text": "Identify relevant external stakeholders and their cybersecurity-related expectations (e.g., privacy expectations of customers, business expectations of partnerships, compliance expectations of regulators, ethics expectations of society)",
-        "text_ja": "顧客、パートナー企業、規制当局、社会などの外部ステークホルダーを特定し、プライバシー、ビジネス要件、コンプライアンス、倫理など、各ステークホルダーがサイバーセキュリティに対して持つ期待や要件を把握します。"
+        "text_ja": "関連する外部ステークホルダーを特定し、それぞれのサイバーセキュリティに関する期待を把握する（例：顧客のプライバシーに関する期待、パートナーシップにおけるビジネス上の期待、規制当局のコンプライアンス要求、社会における倫理的期待など）"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、組織を取り巻く関係者の期待や要請がサイバーセキュリティの判断に十分反映されず、対外的・対内的な説明や対応に齟齬が生じるおそれがあります。特に、内部および外部のステークホルダーとそのニーズが把握されていない場合、必要な保護水準や報告内容の認識が揃わず、意思決定の遅延や信頼低下につながる可能性があります。",
@@ -55,17 +55,17 @@
       {
         "implementationExample": "GV.OC-03.004 (Ex1)",
         "text": "Determine a process to track and manage legal and regulatory requirements regarding protection of individuals' information (e.g., Health Insurance Portability and Accountability Act, California Consumer Privacy Act, General Data Protection Regulation)",
-        "text_ja": "個人情報保護に関する法令・規制（例：HIPAA、CCPA、GDPR など）を継続的に把握し、その要求事項を管理するためのプロセスを整備します。"
+        "text_ja": "個人情報の保護に関する法令および規制要件（例：HIPAA、CCPA、GDPRなど）を追跡・管理するためのプロセスを確立する"
       },
       {
         "implementationExample": "GV.OC-03.005 (Ex2)",
         "text": "Determine a process to track and manage contractual requirements for cybersecurity management of supplier, customer, and partner information",
-        "text_ja": "サプライヤー、顧客、パートナー企業の情報に関するサイバーセキュリティ上の契約条件を把握し、それらの要求事項を追跡・管理するプロセスを定めます。"
+        "text_ja": "サプライヤー、顧客、パートナーに関する情報のサイバーセキュリティ管理に関する契約上の要求事項を追跡・管理するためのプロセスを確立する"
       },
       {
         "implementationExample": "GV.OC-03.006 (Ex3)",
         "text": "Align the organization's cybersecurity strategy with legal, regulatory, and contractual requirements",
-        "text_ja": "組織のサイバーセキュリティ戦略を、関連する法令・規制・契約上の要求と整合するように見直し・調整します。"
+        "text_ja": "組織のサイバーセキュリティ戦略を、法令・規制および契約上の要求事項と整合させる"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、法令・規制・契約に基づく要求事項がサイバーセキュリティの取組みに適切に反映されず、コンプライアンス違反や契約不履行が発生するおそれがあります。特に、プライバシーや市民的自由を含む要求事項の把握と反映が不十分な場合、罰則、是正対応、信用失墜などの重大な影響を受ける可能性があります。",
@@ -84,17 +84,17 @@
       {
         "implementationExample": "GV.OC-04.007 (Ex1)",
         "text": "Establish criteria for determining the criticality of capabilities and services as viewed by internal and external stakeholders",
-        "text_ja": "社内外のステークホルダーの視点から、どの機能やサービスがどの程度重要かを判断するための評価基準を策定します。"
+        "text_ja": "内部および外部ステークホルダーの観点から、能力やサービスの重要度を評価するための基準を策定する"
       },
       {
         "implementationExample": "GV.OC-04.008 (Ex2)",
         "text": "Determine (e.g., from a business impact analysis) assets and business operations that are vital to achieving mission objectives and the potential impact of a loss (or partial loss) of such operations",
-        "text_ja": "ビジネスインパクト分析（BIA）などを通じて、ミッション達成に不可欠な資産や業務を特定し、それらが停止または一部損失した場合の影響度を把握します。"
+        "text_ja": "（例：ビジネスインパクト分析に基づき）ミッション達成に不可欠な資産および業務を特定し、それらが停止または一部停止した場合の影響を評価する"
       },
       {
         "implementationExample": "GV.OC-04.009 (Ex3)",
         "text": "Establish and communicate resilience objectives (e.g., recovery time objectives) for delivering critical capabilities and services in various operating states (e.g., under attack, during recovery, normal operation)",
-        "text_ja": "重要な機能・サービスを、攻撃下・復旧中・平常時など様々な状況で提供し続けるために、復旧時間目標（RTO）などのレジリエンス目標を定め、関係者に共有します。"
+        "text_ja": "さまざまな運用状況（例：攻撃下、復旧中、通常時）において重要な能力やサービスを提供するためのレジリエンス目標（例：目標復旧時間）を設定し、関係者に共有する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、ステークホルダーが依存している重要な目標、能力、サービスが明確にならず、守るべき対象の優先順位付けが不適切になるおそれがあります。特に、外部ステークホルダーが期待する重要な機能やサービスが共有されていない場合、停止や劣化が許容されない領域への備えが不十分となる可能性があります。",
@@ -113,12 +113,12 @@
       {
         "implementationExample": "GV.OC-05.010 (Ex1)",
         "text": "Create an inventory of the organization's dependencies on external resources (e.g., facilities, cloud-based hosting providers) and their relationships to organizational assets and business functions",
-        "text_ja": "外部の設備、クラウドホスティング事業者など、組織が依存している外部リソースの一覧を作成し、それらがどの資産・業務と関係しているかを整理します。"
+        "text_ja": "外部リソース（例：施設、クラウドサービスプロバイダーなど）に対する組織の依存関係を整理し、資産や業務機能との関連性を含めて一覧化する"
       },
       {
         "implementationExample": "GV.OC-05.011 (Ex2)",
         "text": "Identify and document external dependencies that are potential points of failure for the organization's critical capabilities and services, and share that information with appropriate personnel",
-        "text_ja": "組織の重要な機能・サービスに対する単一障害点となり得る外部依存を特定し、文書化したうえで、関係する担当者に共有します。"
+        "text_ja": "組織の重要な能力やサービスに対して障害要因となり得る外部依存関係を特定・文書化し、適切な関係者と共有する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、組織が事業遂行上依存している成果、能力、サービスを前提としたサイバーセキュリティ判断ができず、重要な依存関係を見落とすおそれがあります。特に、組織が依存している外部・内部のサービスや能力が十分に特定・共有されていない場合、障害や停止時の影響を過小評価し、必要な備えが不足する可能性があります。",
@@ -137,17 +137,17 @@
       {
         "implementationExample": "GV.RM-01.012 (Ex1)",
         "text": "Update near-term and long-term cybersecurity risk management objectives as part of annual strategic planning and when major changes occur",
-        "text_ja": "年次の戦略立案や大きな環境変化があったタイミングで、サイバーセキュリティリスク管理の短期・長期の目標を見直し・更新します。"
+        "text_ja": "年次の戦略計画の一環として、また重大な変更が発生した際に、短期および長期のサイバーセキュリティリスク管理目標を見直し・更新する"
       },
       {
         "implementationExample": "GV.RM-01.013 (Ex2)",
         "text": "Establish measurable objectives for cybersecurity risk management (e.g., manage the quality of user training, ensure adequate risk protection for industrial control systems)",
-        "text_ja": "ユーザートレーニングの品質管理や制御システムへの十分なリスク対策などを例に、サイバーセキュリティリスク管理について測定可能な目標を設定します。"
+        "text_ja": "サイバーセキュリティリスク管理に関する測定可能な目標を設定する（例：ユーザートレーニングの品質管理、産業用制御システムに対する十分なリスク対策の確保など）"
       },
       {
         "implementationExample": "GV.RM-01.014 (Ex3)",
         "text": "Senior leaders agree about cybersecurity objectives and use them for measuring and managing risk and performance",
-        "text_ja": "経営陣がサイバーセキュリティに関する目標について合意し、その目標をリスクやパフォーマンスを測定・管理するための指標として活用します。"
+        "text_ja": "経営層がサイバーセキュリティ目標について合意し、それをリスクおよびパフォーマンスの評価・管理に活用する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、組織としてどのようなリスクマネジメントを目指すのかが不明確となり、判断や施策が場当たり的になるおそれがあります。特に、リスクマネジメントの目標が定義されず、ステークホルダー間で合意されていない場合、進むべき方向性や評価基準が揃わず、統制の一貫性が損なわれる可能性があります。",
@@ -166,17 +166,17 @@
       {
         "implementationExample": "GV.RM-02.015 (Ex1)",
         "text": "Determine and communicate risk appetite statements that convey expectations about the appropriate level of risk for the organization",
-        "text_ja": "組織として許容できるリスクの水準（リスクアペタイト）を文書化し、どの程度までリスクを取るのかという経営の考え方を明確にして共有します。"
+        "text_ja": "組織として許容するリスクの水準に関する期待を示すリスクアペタイトを定義し、関係者に共有する"
       },
       {
         "implementationExample": "GV.RM-02.016 (Ex2)",
         "text": "Translate risk appetite statements into specific, measurable, and broadly understandable risk tolerance statements",
-        "text_ja": "リスクアペタイトの方針を、より具体的で測定可能かつ誰にでも分かる形の「リスク許容度」の基準に落とし込みます。"
+        "text_ja": "リスクアペタイトを、具体的で測定可能かつ広く理解可能なリスク許容度に落とし込む"
       },
       {
         "implementationExample": "GV.RM-02.017 (Ex3)",
         "text": "Refine organizational objectives and risk appetite periodically based on known risk exposure and residual risk",
-        "text_ja": "現在のリスク曝露状況や残余リスクに基づき、組織目標とリスクアペタイトを定期的に見直し・調整します。"
+        "text_ja": "既知のリスク曝露および残存リスクを踏まえ、組織の目標およびリスクアペタイトを定期的に見直す"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、どの程度のリスクを受容し、どの水準から対応やエスカレーションが必要かという判断基準が曖昧になるおそれがあります。特に、リスクアペタイトとリスクトレランスが定義・周知・維持されていない場合、同じ事象でも判断がばらつき、投資判断や例外承認の一貫性が失われる可能性があります。",
@@ -195,17 +195,17 @@
       {
         "implementationExample": "GV.RM-03.018 (Ex1)",
         "text": "Aggregate and manage cybersecurity risks alongside other enterprise risks (e.g., compliance, financial, operational, regulatory, reputational, safety)",
-        "text_ja": "サイバーセキュリティリスクを、コンプライアンス、財務、オペレーション、規制、評判、安全性など他の企業リスクとあわせて統合的に集約・管理します。"
+        "text_ja": "サイバーセキュリティリスクを、コンプライアンス、財務、業務、規制、レピュテーション、安全などの他の全社リスクと統合して管理する"
       },
       {
         "implementationExample": "GV.RM-03.019 (Ex2)",
         "text": "Include cybersecurity risk managers in enterprise risk management planning",
-        "text_ja": "エンタープライズリスク管理（ERM）の計画策定プロセスに、サイバーセキュリティリスクを担当するメンバーを参加させます。"
+        "text_ja": "全社的リスク管理の計画に、サイバーセキュリティリスク管理担当者を参画させる"
       },
       {
         "implementationExample": "GV.RM-03.020 (Ex3)",
         "text": "Establish criteria for escalating cybersecurity risks within enterprise risk management",
-        "text_ja": "サイバーセキュリティリスクを ERM の枠組みの中でどのタイミング・条件でエスカレーションするかについて、その基準やルールを定めます。"
+        "text_ja": "全社的リスク管理の枠組みにおいて、サイバーセキュリティリスクをエスカレーションするための基準を定める"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティ・リスクが他の経営リスクと切り離されて扱われ、全社的な優先順位付けや意思決定に反映されないおそれがあります。特に、サイバーセキュリティ・リスクマネジメントの活動や成果がERMに組み込まれていない場合、経営として扱うべきリスクが適切に上がらず、重要な判断が遅れる可能性があります。",
@@ -224,17 +224,17 @@
       {
         "implementationExample": "GV.RM-04.021 (Ex1)",
         "text": "Specify criteria for accepting and avoiding cybersecurity risk for various classifications of data",
-        "text_ja": "データの分類ごとに、どのリスクは受容し、どのリスクは回避すべきかを判断するための基準を明確にします。"
+        "text_ja": "データの分類ごとに、サイバーセキュリティリスクを受容する場合と回避する場合の判断基準を定める"
       },
       {
         "implementationExample": "GV.RM-04.022 (Ex2)",
         "text": "Determine whether to purchase cybersecurity insurance",
-        "text_ja": "サイバー保険を契約すべきかどうかを検討し、必要性を判断します。"
+        "text_ja": "サイバーセキュリティ保険の導入要否を判断する"
       },
       {
         "implementationExample": "GV.RM-04.023 (Ex3)",
         "text": "Document conditions under which shared responsibility models are acceptable (e.g., outsourcing certain cybersecurity functions, having a third party perform financial transactions on behalf of the organization, using public cloud-based services)",
-        "text_ja": "アウトソーシングやクラウド利用など、共有責任モデルが受け入れられる条件を文書化し、組織として明確にします。"
+        "text_ja": "責任共有モデル（例：一部のセキュリティ機能の外部委託、第三者による金融取引の実施、パブリッククラウドの利用など）を採用する条件を明確に定義し、文書化する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、リスクに対して受容・低減・移転・回避などのどの対応を選ぶべきかについて、組織としての一貫した指針が持てなくなるおそれがあります。特に、適切なリスク対応オプションを示す戦略的指針が定義・周知されていない場合、類似のリスクでも対応がばらつき、例外判断や投資判断の妥当性が損なわれる可能性があります。",
@@ -253,12 +253,12 @@
       {
         "implementationExample": "GV.RM-05.024 (Ex1)",
         "text": "Determine how to update senior executives, directors, and management on the organization's cybersecurity posture at agreed-upon intervals",
-        "text_ja": "経営層・役員・管理職に対して、組織のセキュリティ状況をどのタイミングで、どのような形式で報告するかを決めます。"
+        "text_ja": "合意された頻度に基づき、経営層や管理層に対して組織のサイバーセキュリティ状況を報告する方法を定める"
       },
       {
         "implementationExample": "GV.RM-05.025 (Ex2)",
         "text": "Identify how all departments across the organization - such as management, operations, internal auditors, legal, acquisition, physical security, and HR - will communicate with each other about cybersecurity risks",
-        "text_ja": "管理、運用、内部監査、法務、人事など、全社の各部門がサイバーセキュリティリスクに関してどのように連携・情報共有するかを明確にします。"
+        "text_ja": "経営、業務部門、内部監査、法務、調達、物理セキュリティ、人事など、組織全体の各部門間でサイバーセキュリティリスクについてどのように情報共有・連携するかを定義する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティ・リスクに関する情報が組織内で適切に共有されず、部門間の連携不足や報告漏れが生じるおそれがあります。特に、サプライヤや第三者に起因するリスクを含めた組織横断的なコミュニケーション経路が確立されていない場合、必要な関係者に情報が届かず、意思決定や対応が遅れる可能性があります。",
@@ -277,22 +277,22 @@
       {
         "implementationExample": "GV.RM-06.026 (Ex1)",
         "text": "Establish criteria for using a quantitative approach to cybersecurity risk analysis, and specify probability and exposure formulas",
-        "text_ja": "サイバーセキュリティリスクを定量的に分析する際の基準（確率や影響度の計算方法など）を定めます。"
+        "text_ja": "定量的なリスク分析手法を適用するための基準を定め、発生確率や影響度の算出方法を明確にする"
       },
       {
         "implementationExample": "GV.RM-06.027 (Ex2)",
         "text": "Create and use templates (e.g., a risk register) to document cybersecurity risk information (e.g., risk description, exposure, treatment, and ownership)",
-        "text_ja": "リスクの内容、対応方針、責任者などを整理するためのテンプレート（リスク登録票など）を作成し、運用します。"
+        "text_ja": "リスク情報（例：リスクの内容、影響度、対応方針、責任者など）を記録するためのテンプレート（例：リスク登録簿）を整備し、活用する"
       },
       {
         "implementationExample": "GV.RM-06.028 (Ex3)",
         "text": "Establish criteria for risk prioritization at the appropriate levels within the enterprise",
-        "text_ja": "組織全体のレベルに応じて、リスクを優先順位付けするための基準を整備します。"
+        "text_ja": "組織内の適切なレベルにおいて、リスクの優先順位を決定するための基準を定める"
       },
       {
         "implementationExample": "GV.RM-06.029 (Ex4)",
         "text": "Use a consistent list of risk categories to support integrating, aggregating, and comparing cybersecurity risks",
-        "text_ja": "サイバーセキュリティリスクを統合・比較できるように、リスク分類の一覧（カテゴリ体系）を統一して使用します。"
+        "text_ja": "サイバーセキュリティリスクの統合・集約・比較を可能にするために、一貫したリスク分類体系を使用する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティ・リスクの算定、記録、分類、優先順位付けが評価者ごとにばらつき、組織として比較可能な判断ができなくなるおそれがあります。特に、標準化された手法が確立されていない場合、リスク評価結果の再現性や説明可能性が低下し、意思決定の根拠が弱くなる可能性があります。",
@@ -311,17 +311,17 @@
       {
         "implementationExample": "GV.RM-07.030 (Ex1)",
         "text": "Define and communicate guidance and methods for identifying opportunities and including them in risk discussions (e.g., strengths, weaknesses, opportunities, and threats [SWOT] analysis)",
-        "text_ja": "機会（ポジティブリスク）を見つけ、それをリスク議論に組み込むための方法・基準を定め、関係者に共有します。"
+        "text_ja": "機会（ポジティブリスク）を特定し、リスク議論に組み込むための方針および手法（例：SWOT分析）を定義し、関係者に共有する"
       },
       {
         "implementationExample": "GV.RM-07.031 (Ex2)",
         "text": "Identify stretch goals and document them",
-        "text_ja": "組織の成長につながるようなストレッチ目標を設定し、文書化します。"
+        "text_ja": "チャレンジングな目標（ストレッチゴール）を設定し、文書化する"
       },
       {
         "implementationExample": "GV.RM-07.032 (Ex3)",
         "text": "Calculate, document, and prioritize positive risks alongside negative risks",
-        "text_ja": "ネガティブリスクだけでなく、プラスの効果をもたらすポジティブリスクも評価・記録し、優先度を付けて管理します。"
+        "text_ja": "ポジティブリスクをネガティブリスクと同様に評価・記録し、優先順位付けを行う"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティに関する戦略的機会が十分に評価されず、守りだけに偏った判断となるおそれがあります。特に、プラスのリスクが特定・評価され、組織の検討に含められていない場合、レジリエンス向上や競争力強化につながる機会を見逃し、経営判断の幅が狭まる可能性があります。",
@@ -340,22 +340,22 @@
       {
         "implementationExample": "GV.RR-01.033 (Ex1)",
         "text": "Leaders (e.g., directors) agree on their roles and responsibilities in developing, implementing, and assessing the organization's cybersecurity strategy",
-        "text_ja": "経営層が、自身の役割と責任（セキュリティ戦略の策定・評価におけるもの）について合意します。"
+        "text_ja": "リーダー（例：取締役など）が、組織のサイバーセキュリティ戦略の策定・実行・評価における自身の役割と責任について合意する"
       },
       {
         "implementationExample": "GV.RR-01.034 (Ex2)",
         "text": "Share leaders' expectations regarding a secure and ethical culture, especially when current events present the opportunity to highlight positive or negative examples of cybersecurity risk management",
-        "text_ja": "安全で倫理的な企業文化を維持するために、経営層が期待する行動や姿勢を明確にし、組織内で共有します。"
+        "text_ja": "安全で倫理的な組織文化に関するリーダーの期待を共有する（特に、サイバーセキュリティリスク管理の良い例・悪い例を示す機会となる事象が発生した際に活用する）"
       },
       {
         "implementationExample": "GV.RR-01.035 (Ex3)",
         "text": "Leaders direct the CISO to maintain a comprehensive cybersecurity risk strategy and review and update it at least annually and after major events",
-        "text_ja": "経営層が CISO に対し、セキュリティリスク戦略の維持と、年次の見直しを指示します。"
+        "text_ja": "リーダーはCISOに対し、包括的なサイバーセキュリティリスク戦略を維持し、少なくとも年1回および重大な事象発生後に見直し・更新するよう指示する"
       },
       {
         "implementationExample": "GV.RR-01.036 (Ex4)",
         "text": "Conduct reviews to ensure adequate authority and coordination among those responsible for managing cybersecurity risk",
-        "text_ja": "セキュリティリスク管理を担当する組織や個人が、適切な権限と連携体制を持っているかどうかを定期的に確認します。"
+        "text_ja": "サイバーセキュリティリスク管理を担う関係者に対して、十分な権限と適切な連携体制が確保されているかを確認するためのレビューを実施する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、組織のリーダーシップがサイバーセキュリティ・リスクに対する責任を十分に果たせず、全社的な統制や文化形成が弱まるおそれがあります。特に、経営層が責任を持って関与し、リスクを意識した文化を醸成していない場合、重要事項が現場任せとなり、必要な意思決定や支援が行われにくくなる可能性があります。",
@@ -374,27 +374,27 @@
       {
         "implementationExample": "GV.RR-02.037 (Ex1)",
         "text": "Document risk management roles and responsibilities in policy",
-        "text_ja": "リスク管理に関する役割と責任をポリシーに明確に記載します。"
+        "text_ja": "リスク管理に関する役割と責任をポリシーとして文書化する"
       },
       {
         "implementationExample": "GV.RR-02.038 (Ex2)",
         "text": "Document who is responsible and accountable for cybersecurity risk management activities and how those teams and individuals are to be consulted and informed",
-        "text_ja": "サイバーセキュリティリスク管理において、誰が実行責任者で、誰が説明責任者かを文書化します。"
+        "text_ja": "サイバーセキュリティリスク管理活動における責任者および説明責任者を明確にし、関係するチームや個人への連携・報告方法とともに文書化する"
       },
       {
         "implementationExample": "GV.RR-02.039 (Ex3)",
         "text": "Include cybersecurity responsibilities and performance requirements in personnel descriptions",
-        "text_ja": "職務記述書（ジョブディスクリプション）に、サイバーセキュリティに関連する責任や求められる行動基準を記載します。"
+        "text_ja": "職務記述書にサイバーセキュリティに関する責任および求められるパフォーマンス要件を含める"
       },
       {
         "implementationExample": "GV.RR-02.040 (Ex4)",
         "text": "Document performance goals for personnel with cybersecurity risk management responsibilities, and periodically measure performance to identify areas for improvement",
-        "text_ja": "セキュリティを担当する職員について、パフォーマンス目標を設定して文書化し、定期的に評価して改善点を特定します。"
+        "text_ja": "サイバーセキュリティリスク管理を担う人員のパフォーマンス目標を設定・文書化し、定期的に評価して改善点を特定する"
       },
       {
         "implementationExample": "GV.RR-02.041 (Ex5)",
         "text": "Clearly articulate cybersecurity responsibilities within operations, risk functions, and internal audit functions",
-        "text_ja": "運用部門、リスク管理部門、内部監査部門など、それぞれの部門におけるサイバーセキュリティ上の役割と責任を明確にします。"
+        "text_ja": "業務部門、リスク管理部門、内部監査部門におけるサイバーセキュリティの責任範囲を明確に定義する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティ・リスクマネジメントに関する役割、責任、権限が曖昧となり、判断の重複や抜け漏れが発生するおそれがあります。特に、誰が意思決定し、誰が実行し、誰に報告・相談すべきかが明確でない場合、対応の遅延や責任所在の不明確化につながる可能性があります。",
@@ -413,17 +413,17 @@
       {
         "implementationExample": "GV.RR-03.042 (Ex1)",
         "text": "Conduct periodic management reviews to ensure that those given cybersecurity risk management responsibilities have the necessary authority",
-        "text_ja": "セキュリティリスク管理を担当する人が、必要な権限を適切に持っているかを確認するため、定期的にマネジメントレビューを実施します。"
+        "text_ja": "サイバーセキュリティリスク管理の責任を担う者に、必要な権限が付与されているかを確認するための定期的なマネジメントレビューを実施する"
       },
       {
         "implementationExample": "GV.RR-03.043 (Ex2)",
         "text": "Identify resource allocation and investment in line with risk tolerance and response",
-        "text_ja": "組織のリスク許容度や対応方針に沿って、必要なリソース配分や投資内容を明確にします。"
+        "text_ja": "リスク許容度およびリスク対応方針に基づき、リソース配分および投資内容を特定する"
       },
       {
         "implementationExample": "GV.RR-03.044 (Ex3)",
         "text": "Provide adequate and sufficient people, process, and technical resources to support the cybersecurity strategy",
-        "text_ja": "サイバーセキュリティ戦略を実行するために、必要な人員、プロセス、技術的リソースを確保します。"
+        "text_ja": "サイバーセキュリティ戦略を支えるために、人材・プロセス・技術の各側面において十分なリソースを確保する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、定めた戦略や役割、方針を実行するための人員、予算、時間、技術的支援が不足し、ガバナンスが形骸化するおそれがあります。特に、サイバーセキュリティ・リスク戦略や方針に見合った十分なリソースが配分されていない場合、必要な活動が継続できず、優先度の高いリスクへの対応が遅れる可能性があります。",
@@ -442,22 +442,22 @@
       {
         "implementationExample": "GV.RR-04.045 (Ex1)",
         "text": "Integrate cybersecurity risk management considerations into human resources processes (e.g., personnel screening, onboarding, change notification, offboarding)",
-        "text_ja": "採用、入社手続き、退職手続きなどの人事プロセスに、サイバーセキュリティの観点を取り入れます。"
+        "text_ja": "人事プロセス（例：採用前審査、入社時手続き、異動時通知、退職時手続きなど）にサイバーセキュリティリスク管理の観点を組み込む"
       },
       {
         "implementationExample": "GV.RR-04.046 (Ex2)",
         "text": "Consider cybersecurity knowledge to be a positive factor in hiring, training, and retention decisions",
-        "text_ja": "採用、教育、社員の維持において、サイバーセキュリティ知識を評価ポイントとして考慮します。"
+        "text_ja": "採用・教育・人材維持の判断において、サイバーセキュリティに関する知識や理解を評価要素として考慮する"
       },
       {
         "implementationExample": "GV.RR-04.047 (Ex3)",
         "text": "Conduct background checks prior to onboarding new personnel for sensitive roles, and periodically repeat background checks for personnel with such roles",
-        "text_ja": "重要なセキュリティ関連の職務に就く従業員については、入社前に身元調査（背景調査）を実施します。"
+        "text_ja": "機微な役割に就く人員については、入社前にバックグラウンドチェックを実施し、当該役割に従事する期間中も定期的に再確認する"
       },
       {
         "implementationExample": "GV.RR-04.048 (Ex4)",
         "text": "Define and enforce obligations for personnel to be aware of, adhere to, and uphold security policies as they relate to their roles",
-        "text_ja": "従業員がセキュリティポリシーを理解し、遵守し、維持する義務を明確にし、それを徹底します。"
+        "text_ja": "各人の役割に応じて、セキュリティポリシーを理解・遵守・維持する責任を明確に定義し、徹底する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、人事運用とサイバーセキュリティ上の責任が切り離され、採用、配置、評価、異動、退職などの各場面で必要な統制が欠けるおそれがあります。特に、人事プロセスにサイバーセキュリティが組み込まれていない場合、役割に応じた責任や遵守事項が定着せず、組織運用上の弱点が残る可能性があります。",
@@ -476,27 +476,27 @@
       {
         "implementationExample": "GV.PO-01.049 (Ex1)",
         "text": "Create, disseminate, and maintain an understandable, usable risk management policy with statements of management intent, expectations, and direction",
-        "text_ja": "分かりやすく実用的なリスク管理方針を策定し、組織内に展開したうえで適切に維持します。"
+        "text_ja": "経営の意図、期待、および方針を明確に示した、理解しやすく実務で利用可能なリスク管理ポリシーを策定し、周知・維持する"
       },
       {
         "implementationExample": "GV.PO-01.050 (Ex2)",
         "text": "Periodically review policy and supporting processes and procedures to ensure that they align with risk management strategy objectives and priorities, as well as the high-level direction of the cybersecurity policy",
-        "text_ja": "リスク管理方針と関連プロセスを定期的に見直し、組織の目標や優先事項と整合しているかを確認します。"
+        "text_ja": "ポリシーおよび関連するプロセス・手順について、リスク管理戦略の目標や優先事項、およびサイバーセキュリティポリシーの全体方針と整合しているかを確認するため、定期的に見直す"
       },
       {
         "implementationExample": "GV.PO-01.051 (Ex3)",
         "text": "Require approval from senior management on policy",
-        "text_ja": "リスク管理方針について、経営層の承認を得るようにします。"
+        "text_ja": "ポリシーについて経営層の承認を必須とする"
       },
       {
         "implementationExample": "GV.PO-01.052 (Ex4)",
         "text": "Communicate cybersecurity risk management policy and supporting processes and procedures across the organization",
-        "text_ja": "サイバーセキュリティリスク管理に関する方針を、全社に周知・共有します。"
+        "text_ja": "サイバーセキュリティリスク管理ポリシーおよび関連するプロセス・手順を組織全体に周知する"
       },
       {
         "implementationExample": "GV.PO-01.053 (Ex5)",
         "text": "Require personnel to acknowledge receipt of policy when first hired, annually, and whenever policy is updated",
-        "text_ja": "従業員には、入社時・年次・方針更新時に、リスク管理方針を確認したことを明示的に承認してもらいます。"
+        "text_ja": "ポリシーについて、入社時、年次、および改訂時に、従業員による受領および理解の確認（例：署名や同意）を必須とする"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、組織の状況や戦略に基づいたサイバーセキュリティ・リスク管理方針が整備されず、現場判断に依存した運用となるおそれがあります。特に、組織の状況や戦略に基づく方針が策定・承認・維持されていない場合、何を基準に管理すべきかが曖昧となり、統制の一貫性が損なわれる可能性があります。",
@@ -515,22 +515,22 @@
       {
         "implementationExample": "GV.PO-02.054 (Ex1)",
         "text": "Update policy based on periodic reviews of cybersecurity risk management results to ensure that policy and supporting processes and procedures adequately maintain risk at an acceptable level",
-        "text_ja": "セキュリティリスク管理の結果を定期的に評価し、それに基づいて方針を更新します。"
+        "text_ja": "サイバーセキュリティリスク管理の結果を定期的に評価し、リスクが許容可能な水準に維持されるよう、ポリシーおよび関連するプロセス・手順を見直し・更新する"
       },
       {
         "implementationExample": "GV.PO-02.055 (Ex2)",
         "text": "Provide a timeline for reviewing changes to the organization's risk environment (e.g., changes in risk or in the organization's mission objectives), and communicate recommended policy updates",
-        "text_ja": "リスク環境の変化を定期的に確認するためのスケジュールを定め、方針変更が必要な場合はその内容を関係者に共有します。"
+        "text_ja": "組織のリスク環境の変化（例：リスクの変動やミッションの変更）を見直すためのスケジュールを定め、必要なポリシー改訂の提案とともに関係者へ共有する"
       },
       {
         "implementationExample": "GV.PO-02.056 (Ex3)",
         "text": "Update policy to reflect changes in legal and regulatory requirements",
-        "text_ja": "法令や規制の変更に合わせて、方針を更新します。"
+        "text_ja": "法令および規制要件の変更を反映するようポリシーを更新する"
       },
       {
         "implementationExample": "GV.PO-02.057 (Ex4)",
         "text": "Update policy to reflect changes in technology (e.g., adoption of artificial intelligence) and changes to the business (e.g., acquisition of a new business, new contract requirements)",
-        "text_ja": "技術の進化や事業内容の変更に応じて、リスク管理方針を見直し・更新します。"
+        "text_ja": "技術の変化（例：AIの導入）や事業の変化（例：企業買収、新たな契約要件の発生）を踏まえ、ポリシーを更新する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティ・リスク管理方針が現行の要件や環境変化に追随できず、実態と乖離したルールが残るおそれがあります。特に、方針が定期的にレビュー・更新されず、変更内容が周知・遵守されていない場合、古い前提に基づく運用が続き、統制の有効性が低下する可能性があります。",
@@ -549,12 +549,12 @@
       {
         "implementationExample": "GV.OV-01.058 (Ex1)",
         "text": "Measure how well the risk management strategy and risk results have helped leaders make decisions and achieve organizational objectives",
-        "text_ja": "リスク管理戦略やリスク評価の結果が、経営層の意思決定にどれほど役立ったかを測定します。"
+        "text_ja": "リスク管理戦略およびその結果が、経営層の意思決定や組織目標の達成にどの程度寄与しているかを評価する"
       },
       {
         "implementationExample": "GV.OV-01.059 (Ex2)",
         "text": "Examine whether cybersecurity risk strategies that impede operations or innovation should be adjusted",
-        "text_ja": "現行のセキュリティ戦略が業務を阻害していないかを確認し、必要に応じて調整します。"
+        "text_ja": "業務運営やイノベーションを阻害しているサイバーセキュリティリスク戦略について、見直しの必要性を検討する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティ・リスクマネジメント戦略が有効に機能しているかを適切に把握できず、必要な見直しが行われないおそれがあります。特に、戦略の成果が定期的にレビューされ、方向性の調整に活用されていない場合、実態に合わない戦略が継続し、経営判断の質が低下する可能性があります。",
@@ -573,17 +573,17 @@
       {
         "implementationExample": "GV.OV-02.060 (Ex1)",
         "text": "Review audit findings to confirm whether the existing cybersecurity strategy has ensured compliance with internal and external requirements",
-        "text_ja": "監査結果を確認し、現在のサイバーセキュリティ戦略が法令や内部規程に従っているかを評価します。"
+        "text_ja": "監査結果を確認し、現行のサイバーセキュリティ戦略が内部および外部の要求事項への適合を確保できているかを評価する"
       },
       {
         "implementationExample": "GV.OV-02.061 (Ex2)",
         "text": "Review the performance oversight of those in cybersecurity-related roles to determine whether policy changes are necessary",
-        "text_ja": "サイバーセキュリティツールや機能が強化された場合、それに合わせて監督・管理の計画（oversight plan）を更新します。"
+        "text_ja": "サイバーセキュリティ関連の役割を担う人員に対する監督およびパフォーマンスを評価し、ポリシー変更の必要性を判断する"
       },
       {
         "implementationExample": "GV.OV-02.062 (Ex3)",
         "text": "Review strategy in light of cybersecurity incidents",
-        "text_ja": "新しい技術の導入やリスク環境の変化に応じて、監督計画を見直し・更新します。"
+        "text_ja": "サイバーセキュリティインシデントの発生状況を踏まえて、戦略の妥当性を見直す"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティ・リスクマネジメント戦略が組織要件や環境変化を十分に反映できず、必要な領域を網羅しないまま運用されるおそれがあります。特に、戦略がレビュー・調整され、組織要件を十分にカバーする形で維持されていない場合、重要な要件や変更点が抜け落ち、統制上の空白が生じる可能性があります。",
@@ -602,17 +602,17 @@
       {
         "implementationExample": "GV.OV-03.063 (Ex1)",
         "text": "Review key performance indicators (KPIs) to ensure that organization-wide policies and procedures achieve objectives",
-        "text_ja": "リスク状況や事業要件を踏まえて、新しいサイバーセキュリティ投資の優先順位を決めます。"
+        "text_ja": "主要業績指標（KPI）を評価し、組織全体のポリシーおよび手順が目標達成に寄与しているかを確認する"
       },
       {
         "implementationExample": "GV.OV-03.064 (Ex2)",
         "text": "Review key risk indicators (KRIs) to identify risks the organization faces, including likelihood and potential impact",
-        "text_ja": "想定される効果や予算の制約を考慮し、どのセキュリティ投資を優先すべきか判断します。"
+        "text_ja": "主要リスク指標（KRI）を評価し、組織が直面しているリスク（発生可能性および影響度を含む）を把握する"
       },
       {
         "implementationExample": "GV.OV-03.065 (Ex3)",
         "text": "Collect and communicate metrics on cybersecurity risk management with senior leadership",
-        "text_ja": "予算の増減に合わせて、サイバーセキュリティ戦略を調整します。"
+        "text_ja": "サイバーセキュリティリスク管理に関する指標を収集し、経営層へ報告・共有する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、組織におけるサイバーセキュリティ・リスクマネジメントの実効性を客観的に把握できず、改善が必要な領域を適切に見極められないおそれがあります。特に、パフォーマンスが評価・レビューされ、必要に応じて改善に結び付けられていない場合、問題の早期把握や継続的改善が進まない可能性があります。",
@@ -631,22 +631,22 @@
       {
         "implementationExample": "GV.SC-01.066 (Ex1)",
         "text": "Establish a strategy that expresses the objectives of the cybersecurity supply chain risk management program",
-        "text_ja": "ガバナンス委員会やインシデント対応ワーキンググループなどを活用し、組織全体のリーダーを集めてセキュリティガバナンスを実施します。"
+        "text_ja": "サイバーセキュリティ・サプライチェーンリスク管理プログラムの目的を明確に示す戦略を策定する"
       },
       {
         "implementationExample": "GV.SC-01.067 (Ex2)",
         "text": "Develop the cybersecurity supply chain risk management program, including a plan (with milestones), policies, and procedures that guide implementation and improvement of the program, and share the policies and procedures with the organizational stakeholders",
-        "text_ja": "CEO、CFO、CRO などの経営層を含む、サイバーセキュリティ責任者が参加するガバナンス委員会を設置します。"
+        "text_ja": "マイルストーンを含む計画、ポリシー、および手順から構成されるサイバーセキュリティ・サプライチェーンリスク管理プログラムを策定し、その実施および改善を導くとともに、ポリシーおよび手順を組織のステークホルダーに共有する"
       },
       {
         "implementationExample": "GV.SC-01.068 (Ex3)",
         "text": "Develop and implement program processes based on the strategy, objectives, policies, and procedures that are agreed upon and performed by the organizational stakeholders",
-        "text_ja": "サイバーセキュリティガバナンスに関する定期的な会議体を設置し、継続的に開催します。"
+        "text_ja": "合意された戦略、目標、ポリシー、および手順に基づき、組織のステークホルダーによって実行されるプログラムプロセスを策定・実装する"
       },
       {
         "implementationExample": "GV.SC-01.069 (Ex4)",
         "text": "Establish a cross-organizational mechanism that ensures alignment between functions that contribute to cybersecurity supply chain risk management, such as cybersecurity, IT, operations, legal, human resources, and engineering",
-        "text_ja": "OT（Operational Technology）や産業用制御システムに関する責任分担を明確にするガバナンス体制を構築します。"
+        "text_ja": "サイバーセキュリティ、IT、業務、法務、人事、エンジニアリングなど、サイバーセキュリティ・サプライチェーンリスク管理に関与する各機能間の整合性を確保するための全社横断的な連携メカニズムを構築する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サプライチェーンに関するサイバーセキュリティ・リスクを組織として一貫して扱うための基盤が整わず、外部依存に起因するリスク管理が場当たり的になるおそれがあります。特に、プログラム、戦略、目標、方針、プロセスが整備・合意されていない場合、部門ごとに判断が分かれ、重要なサプライチェーンリスクを見落とす可能性があります。",
@@ -665,42 +665,42 @@
       {
         "implementationExample": "GV.SC-02.070 (Ex1)",
         "text": "Identify one or more specific roles or positions that will be responsible and accountable for planning, resourcing, and executing cybersecurity supply chain risk management activities",
-        "text_ja": "サイバーセキュリティに関する法令順守を実現するために、必要な役割・責任・プロセスを定めます。"
+        "text_ja": "サイバーセキュリティ・サプライチェーンリスク管理活動の計画、リソース配分、および実行に対して責任および説明責任を担う具体的な役割またはポジションを特定する"
       },
       {
         "implementationExample": "GV.SC-02.071 (Ex2)",
         "text": "Document cybersecurity supply chain risk management roles and responsibilities in policy",
-        "text_ja": "ISA などの標準化団体への参加費用を支援するなど、他部門を含む担当者が専門知識を維持し、標準策定活動に参加できるようにします。"
+        "text_ja": "サイバーセキュリティ・サプライチェーンリスク管理に関する役割と責任をポリシーとして文書化する"
       },
       {
         "implementationExample": "GV.SC-02.072 (Ex3)",
         "text": "Create responsibility matrixes to document who will be responsible and accountable for cybersecurity supply chain risk management activities and how those teams and individuals will be consulted and informed",
-        "text_ja": "民間・公共のパートナーと協力して、業界標準の策定プロセスに参加します。"
+        "text_ja": "サイバーセキュリティ・サプライチェーンリスク管理活動における責任者および説明責任者、ならびに関係者への連携・報告方法を明確にするための責任分担表（例：RACI）を作成する"
       },
       {
         "implementationExample": "GV.SC-02.073 (Ex4)",
         "text": "Include cybersecurity supply chain risk management responsibilities and performance requirements in personnel descriptions to ensure clarity and improve accountability",
-        "text_ja": "業界標準と一貫性を持たせるため、コンフォーマンスポリシー（適合方針）を策定・管理・運用し、組織内に共有します。"
+        "text_ja": "サイバーセキュリティ・サプライチェーンリスク管理に関する責任およびパフォーマンス要件を職務記述書に含め、責任の明確化と説明責任の強化を図る"
       },
       {
         "implementationExample": "GV.SC-02.074 (Ex5)",
         "text": "Document performance goals for personnel with cybersecurity risk management-specific responsibilities, and periodically measure them to demonstrate and improve performance",
-        "text_ja": "セキュリティ関連の法規制に関する問題を特定するため、弁護士やコンサルタントなどの専門家の支援を受けます。"
+        "text_ja": "当該領域の責任を担う人員のパフォーマンス目標を設定・文書化し、定期的に評価してパフォーマンスの可視化と改善を行う"
       },
       {
         "implementationExample": "GV.SC-02.075 (Ex6)",
         "text": "Develop roles and responsibilities for suppliers, customers, and business partners to address shared responsibilities for applicable cybersecurity risks, and integrate them into organizational policies and applicable third-party agreements",
-        "text_ja": "該当するサイバーセキュリティ要件を文書化し、関係者に共有します。"
+        "text_ja": "適用されるサイバーセキュリティリスクに対する責任共有を踏まえ、サプライヤー、顧客、およびビジネスパートナーの役割と責任を定義し、組織のポリシーおよび該当する第三者契約に組み込む"
       },
       {
         "implementationExample": "GV.SC-02.076 (Ex7)",
         "text": "Internally communicate cybersecurity supply chain risk management roles and responsibilities for third parties",
-        "text_ja": "サイバーセキュリティインシデントに対応する際に必要となる、法務・規制対応の助言や支援を提供します。"
+        "text_ja": "第三者に関するサイバーセキュリティ・サプライチェーンリスク管理の役割と責任を、組織内部で明確に共有する"
       },
       {
         "implementationExample": "GV.SC-02.077 (Ex8)",
         "text": "Establish rules and protocols for information sharing and reporting processes between the organization and its suppliers",
-        "text_ja": "サイバーセキュリティ侵害の調査や対処において、法執行機関と連携します。"
+        "text_ja": "組織とサプライヤー間における情報共有および報告プロセスに関するルールおよび手順を確立する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サプライヤ、顧客、パートナーとの間で誰が何を担うのかが不明確となり、共有責任領域での抜け漏れが生じるおそれがあります。特に、サプライチェーンに関する役割、責任、権限が確立・周知・調整されていない場合、契約上・運用上の期待が揃わず、問題発生時の対応が遅れる可能性があります。",
@@ -719,22 +719,22 @@
       {
         "implementationExample": "GV.SC-03.078 (Ex1)",
         "text": "Identify areas of alignment and overlap with cybersecurity and enterprise risk management",
-        "text_ja": "監査や検査など、法令順守（コンプライアンス）に関するプログラムに参加します。"
+        "text_ja": "サイバーセキュリティおよび全社的リスク管理との整合領域および重複領域を特定する"
       },
       {
         "implementationExample": "GV.SC-03.079 (Ex2)",
         "text": "Establish integrated control sets for cybersecurity risk management and cybersecurity supply chain risk management",
-        "text_ja": "法務・規制に関するレビューの結果を反映し、必要なプロセスを更新します。"
+        "text_ja": "サイバーセキュリティリスク管理とサイバーセキュリティ・サプライチェーンリスク管理を統合した統制体系を確立する"
       },
       {
         "implementationExample": "GV.SC-03.080 (Ex3)",
         "text": "Integrate cybersecurity supply chain risk management into improvement processes",
-        "text_ja": "サプライヤーやパートナーとの契約（SLA や RACI など）に、サイバーセキュリティの要求事項を組み込みます。"
+        "text_ja": "サイバーセキュリティ・サプライチェーンリスク管理を継続的改善プロセスに組み込む"
       },
       {
         "implementationExample": "GV.SC-03.081 (Ex4)",
         "text": "Escalate material cybersecurity risks in supply chains to senior management, and address them at the enterprise risk management level",
-        "text_ja": "組織全体でサイバーセキュリティリスクに関する情報を共有できるよう、コミュニケーション戦略を策定します。"
+        "text_ja": "サプライチェーンにおける重要なサイバーセキュリティリスクを経営層へエスカレーションし、全社的リスク管理の枠組みで対応する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サプライチェーンに起因するリスクがサイバーセキュリティ管理や全社的リスク管理から切り離され、組織全体の判断に十分反映されないおそれがあります。特に、サプライチェーン・リスクマネジメントがサイバーセキュリティおよびERMに統合されていない場合、重大な外部依存リスクが経営レベルで適切に扱われない可能性があります。",
@@ -753,12 +753,12 @@
       {
         "implementationExample": "GV.SC-04.082 (Ex1)",
         "text": "Develop criteria for supplier criticality based on, for example, the sensitivity of data processed or possessed by suppliers, the degree of access to the organization's systems, and the importance of the products or services to the organization's mission",
-        "text_ja": "各事業部と積極的にコミュニケーションを取り、リスク対応や期待する役割を明確にします。"
+        "text_ja": "サプライヤーの重要度を評価するための基準を策定する（例：サプライヤーが取り扱うデータの機微性、組織システムへのアクセス範囲、提供される製品・サービスのミッションに対する重要性など）"
       },
       {
         "implementationExample": "GV.SC-04.083 (Ex2)",
         "text": "Keep a record of all suppliers, and prioritize suppliers based on the criticality criteria",
-        "text_ja": "ISAC などから得た外部の脅威情報を、関連する事業部門に共有します。"
+        "text_ja": "すべてのサプライヤーを一覧として管理し、定義した重要度基準に基づいて優先順位付けを行う"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、どのサプライヤが重要で、どこに優先的な管理が必要かを判断できず、限られた管理資源を効果的に配分できないおそれがあります。特に、サプライヤが把握されず、重要度に基づく優先順位付けが行われていない場合、事業影響の大きい相手先への管理が後回しになる可能性があります。",
@@ -777,52 +777,52 @@
       {
         "implementationExample": "GV.SC-05.084 (Ex1)",
         "text": "Establish security requirements for suppliers, products, and services commensurate with their criticality level and potential impact if compromised",
-        "text_ja": "インシデント発生時に関係者と適切に連携できるよう、運用チームと協力してコミュニケーション体制を整備します。"
+        "text_ja": "サプライヤー、製品、およびサービスの重要度や侵害時の影響に応じたセキュリティ要件を定める"
       },
       {
         "implementationExample": "GV.SC-05.085 (Ex2)",
         "text": "Include all cybersecurity and supply chain requirements that third parties must follow and how compliance with the requirements may be verified in default contractual language",
-        "text_ja": "現在のセキュリティ状況やリスクについて、事業部門や経営層へ定期的に報告します。"
+        "text_ja": "第三者が遵守すべきサイバーセキュリティおよびサプライチェーンに関する要求事項と、その遵守状況の確認方法を標準契約条項に組み込む"
       },
       {
         "implementationExample": "GV.SC-05.086 (Ex3)",
         "text": "Define the rules and protocols for information sharing between the organization and its suppliers and sub-tier suppliers in agreements",
-        "text_ja": "プライバシー関連の施策を主導する責任者（プライバシーオフィサー）を任命します。"
+        "text_ja": "組織とサプライヤーおよびその下位サプライヤー間の情報共有に関するルールおよび手順を契約に明記する"
       },
       {
         "implementationExample": "GV.SC-05.087 (Ex4)",
         "text": "Manage risk by including security requirements in agreements based on their criticality and potential impact if compromised",
-        "text_ja": "プライバシー要件とサイバーセキュリティの目標が矛盾しないよう、整合性を確保します。"
+        "text_ja": "重要度および侵害時の影響に応じて、契約にセキュリティ要件を組み込むことでリスクを管理する"
       },
       {
         "implementationExample": "GV.SC-05.088 (Ex5)",
         "text": "Define security requirements in service-level agreements (SLAs) for monitoring suppliers for acceptable security performance throughout the supplier relationship lifecycle",
-        "text_ja": "関連する事業部門と協力して、プライバシーに関する要件を策定します。"
+        "text_ja": "サプライヤー関係のライフサイクル全体を通じて適切なセキュリティ水準を維持するため、サービスレベル契約（SLA）にセキュリティ要件を定義する"
       },
       {
         "implementationExample": "GV.SC-05.089 (Ex6)",
         "text": "Contractually require suppliers to disclose cybersecurity features, functions, and vulnerabilities of their products and services for the life of the product or the term of service",
-        "text_ja": "プライバシー要件を、日々の運用プロセスや業務システムに組み込みます。"
+        "text_ja": "製品ライフサイクルまたはサービス提供期間を通じて、製品・サービスのセキュリティ機能、特性、および脆弱性の開示を契約上義務付ける"
       },
       {
         "implementationExample": "GV.SC-05.090 (Ex7)",
         "text": "Contractually require suppliers to provide and maintain a current component inventory (e.g., software or hardware bill of materials) for critical products",
-        "text_ja": "組織全体におけるプライバシーへの影響（例：従業員のプライバシーと担当者のセキュリティ責務のバランスなど）を理解するため、社内外の関係者と連携します。"
+        "text_ja": "重要な製品について、最新の構成要素一覧（例：ソフトウェアまたはハードウェアの部品表）を提供・維持することを契約上義務付ける"
       },
       {
         "implementationExample": "GV.SC-05.091 (Ex8)",
         "text": "Contractually require suppliers to vet their employees and guard against insider threats",
-        "text_ja": "ISAC などの外部のサイバーセキュリティ関連ワーキンググループやイベントに参加し、必要に応じて貢献します。"
+        "text_ja": "サプライヤーに対し、従業員の適格性確認を実施し、内部不正リスクへの対策を講じることを契約上義務付ける"
       },
       {
         "implementationExample": "GV.SC-05.092 (Ex9)",
         "text": "Contractually require suppliers to provide evidence of performing acceptable security practices through, for example, self-attestation, conformance to known standards, certifications, or inspections",
-        "text_ja": "重要インフラに関するサイバーセキュリティ情報を共有するため、業界パートナーと協力します。"
+        "text_ja": "自己宣誓、標準準拠、認証、監査などを通じて、適切なセキュリティ対策が実施されていることの証拠提出を契約上義務付ける"
       },
       {
         "implementationExample": "GV.SC-05.093 (Ex10)",
         "text": "Specify in contracts and other agreements the rights and responsibilities of the organization, its suppliers, and their supply chains, with respect to potential cybersecurity risks",
-        "text_ja": "組織全体でセキュリティ施策に取り組むため、共通の情報基盤や協働プラットフォームを活用します。"
+        "text_ja": "潜在的なサイバーセキュリティリスクに関して、組織、サプライヤー、およびそのサプライチェーンの権利と責任を契約や合意に明確に定義する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サプライチェーン上のサイバーセキュリティ要求事項が曖昧なままとなり、必要な管理が契約や合意事項に反映されないおそれがあります。特に、要求事項の確立、優先順位付け、契約への統合が不十分な場合、相手先に求めるべき対応や証跡が明確にならず、実効的な管理ができない可能性があります。",
@@ -841,22 +841,22 @@
       {
         "implementationExample": "GV.SC-06.094 (Ex1)",
         "text": "Perform thorough due diligence on prospective suppliers that is consistent with procurement planning and commensurate with the level of risk, criticality, and complexity of each supplier relationship",
-        "text_ja": "組織内の関係者を洗い出し、レジリエンス（復旧力）計画に適切に取り込みます。"
+        "text_ja": "調達計画に整合し、各サプライヤー関係のリスク、重要度、複雑性に応じた十分なデューデリジェンスを実施する"
       },
       {
         "implementationExample": "GV.SC-06.095 (Ex2)",
         "text": "Assess the suitability of the technology and cybersecurity capabilities and the risk management practices of prospective suppliers",
-        "text_ja": "業務運用に関する意思決定が、サイバーセキュリティリスク管理とも一貫性を保つように調整します。"
+        "text_ja": "候補サプライヤーの技術的適合性、サイバーセキュリティ能力、およびリスク管理体制を評価する"
       },
       {
         "implementationExample": "GV.SC-06.096 (Ex3)",
         "text": "Conduct supplier risk assessments against business and applicable cybersecurity requirements",
-        "text_ja": "事業継続性（レジリエンス）とセキュリティ戦略の間に矛盾がある場合、その衝突を特定し、解消します。"
+        "text_ja": "業務要件および適用されるサイバーセキュリティ要件に基づき、サプライヤーリスク評価を実施する"
       },
       {
         "implementationExample": "GV.SC-06.097 (Ex4)",
         "text": "Assess the authenticity, integrity, and security of critical products prior to acquisition and use",
-        "text_ja": "レジリエンス（復旧力）に関わる全ての部署・担当者の役割と責任を明確にします。"
+        "text_ja": "重要な製品について、導入および利用前に真正性、完全性、およびセキュリティを評価する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サプライヤや第三者との関係開始前に必要なリスク低減策を講じられず、問題のある相手先や製品・サービスを受け入れてしまうおそれがあります。特に、デューデリジェンスや事前評価が不十分な場合、契約開始後に重大なリスクが顕在化し、是正や見直しに大きな負荷が生じる可能性があります。",
@@ -875,27 +875,27 @@
       {
         "implementationExample": "GV.SC-07.098 (Ex1)",
         "text": "Adjust assessment formats and frequencies based on the third party's reputation and the criticality of the products or services they provide",
-        "text_ja": "代替オペレーションセンターや予備の機器（物理・仮想問わず）など、レジリエンス確保に必要なリソースを準備します。"
+        "text_ja": "第三者の信頼性や提供する製品・サービスの重要度に応じて、評価方法および評価頻度を調整する"
       },
       {
         "implementationExample": "GV.SC-07.099 (Ex2)",
         "text": "Evaluate third parties' evidence of compliance with contractual cybersecurity requirements, such as self-attestations, warranties, certifications, and other artifacts",
-        "text_ja": "レジリエンス用のリソース構成が正しく機能するかを検証し、定期的に訓練・演習を行います。"
+        "text_ja": "自己宣誓、保証、認証、各種証跡などを用いて、第三者が契約上のサイバーセキュリティ要件を遵守しているかを評価する"
       },
       {
         "implementationExample": "GV.SC-07.100 (Ex3)",
         "text": "Monitor critical suppliers to ensure that they are fulfilling their security obligations throughout the supplier relationship lifecycle using a variety of methods and techniques, such as inspections, audits, tests, or other forms of evaluation",
-        "text_ja": "訓練や実際のインシデントから得られた知見を、レジリエンス計画に反映します。"
+        "text_ja": "重要なサプライヤーについて、監査、検査、テストなどの手法を用いて、サプライヤー関係ライフサイクル全体にわたりセキュリティ義務の履行状況を監視する"
       },
       {
         "implementationExample": "GV.SC-07.101 (Ex4)",
         "text": "Monitor critical suppliers, services, and products for changes to their risk profiles, and reevaluate supplier criticality and risk impact accordingly",
-        "text_ja": "IT 機器、IoT デバイス、OT 機器、モバイル端末など、すべての種類のハードウェア資産を一覧として管理します。"
+        "text_ja": "重要なサプライヤー、サービス、および製品のリスクプロファイルの変化を監視し、それに応じて重要度やリスク影響を再評価する"
       },
       {
         "implementationExample": "GV.SC-07.102 (Ex5)",
         "text": "Plan for unexpected supplier and supply chain-related interruptions to ensure business continuity",
-        "text_ja": "既存の調達プロセスを活用し、ハードウェア資産の管理が確実にできるようにします。"
+        "text_ja": "サプライヤーやサプライチェーンに起因する予期しない中断に備え、事業継続を確保するための計画を策定する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サプライヤ、その製品・サービス、その他第三者がもたらすリスクを継続的に把握・評価できず、変化する外部リスクに追随できないおそれがあります。特に、リスクが理解され、記録され、優先順位付けされ、評価されていない場合、重要な問題の見逃しや、管理水準の低下に気付けない可能性があります。",
@@ -914,27 +914,27 @@
       {
         "implementationExample": "GV.SC-08.103 (Ex1)",
         "text": "Define and use rules and protocols for reporting incident response and recovery activities and the status between the organization and its suppliers",
-        "text_ja": "ネットワークに接続されていない機器（オフネット機器）についても、資産一覧を作成して管理します。"
+        "text_ja": "インシデント対応および復旧活動の状況について、組織とサプライヤー間で報告・共有するためのルールおよび手順を定め、運用する"
       },
       {
         "implementationExample": "GV.SC-08.104 (Ex2)",
         "text": "Identify and document the roles and responsibilities of the organization and its suppliers for incident response",
-        "text_ja": "ICS（産業制御システム）やビル管理システムなど、制御系に関連するハードウェア資産の一覧を作成します。"
+        "text_ja": "インシデント対応における組織およびサプライヤーの役割と責任を特定し、文書化する"
       },
       {
         "implementationExample": "GV.SC-08.105 (Ex3)",
         "text": "Include critical suppliers in incident response exercises and simulations",
-        "text_ja": "ファームウェア、ケーブル、ドックなど、機器の付属部品や周辺機器も資産管理の対象に含めます。"
+        "text_ja": "重要なサプライヤーをインシデント対応訓練やシミュレーションに参加させる"
       },
       {
         "implementationExample": "GV.SC-08.106 (Ex4)",
         "text": "Define and coordinate crisis communication methods and protocols between the organization and its critical suppliers",
-        "text_ja": "ソフトウェア、アプリケーション、デジタルプラットフォームのコンポーネントなど、すべての種類のソフト資産を一覧として管理します。"
+        "text_ja": "組織と重要なサプライヤー間での危機対応時のコミュニケーション手段および手順を定義し、連携体制を確立する"
       },
       {
         "implementationExample": "GV.SC-08.107 (Ex5)",
         "text": "Conduct collaborative lessons learned sessions with critical suppliers",
-        "text_ja": "ソフトウェアのバージョン、設定、パッチ適用状況を一覧管理し、更新を追跡します。"
+        "text_ja": "重要なサプライヤーと共同で振り返り（Lessons Learned）を実施し、改善につなげる"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、インシデント発生時にサプライヤや第三者との連携が円滑に行えず、対応や復旧が遅れるおそれがあります。特に、関連するサプライヤや第三者が計画、対応、復旧活動に含められていない場合、役割分担や連絡手順が不明確なままとなり、被害拡大や調整遅延につながる可能性があります。",
@@ -953,27 +953,27 @@
       {
         "implementationExample": "GV.SC-09.108 (Ex1)",
         "text": "Policies and procedures require provenance records for all acquired technology products and services",
-        "text_ja": "ソフトウェアが追加・削除・変更された場合に、資産一覧を更新して変更履歴を管理します。"
+        "text_ja": "取得するすべての技術製品およびサービスについて、由来（プロビナンス）に関する記録の保持をポリシーおよび手順で義務付ける"
       },
       {
         "implementationExample": "GV.SC-09.109 (Ex2)",
         "text": "Periodically provide risk reporting to leaders about how acquired components are proven to be untampered and authentic",
-        "text_ja": "パッチ適用、アップグレード、廃止、置き換えなど、ソフトウェアのライフサイクル管理を支えるプロセスを整備します。"
+        "text_ja": "取得したコンポーネントが改ざんされておらず真正であることをどのように確認しているかについて、定期的にリスク報告を経営層へ提供する"
       },
       {
         "implementationExample": "GV.SC-09.110 (Ex3)",
         "text": "Communicate regularly among cybersecurity risk managers and operations personnel about the need to acquire software patches, updates, and upgrades only from authenticated and trustworthy software providers",
-        "text_ja": "サプライヤー提供のソフトウェアやオープンソースコンポーネントも含めて資産として管理します。"
+        "text_ja": "ソフトウェアのパッチ、更新、アップグレードは認証済みかつ信頼できる提供元からのみ取得する必要性について、サイバーセキュリティ担当者と運用担当者間で定期的に共有する"
       },
       {
         "implementationExample": "GV.SC-09.111 (Ex4)",
         "text": "Review policies to ensure that they require approved supplier personnel to perform maintenance on supplier products",
-        "text_ja": "どの資産や依存関係が共有されており、どれが特定システム専用なのかを識別します。"
+        "text_ja": "サプライヤー製品の保守作業が、承認されたサプライヤー担当者によって実施されることをポリシーで要求しているかを確認する"
       },
       {
         "implementationExample": "GV.SC-09.112 (Ex5)",
         "text": "Policies and procedure require checking upgrades to critical hardware for unauthorized changes",
-        "text_ja": "利用しているベンダー製品とその依存関係、そしてそれらが組織の既存技術を適切にサポートするかを確認します。"
+        "text_ja": "重要なハードウェアのアップグレードに対して、不正な変更がないかを確認することをポリシーおよび手順で義務付ける"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サプライチェーンに関するセキュリティ実践がサイバーセキュリティ管理やERMと一体で機能せず、取得・利用する製品やサービスに関する統制が分断されるおそれがあります。特に、それらの実践が全体プログラムに統合されていない場合、取得、維持、変更、保守に関する判断がばらつき、信頼性確保が不十分となる可能性があります。",
@@ -992,37 +992,37 @@
       {
         "implementationExample": "GV.SC-10.113 (Ex1)",
         "text": "Establish processes for terminating critical relationships under both normal and adverse circumstances",
-        "text_ja": "ソフトウェアに必要なライブラリ、フレームワーク、サブコンポーネントなどの技術的依存関係を文書化します。"
+        "text_ja": "通常時および異常時の双方において、重要な取引関係を終了するためのプロセスを整備する"
       },
       {
         "implementationExample": "GV.SC-10.114 (Ex2)",
         "text": "Define and implement plans for component end-of-life maintenance support and obsolescence",
-        "text_ja": "業務機能、業務プロセス、システム間の依存関係を整理し、文書化します。"
+        "text_ja": "コンポーネントのライフサイクル終了（EOL）に伴う保守対応および廃止（陳腐化）に関する計画を定義・実装する"
       },
       {
         "implementationExample": "GV.SC-10.115 (Ex3)",
         "text": "Verify that supplier access to organization resources is deactivated promptly when it is no longer needed",
-        "text_ja": "担当者の役割と責任を識別・文書化するためのプロセスを整備します。"
+        "text_ja": "サプライヤーによる組織リソースへのアクセスが不要となった場合、速やかに無効化されていることを確認する"
       },
       {
         "implementationExample": "GV.SC-10.116 (Ex4)",
         "text": "Verify that assets containing the organization's data are returned or properly disposed of in a timely, controlled, and safe manner",
-        "text_ja": "担当者の役割や責任に変更があった場合、それを継続的に追跡し管理します。"
+        "text_ja": "組織のデータを含む資産が、適時かつ統制された安全な方法で返却または適切に廃棄されていることを確認する"
       },
       {
         "implementationExample": "GV.SC-10.117 (Ex5)",
         "text": "Develop and execute a plan for terminating or transitioning supplier relationships that takes supply chain security risk and resiliency into account",
-        "text_ja": "運用担当、経営層、リスク管理担当など、役割ごとの担当者リストを整備し、常に最新に保ちます。"
+        "text_ja": "サプライチェーンセキュリティリスクおよびレジリエンスを考慮した、サプライヤー関係の終了または移行計画を策定・実行する"
       },
       {
         "implementationExample": "GV.SC-10.118 (Ex6)",
         "text": "Mitigate risks to data and systems created by supplier termination",
-        "text_ja": "ハードウェア資産が、どの組織・ユーザー・システム・物理場所に紐づいているかを明確にします。"
+        "text_ja": "サプライヤー関係の終了に伴い発生するデータおよびシステムへのリスクを低減する"
       },
       {
         "implementationExample": "GV.SC-10.119 (Ex7)",
         "text": "Manage data leakage risks associated with supplier termination",
-        "text_ja": "ソフトウェア資産が、どの組織・利用者・システムと関連付いているかを整理します。"
+        "text_ja": "サプライヤー契約終了に伴うデータ漏えいリスクを管理する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サプライヤとの契約終了や関係移行の際に必要な統制が不足し、アクセス残存、データ返却漏れ、移行不備などのリスクが発生するおそれがあります。特に、契約終了後に実施すべき活動が計画に含まれていない場合、終了後の管理責任が曖昧となり、情報漏えいや業務影響につながる可能性があります。",
