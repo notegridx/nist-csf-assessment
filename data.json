@@ -2737,22 +2737,22 @@
       {
         "implementationExample": "RS.MA-01.308 (Ex1)",
         "text": "Detection technologies automatically report confirmed incidents",
-        "text_ja": "本人確認（ID Verification）の改善点を、プロセスに反映します。"
+        "text_ja": "検知技術は、確認されたインシデントを自動的に報告する"
       },
       {
         "implementationExample": "RS.MA-01.309 (Ex2)",
         "text": "Request incident response assistance from the organization's incident response outsourcer",
-        "text_ja": "認可プロセス（アクセス許可）の改善点を反映します。"
+        "text_ja": "組織のインシデント対応外部委託先に対して、インシデント対応支援を要請する"
       },
       {
         "implementationExample": "RS.MA-01.310 (Ex3)",
         "text": "Designate an incident lead for each incident",
-        "text_ja": "ID証明（Identity Proofing）の改善点をプロセスへ取り込みます。"
+        "text_ja": "各インシデントごとにインシデント対応責任者（インシデントリード）を指定する"
       },
       {
         "implementationExample": "RS.MA-01.311 (Ex4)",
         "text": "Initiate execution of additional cybersecurity plans as needed to support incident response (for example, business continuity and disaster recovery)",
-        "text_ja": "安全な構成管理のベストプラクティスを用いて、システムの標準構成（ベースライン）を定義します。"
+        "text_ja": "インシデント対応を支援するために必要に応じて、追加のサイバーセキュリティ計画（例：事業継続計画や災害復旧計画）の実行を開始する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、インシデント対応活動が場当たり的になり、対応の遅延や混乱を招くおそれがあります。特に、インシデント対応活動が、定義された手順および役割に基づいて管理されていない場合、誰が何を判断し実行するのかが曖昧となり、初動や関係者連携が遅れる可能性があります。",
@@ -2771,16 +2771,16 @@
       {
         "implementationExample": "RS.MA-02.312 (Ex1)",
         "text": "Preliminarily review incident reports to confirm that they are cybersecurity-related and necessitate incident response activities",
-        "text_ja": "運用システムの構成管理において、安全な構成管理のベストプラクティスを適用します。"
+        "text_ja": "インシデント報告を初期レビューし、それがサイバーセキュリティに関連しており、インシデント対応活動を必要とするかを確認する"
       },
       {
         "implementationExample": "RS.MA-02.313 (Ex2)",
         "text": "Apply criteria to estimate the severity of an incident",
-        "text_ja": "ソフトウェア構成管理にも、安全な構成管理手法を適用します。"
+        "text_ja": "インシデントの重大度を評価するための基準を適用する"
       }
     ],
-    "riskText": "本カテゴリの取組みが不十分な場合、インシデント対応の進捗や有効性を適切に把握できず、対応の遅れや抜け漏れに気付きにくくなります。特に、インシデント対応の進捗および有効性が監視・調整されていない場合、状況変化に応じた判断や資源配分が遅れ、被害拡大につながる可能性があります。",
-    "improvementHint": "対応状況を把握するために確認すべき項目を整理し、進捗、未完了事項、阻害要因、対応効果を継続的に確認できるようにしてください。必要に応じて対応方針や体制を調整する手順も定義してください。（RS.MA-02）"
+    "riskText": "本カテゴリの取組みが不十分な場合、インシデント報告の内容が適切に評価されず、対応が必要な事象を見逃したり、不要な対応に資源を割いてしまうおそれがあります。特に、インシデント報告がトリアージされ、妥当性が確認されていない場合、誤検知や重要度の低い事象に対応が偏り、重要なインシデントへの初動が遅れる可能性があります。",
+    "improvementHint": "インシデント報告を評価するためのトリアージ基準と確認手順を整理してください。サイバーセキュリティ関連性、重大度、対応必要性を判断できるようにし、適切に対応優先度へ反映できるようにしてください。（RS.MA-02）"
   },
   {
     "id": "RS.MA-03",
@@ -2795,17 +2795,17 @@
       {
         "implementationExample": "RS.MA-03.314 (Ex1)",
         "text": "Further review and categorize incidents based on the type of incident (e.g., data breach, ransomware, DDoS, account compromise)",
-        "text_ja": "運用環境が、定めた標準構成（ベースライン）と一致していることを確認します。"
+        "text_ja": "インシデントの種類（例：情報漏えい、ランサムウェア、DDoS、アカウント侵害）に基づいて、インシデントをさらにレビューし分類する"
       },
       {
         "implementationExample": "RS.MA-03.315 (Ex2)",
         "text": "Prioritize incidents based on their scope, likely impact, and time-critical nature",
-        "text_ja": "安全な構成管理を適用し、法規制・ガイドラインの遵守を支援します。"
+        "text_ja": "インシデントの影響範囲、想定される影響、および時間的緊急性に基づいて優先順位を付ける"
       },
       {
         "implementationExample": "RS.MA-03.316 (Ex3)",
         "text": "Select incident response strategies for active incidents by balancing the need to quickly recover from an incident with the need to observe the attacker or conduct a more thorough investigation",
-        "text_ja": "資産（システム・アプリ）の開発およびデプロイ時に、安全なデプロイ手法を活用します。"
+        "text_ja": "インシデントから迅速に復旧する必要性と、攻撃者の観察やより詳細な調査の必要性とのバランスを考慮して、進行中のインシデントに対する対応戦略を選択する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、インシデントの分類や優先順位付けが適切に行われず、重要な事象への対応が後手に回るおそれがあります。特に、インシデントが分類され、優先順位付けされていない場合、深刻度や影響に見合った対応が取れず、限られた対応資源を適切に配分できない可能性があります。",
@@ -2824,12 +2824,12 @@
       {
         "implementationExample": "RS.MA-04.317 (Ex1)",
         "text": "Track and validate the status of all ongoing incidents",
-        "text_ja": "ソフトウェア開発時に、安全な開発手法（Secure SDLC）を取り入れます。"
+        "text_ja": "進行中のすべてのインシデントの状況を追跡し、妥当性を確認する"
       },
       {
         "implementationExample": "RS.MA-04.318 (Ex2)",
         "text": "Coordinate incident escalation or elevation with designated internal and external stakeholders",
-        "text_ja": "資産の開発・展開において、関連する脅威（攻撃手法）を考慮します。"
+        "text_ja": "指定された内部および外部のステークホルダーと連携して、インシデントのエスカレーションまたは上位レベルへの引き上げを実施する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、重要なインシデントが適切な相手に引き上げられず、必要な判断や支援が得られないおそれがあります。特に、必要に応じてインシデントがエスカレーションされていない場合、経営判断、法務判断、外部連携が遅れ、対応の遅延や対外的な混乱につながる可能性があります。",
@@ -2848,12 +2848,12 @@
       {
         "implementationExample": "RS.MA-05.319 (Ex1)",
         "text": "Apply incident recovery criteria to known and assumed characteristics of the incident to determine whether incident recovery processes should be initiated",
-        "text_ja": "セキュアコーディングを行うため、安全な開発手法を適用します。"
+        "text_ja": "インシデントの既知および想定される特性に対して復旧開始基準を適用し、インシデント復旧プロセスを開始すべきかを判断する"
       },
       {
         "implementationExample": "RS.MA-05.320 (Ex2)",
         "text": "Take the possible operational disruption of incident recovery activities into account",
-        "text_ja": "コードスキャナなどの自動化ツールを活用し、安全な開発（Secure Development）を支援します。"
+        "text_ja": "インシデント復旧活動によって生じ得る業務への影響を考慮する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、復旧へ移行すべきタイミングを誤り、早すぎる復旧による再発や遅すぎる復旧による業務影響の長期化を招くおそれがあります。特に、インシデント復旧を開始するための基準が適用されていない場合、封じ込めや原因除去が不十分なまま復旧を始めたり、逆に不要に復旧が遅れたりする可能性があります。",
@@ -2872,22 +2872,22 @@
       {
         "implementationExample": "RS.AN-03.321 (Ex1)",
         "text": "Determine the sequence of events that occurred during the incident and which assets and resources were involved in each event",
-        "text_ja": "資産管理を適切に行うため、安全な構成管理（Secure Configuration）を適用します。"
+        "text_ja": "インシデント中に発生した事象の時系列および各事象に関与した資産やリソースを特定する"
       },
       {
         "implementationExample": "RS.AN-03.322 (Ex2)",
         "text": "Attempt to determine what vulnerabilities, threats, and threat actors were directly or indirectly involved in the incident",
-        "text_ja": "資産インベントリ（機器・ソフト一覧）を活用し、安全な構成管理を実施します。"
+        "text_ja": "インシデントに直接または間接的に関与した脆弱性、脅威、および脅威アクターを特定するよう努める"
       },
       {
         "implementationExample": "RS.AN-03.323 (Ex3)",
         "text": "Analyze the incident to find the underlying, systemic root causes",
-        "text_ja": "無許可の構成変更を防ぐため、安全な構成管理手法を活用します。"
+        "text_ja": "インシデントを分析し、根底にある体系的な根本原因を特定する"
       },
       {
         "implementationExample": "RS.AN-03.324 (Ex4)",
         "text": "Check any cyber deception technology for additional information on attacker behavior",
-        "text_ja": "組織全体で、安全な構成管理の方法が統一して適用されるようにします。"
+        "text_ja": "攻撃者の行動に関する追加情報を得るために、デセプション技術を確認する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、インシデント中に何が起きたのか、なぜ起きたのかを正確に把握できず、適切な対応判断や再発防止策につながらないおそれがあります。特に、インシデント中に何が起きたか、および根本原因を特定するための分析が実施されていない場合、表面的な対応に留まり、同様の問題が再発する可能性があります。",
@@ -2906,12 +2906,12 @@
       {
         "implementationExample": "RS.AN-06.325 (Ex1)",
         "text": "Require each incident responder and others (e.g., system administrators, cybersecurity engineers) who perform incident response tasks to record their actions and make the record immutable",
-        "text_ja": "レジリエンス（復旧力）向上のため、安全な構成管理手法を活用します。"
+        "text_ja": "インシデント対応を実施する各担当者（例：インシデント対応者、システム管理者、セキュリティエンジニアなど）に対し、自身の対応内容を記録し、その記録を改ざん不可能な状態とすることを求める"
       },
       {
         "implementationExample": "RS.AN-06.326 (Ex2)",
         "text": "Require the incident lead to document the incident in detail and be responsible for preserving the integrity of the documentation and the sources of all information being reported",
-        "text_ja": "アクセス制御において、最小権限の原則を適用します。"
+        "text_ja": "インシデントリードに対し、インシデントの詳細な記録を作成させ、報告されるすべての情報の文書および情報源の完全性を保持する責任を負わせる"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、調査で実施した作業の記録が不十分となり、何を根拠にどの判断をしたのかを後から確認できなくなるおそれがあります。特に、調査で実施した作業が記録され、記録の完全性および来歴（プロベナンス）が保持されていない場合、原因究明、説明責任、法的対応に支障が生じる可能性があります。",
@@ -2930,7 +2930,7 @@
       {
         "implementationExample": "RS.AN-07.327 (Ex1)",
         "text": "Collect, preserve, and safeguard the integrity of all pertinent incident data and metadata (e.g., data source, date/time of collection) based on evidence preservation and chain-of-custody procedures",
-        "text_ja": "アクセス制御では、職務分掌（Separation of Duties）を適切に導入します。"
+        "text_ja": "証拠保全およびチェーン・オブ・カストディ手順に基づき、関連するすべてのインシデントデータおよびメタデータ（例：データの取得元、収集日時）を収集し、完全性を維持し、安全に保護する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、インシデントに関するデータやメタデータが十分に収集・保全されず、分析や証拠保全の質が低下するおそれがあります。特に、インシデントに関するデータおよびメタデータが収集され、その完全性および来歴（プロベナンス）が保持されていない場合、調査結果の信頼性が損なわれ、説明責任や法的対応に支障が生じる可能性があります。",
@@ -2949,12 +2949,12 @@
       {
         "implementationExample": "RS.AN-08.328 (Ex1)",
         "text": "Review other potential targets of the incident to search for indicators of compromise and evidence of persistence",
-        "text_ja": "サイバーセキュリティのリスク管理を支援するため、安全なアクセス制御手法を適用します。"
+        "text_ja": "インシデントの他の潜在的な対象を確認し、侵害指標および持続的侵入の痕跡を調査する"
       },
       {
         "implementationExample": "RS.AN-08.329 (Ex2)",
         "text": "Automatically run tools on targets to look for indicators of compromise and evidence of persistence",
-        "text_ja": "アクセス制御プロセスが、安全なサービス提供を支えるように設計します。"
+        "text_ja": "対象システムに対してツールを自動実行し、侵害指標および持続的侵入の痕跡を検出する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、インシデントの規模を正しく見積もれず、対応範囲や必要資源の判断を誤るおそれがあります。特に、インシデントの規模が推定され、検証されていない場合、影響対象や被害範囲を過小評価し、封じ込めや連絡が不十分になる可能性があります。",
@@ -2973,17 +2973,17 @@
       {
         "implementationExample": "RS.CO-02.330 (Ex1)",
         "text": "Follow the organization's breach notification procedures after discovering a data breach incident, including notifying affected customers",
-        "text_ja": "IAM（ID & Access Management）システムを適切に活用し、アクセス制御を強化します。"
+        "text_ja": "データ侵害インシデントを検知した後、影響を受けた顧客への通知を含め、組織の侵害通知手順に従う"
       },
       {
         "implementationExample": "RS.CO-02.331 (Ex2)",
         "text": "Notify business partners and customers of incidents in accordance with contractual requirements",
-        "text_ja": "レジリエンス（復旧力）強化のため、アクセス制御の適切な運用を行います。"
+        "text_ja": "契約上の要件に従い、ビジネスパートナーおよび顧客に対してインシデントを通知する"
       },
       {
         "implementationExample": "RS.CO-02.332 (Ex3)",
         "text": "Notify law enforcement agencies and regulatory bodies of incidents based on criteria in the incident response plan and management approval",
-        "text_ja": "アクセス制御を強化するため、多要素認証（MFA）を導入・運用します。"
+        "text_ja": "インシデント対応計画で定められた基準および経営層の承認に基づき、法執行機関および規制当局にインシデントを通知する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、インシデント対応の状況や結果が関係するステークホルダーへ適切に報告されず、信頼低下や意思決定の遅れを招くおそれがあります。特に、インシデント対応の状況および結果が、関係するステークホルダーに報告されていない場合、経営層、顧客、取引先、規制当局などとの認識のずれや説明不足が生じる可能性があります。",
@@ -3002,32 +3002,32 @@
       {
         "implementationExample": "RS.CO-03.333 (Ex1)",
         "text": "Securely share information consistent with response plans and information sharing agreements",
-        "text_ja": "アクセス制御を適切に行うため、本人確認（Identity Proofing）を実施します。"
+        "text_ja": "対応計画および情報共有契約に従い、情報を安全に共有する"
       },
       {
         "implementationExample": "RS.CO-03.334 (Ex2)",
         "text": "Voluntarily share information about an attacker's observed TTPs, with all sensitive data removed, with an Information Sharing and Analysis Center (ISAC)",
-        "text_ja": "リモートアクセス時には、デジタルID確認（Digital Identity Verification）を活用します。"
+        "text_ja": "攻撃者の観測された戦術・技術・手順（TTP）に関する情報を、機微情報をすべて除去したうえで、情報共有分析センター（ISAC）と自主的に共有する"
       },
       {
         "implementationExample": "RS.CO-03.335 (Ex3)",
         "text": "Notify HR when malicious insider activity occurs",
-        "text_ja": "リモートアクセスには、適切な認証ソリューションの利用を必須とします。"
+        "text_ja": "悪意のある内部活動が発生した場合、人事部門に通知する"
       },
       {
         "implementationExample": "RS.CO-03.336 (Ex4)",
         "text": "Regularly update senior leadership on the status of major incidents",
-        "text_ja": "機密性・完全性・可用性を確保するため、アクセス制御を適切に運用します。"
+        "text_ja": "重大なインシデントの状況について、経営層に定期的に報告する"
       },
       {
         "implementationExample": "RS.CO-03.337 (Ex5)",
         "text": "Follow the rules and protocols defined in contracts for incident information sharing between the organization and its suppliers",
-        "text_ja": "ネットワークセキュリティを強化するため、アクセス制御手法を活用します。"
+        "text_ja": "組織とサプライヤー間のインシデント情報共有について、契約で定義されたルールおよび手順に従う"
       },
       {
         "implementationExample": "RS.CO-03.338 (Ex6)",
         "text": "Coordinate crisis communication methods between the organization and its critical suppliers",
-        "text_ja": "安全なサービス運用のため、アクセス制御手法を活用します。"
+        "text_ja": "組織と重要なサプライヤー間で、危機時のコミュニケーション手段を調整する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、指定された内部および外部の関係者との情報共有が適切に行われず、対応連携や意思決定に支障が生じるおそれがあります。特に、指定された内部および外部のステークホルダーに情報が共有されていない場合、必要な支援や協力が得られず、対応の遅延や混乱につながる可能性があります。",
@@ -3046,22 +3046,22 @@
       {
         "implementationExample": "RS.MI-01.339 (Ex1)",
         "text": "Cybersecurity technologies (e.g., antivirus software) and cybersecurity features of other technologies (e.g., operating systems, network infrastructure devices) automatically perform containment actions",
-        "text_ja": "外部業者・サードパーティのユーザーアクセスを適切に管理します。"
+        "text_ja": "サイバーセキュリティ技術（例：アンチウイルスソフトウェア）および他の技術のセキュリティ機能（例：オペレーティングシステム、ネットワークインフラ機器）が、自動的に封じ込め対応を実施する"
       },
       {
         "implementationExample": "RS.MI-01.340 (Ex2)",
         "text": "Allow incident responders to manually select and perform containment actions",
-        "text_ja": "ユーザーIDとデバイスIDを組み合わせて、アクセス制御を強化します。"
+        "text_ja": "インシデント対応担当者が封じ込め対応を手動で選択し実施できるようにする"
       },
       {
         "implementationExample": "RS.MI-01.341 (Ex3)",
         "text": "Allow a third party (e.g., internet service provider, managed security service provider) to perform containment actions on behalf of the organization",
-        "text_ja": "アカウント管理を強化するため、ログ取得と監視を活用します。"
+        "text_ja": "第三者（例：インターネットサービスプロバイダー、マネージドセキュリティサービスプロバイダー）が組織に代わって封じ込め対応を実施できるようにする"
       },
       {
         "implementationExample": "RS.MI-01.342 (Ex4)",
         "text": "Automatically transfer compromised endpoints to a remediation virtual local area network (VLAN)",
-        "text_ja": "ID管理・アカウント管理に関連するイベントを監視します。"
+        "text_ja": "侵害されたエンドポイントを、修復用の仮想ローカルエリアネットワーク（VLAN）へ自動的に移動させる"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、インシデントの封じ込めが遅れ、被害範囲の拡大や影響の長期化を招くおそれがあります。特に、インシデントの影響を抑制・軽減するための対策が実施されていない場合、感染拡大、不正アクセス継続、データ流出継続などを止められない可能性があります。",
@@ -3080,17 +3080,17 @@
       {
         "implementationExample": "RS.MI-02.343 (Ex1)",
         "text": "Cybersecurity technologies and cybersecurity features of other technologies (e.g., operating systems, network infrastructure devices) automatically perform eradication actions",
-        "text_ja": "認証・認可ログを活用し、アカウント管理を適切に行います。"
+        "text_ja": "サイバーセキュリティ技術および他の技術のセキュリティ機能（例：オペレーティングシステム、ネットワークインフラ機器）が、自動的に根絶対応を実施する"
       },
       {
         "implementationExample": "RS.MI-02.344 (Ex2)",
         "text": "Allow incident responders to manually select and perform eradication actions",
-        "text_ja": "アクセス制御ログを活用して、アカウント管理をサポートします。"
+        "text_ja": "インシデント対応担当者が根絶対応を手動で選択し実施できるようにする"
       },
       {
         "implementationExample": "RS.MI-02.345 (Ex3)",
         "text": "Allow a third party (e.g., managed security service provider) to perform eradication actions on behalf of the organization",
-        "text_ja": "アクセス制御ログを分析し、セキュリティ対策やリスク管理の判断に役立てます。"
+        "text_ja": "第三者（例：マネージドセキュリティサービスプロバイダー）が組織に代わって根絶対応を実施できるようにする"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、インシデントの原因や攻撃手段を除去できず、同じ問題が継続したり再発したりするおそれがあります。特に、インシデントによる被害の拡大を防止するための是正措置が講じられていない場合、侵害要因が残り、封じ込め後も再侵害や影響継続につながる可能性があります。",
