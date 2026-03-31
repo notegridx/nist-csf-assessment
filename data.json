@@ -305,13 +305,13 @@
     "category": "GV.RM (Risk Management Strategy)",
     "category_ja": "GV.RM（リスクマネジメント戦略）",
     "subcategory": "GV.RM-07 - Strategic opportunities (i.e., positive risks) are characterized and are included in organizational cybersecurity risk discussions",
-    "subcategory_ja": "GV.RM-07 - 戦略的機会（ポジティブリスク）が特定され、組織のサイバーセキュリティリスクに関する検討に含まれている",
-    "question": "GV.RM-07 - 戦略的機会（ポジティブリスク）が特定され、組織のサイバーセキュリティリスクに関する検討に含まれている",
+    "subcategory_ja": "GV.RM-07 - 戦略的機会（機会としてのリスク）が特定され、組織のサイバーセキュリティリスクに関する検討に含まれている",
+    "question": "GV.RM-07 - 戦略的機会（機会としてのリスク）が特定され、組織のサイバーセキュリティリスクに関する検討に含まれている",
     "examples": [
       {
         "implementationExample": "GV.RM-07.030 (Ex1)",
         "text": "Define and communicate guidance and methods for identifying opportunities and including them in risk discussions (e.g., strengths, weaknesses, opportunities, and threats [SWOT] analysis)",
-        "text_ja": "機会（ポジティブリスク）を特定し、リスク議論に組み込むための方針および手法（例：SWOT分析）を定義し、関係者に共有する"
+        "text_ja": "機会（機会としてのリスク）を特定し、リスク議論に組み込むための方針および手法（例：SWOT分析）を定義し、関係者に共有する"
       },
       {
         "implementationExample": "GV.RM-07.031 (Ex2)",
@@ -321,7 +321,7 @@
       {
         "implementationExample": "GV.RM-07.032 (Ex3)",
         "text": "Calculate, document, and prioritize positive risks alongside negative risks",
-        "text_ja": "ポジティブリスクをネガティブリスクと同様に評価・記録し、優先順位付けを行う"
+        "text_ja": "機会としてのリスクをネガティブリスクと同様に評価・記録し、優先順位付けを行う"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、サイバーセキュリティに関する戦略的機会が十分に評価されず、守りだけに偏った判断となるおそれがあります。特に、プラスのリスクが特定・評価され、組織の検討に含められていない場合、レジリエンス向上や競争力強化につながる機会を見逃し、経営判断の幅が狭まる可能性があります。",
@@ -334,8 +334,8 @@
     "category": "GV.RR (Roles, Responsibilities, and Authorities)",
     "category_ja": "GV.RR（役割・責任・権限）",
     "subcategory": "GV.RR-01 - Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually improving",
-    "subcategory_ja": "GV.RR-01 - 組織の経営層がサイバーセキュリティリスクに対する責任と説明責任を担い、リスクを認識し倫理的で継続的に改善する文化が醸成されている",
-    "question": "GV.RR-01 - 組織の経営層がサイバーセキュリティリスクに対する責任と説明責任を担い、リスクを認識し倫理的で継続的に改善する文化が醸成されている",
+    "subcategory_ja": "GV.RR-01 - 組織の経営層がサイバーセキュリティリスクに対する責任と説明責任を担い、リスク認識を持ち、倫理性と継続的改善を重視する文化が醸成されている",
+    "question": "GV.RR-01 - 組織の経営層がサイバーセキュリティリスクに対する責任と説明責任を担い、リスク認識を持ち、倫理性と継続的改善を重視する文化が醸成されている",
     "examples": [
       {
         "implementationExample": "GV.RR-01.033 (Ex1)",
@@ -368,8 +368,8 @@
     "category": "GV.RR (Roles, Responsibilities, and Authorities)",
     "category_ja": "GV.RR（役割・責任・権限）",
     "subcategory": "GV.RR-02 - Roles, responsibilities, and authorities related to cybersecurity risk management are established, communicated, understood, and enforced",
-    "subcategory_ja": "GV.RR-02 - サイバーセキュリティリスク管理に関する役割、責任、および権限が定義され、共有され、理解され、適用されている",
-    "question": "GV.RR-02 - サイバーセキュリティリスク管理に関する役割、責任、および権限が定義され、共有され、理解され、適用されている",
+    "subcategory_ja": "GV.RR-02 - サイバーセキュリティリスク管理に関する役割、責任、および権限が定義され、共有され、理解され、遵守が徹底されている",
+    "question": "GV.RR-02 - サイバーセキュリティリスク管理に関する役割、責任、および権限が定義され、共有され、理解され、遵守が徹底されている",
     "examples": [
       {
         "implementationExample": "GV.RR-02.037 (Ex1)",
@@ -470,8 +470,8 @@
     "category": "GV.PO (Policy)",
     "category_ja": "GV.PO（方針）",
     "subcategory": "GV.PO-01 - Policy for managing cybersecurity risks is established based on organizational context, cybersecurity strategy, and priorities and is communicated and enforced",
-    "subcategory_ja": "GV.PO-01 - 組織の状況、サイバーセキュリティ戦略、および優先事項に基づいてサイバーセキュリティリスク管理に関する方針が定義され、共有され、適用されている",
-    "question": "GV.PO-01 - 組織の状況、サイバーセキュリティ戦略、および優先事項に基づいてサイバーセキュリティリスク管理に関する方針が定義され、共有され、適用されている",
+    "subcategory_ja": "GV.PO-01 - 組織の状況、サイバーセキュリティ戦略、および優先事項に基づいてサイバーセキュリティリスク管理に関する方針が定義され、共有され、遵守が徹底されている",
+    "question": "GV.PO-01 - 組織の状況、サイバーセキュリティ戦略、および優先事項に基づいてサイバーセキュリティリスク管理に関する方針が定義され、共有され、遵守が徹底されている",
     "examples": [
       {
         "implementationExample": "GV.PO-01.049 (Ex1)",
@@ -685,7 +685,7 @@
       {
         "implementationExample": "GV.SC-02.074 (Ex5)",
         "text": "Document performance goals for personnel with cybersecurity risk management-specific responsibilities, and periodically measure them to demonstrate and improve performance",
-        "text_ja": "当該領域の責任を担う人員のパフォーマンス目標を設定・文書化し、定期的に評価してパフォーマンスの可視化と改善を行う"
+        "text_ja": "この領域の責任を持つ人員のパフォーマンス目標を設定・文書化し、定期的に評価してパフォーマンスの可視化と改善を行う"
       },
       {
         "implementationExample": "GV.SC-02.075 (Ex6)",
@@ -1088,8 +1088,8 @@
     "category": "ID.AM (Asset Management)",
     "category_ja": "ID.AM（資産管理）",
     "subcategory": "ID.AM-03 - Representations of the organization's authorized network communication and internal and external network data flows are maintained",
-    "subcategory_ja": "ID.AM-03 - 組織において許可されたネットワーク通信および内部・外部のデータフローが把握され、管理されている",
-    "question": "ID.AM-03 - 組織において許可されたネットワーク通信および内部・外部のデータフローが把握され、管理されている",
+    "subcategory_ja": "ID.AM-03 - 組織において許可されたネットワーク通信および内部・外部のデータフローが可視化され、維持されている",
+    "question": "ID.AM-03 - 組織において許可されたネットワーク通信および内部・外部のデータフローが可視化され、維持されている",
     "examples": [
       {
         "implementationExample": "ID.AM-03.125 (Ex1)",
@@ -1360,8 +1360,8 @@
         "text_ja": "内部不正を含む内部脅威アクターを特定するためのプロセスを整備・運用する"
       }
     ],
-    "riskText": "本カテゴリの取組みが不十分な場合、脅威が実際に発生する可能性を十分に見積もれず、リスクの優先順位付けが現実とずれるおそれがあります。特に、脅威の発生可能性が特定・評価されていない場合、重要なリスクを過小評価したり、逆に影響の小さい事象に過度な注意を払ったりする可能性があります。",
-    "improvementHint": "想定する脅威ごとに、発生可能性を評価するための観点を整理してください。外部脅威動向、自組織の露出状況、過去事例、対策状況などを踏まえて評価基準を定義し、リスク評価に一貫して適用してください。（ID.RA-03）"
+    "riskText": "本カテゴリの取組みが不十分な場合、組織に影響を与える内部・外部の脅威を十分に把握できず、想定すべき脅威シナリオの前提が欠けるおそれがあります。特に、脅威アクターや内部脅威が特定・記録されていない場合、リスク評価や対策の優先順位付けの前提が不明確になる可能性があります。",
+    "improvementHint": "想定すべき内部脅威と外部脅威の種類を整理し、脅威アクター、攻撃手法、内部不正要因などを記録してください。脅威インテリジェンスや過去事例も踏まえて、脅威一覧を継続的に見直せるようにしてください。（ID.RA-03）"
   },
   {
     "id": "ID.RA-04",
@@ -1439,7 +1439,7 @@
       {
         "implementationExample": "ID.RA-06.166 (Ex3)",
         "text": "Track the progress of risk response implementation (e.g., plan of action and milestones [POA&M], risk register, risk detail report)",
-        "text_ja": "Iリスク対応の実施状況（例：対応計画およびマイルストーン、リスク登録簿、詳細レポート）を追跡する"
+        "text_ja": "リスク対応の実施状況（例：対応計画およびマイルストーン、リスク登録簿、詳細レポート）を追跡する"
       },
       {
         "implementationExample": "ID.RA-06.167 (Ex4)",
@@ -1733,8 +1733,8 @@
     "category": "PR.AA (Identity Management, Authentication, and Access Control)",
     "category_ja": "PR.AA（アイデンティティ管理・認証・アクセス制御）",
     "subcategory": "PR.AA-02 - Identities are proofed and bound to credentials based on the context of interactions",
-    "subcategory_ja": "PR.AA-02 - 識別情報が検証され、相互作用の文脈に基づいて認証情報に関連付けられている",
-    "question": "PR.AA-02 - 識別情報が検証され、相互作用の文脈に基づいて認証情報に関連付けられている",
+    "subcategory_ja": "PR.AA-02 - アイデンティティが本人確認され、相互作用の文脈に基づいて認証情報に関連付けられている",
+    "question": "PR.AA-02 - アイデンティティが本人確認され、相互作用の文脈に基づいて認証情報に関連付けられている",
     "examples": [
       {
         "implementationExample": "PR.AA-02.198 (Ex1)",
@@ -1820,8 +1820,8 @@
     "category": "PR.AA (Identity Management, Authentication, and Access Control)",
     "category_ja": "PR.AA（アイデンティティ管理・認証・アクセス制御）",
     "subcategory": "PR.AA-05 - Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties",
-    "subcategory_ja": "PR.AA-05 - アクセス権限、権利、および認可が方針に基づいて定義され、管理され、適用され、見直され、最小権限および職務分離の原則が適用されている",
-    "question": "PR.AA-05 - アクセス権限、権利、および認可が方針に基づいて定義され、管理され、適用され、見直され、最小権限および職務分離の原則が適用されている",
+    "subcategory_ja": "PR.AA-05 - アクセス権限、付与された権限、および認可が方針に基づいて定義され、管理され、適用され、見直され、最小権限および職務分離の原則が適用されている",
+    "question": "PR.AA-05 - アクセス権限、付与された権限、および認可が方針に基づいて定義され、管理され、適用され、見直され、最小権限および職務分離の原則が適用されている",
     "examples": [
       {
         "implementationExample": "PR.AA-05.207 (Ex1)",
@@ -1844,8 +1844,8 @@
         "text_ja": "重要な業務機能に関連する権限について、適切な職務分離が確保されているかを定期的に確認する"
       }
     ],
-    "riskText": "本カテゴリの取組みが不十分な場合、施設・機器・システム・情報への物理的および論理的アクセスが適切に制御されず、許可されていない主体による利用や持ち出しを招くおそれがあります。特に、物理的および論理的アクセスが適切に制御されていない場合、境界管理や権限管理の不備により、重要資産への不正到達を防ぎきれない可能性があります。",
-    "improvementHint": "物理アクセスと論理アクセスそれぞれについて、保護対象、アクセス条件、承認ルール、監視方法を整理してください。重要度に応じた制御を定義し、両者が整合的に運用されるようにしてください。（PR.AA-05）"
+    "riskText": "本カテゴリの取組みが不十分な場合、アクセス権限の付与・見直し・剥奪が適切に行われず、過剰権限や不要権限が残存するおそれがあります。特に、最小権限や職務分離の原則が適用されていない場合、不正利用、誤操作、権限の悪用による不正処理などの重大な統制不備につながる可能性があります。",
+    "improvementHint": "利用者・役割・業務機能ごとに必要な権限を整理し、アクセス権限、付与権限、認可の管理ルールを定義してください。最小権限と職務分離の原則を適用し、定期的な棚卸しと見直しを実施してください。（PR.AA-05）"
   },
   {
     "id": "PR.AA-06",
@@ -1854,8 +1854,8 @@
     "category": "PR.AA (Identity Management, Authentication, and Access Control)",
     "category_ja": "PR.AA（アイデンティティ管理・認証・アクセス制御）",
     "subcategory": "PR.AA-06 - Physical access to assets is managed, monitored, and enforced commensurate with risk",
-    "subcategory_ja": "PR.AA-06 - 資産への物理的アクセスがリスクに応じて管理され、監視され、適用されている",
-    "question": "PR.AA-06 - 資産への物理的アクセスがリスクに応じて管理され、監視され、適用されている",
+    "subcategory_ja": "PR.AA-06 - 資産への物理的アクセスがリスクに応じて管理され、監視され、遵守が徹底されている",
+    "question": "PR.AA-06 - 資産への物理的アクセスがリスクに応じて管理され、監視され、遵守が徹底されている",
     "examples": [
       {
         "implementationExample": "PR.AA-06.211 (Ex1)",
@@ -1933,7 +1933,7 @@
       {
         "implementationExample": "PR.AT-02.220 (Ex2)",
         "text": "Provide role-based cybersecurity awareness and training to all those in specialized roles, including contractors, partners, suppliers, and other third parties",
-        "text_ja": "専門的な役割に応じたサイバーセキュリティ教育および意識向上活動を、委託先、パートナー、サプライヤーなどの第三者を含めて提供する"
+        "text_ja": "専門的な役割に応じたサイバーセキュリティ教育および意識向上活動を、委託先、パートナー、サプライヤーなどの第三者にも提供する"
       },
       {
         "implementationExample": "PR.AT-02.221 (Ex3)",
@@ -2339,8 +2339,8 @@
     "category": "PR.IR (Technology Infrastructure Resilience)",
     "category_ja": "PR.IR（技術インフラのレジリエンス）",
     "subcategory": "PR.IR-03 - Mechanisms are implemented to achieve resilience requirements in normal and adverse situations",
-    "subcategory_ja": "PR.IR-03 - 通常時および障害発生時の両方においてレジリエンス要件を満たすための仕組みが実装されている",
-    "question": "PR.IR-03 - 通常時および障害発生時の両方においてレジリエンス要件を満たすための仕組みが実装されている",
+    "subcategory_ja": "PR.IR-03 - 通常時および障害発生時の両方においてレジリエンス（回復力）要件を満たすための仕組みが実装されている",
+    "question": "PR.IR-03 - 通常時および障害発生時の両方においてレジリエンス（回復力）要件を満たすための仕組みが実装されている",
     "examples": [
       {
         "implementationExample": "PR.IR-03.266 (Ex1)",
@@ -2358,8 +2358,8 @@
         "text_ja": "冗長ストレージや冗長電源などの高可用性コンポーネントを採用し、システムの信頼性を向上させる"
       }
     ],
-    "riskText": "本カテゴリの取組みが不十分な場合、通常時および異常時の双方で必要なレジリエンスを維持するための仕組みが不足し、障害発生時にサービス水準を保てなくなるおそれがあります。特に、通常時および異常時におけるレジリエンス要件を満たすための仕組みが実装されていない場合、単一障害点の排除や切替・冗長化が不十分となり、局所的な問題が広範囲の停止につながる可能性があります。",
-    "improvementHint": "通常時と異常時に求められるレジリエンス要件を整理し、それを満たすための仕組みを定義してください。冗長構成、切替手順、負荷分散、代替運用などを計画し、実装と見直しを継続してください。（PR.IR-03）"
+    "riskText": "本カテゴリの取組みが不十分な場合、通常時および異常時の双方で必要なレジリエンスを維持するための仕組みが不足し、障害発生時にサービス水準を保てなくなるおそれがあります。特に、通常時および異常時におけるレジリエンス（回復力）要件を満たすための仕組みが実装されていない場合、単一障害点の排除や切替・冗長化が不十分となり、局所的な問題が広範囲の停止につながる可能性があります。",
+    "improvementHint": "通常時と異常時に求められるレジリエンス（回復力）要件を整理し、それを満たすための仕組みを定義してください。冗長構成、切替手順、負荷分散、代替運用などを計画し、実装と見直しを継続してください。（PR.IR-03）"
   },
   {
     "id": "PR.IR-04",
@@ -2392,8 +2392,8 @@
     "category": "DE.CM (Continuous Monitoring)",
     "category_ja": "DE.CM（継続的モニタリング）",
     "subcategory": "DE.CM-01 - Networks and network services are monitored to find potentially adverse events",
-    "subcategory_ja": "DE.CM-01 - ネットワークおよびネットワークサービスが監視され、潜在的な異常事象が検出されている",
-    "question": "DE.CM-01 - ネットワークおよびネットワークサービスが監視され、潜在的な異常事象が検出されている",
+    "subcategory_ja": "DE.CM-01 - ネットワークおよびネットワークサービスが監視され、潜在的に悪影響を及ぼす可能性のある事象が検出されている",
+    "question": "DE.CM-01 - ネットワークおよびネットワークサービスが監視され、潜在的に悪影響を及ぼす可能性のある事象が検出されている",
     "examples": [
       {
         "implementationExample": "DE.CM-01.271 (Ex1)",
@@ -2421,7 +2421,7 @@
         "text_ja": "ゼロトラストの観点から、ネットワーク通信を監視し、セキュリティ状態の変化を特定する"
       }
     ],
-    "riskText": "本カテゴリの取組みが不十分な場合、ネットワークやネットワークサービス上の異常や不正な通信を継続的に把握できず、攻撃や障害の兆候を見逃すおそれがあります。特に、ネットワークおよびネットワークサービスが、潜在的な異常事象を検知するために継続的に監視されていない場合、異常通信や不正接続を早期に把握できず、影響の拡大を防ぎにくくなる可能性があります。",
+    "riskText": "本カテゴリの取組みが不十分な場合、ネットワークやネットワークサービス上の異常や不正な通信を継続的に把握できず、攻撃や障害の兆候を見逃すおそれがあります。特に、ネットワークおよびネットワークサービスが、潜在的に悪影響を及ぼす可能性のある事象を検知するために継続的に監視されていない場合、異常通信や不正接続を早期に把握できず、影響の拡大を防ぎにくくなる可能性があります。",
     "improvementHint": "監視対象とするネットワーク機器、通信経路、主要なネットワークサービスを整理してください。通常状態と比較して何を異常とみなすかを定義し、継続的に把握できる監視運用に反映してください。（DE.CM-01）"
   },
   {
@@ -2431,8 +2431,8 @@
     "category": "DE.CM (Continuous Monitoring)",
     "category_ja": "DE.CM（継続的モニタリング）",
     "subcategory": "DE.CM-02 - The physical environment is monitored to find potentially adverse events",
-    "subcategory_ja": "DE.CM-02 - 物理環境が監視され、潜在的な異常事象が検出されている",
-    "question": "DE.CM-02 - 物理環境が監視され、潜在的な異常事象が検出されている",
+    "subcategory_ja": "DE.CM-02 - 物理環境が監視され、潜在的に悪影響を及ぼす可能性のある事象が検出されている",
+    "question": "DE.CM-02 - 物理環境が監視され、潜在的に悪影響を及ぼす可能性のある事象が検出されている",
     "examples": [
       {
         "implementationExample": "DE.CM-02.276 (Ex1)",
@@ -2465,8 +2465,8 @@
     "category": "DE.CM (Continuous Monitoring)",
     "category_ja": "DE.CM（継続的モニタリング）",
     "subcategory": "DE.CM-03 - Personnel activity and technology usage are monitored to find potentially adverse events",
-    "subcategory_ja": "DE.CM-03 - 担当者の活動および技術の利用状況が監視され、潜在的な異常事象が検出されている",
-    "question": "DE.CM-03 - 担当者の活動および技術の利用状況が監視され、潜在的な異常事象が検出されている",
+    "subcategory_ja": "DE.CM-03 - 担当者の活動および技術の利用状況が監視され、潜在的に悪影響を及ぼす可能性のある事象が検出されている",
+    "question": "DE.CM-03 - 担当者の活動および技術の利用状況が監視され、潜在的に悪影響を及ぼす可能性のある事象が検出されている",
     "examples": [
       {
         "implementationExample": "DE.CM-03.280 (Ex1)",
@@ -2494,8 +2494,8 @@
     "category": "DE.CM (Continuous Monitoring)",
     "category_ja": "DE.CM（継続的モニタリング）",
     "subcategory": "DE.CM-06 - External service provider activities and services are monitored to find potentially adverse events",
-    "subcategory_ja": "DE.CM-06 - 外部サービスプロバイダの活動およびサービスが監視され、潜在的な異常事象が検出されている",
-    "question": "DE.CM-06 - 外部サービスプロバイダの活動およびサービスが監視され、潜在的な異常事象が検出されている",
+    "subcategory_ja": "DE.CM-06 - 外部サービスプロバイダの活動およびサービスが監視され、潜在的に悪影響を及ぼす可能性のある事象が検出されている",
+    "question": "DE.CM-06 - 外部サービスプロバイダの活動およびサービスが監視され、潜在的に悪影響を及ぼす可能性のある事象が検出されている",
     "examples": [
       {
         "implementationExample": "DE.CM-06.283 (Ex1)",
@@ -2518,8 +2518,8 @@
     "category": "DE.CM (Continuous Monitoring)",
     "category_ja": "DE.CM（継続的モニタリング）",
     "subcategory": "DE.CM-09 - Computing hardware and software, runtime environments, and their data are monitored to find potentially adverse events",
-    "subcategory_ja": "DE.CM-09 - コンピューティングハードウェア、ソフトウェア、実行環境、およびそれらのデータが監視され、潜在的な異常事象が検出されている",
-    "question": "DE.CM-09 - コンピューティングハードウェア、ソフトウェア、実行環境、およびそれらのデータが監視され、潜在的な異常事象が検出されている",
+    "subcategory_ja": "DE.CM-09 - コンピューティングハードウェア、ソフトウェア、実行環境、およびそれらのデータが監視され、潜在的に悪影響を及ぼす可能性のある事象が検出されている",
+    "question": "DE.CM-09 - コンピューティングハードウェア、ソフトウェア、実行環境、およびそれらのデータが監視され、潜在的に悪影響を及ぼす可能性のある事象が検出されている",
     "examples": [
       {
         "implementationExample": "DE.CM-09.285 (Ex1)",
@@ -2557,8 +2557,8 @@
     "category": "DE.AE (Adverse Event Analysis)",
     "category_ja": "DE.AE（悪影響事象分析）",
     "subcategory": "DE.AE-02 - Potentially adverse events are analyzed to better understand associated activities",
-    "subcategory_ja": "DE.AE-02 - 潜在的な異常事象が分析され、関連する活動の理解に活用されている",
-    "question": "DE.AE-02 - 潜在的な異常事象が分析され、関連する活動の理解に活用されている",
+    "subcategory_ja": "DE.AE-02 - 潜在的に悪影響を及ぼす可能性のある事象が関連する活動をより深く理解するために分析されている",
+    "question": "DE.AE-02 - 潜在的に悪影響を及ぼす可能性のある事象が関連する活動をより深く理解するために分析されている",
     "examples": [
       {
         "implementationExample": "DE.AE-02.290 (Ex1)",
@@ -2620,8 +2620,8 @@
     "category": "DE.AE (Adverse Event Analysis)",
     "category_ja": "DE.AE（悪影響事象分析）",
     "subcategory": "DE.AE-04 - The estimated impact and scope of adverse events are understood",
-    "subcategory_ja": "DE.AE-04 - 異常事象の影響および範囲が理解されている",
-    "question": "DE.AE-04 - 異常事象の影響および範囲が理解されている",
+    "subcategory_ja": "DE.AE-04 - 悪影響を及ぼす事象の影響および範囲が理解されている",
+    "question": "DE.AE-04 - 悪影響を及ぼす事象の影響および範囲が理解されている",
     "examples": [
       {
         "implementationExample": "DE.AE-04.297 (Ex1)",
@@ -2644,8 +2644,8 @@
     "category": "DE.AE (Adverse Event Analysis)",
     "category_ja": "DE.AE（悪影響事象分析）",
     "subcategory": "DE.AE-06 - Information on adverse events is provided to authorized staff and tools",
-    "subcategory_ja": "DE.AE-06 - 異常事象に関する情報が、認可された担当者およびツールに提供されている",
-    "question": "DE.AE-06 - 異常事象に関する情報が、認可された担当者およびツールに提供されている",
+    "subcategory_ja": "DE.AE-06 - 悪影響を及ぼす事象に関する情報が、認可された担当者およびツールに提供されている",
+    "question": "DE.AE-06 - 悪影響を及ぼす事象に関する情報が、認可された担当者およびツールに提供されている",
     "examples": [
       {
         "implementationExample": "DE.AE-06.299 (Ex1)",
@@ -2707,8 +2707,8 @@
     "category": "DE.AE (Adverse Event Analysis)",
     "category_ja": "DE.AE（悪影響事象分析）",
     "subcategory": "DE.AE-08 - Incidents are declared when adverse events meet the defined incident criteria",
-    "subcategory_ja": "DE.AE-08 - 異常事象が定義されたインシデント基準を満たした場合に、インシデントとして宣言されている",
-    "question": "DE.AE-08 - 異常事象が定義されたインシデント基準を満たした場合に、インシデントとして宣言されている",
+    "subcategory_ja": "DE.AE-08 - 悪影響を及ぼす事象が定義されたインシデント基準を満たした場合に、インシデントとして宣言されている",
+    "question": "DE.AE-08 - 悪影響を及ぼす事象が定義されたインシデント基準を満たした場合に、インシデントとして宣言されている",
     "examples": [
       {
         "implementationExample": "DE.AE-08.306 (Ex1)",
@@ -2818,8 +2818,8 @@
     "category": "RS.MA (Incident Management)",
     "category_ja": "RS.MA（インシデント管理）",
     "subcategory": "RS.MA-04 - Incidents are escalated or elevated as needed",
-    "subcategory_ja": "RS.MA-04 - 必要に応じてインシデントがエスカレーションまたは重要度の引き上げが行われている",
-    "question": "RS.MA-04 - 必要に応じてインシデントがエスカレーションまたは重要度の引き上げが行われている",
+    "subcategory_ja": "RS.MA-04 - 必要に応じてインシデントがエスカレーションされる、または重要度が引き上げられている",
+    "question": "RS.MA-04 - 必要に応じてインシデントがエスカレーションされる、または重要度が引き上げられている",
     "examples": [
       {
         "implementationExample": "RS.MA-04.317 (Ex1)",
@@ -3103,8 +3103,8 @@
     "category": "RC.RP (Incident Recovery Plan Execution)",
     "category_ja": "RC.RP（インシデント復旧計画の実行）",
     "subcategory": "RC.RP-01 - The recovery portion of the incident response plan is executed once initiated from the incident response process",
-    "subcategory_ja": "RC.RP-01 - インシデント対応プロセスに基づき、復旧に関する対応が適切に実行されている",
-    "question": "RC.RP-01 - インシデント対応プロセスに基づき、復旧に関する対応が適切に実行されている",
+    "subcategory_ja": "RC.RP-01 - インシデント対応プロセスに基づき、復旧に関する対応が実行されている",
+    "question": "RC.RP-01 - インシデント対応プロセスに基づき、復旧に関する対応が実行されている",
     "examples": [
       {
         "implementationExample": "RC.RP-01.346 (Ex1)",
@@ -3114,7 +3114,7 @@
       {
         "implementationExample": "RC.RP-01.347 (Ex2)",
         "text": "Make all individuals with recovery responsibilities aware of the plans for recovery and the authorizations required to implement each aspect of the plans",
-        "text_ja": "復旧責任を担うすべての担当者に対して、復旧計画および各計画要素の実施に必要な承認について認識させる"
+        "text_ja": "復旧責任を持つすべての担当者に対して、復旧計画および各計画要素の実施に必要な承認について周知する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、復旧活動が計画に基づかず場当たり的に実施され、復旧の遅延や品質低下につながるおそれがあります。特に、インシデントからの復旧計画が明確に定義されておらず、それに基づく実行が行われていない場合、役割分担や手順が曖昧となり、対応の抜け漏れや重複が発生する可能性があります。",
@@ -3205,7 +3205,7 @@
       {
         "implementationExample": "RC.RP-05.354 (Ex1)",
         "text": "Check restored assets for indicators of compromise and remediation of root causes of the incident before production use",
-        "text_ja": "本番利用前に、復旧された資産について侵害指標およびインシデントの根本原因の是正状況を確認する"
+        "text_ja": "本番環境で利用する前に、復旧された資産について侵害指標およびインシデントの根本原因の是正状況を確認する"
       },
       {
         "implementationExample": "RC.RP-05.355 (Ex2)",
