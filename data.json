@@ -2398,27 +2398,27 @@
       {
         "implementationExample": "DE.CM-01.271 (Ex1)",
         "text": "Monitor DNS, BGP, and other network services for adverse events",
-        "text_ja": "インシデント対応計画や手順が有効かどうかを検証するため、演習を実施します。"
+        "text_ja": "DNS、BGP、およびその他のネットワークサービスを監視し、有害な事象を検出する"
       },
       {
         "implementationExample": "DE.CM-01.272 (Ex2)",
         "text": "Monitor wired and wireless networks for connections from unauthorized endpoints",
-        "text_ja": "インシデント対応演習を通じて、担当者の知識・スキルを確認します。"
+        "text_ja": "有線および無線ネットワークを監視し、未許可のエンドポイントからの接続を検出する"
       },
       {
         "implementationExample": "DE.CM-01.273 (Ex3)",
         "text": "Monitor facilities for unauthorized or rogue wireless networks",
-        "text_ja": "演習を活用して、必要な機器や技術が適切に機能するか検証します。"
+        "text_ja": "施設内において、未許可または不正な無線ネットワークの存在を監視する"
       },
       {
         "implementationExample": "DE.CM-01.274 (Ex4)",
         "text": "Compare actual network flows against baselines to detect deviations",
-        "text_ja": "実施した演習について、定期的に評価・見直しを行います。"
+        "text_ja": "実際のネットワーク通信フローをベースラインと比較し、逸脱を検出する"
       },
       {
         "implementationExample": "DE.CM-01.275 (Ex5)",
         "text": "Monitor network communications to identify changes in security postures for zero trust purposes",
-        "text_ja": "実際のインシデントや演習から得られた教訓を、対応計画に反映します。"
+        "text_ja": "ゼロトラストの観点から、ネットワーク通信を監視し、セキュリティ状態の変化を特定する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、ネットワークやネットワークサービス上の異常や不正な通信を継続的に把握できず、攻撃や障害の兆候を見逃すおそれがあります。特に、ネットワークおよびネットワークサービスが、潜在的な悪影響事象を検知するために継続的に監視されていない場合、異常通信や不正接続を早期に把握できず、影響の拡大を防ぎにくくなる可能性があります。",
@@ -2437,22 +2437,22 @@
       {
         "implementationExample": "DE.CM-02.276 (Ex1)",
         "text": "Monitor logs from physical access control systems (e.g., badge readers) to find unusual access patterns (e.g., deviations from the norm) and failed access attempts",
-        "text_ja": "インシデント対応におけるコミュニケーション担当者を明確に指名します。"
+        "text_ja": "入退室管理システム（例：バッジリーダー）のログを監視し、異常なアクセスパターン（例：通常からの逸脱）およびアクセス失敗を検出する"
       },
       {
         "implementationExample": "DE.CM-02.277 (Ex2)",
         "text": "Review and monitor physical access records (e.g., from visitor registration, sign-in sheets)",
-        "text_ja": "サイバーセキュリティ関連のコミュニケーションに必要な役割を定義します。"
+        "text_ja": "来訪者登録や入館記録（例：受付記録、サインインシート）を確認および監視する"
       },
       {
         "implementationExample": "DE.CM-02.278 (Ex3)",
         "text": "Monitor physical access controls (e.g., locks, latches, hinge pins, alarms) for signs of tampering",
-        "text_ja": "コミュニケーション業務における役割と責任を文書化します。"
+        "text_ja": "物理的アクセス制御（例：鍵、ラッチ、ヒンジピン、警報装置）について、改ざんの兆候を監視する"
       },
       {
         "implementationExample": "DE.CM-02.279 (Ex4)",
         "text": "Monitor the physical environment using alarm systems, cameras, and security guards",
-        "text_ja": "社内外のコミュニケーション対応が適切に行えるよう、担当者が準備できている状態を保ちます。"
+        "text_ja": "警報装置、監視カメラ、および警備員を用いて物理環境を監視する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、物理環境や設備に関する異常を見逃し、システムやサービスに影響する問題の発見が遅れるおそれがあります。特に、物理環境が、潜在的な悪影響事象を検知するために監視されていない場合、不正侵入や設備異常が情報システムへ波及し、業務影響が拡大する可能性があります。",
@@ -2471,17 +2471,17 @@
       {
         "implementationExample": "DE.CM-03.280 (Ex1)",
         "text": "Use behavior analytics software to detect anomalous user activity to mitigate insider threats",
-        "text_ja": "サイバーインシデント発生時のコミュニケーション業務や期待される役割について、担当者に教育を行います。"
+        "text_ja": "行動分析ソフトウェアを使用して異常なユーザー行動を検出し、内部脅威を低減する"
       },
       {
         "implementationExample": "DE.CM-03.281 (Ex2)",
         "text": "Monitor logs from logical access control systems to find unusual access patterns and failed access attempts",
-        "text_ja": "インシデント発生時に情報共有が必要となる、社内外の関係者を特定します。"
+        "text_ja": "論理アクセス制御システムのログを監視し、異常なアクセスパターンおよびアクセス失敗を検出する"
       },
       {
         "implementationExample": "DE.CM-03.282 (Ex3)",
         "text": "Continuously monitor deception technology, including user accounts, for any usage",
-        "text_ja": "適切に情報が共有されるよう、コミュニケーション計画に基づいて発信します。"
+        "text_ja": "ユーザーアカウントを含むデセプション技術を継続的に監視し、その利用を検出する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、要員の活動や技術利用に起因する異常を見逃し、内部不正や誤操作による影響を早期に把握できないおそれがあります。特に、要員の活動および技術利用状況が、潜在的な悪影響事象を検知するために監視されていない場合、通常と異なる行動や不適切な利用を見逃し、被害の拡大につながる可能性があります。",
@@ -2500,12 +2500,12 @@
       {
         "implementationExample": "DE.CM-06.283 (Ex1)",
         "text": "Monitor remote and onsite administration and maintenance activities that external providers perform on organizational systems",
-        "text_ja": "サイバーインシデントに関する対外・対内広報を、企業全体のコミュニケーション方針と連携させます。"
+        "text_ja": "外部プロバイダーが組織のシステムに対して実施するリモートおよびオンサイトの管理・保守活動を監視する"
       },
       {
         "implementationExample": "DE.CM-06.284 (Ex2)",
         "text": "Monitor activity from cloud-based services, internet service providers, and other service providers for deviations from expected behavior",
-        "text_ja": "必要な社内外関係者と調整しながら、インシデント通知を行います。"
+        "text_ja": "クラウドサービス、インターネットサービスプロバイダー、およびその他のサービスプロバイダーの活動を監視し、想定される挙動からの逸脱を検出する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、外部サービス提供者の活動や提供サービスに起因する異常を見逃し、外部依存に伴うリスクを早期に把握できないおそれがあります。特に、外部サービス提供者の活動および提供サービスが、潜在的な悪影響事象を検知するために監視されていない場合、委託先やクラウドサービス経由の問題に気付くのが遅れ、重要な業務へ影響が及ぶ可能性があります。",
@@ -2524,27 +2524,27 @@
       {
         "implementationExample": "DE.CM-09.285 (Ex1)",
         "text": "Monitor email, web, file sharing, collaboration services, and other common attack vectors to detect malware, phishing, data leaks and exfiltration, and other adverse events",
-        "text_ja": "必要に応じて、法執行機関（警察など）へインシデント通知を行います。"
+        "text_ja": "メール、Web、ファイル共有、コラボレーションサービスなどの一般的な攻撃経路を監視し、マルウェア、フィッシング、データ漏えいおよびデータ持ち出し、その他の有害な事象を検出する"
       },
       {
         "implementationExample": "DE.CM-09.286 (Ex2)",
         "text": "Monitor authentication attempts to identify attacks against credentials and unauthorized credential reuse",
-        "text_ja": "社内外のインシデント関連コミュニケーションには、安全な手段（暗号化・認証付きチャネル等）を用います。"
+        "text_ja": "認証試行を監視し、認証情報への攻撃および不正な認証情報の再利用を検出する"
       },
       {
         "implementationExample": "DE.CM-09.287 (Ex3)",
         "text": "Monitor software configurations for deviations from security baselines",
-        "text_ja": "機密情報を保護するために、安全な通信方法を使用します。"
+        "text_ja": "ソフトウェア構成を監視し、セキュリティベースラインからの逸脱を検出する"
       },
       {
         "implementationExample": "DE.CM-09.288 (Ex4)",
         "text": "Monitor hardware and software for signs of tampering",
-        "text_ja": "通信の「機密性・完全性・可用性」を確保するため、安全なコミュニケーション手段を活用します。"
+        "text_ja": "ハードウェアおよびソフトウェアについて、改ざんの兆候を監視する"
       },
       {
         "implementationExample": "DE.CM-09.289 (Ex5)",
         "text": "Use technologies with a presence on endpoints to detect cyber health issues (e.g., missing patches, malware infections, unauthorized software), and redirect the endpoints to a remediation environment before access is authorized",
-        "text_ja": "インシデント対応時に使用するコミュニケーション手段（チャット、ホットラインなど）を提供します。"
+        "text_ja": "エンドポイント上に常駐する技術を用いて、セキュリティ状態の問題（例：未適用パッチ、マルウェア感染、不正ソフトウェア）を検出し、アクセスを許可する前に当該エンドポイントを修復環境へリダイレクトする"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、コンピューティング機器、ソフトウェア、実行環境、およびそれらのデータに関する異常を見逃し、侵害や不正変更の発見が遅れるおそれがあります。特に、コンピューティング機器・ソフトウェア・実行環境およびそれらのデータが、潜在的な悪影響事象を検知するために監視されていない場合、構成逸脱、改ざん、悪性挙動などを早期に把握できない可能性があります。",
@@ -2563,22 +2563,22 @@
       {
         "implementationExample": "DE.AE-02.290 (Ex1)",
         "text": "Use security information and event management (SIEM) or other tools to continuously monitor log events for known malicious and suspicious activity",
-        "text_ja": "インシデント対応に必要なコミュニケーションチャネルへ、適切な担当者がアクセスできるようにします。"
+        "text_ja": "セキュリティ情報およびイベント管理（SIEM）またはその他のツールを使用して、既知の悪意ある活動および不審な活動を検出するためにログイベントを継続的に監視する"
       },
       {
         "implementationExample": "DE.AE-02.291 (Ex2)",
         "text": "Utilize up-to-date cyber threat intelligence in log analysis tools to improve detection accuracy and characterize threat actors, their methods, and indicators of compromise",
-        "text_ja": "脆弱性を修正するためのプロセスを策定し、運用します。"
+        "text_ja": "最新のサイバー脅威インテリジェンスをログ分析ツールで活用し、検知精度を向上させるとともに、脅威アクター、その手法、および侵害指標を特定する"
       },
       {
         "implementationExample": "DE.AE-02.292 (Ex3)",
         "text": "Regularly conduct manual reviews of log events for technologies that cannot be sufficiently monitored through automation",
-        "text_ja": "パッチ管理プロセスを用いて、脆弱性修正（パッチ適用）を支援します。"
+        "text_ja": "自動化による監視が十分に行えない技術については、ログイベントの手動レビューを定期的に実施する"
       },
       {
         "implementationExample": "DE.AE-02.293 (Ex4)",
         "text": "Use log analysis tools to generate reports on their findings",
-        "text_ja": "脆弱性修正のプロセスを、クラウドサービスなど企業のその他の仕組みと統合します。"
+        "text_ja": "ログ分析ツールを使用して、分析結果に関するレポートを生成する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、複数の情報源から得られる兆候を結び付けて把握できず、重要な事象を断片的にしか認識できないおそれがあります。特に、複数の情報源からの情報が相関分析されていない場合、単独では小さく見える兆候を見逃し、攻撃や異常の全体像を把握できない可能性があります。",
@@ -2597,21 +2597,21 @@
       {
         "implementationExample": "DE.AE-03.294 (Ex1)",
         "text": "Constantly transfer log data generated by other sources to a relatively small number of log servers",
-        "text_ja": "サプライヤーとの契約や作業に、脆弱性修正の要件を組み込みます。"
+        "text_ja": "他の情報源から生成されたログデータを、比較的少数のログサーバに継続的に転送する"
       },
       {
         "implementationExample": "DE.AE-03.295 (Ex2)",
         "text": "Use event correlation technology (e.g., SIEM) to collect information captured by multiple sources",
-        "text_ja": "脆弱性修正の要件を文書化し、関係者に共有します。"
+        "text_ja": "イベント相関技術（例：SIEM）を使用して、複数の情報源から取得された情報を収集する"
       },
       {
         "implementationExample": "DE.AE-03.296 (Ex3)",
         "text": "Utilize cyber threat intelligence to help correlate events among log sources",
-        "text_ja": "インシデントや脆弱性を軽減するための、緩和（mitigation）戦略を策定します。"
+        "text_ja": "サイバー脅威インテリジェンスを活用して、ログソース間のイベント相関を支援する"
       }
     ],
-    "riskText": "本カテゴリの取組みが不十分な場合、悪影響事象が及ぼす影響範囲や深刻度を適切に見積もれず、対応の優先順位を誤るおそれがあります。特に、悪影響事象の想定される影響および範囲が把握されていない場合、どの資産、業務、利用者に影響が及ぶのかを判断できず、重要な対応が遅れる可能性があります。",
-    "improvementHint": "事象の影響範囲を判断するために、確認すべき資産、業務、利用者、外部依存先を整理してください。影響度と範囲を評価する観点を定義し、優先順位付けやエスカレーション判断に活用してください。（DE.AE-03）"
+    "riskText": "本カテゴリの取組みが不十分な場合、複数の情報源から得られる情報を適切に関連付けて分析できず、個別の事象を統合的に把握できないおそれがあります。特に、ログ、アラート、脅威情報などが相関分析されていない場合、攻撃の全体像や関連する事象のつながりを見逃す可能性があります。",
+    "improvementHint": "相関分析に利用するログ、アラート、脅威情報、資産情報などの情報源を整理してください。どの情報をどのように突き合わせるかを定義し、複数の兆候を結び付けて分析できるようにしてください。（DE.AE-03）"
   },
   {
     "id": "DE.AE-04",
@@ -2626,16 +2626,16 @@
       {
         "implementationExample": "DE.AE-04.297 (Ex1)",
         "text": "Use SIEMs or other tools to estimate impact and scope, and review and refine the estimates",
-        "text_ja": "リスク情報を活用して、優先的に取り組むべき緩和策を決定します。"
+        "text_ja": "SIEMなどのツールを使用して影響度および影響範囲を推定し、その推定結果をレビューおよび精緻化する"
       },
       {
         "implementationExample": "DE.AE-04.298 (Ex2)",
         "text": "A person creates their own estimates of impact and scope",
-        "text_ja": "既知の攻撃者の行動パターン（TTP）に基づき、効果的な緩和策を策定します。"
+        "text_ja": "担当者が影響度および影響範囲について独自に推定を行う"
       }
     ],
-    "riskText": "本カテゴリの取組みが不十分な場合、悪影響事象に関する情報が必要な担当者やツールへ適切に共有されず、分析や初動対応が遅れるおそれがあります。特に、悪影響事象に関する情報が、権限を付与された担当者およびツールに提供されていない場合、必要な確認や判断が遅れ、対応の一貫性が損なわれる可能性があります。",
-    "improvementHint": "悪影響事象に関する情報について、誰に、どの粒度で、どのタイミングで提供するかを整理してください。分析担当者、運用担当者、対応ツールが必要な情報を速やかに利用できるよう、連携方法と手順を定義してください。（DE.AE-04）"
+    "riskText": "本カテゴリの取組みが不十分な場合、悪影響事象の影響範囲や深刻度を適切に把握できず、対応の優先順位付けや判断を誤るおそれがあります。特に、どの資産、業務、利用者に影響が及ぶかを把握できていない場合、重要な対応が遅れる可能性があります。",
+    "improvementHint": "事象の影響範囲を判断するために、確認すべき資産、業務、利用者、外部依存先を整理してください。影響度と範囲を評価する観点を定義し、優先順位付けやエスカレーション判断に活用してください。（DE.AE-04）"
   },
   {
     "id": "DE.AE-06",
@@ -2650,22 +2650,22 @@
       {
         "implementationExample": "DE.AE-06.299 (Ex1)",
         "text": "Use cybersecurity software to generate alerts and provide them to the security operations center (SOC), incident responders, and incident response tools",
-        "text_ja": "最小権限の原則を取り入れ、緩和策の効果を高めます。"
+        "text_ja": "サイバーセキュリティソフトウェアを使用してアラートを生成し、それらをセキュリティオペレーションセンター（SOC）、インシデント対応担当者、およびインシデント対応ツールに提供する"
       },
       {
         "implementationExample": "DE.AE-06.300 (Ex2)",
         "text": "Incident responders and other authorized personnel can access log analysis findings at all times",
-        "text_ja": "多層防御の考え方を取り入れ、緩和策の実効性を高めます。"
+        "text_ja": "インシデント対応担当者およびその他の権限を有する担当者が、ログ分析結果に常時アクセスできるようにする"
       },
       {
         "implementationExample": "DE.AE-06.301 (Ex3)",
         "text": "Automatically create and assign tickets in the organization's ticketing system when certain types of alerts occur",
-        "text_ja": "サイバーセキュリティイベント（インシデント等）の情報を分析し、改善が必要な領域を特定します。"
+        "text_ja": "特定の種類のアラートが発生した際に、組織のチケット管理システムでチケットを自動的に作成および割り当てる"
       },
       {
         "implementationExample": "DE.AE-06.302 (Ex4)",
         "text": "Manually create and assign tickets in the organization's ticketing system when technical staff discover indicators of compromise",
-        "text_ja": "脅威インテリジェンスレポートの情報を活用し、改善ポイントを特定します。"
+        "text_ja": "技術担当者が侵害指標を検出した場合に、組織のチケット管理システムでチケットを手動で作成および割り当てる"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、悪影響事象がインシデントに該当するかどうかを迅速かつ一貫して判断できず、必要な対応開始が遅れるおそれがあります。特に、悪影響事象が定義されたインシデント判定基準を満たす場合にインシデントとして宣言されていないと、体制移行や関係者招集が遅れ、被害の拡大につながる可能性があります。",
@@ -2684,17 +2684,17 @@
       {
         "implementationExample": "DE.AE-07.303 (Ex1)",
         "text": "Securely provide cyber threat intelligence feeds to detection technologies, processes, and personnel",
-        "text_ja": "インシデントや脆弱性に対して、原因分析（Root Cause Analysis）を実施します。"
+        "text_ja": "サイバー脅威インテリジェンスフィードを、検知技術、プロセス、および担当者に対して安全に提供する"
       },
       {
         "implementationExample": "DE.AE-07.304 (Ex2)",
         "text": "Securely provide information from asset inventories to detection technologies, processes, and personnel",
-        "text_ja": "原因分析の結果を基に、改善施策を実行します。"
+        "text_ja": "資産インベントリの情報を、検知技術、プロセス、および担当者に対して安全に提供する"
       },
       {
         "implementationExample": "DE.AE-07.305 (Ex3)",
         "text": "Rapidly acquire and analyze vulnerability disclosures for the organization's technologies from suppliers, vendors, and third-party security advisories",
-        "text_ja": "改善点や改善機会を文書化し、関係者へ共有します。"
+        "text_ja": "サプライヤー、ベンダー、および第三者のセキュリティアドバイザリから、組織の技術に関する脆弱性情報を迅速に取得し、分析する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、脅威情報や資産情報などのコンテキストを踏まえた分析ができず、検知精度や分析の実効性が低下するおそれがあります。特に、サイバー脅威インテリジェンスおよびその他のコンテキスト情報が分析に統合されていない場合、検知した事象の意味付けや優先順位付けが不十分となる可能性があります。",
@@ -2713,12 +2713,12 @@
       {
         "implementationExample": "DE.AE-08.306 (Ex1)",
         "text": "Apply incident criteria to known and assumed characteristics of activity in order to determine whether an incident should be declared",
-        "text_ja": "ID管理プログラムの文書を、インシデントや改善点に応じて更新します。"
+        "text_ja": "活動の既知および想定される特性に対してインシデント基準を適用し、インシデントとして宣言すべきかを判断する"
       },
       {
         "implementationExample": "DE.AE-08.307 (Ex2)",
         "text": "Take known false positives into account when applying incident criteria",
-        "text_ja": "得られた教訓（Lessons Learned）を基に、ID管理プログラムを改善します。"
+        "text_ja": "インシデント基準を適用する際に、既知の誤検知（False Positive）を考慮する"
       }
     ],
     "riskText": "本カテゴリの取組みが不十分な場合、悪影響事象がインシデントに該当するタイミングを適切に判断できず、対応開始やエスカレーションが遅れるおそれがあります。特に、悪影響事象が定義されたインシデント判定基準を満たす場合にインシデントとして宣言されていないと、必要な体制移行や関係者招集が遅れる可能性があります。",
