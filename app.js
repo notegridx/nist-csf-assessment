@@ -1322,25 +1322,29 @@ function renderTop3Categories(top3Cats) {
    - Unanswered/NA items
 -------------------------------- */
 function groupByCategory(questions, predicate) {
-  const buckets = new Map(); // key -> { categoryKey, labelJa, items: [{q, ans}] }
-  for (const q of questions) {
+  const buckets = new Map(); // key -> { categoryKey, labelJa, items: [{q, ans}], firstIndex }
+
+  questions.forEach((q, idx) => {
     const categoryKey = normalizeCategoryKey(q);
     const labelJa = normalizeCategoryLabelJa(q);
     const ans = answersById[q.id];
 
-    if (!predicate(q, ans)) continue;
+    if (!predicate(q, ans)) return;
 
     if (!buckets.has(categoryKey)) {
-      buckets.set(categoryKey, { categoryKey, labelJa, items: [] });
+      buckets.set(categoryKey, {
+        categoryKey,
+        labelJa,
+        items: [],
+        firstIndex: idx,
+      });
     }
+
     buckets.get(categoryKey).items.push({ q, ans });
-  }
+  });
 
   const groups = [...buckets.values()];
-  groups.sort((a, b) => {
-    if (b.items.length !== a.items.length) return b.items.length - a.items.length;
-    return String(a.categoryKey).localeCompare(String(b.categoryKey));
-  });
+  groups.sort((a, b) => a.firstIndex - b.firstIndex);
   return groups;
 }
 
