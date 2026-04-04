@@ -1182,10 +1182,18 @@ function renderQuestion(options = {}) {
   updateNavActive(navScroll);
 }
 
+function scrollAssessHeaderIntoView() {
+  const header = document.getElementById("assessHeaderBlock");
+  if (header && typeof header.scrollIntoView === "function") {
+    header.scrollIntoView({ block: "start", behavior: "auto" });
+  }
+}
+
 function goNext() {
   if (currentIndex < QUESTIONS.length - 1) {
     currentIndex++;
     renderQuestion({ navScroll: false });
+    scrollAssessHeaderIntoView();
   } else {
     renderResults();
     showOnly("result");
@@ -1196,6 +1204,7 @@ function goPrev() {
   if (currentIndex > 0) {
     currentIndex--;
     renderQuestion({ navScroll: false });
+    scrollAssessHeaderIntoView();
   }
 }
 
