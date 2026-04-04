@@ -1157,7 +1157,9 @@ function renderExamples(q) {
   }).join("");
 }
 
-function renderQuestion() {
+function renderQuestion(options = {}) {
+  const { navScroll = false } = options;
+
   const q = QUESTIONS[currentIndex];
   if (!q) return;
 
@@ -1177,13 +1179,13 @@ function renderQuestion() {
 
   setSelectedButton(answersById[q.id] || "");
   updateNavButtons();
-  updateNavActive();
+  updateNavActive(navScroll);
 }
 
 function goNext() {
   if (currentIndex < QUESTIONS.length - 1) {
     currentIndex++;
-    renderQuestion();
+    renderQuestion({ navScroll: false });
   } else {
     renderResults();
     showOnly("result");
@@ -1193,7 +1195,7 @@ function goNext() {
 function goPrev() {
   if (currentIndex > 0) {
     currentIndex--;
-    renderQuestion();
+    renderQuestion({ navScroll: false });
   }
 }
 
