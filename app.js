@@ -800,7 +800,7 @@ function refreshNavCounts() {
   });
 }
 
-function updateNavActive() {
+function updateNavActive(scrollIntoView = true) {
   if (!NAV || !el.navTree) return;
 
   const q = QUESTIONS[currentIndex];
@@ -809,7 +809,6 @@ function updateNavActive() {
   const activeKey = normalizeCategoryKey(q);
   const activeTag = tagFromId(q.id);
 
-  // If not searching, keep the nav compact: open only the current Function
   const kw = String(el.navSearch?.value || "").trim();
   if (!kw) {
     el.navTree.querySelectorAll("details.navFn").forEach(d => {
@@ -821,14 +820,14 @@ function updateNavActive() {
     const isActive = btn.dataset.catKey === activeKey;
     btn.classList.toggle("is-active", isActive);
 
-    // Ensure the active Function block is expanded (mainly for search mode)
     if (isActive) {
       const parentDetails = btn.closest("details.navFn");
       if (parentDetails) parentDetails.open = true;
     }
   });
 
-  // keep active category in view
+  if (!scrollIntoView) return;
+
   const domId = NAV.domIdByKey.get(activeKey);
   if (domId) {
     const node = document.getElementById(domId);
@@ -1204,7 +1203,7 @@ function setAnswerForCurrent(ans) {
   setSelectedButton(ans);
   updateNavButtons();
   refreshNavCounts();
-  updateNavActive();
+  updateNavActive(false);
 }
 
 /* -----------------------------
