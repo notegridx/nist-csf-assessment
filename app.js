@@ -1320,9 +1320,8 @@ function renderTop3Categories(top3Cats) {
       if (!Number.isFinite(idx)) return;
       currentIndex = clamp(idx, 0, Math.max(0, QUESTIONS.length - 1));
       showOnly("assess");
-      renderQuestion();
-      el.questionText?.scrollIntoView({ block: "start", behavior: "smooth" });
-      updateNavActive();
+      renderQuestion({ navScroll: false });
+      scrollAssessHeaderIntoView();
     });
   });
 }
