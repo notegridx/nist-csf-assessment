@@ -299,10 +299,14 @@ function buildSummaryData({
     : computeFunctionStats();
   const evaluatedFs = fs.filter((x) => (x.answered || 0) > 0);
   const base = evaluatedFs.length ? evaluatedFs : fs;
+
   let weakest = base[0] || { tag: "?", ja: "（不明）", avg: 0, coveragePct: 0 };
   for (const f of base) {
     if ((f.avg ?? 0) < (weakest.avg ?? 0)) weakest = f;
   }
+
+  const weakestAvg = weakest.avg ?? 0;
+  const weakestFunctions = base.filter((f) => (f.avg ?? 0) === weakestAvg);
 
   const top3 = (top3Cats || [])
     .slice(0, 3)
@@ -332,6 +336,7 @@ function buildSummaryData({
     overall,
     level,
     weakest,
+    weakestFunctions,
     top3,
     unassessed,
     unassessedCount,
@@ -347,12 +352,20 @@ function buildSummaryTextFromData(data) {
 
   const c = data.counts || { 5: 0, 4: 0, 3: 0, 2: 0, 1: 0, na: 0 };
   const pct = data.pct || ((n) => 0);
-  const weakest = data.weakest || { ja: "（不明）", tag: "?" };
+  const weakestFunctions =
+    Array.isArray(data.weakestFunctions) && data.weakestFunctions.length
+      ? data.weakestFunctions
+      : [data.weakest || { ja: "（不明）", tag: "?", avg: 0 }];
+
+  const weakestLine =
+    weakestFunctions.length === 1
+      ? `最も弱い分野は ${weakestFunctions[0].ja}（${weakestFunctions[0].tag}）で、相対スコアは ${weakestFunctions[0].avg ?? 0} です。`
+      : `最も弱い分野は ${weakestFunctions.map((f) => `${f.ja}（${f.tag}）`).join(" / ")} で、相対スコアはいずれも ${weakestFunctions[0].avg ?? 0} です。`;
 
   const lines = [
     `総合成熟度は ${data.overall} 点で、現在の対策状況は「${data.level}」です（回答率: ${data.coveragePct}%）。`,
     `回答内訳: 5 ${c["5"]}件（${pct(c["5"])}%） / 4 ${c["4"]}件（${pct(c["4"])}%） / 3 ${c["3"]}件（${pct(c["3"])}%） / 2 ${c["2"]}件（${pct(c["2"])}%） / 1 ${c["1"]}件（${pct(c["1"])}%） / 未評価 ${c.na}件（${pct(c.na)}%）。`,
-    `最も弱い分野は ${weakest.ja}（${weakest.tag}）で、相対スコアは ${weakest.avg ?? 0} です。`,
+    weakestLine,
     Array.isArray(data.top3) && data.top3.length
       ? `改善優先カテゴリ（Top3）は「${data.top3.join(" / ")}」です。`
       : "",
@@ -393,6 +406,20 @@ function renderSummary(data) {
   const c = data.counts || { 5: 0, 4: 0, 3: 0, 2: 0, 1: 0, na: 0 };
   const total = data.total || 0;
   const scored = data.scoredCount || 0;
+  const weakestFunctions =
+    Array.isArray(data.weakestFunctions) && data.weakestFunctions.length
+      ? data.weakestFunctions
+      : [data.weakest || { ja: "（不明）", tag: "?", avg: 0, coveragePct: 0 }];
+
+  const weakestLabel = weakestFunctions
+    .map((f) => `${f.ja}（${f.tag}）`)
+    .join(" / ");
+  const weakestAvg = weakestFunctions[0]?.avg ?? 0;
+  const weakestCoverage = weakestFunctions[0]?.coveragePct ?? 0;
+  const weakestSub =
+    weakestFunctions.length === 1
+      ? `平均: ${weakestAvg}点 / 回答率: ${weakestCoverage}%`
+      : `平均: ${weakestAvg}点（同点 ${weakestFunctions.length}件）`;
 
   kpis.innerHTML = `
     <div class="kpi">
@@ -407,8 +434,8 @@ function renderSummary(data) {
     </div>
     <div class="kpi">
       <div class="kpi__k">最も弱い分野</div>
-      <div class="kpi__v">${escapeHtml(data.weakest.ja)}（${escapeHtml(data.weakest.tag)}）</div>
-      <div class="kpi__sub">平均: ${data.weakest.avg ?? 0}点 / 回答率: ${data.weakest.coveragePct ?? 0}%</div>
+      <div class="kpi__v">${escapeHtml(weakestLabel)}</div>
+      <div class="kpi__sub">${escapeHtml(weakestSub)}</div>
     </div>
     <div class="kpi">
       <div class="kpi__k">未評価カテゴリ</div>
@@ -1449,6 +1476,7 @@ function renderTop3Categories(top3Cats) {
             <div class="unmetList">
               ${itemsHtml || `<div class="muted">—</div>`}
             </div>
+            ${moreLine}
           </div>
         </details>
       </div>
