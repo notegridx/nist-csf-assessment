@@ -9,7 +9,7 @@
    keep rendering pure (DOM writes) and wire events only once.
    ========================================================= */
 
-'use strict';
+"use strict";
 
 const DATA_FILE = "./data.json";
 
@@ -20,13 +20,12 @@ const SESSION_VERSION = 2;
 /** Scored answers (1..5). "na" means not answered. */
 const SCORE_CHOICES = new Set(["1", "2", "3", "4", "5"]);
 /** Converts answer (1..5) to maturity score (0..100). */
-const SCORE_TO_MATURITY = Object.freeze({ "1": 0, "2": 25, "3": 50, "4": 75, "5": 100 });
+const SCORE_TO_MATURITY = Object.freeze({ 1: 0, 2: 25, 3: 50, 4: 75, 5: 100 });
 
 let VIEWS;
 let el;
 
 function bindDomRefs() {
-
   VIEWS = {
     loading: document.getElementById("viewLoading"),
     intro: document.getElementById("viewIntro"),
@@ -94,14 +93,13 @@ function bindDomRefs() {
 }
 
 const ANSWER_LABEL = {
-  "5": "5: 定着",
-  "4": "4: 概ね実施",
-  "3": "3: 一部実施",
-  "2": "2: 準備中",
-  "1": "1: 未実施",
+  5: "5: 定着",
+  4: "4: 概ね実施",
+  3: "3: 一部実施",
+  2: "2: 準備中",
+  1: "1: 未実施",
   na: "未回答／不明",
 };
-
 
 const FUNCTION_ORDER = [
   { tag: "GV", ja: "ガバナンス" },
@@ -112,14 +110,18 @@ const FUNCTION_ORDER = [
   { tag: "RC", ja: "復旧" },
 ];
 
-const FUNCTION_TAG_TO_JA = Object.fromEntries(FUNCTION_ORDER.map(x => [x.tag, x.ja]));
+const FUNCTION_TAG_TO_JA = Object.fromEntries(
+  FUNCTION_ORDER.map((x) => [x.tag, x.ja]),
+);
 
 function isScoredAnswer(answer) {
   return SCORE_CHOICES.has(answer);
 }
 
 function isMissingAnswer(answer) {
-  return answer === "na" || answer === undefined || answer === null || answer === "";
+  return (
+    answer === "na" || answer === undefined || answer === null || answer === ""
+  );
 }
 
 /** Maturity score (0-100). Missing answers return null (excluded from averaging). */
@@ -130,7 +132,9 @@ function maturityScore(answer) {
 
 function showOnly(viewKey) {
   if (!VIEWS) return;
-  Object.values(VIEWS).forEach(v => { if (v) v.hidden = true; });
+  Object.values(VIEWS).forEach((v) => {
+    if (v) v.hidden = true;
+  });
   if (VIEWS[viewKey]) VIEWS[viewKey].hidden = false;
   el.btnRestart.hidden = !(viewKey === "assess" || viewKey === "result");
   setBackToResultVisibility();
@@ -149,7 +153,6 @@ function escapeHtml(s) {
     .replaceAll("'", "&#039;");
 }
 
-
 function splitCategoryLabelJa(label) {
   // Expect formats like "PR.AT（意識向上と訓練）" or "PR.AT (Awareness and Training)"
   const s = String(label || "").trim();
@@ -166,7 +169,6 @@ function tagFromId(id) {
   return id.split(".")[0];
 }
 
-
 let canReturnToResult = false;
 let resultScrollY = 0;
 
@@ -182,7 +184,6 @@ function markCameFromResult() {
   resultScrollY = window.scrollY || 0;
 }
 
-
 /* -----------------------------
    Theme (Function color)
 -------------------------------- */
@@ -195,14 +196,69 @@ function setCurrentFunctionTheme(tag) {
 /* -----------------------------
    Summary (Richer)
 -------------------------------- */
-function buildSummaryData({ functionStats, top3Cats, unassessedCats, answers, questions }) {
+function buildPriorityAction({
+  coveragePct,
+  overall,
+  weakest,
+  top3,
+  unassessedCount,
+}) {
+  const top3Text =
+    Array.isArray(top3) && top3.length
+      ? top3.join(" / ")
+      : "優先改善カテゴリはまだ特定されていません。";
+
+  if (coveragePct < 70) {
+    return {
+      situation:
+        "未評価（未回答／不明）が多く、現状の全体像を十分に把握できていません。",
+      priority: `未評価カテゴリ ${unassessedCount} 件の確認を優先してください。`,
+      nextStep:
+        "関係部門（IT、セキュリティ、業務部門）と連携し、対象システム・運用プロセス・責任範囲を棚卸ししてください。特に「誰が・何を・どこまで実施しているか」を明確にすることが、その後の改善の前提になります。",
+    };
+  }
+
+  if (overall < 40) {
+    return {
+      situation: "対策が体系的に整備されていない状態です。",
+      priority: `優先改善カテゴリは ${top3Text} です。`,
+      nextStep:
+        "最低限の統制（方針・ルール）、責任分担、基本的な運用手順を整備してください。初期段階では、網羅性を求めすぎるよりも、主要な対象で確実に回る仕組みを先に作ることが重要です。",
+    };
+  }
+
+  if (overall < 60) {
+    return {
+      situation:
+        "一部の取り組みは実施されていますが、適用範囲や運用のばらつきが残っています。",
+      priority: `優先改善カテゴリは ${top3Text} です。`,
+      nextStep:
+        "既存の対策をベースに、対象範囲の明確化、例外管理の基準化、運用手順の標準化を進め、組織全体で一貫して適用できる状態へ引き上げてください。",
+    };
+  }
+
+  return {
+    situation: "基本的な対策は整備されています。",
+    priority: `残存する低成熟領域として、${top3Text} を優先的に解消してください。`,
+    nextStep:
+      "継続的改善（測定→見直し→改善）の仕組みを強化してください。KPIやモニタリング指標を用いて運用状況を定量的に把握し、定期的なレビューと改善サイクルを回すことが重要です。",
+  };
+}
+
+function buildSummaryData({
+  functionStats,
+  top3Cats,
+  unassessedCats,
+  answers,
+  questions,
+}) {
   const total = Array.isArray(questions) ? questions.length : 0;
 
-  const counts = { "5": 0, "4": 0, "3": 0, "2": 0, "1": 0, na: 0 };
+  const counts = { 5: 0, 4: 0, 3: 0, 2: 0, 1: 0, na: 0 };
   let scoredCount = 0;
   let naCount = 0;
 
-  for (const q of (questions || [])) {
+  for (const q of questions || []) {
     const a = answers && answers[q.id] ? String(answers[q.id]) : "na";
     if (isScoredAnswer(a)) {
       counts[a] += 1;
@@ -219,7 +275,7 @@ function buildSummaryData({ functionStats, top3Cats, unassessedCats, answers, qu
   let overall = 0;
   if (scoredCount > 0) {
     let sum = 0;
-    for (const q of (questions || [])) {
+    for (const q of questions || []) {
       const s = maturityScore(answers[q.id]);
       if (s !== null) sum += s;
     }
@@ -229,32 +285,42 @@ function buildSummaryData({ functionStats, top3Cats, unassessedCats, answers, qu
   const coveragePct = total ? Math.round((scoredCount / total) * 100) : 0;
 
   const level =
-    overall >= 80 ? "高い" :
-      overall >= 60 ? "一定の水準" :
-        overall >= 40 ? "改善余地が大きい" :
-          "特に注意が必要";
+    overall >= 80
+      ? "高い"
+      : overall >= 60
+        ? "一定の水準"
+        : overall >= 40
+          ? "改善余地が大きい"
+          : "特に注意が必要";
 
   // Weakest function by average (evaluated only). If none, fall back to minimum avg including zeros.
-  const fs = Array.isArray(functionStats) ? functionStats : computeFunctionStats();
-  const evaluatedFs = fs.filter(x => (x.answered || 0) > 0);
-  const base = (evaluatedFs.length ? evaluatedFs : fs);
+  const fs = Array.isArray(functionStats)
+    ? functionStats
+    : computeFunctionStats();
+  const evaluatedFs = fs.filter((x) => (x.answered || 0) > 0);
+  const base = evaluatedFs.length ? evaluatedFs : fs;
   let weakest = base[0] || { tag: "?", ja: "（不明）", avg: 0, coveragePct: 0 };
   for (const f of base) {
     if ((f.avg ?? 0) < (weakest.avg ?? 0)) weakest = f;
   }
 
-  const top3 = (top3Cats || []).slice(0, 3).map(c => c.categoryLabelJa).filter(Boolean);
-  const unassessed = (unassessedCats || []).slice(0, 12).map(c => c.categoryLabelJa).filter(Boolean);
+  const top3 = (top3Cats || [])
+    .slice(0, 3)
+    .map((c) => c.categoryLabelJa)
+    .filter(Boolean);
+  const unassessed = (unassessedCats || [])
+    .slice(0, 12)
+    .map((c) => c.categoryLabelJa)
+    .filter(Boolean);
   const unassessedCount = (unassessedCats || []).length;
 
-  const action =
-    coveragePct < 70
-      ? "未評価（未回答／不明）が多いため、まずは関係部門と連携して現状を棚卸しし、適用状況を可視化してください。"
-      : overall < 40
-        ? "優先度の高い未整備領域から着手し、最低限のルール・責任分担・運用手順を先に整備してください。"
-        : overall < 60
-          ? "部分的に実施できている取り組みを、主要な対象範囲へ確実に適用できる状態に引き上げてください（適用範囲の明確化、例外の基準化・削減、運用の定着）。"
-          : "成熟度が低い残課題を優先的に解消しつつ、継続的な改善（測定→見直し→改善）を強化してください。";
+  const actionPlan = buildPriorityAction({
+    coveragePct,
+    overall,
+    weakest,
+    top3,
+    unassessedCount,
+  });
 
   return {
     total,
@@ -269,14 +335,17 @@ function buildSummaryData({ functionStats, top3Cats, unassessedCats, answers, qu
     top3,
     unassessed,
     unassessedCount,
-    action,
+    actionPlan,
+    action: [actionPlan?.situation, actionPlan?.priority, actionPlan?.nextStep]
+      .filter(Boolean)
+      .join(" "),
   };
 }
 
 function buildSummaryTextFromData(data) {
   if (!data) return "—";
 
-  const c = data.counts || { "5": 0, "4": 0, "3": 0, "2": 0, "1": 0, na: 0 };
+  const c = data.counts || { 5: 0, 4: 0, 3: 0, 2: 0, 1: 0, na: 0 };
   const pct = data.pct || ((n) => 0);
   const weakest = data.weakest || { ja: "（不明）", tag: "?" };
 
@@ -284,14 +353,19 @@ function buildSummaryTextFromData(data) {
     `総合成熟度は ${data.overall} 点で、現在の対策状況は「${data.level}」です（回答率: ${data.coveragePct}%）。`,
     `回答内訳: 5 ${c["5"]}件（${pct(c["5"])}%） / 4 ${c["4"]}件（${pct(c["4"])}%） / 3 ${c["3"]}件（${pct(c["3"])}%） / 2 ${c["2"]}件（${pct(c["2"])}%） / 1 ${c["1"]}件（${pct(c["1"])}%） / 未評価 ${c.na}件（${pct(c.na)}%）。`,
     `最も弱い分野は ${weakest.ja}（${weakest.tag}）で、相対スコアは ${weakest.avg ?? 0} です。`,
-    (Array.isArray(data.top3) && data.top3.length) ? `改善優先カテゴリ（Top3）は「${data.top3.join(" / ")}」です。` : "",
-    data.unassessedCount ? `未評価の領域が ${data.unassessedCount} 件あります。` : "",
-    `対応方針: ${data.action}`,
+    Array.isArray(data.top3) && data.top3.length
+      ? `改善優先カテゴリ（Top3）は「${data.top3.join(" / ")}」です。`
+      : "",
+    data.unassessedCount
+      ? `未評価の領域が ${data.unassessedCount} 件あります。`
+      : "",
+    `現状認識: ${data.actionPlan?.situation || "—"}`,
+    `優先対象: ${data.actionPlan?.priority || "—"}`,
+    `次の一手: ${data.actionPlan?.nextStep || "—"}`,
   ].filter(Boolean);
 
   return lines.join("\n");
 }
-
 
 function renderSummary(data) {
   // Prefer new structured summary if the container exists.
@@ -316,7 +390,7 @@ function renderSummary(data) {
   // New layout: hide old text field if present.
   if (el.summaryText) el.summaryText.hidden = true;
 
-  const c = data.counts || { "5": 0, "4": 0, "3": 0, "2": 0, "1": 0, na: 0 };
+  const c = data.counts || { 5: 0, 4: 0, 3: 0, 2: 0, 1: 0, na: 0 };
   const total = data.total || 0;
   const scored = data.scoredCount || 0;
 
@@ -354,37 +428,56 @@ function renderSummary(data) {
     </div>
   `;
 
-  top3.innerHTML = (data.top3 && data.top3.length)
-    ? `<ol class="topList">` + data.top3.map(label => {
-      const p = splitCategoryLabelJa(label);
-      const code = p.code ? `<span class="codeTag">${escapeHtml(p.code)}</span>` : ``;
-      const name = p.name ? `<span class="topList__txt">${escapeHtml(p.name)}</span>` : `<span class="topList__txt">${escapeHtml(label)}</span>`;
-      return `<li class="topList__item">${code}${name}</li>`;
-    }).join("") + `</ol>`
-    : `<span class="muted">—</span>`;
+  top3.innerHTML =
+    data.top3 && data.top3.length
+      ? `<ol class="topList">` +
+        data.top3
+          .map((label) => {
+            const p = splitCategoryLabelJa(label);
+            const code = p.code
+              ? `<span class="codeTag">${escapeHtml(p.code)}</span>`
+              : ``;
+            const name = p.name
+              ? `<span class="topList__txt">${escapeHtml(p.name)}</span>`
+              : `<span class="topList__txt">${escapeHtml(label)}</span>`;
+            return `<li class="topList__item">${code}${name}</li>`;
+          })
+          .join("") +
+        `</ol>`
+      : `<span class="muted">—</span>`;
 
   if (unassessedRow && unassessed) {
     const show = (data.unassessedCount || 0) > 0;
     unassessedRow.hidden = !show;
     if (show) {
-      unassessed.innerHTML = (data.unassessed || []).map(label => {
-        const p = splitCategoryLabelJa(label);
-        const code = p.code ? `${p.code} ` : "";
-        const name = p.name || label;
-        return `<span class="pill">${escapeHtml(code + name)}</span>`;
-      }).join("") + (data.unassessedCount > (data.unassessed || []).length ? `<span class="muted small">…他</span>` : "");
+      unassessed.innerHTML =
+        (data.unassessed || [])
+          .map((label) => {
+            const p = splitCategoryLabelJa(label);
+            const code = p.code ? `${p.code} ` : "";
+            const name = p.name || label;
+            return `<span class="pill">${escapeHtml(code + name)}</span>`;
+          })
+          .join("") +
+        (data.unassessedCount > (data.unassessed || []).length
+          ? `<span class="muted small">…他</span>`
+          : "");
     } else {
       unassessed.innerHTML = "";
     }
   }
 
-  action.innerHTML = `<b>対応方針:</b> ${escapeHtml(data.action)}`;
+  const plan = data.actionPlan || {};
+  action.innerHTML = `
+    <div><b>現状認識:</b> ${escapeHtml(plan.situation || "—")}</div>
+    <div style="margin-top:6px;"><b>優先対象:</b> ${escapeHtml(plan.priority || "—")}</div>
+    <div style="margin-top:6px;"><b>次の一手:</b> ${escapeHtml(plan.nextStep || "—")}</div>
+  `;
 }
 
 /* -----------------------------
    Priority selection (Category-based, Maturity-only)
 -------------------------------- */
-
 
 function normalizeCategoryKey(q) {
   // Prefer canonical english key if present. Fallback to japanese.
@@ -410,7 +503,10 @@ function computeCategoryStats(questions, answers) {
 
     if (!buckets.has(categoryKey)) {
       const p = splitCategoryLabelJa(labelJa);
-      const code = (p.code || (String(categoryKey).match(/^[A-Z]{2}\.[A-Z]{2}/)?.[0]) || String(categoryKey));
+      const code =
+        p.code ||
+        String(categoryKey).match(/^[A-Z]{2}\.[A-Z]{2}/)?.[0] ||
+        String(categoryKey);
       const name = p.name || labelJa;
       buckets.set(categoryKey, {
         categoryKey,
@@ -459,11 +555,11 @@ function computeCategoryStats(questions, answers) {
 function selectTop3MaturityCategories(questions, answers) {
   const stats = computeCategoryStats(questions, answers);
 
-  const evaluated = stats.filter(s => s.answered > 0 && s.avgScore !== null);
+  const evaluated = stats.filter((s) => s.answered > 0 && s.avgScore !== null);
   evaluated.sort((a, b) => {
-    if (a.avgScore !== b.avgScore) return a.avgScore - b.avgScore;                 // low maturity first
-    if (a.coveragePct !== b.coveragePct) return a.coveragePct - b.coveragePct;     // lower coverage first
-    return String(a.code).localeCompare(String(b.code));                             // stable tie-break
+    if (a.avgScore !== b.avgScore) return a.avgScore - b.avgScore; // low maturity first
+    if (a.coveragePct !== b.coveragePct) return a.coveragePct - b.coveragePct; // lower coverage first
+    return String(a.code).localeCompare(String(b.code)); // stable tie-break
   });
 
   return evaluated.slice(0, 3);
@@ -471,10 +567,8 @@ function selectTop3MaturityCategories(questions, answers) {
 
 function selectUnassessedCategories(questions, answers) {
   const stats = computeCategoryStats(questions, answers);
-  return stats.filter(s => s.answered === 0);
+  return stats.filter((s) => s.answered === 0);
 }
-
-
 
 /* -----------------------------
    Radar + results render
@@ -512,7 +606,8 @@ function drawRadar(canvas, labels, values, opt = {}) {
   }
 
   // axes + labels
-  ctx.font = "12px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans JP, sans-serif";
+  ctx.font =
+    "12px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans JP, sans-serif";
   ctx.fillStyle = "rgba(17,24,39,.75)";
 
   for (let i = 0; i < labels.length; i++) {
@@ -562,7 +657,7 @@ function drawRadar(canvas, labels, values, opt = {}) {
 
   // points
   ctx.fillStyle = point;
-  pts.forEach(p => {
+  pts.forEach((p) => {
     ctx.beginPath();
     ctx.arc(p.x, p.y, 3.2, 0, Math.PI * 2);
     ctx.fill();
@@ -571,7 +666,8 @@ function drawRadar(canvas, labels, values, opt = {}) {
   // values (optional)
   const showValues = opt.showValues === true;
   if (showValues) {
-    ctx.font = "11px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans JP, sans-serif";
+    ctx.font =
+      "11px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans JP, sans-serif";
     ctx.fillStyle = "rgba(17,24,39,.85)";
 
     values.forEach((v, i) => {
@@ -657,7 +753,6 @@ function hashStr(s) {
   return h.toString(36);
 }
 
-
 function buildCategoryNav() {
   if (!el.navTree) return;
 
@@ -682,7 +777,8 @@ function buildCategoryNav() {
     if (!byTag.has(cat.tag)) byTag.set(cat.tag, []);
     byTag.get(cat.tag).push(cat);
   }
-  for (const arr of byTag.values()) arr.sort((a, b) => a.startIndex - b.startIndex);
+  for (const arr of byTag.values())
+    arr.sort((a, b) => a.startIndex - b.startIndex);
 
   // Build DOM
   const domIdByKey = new Map();
@@ -691,7 +787,7 @@ function buildCategoryNav() {
     domIdByKey.set(cat.key, domId);
 
     // Display "GV.OC" part if present, otherwise the full key
-    const code = (cat.key.match(/^[A-Z]{2}\.[A-Z]{2}/)?.[0]) || cat.key;
+    const code = cat.key.match(/^[A-Z]{2}\.[A-Z]{2}/)?.[0] || cat.key;
 
     return `
       <button type="button" class="navCat" id="${domId}"
@@ -703,7 +799,7 @@ function buildCategoryNav() {
     `;
   };
 
-  const html = FUNCTION_ORDER.map(fn => {
+  const html = FUNCTION_ORDER.map((fn) => {
     const arr = byTag.get(fn.tag) || [];
     if (arr.length === 0) return "";
     const items = arr.map(catItemsHtml).join("");
@@ -723,7 +819,7 @@ function buildCategoryNav() {
   NAV = { categories, domIdByKey };
 
   // Click handlers
-  el.navTree.querySelectorAll(".navCat").forEach(btn => {
+  el.navTree.querySelectorAll(".navCat").forEach((btn) => {
     btn.addEventListener("click", () => {
       const idx = Number(btn.dataset.navIndex);
       if (!Number.isFinite(idx)) return;
@@ -749,10 +845,12 @@ function buildCategoryNav() {
 
 function filterNav(keywordRaw) {
   if (!NAV || !el.navTree) return;
-  const kw = String(keywordRaw || "").trim().toLowerCase();
+  const kw = String(keywordRaw || "")
+    .trim()
+    .toLowerCase();
 
   // show/hide categories by keyword (matches code/label)
-  el.navTree.querySelectorAll(".navCat").forEach(btn => {
+  el.navTree.querySelectorAll(".navCat").forEach((btn) => {
     if (!kw) {
       btn.hidden = false;
       return;
@@ -768,8 +866,10 @@ function filterNav(keywordRaw) {
   });
 
   // hide function blocks that have no visible items
-  el.navTree.querySelectorAll(".navFn").forEach(block => {
-    const hasVisible = Array.from(block.querySelectorAll(".navCat")).some(x => !x.hidden);
+  el.navTree.querySelectorAll(".navFn").forEach((block) => {
+    const hasVisible = Array.from(block.querySelectorAll(".navCat")).some(
+      (x) => !x.hidden,
+    );
     block.hidden = !hasVisible;
     if (kw) block.open = hasVisible; // expand matches
   });
@@ -793,7 +893,7 @@ function refreshNavCounts() {
     if (maturityScore(answersById[q.id]) !== null) s.answered++;
   }
 
-  el.navTree.querySelectorAll("[data-nav-count]").forEach(span => {
+  el.navTree.querySelectorAll("[data-nav-count]").forEach((span) => {
     const key = span.getAttribute("data-nav-count");
     const s = stats.get(key) || { answered: 0, total: 0 };
     span.textContent = `${s.answered}/${s.total}`;
@@ -811,12 +911,12 @@ function updateNavActive(scrollIntoView = true) {
 
   const kw = String(el.navSearch?.value || "").trim();
   if (!kw) {
-    el.navTree.querySelectorAll("details.navFn").forEach(d => {
-      d.open = (d.dataset.fn === activeTag);
+    el.navTree.querySelectorAll("details.navFn").forEach((d) => {
+      d.open = d.dataset.fn === activeTag;
     });
   }
 
-  el.navTree.querySelectorAll(".navCat").forEach(btn => {
+  el.navTree.querySelectorAll(".navCat").forEach((btn) => {
     const isActive = btn.dataset.catKey === activeKey;
     btn.classList.toggle("is-active", isActive);
 
@@ -837,10 +937,8 @@ function updateNavActive(scrollIntoView = true) {
   }
 }
 
-
-
 function setSelectedButton(answer) {
-  document.querySelectorAll(".answerChoice").forEach(btn => {
+  document.querySelectorAll(".answerChoice").forEach((btn) => {
     const selected = btn.dataset.answer === answer;
     btn.classList.toggle("is-selected", selected);
     btn.setAttribute("aria-checked", selected ? "true" : "false");
@@ -862,7 +960,8 @@ function updateOpenResultButton() {
   if (!el.btnOpenResult) return;
 
   const hasQuestions = Array.isArray(QUESTIONS) && QUESTIONS.length > 0;
-  const answeredAny = hasQuestions && QUESTIONS.some(q => Boolean(answersById[q.id]));
+  const answeredAny =
+    hasQuestions && QUESTIONS.some((q) => Boolean(answersById[q.id]));
   el.btnOpenResult.disabled = !(hasQuestions && answeredAny);
 }
 
@@ -878,7 +977,7 @@ function updateStartButtonState() {
 
 function computeRadarValues() {
   // average per function tag (scored answers only)
-  const byTag = Object.fromEntries(FUNCTION_ORDER.map(x => [x.tag, []]));
+  const byTag = Object.fromEntries(FUNCTION_ORDER.map((x) => [x.tag, []]));
   for (const q of QUESTIONS) {
     const ans = answersById[q.id];
     const tag = tagFromId(q.id);
@@ -887,7 +986,7 @@ function computeRadarValues() {
     if (!byTag[tag]) byTag[tag] = [];
     byTag[tag].push(s);
   }
-  const values = FUNCTION_ORDER.map(x => {
+  const values = FUNCTION_ORDER.map((x) => {
     const arr = byTag[x.tag] || [];
     if (arr.length === 0) return 0;
     const avg = arr.reduce((a, b) => a + b, 0) / arr.length;
@@ -898,9 +997,11 @@ function computeRadarValues() {
 
 function computeFunctionStats() {
   // { tag, ja, avg, answered, total, coveragePct }
-  const totalByTag = Object.fromEntries(FUNCTION_ORDER.map(x => [x.tag, 0]));
-  const answeredByTag = Object.fromEntries(FUNCTION_ORDER.map(x => [x.tag, 0]));
-  const sumByTag = Object.fromEntries(FUNCTION_ORDER.map(x => [x.tag, 0]));
+  const totalByTag = Object.fromEntries(FUNCTION_ORDER.map((x) => [x.tag, 0]));
+  const answeredByTag = Object.fromEntries(
+    FUNCTION_ORDER.map((x) => [x.tag, 0]),
+  );
+  const sumByTag = Object.fromEntries(FUNCTION_ORDER.map((x) => [x.tag, 0]));
 
   for (const q of QUESTIONS) {
     const tag = tagFromId(q.id);
@@ -912,7 +1013,7 @@ function computeFunctionStats() {
     }
   }
 
-  return FUNCTION_ORDER.map(f => {
+  return FUNCTION_ORDER.map((f) => {
     const total = totalByTag[f.tag] || 0;
     const answered = answeredByTag[f.tag] || 0;
     const avg = answered ? Math.round((sumByTag[f.tag] || 0) / answered) : 0;
@@ -935,15 +1036,17 @@ const FUNCTION_COLOR_HEX = {
 };
 
 let CAT_RADAR = {
-  dataByFn: null,     // { GV: [ {code,name,labelJa,value,key,firstIndex,total}... ] , ... }
+  dataByFn: null, // { GV: [ {code,name,labelJa,value,key,firstIndex,total}... ] , ... }
   lastSelectedFn: null,
   lastSort: "weak", // weak | strong | code | name
-  lastShow: "all",   // all (legacy: 12)
+  lastShow: "all", // all (legacy: 12)
 };
 
 let CAT_BARS_WIRED = false;
 function rerenderCategoryBarsFromControls() {
-  const fn = String(el.catFnSelect?.value || CAT_RADAR.lastSelectedFn || "GV").toUpperCase();
+  const fn = String(
+    el.catFnSelect?.value || CAT_RADAR.lastSelectedFn || "GV",
+  ).toUpperCase();
   const sort = String(el.catSortSelect?.value || CAT_RADAR.lastSort || "weak");
   const show = String(el.catShowSelect?.value || CAT_RADAR.lastShow || "12");
   CAT_RADAR.lastSelectedFn = fn;
@@ -952,10 +1055,11 @@ function rerenderCategoryBarsFromControls() {
   renderCategoryBars(fn, sort, show);
 }
 
-
 function computeCategoryRadarData() {
   // Build category maturity averages (scored answers only), grouped by Function
-  const dataByFn = Object.fromEntries(FUNCTION_ORDER.map(f => [f.tag, new Map()]));
+  const dataByFn = Object.fromEntries(
+    FUNCTION_ORDER.map((f) => [f.tag, new Map()]),
+  );
 
   QUESTIONS.forEach((q, idx) => {
     const fn = tagFromId(q.id);
@@ -965,7 +1069,14 @@ function computeCategoryRadarData() {
     const labelJa = normalizeCategoryLabelJa(q);
     const s = maturityScore(answersById[q.id]);
 
-    const bucket = dataByFn[fn].get(key) || { key, labelJa, firstIndex: idx, sum: 0, answered: 0, total: 0 };
+    const bucket = dataByFn[fn].get(key) || {
+      key,
+      labelJa,
+      firstIndex: idx,
+      sum: 0,
+      answered: 0,
+      total: 0,
+    };
     bucket.total += 1;
     if (s !== null) {
       bucket.sum += s;
@@ -980,12 +1091,17 @@ function computeCategoryRadarData() {
   for (const fn of Object.keys(dataByFn)) {
     const arr = Array.from(dataByFn[fn].values())
       .sort((a, b) => a.firstIndex - b.firstIndex)
-      .map(x => {
+      .map((x) => {
         const p = splitCategoryLabelJa(x.labelJa);
-        const code = (p.code || (String(x.key).match(/^[A-Z]{2}\.[A-Z]{2}/)?.[0]) || String(x.key));
+        const code =
+          p.code ||
+          String(x.key).match(/^[A-Z]{2}\.[A-Z]{2}/)?.[0] ||
+          String(x.key);
         const name = p.name || x.labelJa;
         const value = x.answered ? Math.round(x.sum / x.answered) : null;
-        const coveragePct = x.total ? Math.round((x.answered / x.total) * 100) : 0;
+        const coveragePct = x.total
+          ? Math.round((x.answered / x.total) * 100)
+          : 0;
         return {
           key: x.key,
           labelJa: x.labelJa,
@@ -1006,15 +1122,15 @@ function computeCategoryRadarData() {
   return out;
 }
 
-
 function ensureCategoryBarsControls(defaultFnTag) {
   if (!el.catFnSelect || !el.catSortSelect) return;
 
   // Populate selects (only once)
   if (el.catFnSelect.options.length === 0) {
-    el.catFnSelect.innerHTML = FUNCTION_ORDER
-      .map(f => `<option value="${escapeHtml(f.tag)}">${escapeHtml(f.ja)}（${escapeHtml(f.tag)}）</option>`)
-      .join("");
+    el.catFnSelect.innerHTML = FUNCTION_ORDER.map(
+      (f) =>
+        `<option value="${escapeHtml(f.tag)}">${escapeHtml(f.ja)}（${escapeHtml(f.tag)}）</option>`,
+    ).join("");
   }
   if (el.catSortSelect.options.length === 0) {
     el.catSortSelect.innerHTML = `
@@ -1027,7 +1143,9 @@ function ensureCategoryBarsControls(defaultFnTag) {
 
   // Initial / restore values (do not overwrite user selection unless this is the first time)
   const pick = String(defaultFnTag || "").toUpperCase();
-  const initialFn = FUNCTION_TAG_TO_JA[pick] ? pick : (FUNCTION_ORDER[0]?.tag || "GV");
+  const initialFn = FUNCTION_TAG_TO_JA[pick]
+    ? pick
+    : FUNCTION_ORDER[0]?.tag || "GV";
 
   if (!CAT_RADAR.lastSelectedFn) CAT_RADAR.lastSelectedFn = initialFn;
   if (!CAT_RADAR.lastSort) CAT_RADAR.lastSort = "weak";
@@ -1039,11 +1157,13 @@ function ensureCategoryBarsControls(defaultFnTag) {
   // Wire change listeners only once to avoid duplicate handlers when renderResults() reruns.
   if (!CAT_BARS_WIRED) {
     el.catFnSelect.addEventListener("change", rerenderCategoryBarsFromControls);
-    el.catSortSelect.addEventListener("change", rerenderCategoryBarsFromControls);
+    el.catSortSelect.addEventListener(
+      "change",
+      rerenderCategoryBarsFromControls,
+    );
     CAT_BARS_WIRED = true;
   }
 }
-
 
 function renderCategoryBars(fnTag, sortMode, showMode) {
   if (!el.catBars) return;
@@ -1051,7 +1171,7 @@ function renderCategoryBars(fnTag, sortMode, showMode) {
 
   const byFn = CAT_RADAR.dataByFn || computeCategoryRadarData();
   const t = String(fnTag || "").toUpperCase();
-  let cats = (byFn && byFn[t]) ? [...byFn[t]] : [];
+  let cats = byFn && byFn[t] ? [...byFn[t]] : [];
 
   if (!cats.length) {
     el.catBars.innerHTML = `<div class="catBarsEmpty muted small">該当するカテゴリがありません。</div>`;
@@ -1060,10 +1180,16 @@ function renderCategoryBars(fnTag, sortMode, showMode) {
   }
 
   // sort
-  const collator = new Intl.Collator("ja", { numeric: true, sensitivity: "base" });
+  const collator = new Intl.Collator("ja", {
+    numeric: true,
+    sensitivity: "base",
+  });
   switch (sortMode) {
     case "strong":
-      cats.sort((a, b) => (((b.value ?? -1) - (a.value ?? -1)) || collator.compare(a.code, b.code)));
+      cats.sort(
+        (a, b) =>
+          (b.value ?? -1) - (a.value ?? -1) || collator.compare(a.code, b.code),
+      );
       break;
     case "code":
       cats.sort((a, b) => collator.compare(a.code, b.code));
@@ -1073,7 +1199,12 @@ function renderCategoryBars(fnTag, sortMode, showMode) {
       break;
     case "weak":
     default:
-      cats.sort((a, b) => ((((a.value === null || a.value === undefined) ? 101 : a.value) - ((b.value === null || b.value === undefined) ? 101 : b.value)) || collator.compare(a.code, b.code)));
+      cats.sort(
+        (a, b) =>
+          (a.value === null || a.value === undefined ? 101 : a.value) -
+            (b.value === null || b.value === undefined ? 101 : b.value) ||
+          collator.compare(a.code, b.code),
+      );
       break;
   }
   // show all categories (no limit selector)
@@ -1085,16 +1216,17 @@ function renderCategoryBars(fnTag, sortMode, showMode) {
 
   const color = FUNCTION_COLOR_HEX[t] || "#2563eb";
 
-  el.catBars.innerHTML = shown.map(c => {
-    const hasScore = (c.value !== null && c.value !== undefined);
-    const pct = hasScore ? clamp(c.value, 0, 100) : 0;
-    const code = escapeHtml(c.code);
-    const name = escapeHtml(c.name);
-    // const val = hasScore ? escapeHtml(String(c.value)) : "—";
-    const val = hasScore ? `${Math.round(pct)} 点` : "—";
-    const idx = Number.isFinite(c.firstIndex) ? c.firstIndex : 0;
+  el.catBars.innerHTML = shown
+    .map((c) => {
+      const hasScore = c.value !== null && c.value !== undefined;
+      const pct = hasScore ? clamp(c.value, 0, 100) : 0;
+      const code = escapeHtml(c.code);
+      const name = escapeHtml(c.name);
+      // const val = hasScore ? escapeHtml(String(c.value)) : "—";
+      const val = hasScore ? `${Math.round(pct)} 点` : "—";
+      const idx = Number.isFinite(c.firstIndex) ? c.firstIndex : 0;
 
-    return `
+      return `
       <div class="catBar" role="listitem" tabindex="0"
            style="--bar-color:${color};"
            data-nav-index="${idx}">
@@ -1108,10 +1240,11 @@ function renderCategoryBars(fnTag, sortMode, showMode) {
         </div>
       </div>
     `;
-  }).join("");
+    })
+    .join("");
 
   // wire click -> jump to category start question
-  el.catBars.querySelectorAll(".catBar").forEach(row => {
+  el.catBars.querySelectorAll(".catBar").forEach((row) => {
     const jump = () => {
       markCameFromResult();
       const idx = Number(row.getAttribute("data-nav-index"));
@@ -1145,16 +1278,18 @@ function renderExamples(q) {
   }
 
   el.exampleDetails.hidden = false;
-  el.exampleList.innerHTML = ex.map((e) => {
-    const code = escapeHtml(e.implementationExample || "");
-    const text = escapeHtml(e.text_ja || e.text || "");
-    return `
+  el.exampleList.innerHTML = ex
+    .map((e) => {
+      const code = escapeHtml(e.implementationExample || "");
+      const text = escapeHtml(e.text_ja || e.text || "");
+      return `
       <li class="exampleItem">
         <div class="exampleCode">${code}</div>
         <div class="exampleText">${text}</div>
       </li>
     `;
-  }).join("");
+    })
+    .join("");
 }
 
 function renderQuestion(options = {}) {
@@ -1221,7 +1356,6 @@ function setAnswerForCurrent(ans) {
    Results rendering (Category-based Top3)
 -------------------------------- */
 
-
 function renderTop3Categories(top3Cats) {
   if (!el.top3) return;
 
@@ -1230,32 +1364,39 @@ function renderTop3Categories(top3Cats) {
     return;
   }
 
-  el.top3.innerHTML = top3Cats.map((cat, idx) => {
-    const rawFn = cat.functionLabel || cat.function;
-    const fnTag = cat.functionTag || tagFromId(cat.categoryKey || cat.code || "");
-    const fnText = rawFn ? `${escapeHtml(rawFn)} ｜ ` : "";
-    const header = cat.labelJa || cat.categoryKey || "—";
-    const score = Number.isFinite(cat.avgScore) ? cat.avgScore.toFixed(2) : "—";
-    const cov = Number.isFinite(cat.coveragePct) ? Math.round(cat.coveragePct) : "—";
+  el.top3.innerHTML = top3Cats
+    .map((cat, idx) => {
+      const rawFn = cat.functionLabel || cat.function;
+      const fnTag =
+        cat.functionTag || tagFromId(cat.categoryKey || cat.code || "");
+      const fnText = rawFn ? `${escapeHtml(rawFn)} ｜ ` : "";
+      const header = cat.labelJa || cat.categoryKey || "—";
+      const score = Number.isFinite(cat.avgScore)
+        ? cat.avgScore.toFixed(2)
+        : "—";
+      const cov = Number.isFinite(cat.coveragePct)
+        ? Math.round(cat.coveragePct)
+        : "—";
 
-    const allMinItems = Array.isArray(cat.minItems) ? cat.minItems : [];
-    const minCount = allMinItems.length;
+      const allMinItems = Array.isArray(cat.minItems) ? cat.minItems : [];
+      const minCount = allMinItems.length;
 
-    // Render only a small number of lowest-maturity items to keep the Top3 cards readable.
-    const MAX_MINITEMS = 6;
-    const shownMinItems = allMinItems.slice(0, MAX_MINITEMS);
-    const remainingMinItems = Math.max(0, minCount - shownMinItems.length);
+      // Render only a small number of lowest-maturity items to keep the Top3 cards readable.
+      const MAX_MINITEMS = 6;
+      const shownMinItems = allMinItems.slice(0, MAX_MINITEMS);
+      const remainingMinItems = Math.max(0, minCount - shownMinItems.length);
 
-    const itemsHtml = shownMinItems.map(({ q, ans, idx }) => {
-      const status = ANSWER_LABEL[ans] || ans;
-      const sub = (q.subcategory_ja || q.question || "").trim() || "—";
+      const itemsHtml = shownMinItems
+        .map(({ q, ans, idx }) => {
+          const status = ANSWER_LABEL[ans] || ans;
+          const sub = (q.subcategory_ja || q.question || "").trim() || "—";
 
-      const riskOut = (q.riskText || "").trim() || "—";
-      const hintOut = (q.improvementHint || "").trim() || "—";
+          const riskOut = (q.riskText || "").trim() || "—";
+          const hintOut = (q.improvementHint || "").trim() || "—";
 
-      const itemFn = tagFromId(q.id);
+          const itemFn = tagFromId(q.id);
 
-      return `
+          return `
         <div class="unmetItem" data-fn="${escapeHtml(itemFn)}">
           <div class="unmetItem__meta row row--space"><span>${escapeHtml(`${q.id} ｜ 回答: ${status}`)}</span><button type="button" class="btn btn--ghost btn--sm" data-jump-idx="${idx}">この設問に移動</button></div>
 
@@ -1279,15 +1420,17 @@ function renderTop3Categories(top3Cats) {
           </details>
         </div>
       `;
-    }).join("");
+        })
+        .join("");
 
-    const moreLine = remainingMinItems > 0
-      ? `<div class="muted small" style="margin-top:10px;">ほか<b>${remainingMinItems}</b>件（最小成熟度）。「詳細一覧（任意）」で確認できます。</div>`
-      : "";
+      const moreLine =
+        remainingMinItems > 0
+          ? `<div class="muted small" style="margin-top:10px;">ほか<b>${remainingMinItems}</b>件（最小成熟度）。「詳細一覧（任意）」で確認できます。</div>`
+          : "";
 
-    const summaryLine = `低成熟度（最小）: <b>${minCount}</b>件`;
+      const summaryLine = `低成熟度（最小）: <b>${minCount}</b>件`;
 
-    return `
+      return `
       <div class="top3Card" data-fn="${escapeHtml(fnTag)}">
         <div class="top3Card__header">
           <div class="top3Card__headText">
@@ -1310,10 +1453,11 @@ function renderTop3Categories(top3Cats) {
         </details>
       </div>
     `;
-  }).join("");
+    })
+    .join("");
 
   // Wire jump buttons
-  el.top3.querySelectorAll("[data-jump-idx]").forEach(btn => {
+  el.top3.querySelectorAll("[data-jump-idx]").forEach((btn) => {
     btn.addEventListener("click", () => {
       markCameFromResult();
       const idx = Number(btn.getAttribute("data-jump-idx"));
@@ -1365,22 +1509,26 @@ function renderGroupedItemList(containerEl, groups, emptyText) {
     return;
   }
 
-  containerEl.innerHTML = groups.map(g => {
-    const header = `${g.labelJa}（${g.items.length}件）`;
+  containerEl.innerHTML = groups
+    .map((g) => {
+      const header = `${g.labelJa}（${g.items.length}件）`;
 
-    // Function tag for this Category group (e.g., "GV"). Assumes group items share the same Function.
-    const groupFn = tagFromId(g.items?.[0]?.q?.id || g.items?.[0]?.q?.categoryKey || "");
+      // Function tag for this Category group (e.g., "GV"). Assumes group items share the same Function.
+      const groupFn = tagFromId(
+        g.items?.[0]?.q?.id || g.items?.[0]?.q?.categoryKey || "",
+      );
 
-    const body = g.items.map(({ q, ans }) => {
-      const status = ANSWER_LABEL[ans] || "未回答／不明";
-      const sub = (q.subcategory_ja || q.question || "").trim() || "—";
+      const body = g.items
+        .map(({ q, ans }) => {
+          const status = ANSWER_LABEL[ans] || "未回答／不明";
+          const sub = (q.subcategory_ja || q.question || "").trim() || "—";
 
-      const riskOut = (q.riskText || "").trim() || "—";
-      const hintOut = (q.improvementHint || "").trim() || "—";
+          const riskOut = (q.riskText || "").trim() || "—";
+          const hintOut = (q.improvementHint || "").trim() || "—";
 
-      const itemFn = tagFromId(q.id);
+          const itemFn = tagFromId(q.id);
 
-      return `
+          return `
         <div class="unmetItem" data-fn="${escapeHtml(itemFn)}">
           <div class="unmetItem__meta">${escapeHtml(`${q.id} ｜ 回答: ${status}`)}</div>
           <div class="unmetItem__q">${escapeHtml(sub)}</div>
@@ -1396,15 +1544,17 @@ function renderGroupedItemList(containerEl, groups, emptyText) {
           </div>
         </div>
       `;
-    }).join("");
+        })
+        .join("");
 
-    return `
+      return `
       <div class="unmetGroup" data-fn="${escapeHtml(groupFn)}">
         <div class="unmetGroup__title">${escapeHtml(header)}</div>
         ${body}
       </div>
     `;
-  }).join("");
+    })
+    .join("");
 }
 
 function renderLowMaturityList(maxLevel) {
@@ -1414,7 +1564,10 @@ function renderLowMaturityList(maxLevel) {
     const level = Number(ans);
     return Number.isFinite(level) && level <= n;
   });
-  const label = n === 2 ? "成熟度 1–2 の項目はありません。" : "成熟度 1–3 の項目はありません。";
+  const label =
+    n === 2
+      ? "成熟度 1–2 の項目はありません。"
+      : "成熟度 1–3 の項目はありません。";
   renderGroupedItemList(el.lowMaturityList, groups, label);
 }
 
@@ -1422,14 +1575,20 @@ function renderUnansweredList() {
   const groups = groupByCategory(QUESTIONS, (q, ans) => {
     return isMissingAnswer(ans) || ans === "na";
   });
-  renderGroupedItemList(el.unansweredList, groups, "未回答／不明の項目はありません。");
+  renderGroupedItemList(
+    el.unansweredList,
+    groups,
+    "未回答／不明の項目はありません。",
+  );
 }
 
 function wireDetailListsUI() {
   if (el.lowMaturityDetails) {
     el.lowMaturityDetails.addEventListener("toggle", () => {
       if (!el.lowMaturityDetails.open) return;
-      renderLowMaturityList(el.lowThresholdSelect ? el.lowThresholdSelect.value : "2");
+      renderLowMaturityList(
+        el.lowThresholdSelect ? el.lowThresholdSelect.value : "2",
+      );
     });
   }
   if (el.lowThresholdSelect) {
@@ -1446,10 +1605,8 @@ function wireDetailListsUI() {
   }
 }
 
-
-
 function renderResults() {
-  const labels = FUNCTION_ORDER.map(x => `${x.ja}（${x.tag}）`);
+  const labels = FUNCTION_ORDER.map((x) => `${x.ja}（${x.tag}）`);
   const values = computeRadarValues();
   drawRadar(el.radar, labels, values, { showValues: true });
 
@@ -1482,13 +1639,14 @@ function renderResults() {
 
   // Refresh detail lists if open (useful after import)
   if (el.lowMaturityDetails && el.lowMaturityDetails.open) {
-    renderLowMaturityList(el.lowThresholdSelect ? el.lowThresholdSelect.value : "2");
+    renderLowMaturityList(
+      el.lowThresholdSelect ? el.lowThresholdSelect.value : "2",
+    );
   }
   if (el.unansweredDetails && el.unansweredDetails.open) {
     renderUnansweredList();
   }
 }
-
 
 /* -----------------------------
    Restart
@@ -1516,31 +1674,35 @@ function restart() {
 -------------------------------- */
 function exportResultJson() {
   const functionStats = computeFunctionStats();
-  const radarValues = FUNCTION_ORDER.map(f => {
-    const s = functionStats.find(x => x.tag === f.tag);
+  const radarValues = FUNCTION_ORDER.map((f) => {
+    const s = functionStats.find((x) => x.tag === f.tag);
     return s ? s.avg : 0;
   });
 
-  const top3 = selectTop3MaturityCategories(QUESTIONS, answersById).map(cat => ({
-    category: cat.categoryKey,
-    category_ja: cat.categoryLabelJa,
-    functionTag: cat.functionTag,
-    functionJa: cat.functionJa,
-    avgMaturity: cat.avgScore,
-    coveragePct: cat.coveragePct,
-    lowestScore: cat.minScore,
-    lowestItems: (cat.minItems || []).map(x => ({
-      id: x.q.id,
-      answer: x.ans,
-    })),
-  }));
+  const top3 = selectTop3MaturityCategories(QUESTIONS, answersById).map(
+    (cat) => ({
+      category: cat.categoryKey,
+      category_ja: cat.categoryLabelJa,
+      functionTag: cat.functionTag,
+      functionJa: cat.functionJa,
+      avgMaturity: cat.avgScore,
+      coveragePct: cat.coveragePct,
+      lowestScore: cat.minScore,
+      lowestItems: (cat.minItems || []).map((x) => ({
+        id: x.q.id,
+        answer: x.ans,
+      })),
+    }),
+  );
 
-  const unassessed = selectUnassessedCategories(QUESTIONS, answersById).map(cat => ({
-    category: cat.categoryKey,
-    category_ja: cat.categoryLabelJa,
-    functionTag: cat.functionTag,
-    functionJa: cat.functionJa,
-  }));
+  const unassessed = selectUnassessedCategories(QUESTIONS, answersById).map(
+    (cat) => ({
+      category: cat.categoryKey,
+      category_ja: cat.categoryLabelJa,
+      functionTag: cat.functionTag,
+      functionJa: cat.functionJa,
+    }),
+  );
 
   const s = buildSummaryData({
     functionStats,
@@ -1565,7 +1727,9 @@ function exportResultJson() {
     answers: { ...answersById },
   };
 
-  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+  const blob = new Blob([JSON.stringify(payload, null, 2)], {
+    type: "application/json",
+  });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
@@ -1576,7 +1740,6 @@ function exportResultJson() {
   URL.revokeObjectURL(url);
 }
 
-
 /* -----------------------------
    Export/Import: SESSION JSON (NEW)
 -------------------------------- */
@@ -1585,13 +1748,19 @@ function safePickAnswersForExport() {
   const out = Object.create(null);
   for (const q of QUESTIONS) {
     const v = answersById[q.id];
-    if (v === "na" || v === "1" || v === "2" || v === "3" || v === "4" || v === "5") {
+    if (
+      v === "na" ||
+      v === "1" ||
+      v === "2" ||
+      v === "3" ||
+      v === "4" ||
+      v === "5"
+    ) {
       out[q.id] = v;
     }
   }
   return out;
 }
-
 
 function exportSessionJson() {
   if (!Array.isArray(QUESTIONS) || QUESTIONS.length === 0) {
@@ -1609,7 +1778,9 @@ function exportSessionJson() {
     answers: safePickAnswersForExport(),
   };
 
-  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+  const blob = new Blob([JSON.stringify(payload, null, 2)], {
+    type: "application/json",
+  });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
@@ -1621,21 +1792,32 @@ function exportSessionJson() {
 }
 
 function applyImportedSession(session) {
-  if (!session || typeof session !== "object") throw new Error("JSONの形式が不正です。");
-  if (session.kind !== SESSION_KIND) throw new Error("このツール用のセッションJSONではありません。");
-  if (session.version !== SESSION_VERSION) throw new Error(`未対応のversionです（${session.version}）。`);
-  if (!session.answers || typeof session.answers !== "object") throw new Error("answersが見つかりません。");
+  if (!session || typeof session !== "object")
+    throw new Error("JSONの形式が不正です。");
+  if (session.kind !== SESSION_KIND)
+    throw new Error("このツール用のセッションJSONではありません。");
+  if (session.version !== SESSION_VERSION)
+    throw new Error(`未対応のversionです（${session.version}）。`);
+  if (!session.answers || typeof session.answers !== "object")
+    throw new Error("answersが見つかりません。");
 
   // Clear current answers first
   for (const k of Object.keys(answersById)) delete answersById[k];
 
   // Apply only IDs that exist in current QUESTIONS
-  const idSet = new Set(QUESTIONS.map(q => q.id));
+  const idSet = new Set(QUESTIONS.map((q) => q.id));
   for (const [id, ans] of Object.entries(session.answers)) {
     // Convert long id to short id if needed (e.g., "GV.OC-01 - ..." -> "GV.OC-01")
     const shortId = id.split(" - ")[0];
     if (!idSet.has(shortId)) continue;
-    if (ans === "na" || ans === "1" || ans === "2" || ans === "3" || ans === "4" || ans === "5") {
+    if (
+      ans === "na" ||
+      ans === "1" ||
+      ans === "2" ||
+      ans === "3" ||
+      ans === "4" ||
+      ans === "5"
+    ) {
       answersById[shortId] = ans;
     }
   }
@@ -1646,7 +1828,7 @@ function applyImportedSession(session) {
 
   // If restored index is already answered and later questions also answered, keep as-is.
   // Otherwise, jump to the first unanswered from the beginning (better UX).
-  const firstUnanswered = QUESTIONS.findIndex(q => !answersById[q.id]);
+  const firstUnanswered = QUESTIONS.findIndex((q) => !answersById[q.id]);
   if (firstUnanswered >= 0) {
     currentIndex = firstUnanswered;
   } else {
@@ -1659,7 +1841,7 @@ function applyImportedSession(session) {
   updateOpenResultButton();
 
   // Navigate
-  const allAnswered = QUESTIONS.every(q => Boolean(answersById[q.id]));
+  const allAnswered = QUESTIONS.every((q) => Boolean(answersById[q.id]));
   if (allAnswered) {
     renderResults();
     showOnly("result");
@@ -1676,7 +1858,9 @@ async function importSessionFile(file) {
   try {
     json = JSON.parse(text);
   } catch {
-    throw new Error("JSONのパースに失敗しました（ファイルが壊れている可能性があります）。");
+    throw new Error(
+      "JSONのパースに失敗しました（ファイルが壊れている可能性があります）。",
+    );
   }
   applyImportedSession(json);
 }
@@ -1710,7 +1894,7 @@ function wireEvents() {
     });
   }
 
-  document.querySelectorAll(".answerChoice").forEach(btn => {
+  document.querySelectorAll(".answerChoice").forEach((btn) => {
     btn.addEventListener("click", () => {
       setAnswerForCurrent(btn.dataset.answer);
     });
@@ -1733,30 +1917,35 @@ function wireEvents() {
     el.btnBackToResult.addEventListener("click", () => {
       renderResults();
       showOnly("result");
-      requestAnimationFrame(() => window.scrollTo({ top: resultScrollY, behavior: "auto" }));
+      requestAnimationFrame(() =>
+        window.scrollTo({ top: resultScrollY, behavior: "auto" }),
+      );
     });
   }
 
   el.btnExport.addEventListener("click", () => exportResultJson());
 
   // session export/import
-  if (el.btnExportSession) el.btnExportSession.addEventListener("click", () => exportSessionJson());
+  if (el.btnExportSession)
+    el.btnExportSession.addEventListener("click", () => exportSessionJson());
 
-  if (el.btnImportSession) el.btnImportSession.addEventListener("click", () => {
-    if (!el.fileImportSession) return;
-    el.fileImportSession.value = ""; // allow re-import same file
-    el.fileImportSession.click();
-  });
+  if (el.btnImportSession)
+    el.btnImportSession.addEventListener("click", () => {
+      if (!el.fileImportSession) return;
+      el.fileImportSession.value = ""; // allow re-import same file
+      el.fileImportSession.click();
+    });
 
-  if (el.fileImportSession) el.fileImportSession.addEventListener("change", async () => {
-    const file = el.fileImportSession.files?.[0];
-    try {
-      await importSessionFile(file);
-    } catch (e) {
-      console.error(e);
-      alert(`読み込みに失敗しました: ${e?.message || e}`);
-    }
-  });
+  if (el.fileImportSession)
+    el.fileImportSession.addEventListener("change", async () => {
+      const file = el.fileImportSession.files?.[0];
+      try {
+        await importSessionFile(file);
+      } catch (e) {
+        console.error(e);
+        alert(`読み込みに失敗しました: ${e?.message || e}`);
+      }
+    });
 
   // keyboard shortcuts
   window.addEventListener("keydown", (e) => {
@@ -1793,7 +1982,8 @@ async function boot() {
   showOnly("loading");
   try {
     const res = await fetch(DATA_FILE, { cache: "no-store" });
-    if (!res.ok) throw new Error(`Failed to load JSON: ${res.status} ${res.statusText}`);
+    if (!res.ok)
+      throw new Error(`Failed to load JSON: ${res.status} ${res.statusText}`);
     QUESTIONS = await res.json();
 
     if (!Array.isArray(QUESTIONS) || QUESTIONS.length === 0) {
@@ -1810,8 +2000,8 @@ async function boot() {
     if (VIEWS?.loading) {
       VIEWS.loading.hidden = false;
       const m = VIEWS.loading.querySelector(".muted");
-      if (m) m.textContent =
-        `読み込みに失敗しました: ${err?.message || err}. JSONファイル名と配置場所を確認してください。`;
+      if (m)
+        m.textContent = `読み込みに失敗しました: ${err?.message || err}. JSONファイル名と配置場所を確認してください。`;
     } else {
       alert(`読み込みに失敗しました: ${err?.message || err}`);
     }
@@ -1823,4 +2013,3 @@ if (document.readyState === "loading") {
 } else {
   boot();
 }
-
